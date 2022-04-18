@@ -1,0 +1,32 @@
+.section-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .sh-heading {
+    width: max-content;
+    position: relative;
+    h2 {
+      font-size: 4.5rem;
+      line-height: 5rem;
+      font-weight: 800;
+      position: relative;
+      z-index: 10;
+      color: #1f194d;
+    }
+    img {
+      width: 6.5rem;
+      position: absolute;
+      top: 0rem;
+      right: -2.5rem;
+      z-index: 9;
+    }
+  }
+  p {
+    font-size: 2rem;
+    color: #69697c;
+    text-align: center;
+    line-height: 2.5rem;
+    margin: 2.5rem 0 0 0;
+  }
+}
