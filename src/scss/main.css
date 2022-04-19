@@ -485,14 +485,39 @@ button:hover {
   grid-gap: 1.5rem;
 }
 
-.letushelp.hiwsection {
+.letushelp {
+  width: 100%;
+}
+.letushelp .luh-main {
+  width: 100%;
+}
+.letushelp .luh-main .landing-bg-light {
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  z-index: 1;
+}
+
+.letushelp-content.hiwsection {
   margin: 25rem 0 15rem 0;
 }
-.letushelp.hiwsection .section-heading p {
+.letushelp-content.hiwsection .section-heading p {
   margin: 2.5rem 0 8rem 0;
+  z-index: 10;
 }
-.letushelp.hiwsection .letushelp-grid .accordion-item {
+.letushelp-content.hiwsection .letushelp-grid .accordion-item {
   margin: 0 0 3rem 0 !important;
+  z-index: 10;
+}
+.letushelp-content.hiwsection .faq-a p span {
+  color: #000000;
+  font-weight: 700;
 }
 
 .landingpage {
@@ -505,7 +530,7 @@ button:hover {
 }
 .landingpage .landing-main .landing-bg-light {
   width: 100%;
-  height: 105vh;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;

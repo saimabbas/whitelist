@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "./views/Team";
+import Page from "./views/HowItWorks";
 const App = () => {
   return <Page />;
 };
