@@ -14,6 +14,10 @@ import Team2 from "./../assets/img/team2.png";
 import Team3 from "./../assets/img/team3.png";
 import Team4 from "./../assets/img/team4.png";
 import Team5 from "./../assets/img/team5.png";
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Subscribe = () => {
     return (
@@ -184,7 +188,22 @@ const Subscribe = () => {
                     More <RefreshIcon color="#fff" />
                 </div>
             </footer>
+            <>
+                <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+                    <SwiperSlide>Slide 1</SwiperSlide>
+                    <SwiperSlide>Slide 2</SwiperSlide>
+                    <SwiperSlide>Slide 3</SwiperSlide>
+                    <SwiperSlide>Slide 4</SwiperSlide>
+                    <SwiperSlide>Slide 5</SwiperSlide>
+                    <SwiperSlide>Slide 6</SwiperSlide>
+                    <SwiperSlide>Slide 7</SwiperSlide>
+                    <SwiperSlide>Slide 8</SwiperSlide>
+                    <SwiperSlide>Slide 9</SwiperSlide>
+                </Swiper>
+            </>
         </div >
+
+
     )
 }
 
