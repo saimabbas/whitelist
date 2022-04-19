@@ -10,7 +10,7 @@ import MessagesIcon from "../assets/icons/MessagesIcon";
 import MoonIcon from "../assets/icons/MoonIcon";
 import WalletIcon from "../assets/icons/WalletIcon";
 
-const Roadmap = () => {
+const Vault = () => {
     return (
         <div className="app light-theme">
             {/* Header */}
@@ -59,21 +59,22 @@ const Roadmap = () => {
                     </div>
                 </div>
             </header>
-            <div className="roadmapmainpage">
-                {/* Roadmap Section */}
-                <section className="roadmapmain">
+            <div className="vaultmainpage">
+                {/* Collection Section */}
+                <section className="vaultmain">
                     <img
-                        className="roadmap-bg-light light-img"
+                        className="vault-bg-light light-img"
                         src={HeroBgLight}
                         alt="HeroBgLight"
                     />
                     <div className="box">
-                        <div className="letushelp-content hiwsection">
+                        <div className="letushelp-content vaultsection">
                             <div className="section-heading">
                                 <div className="sh-heading">
-                                    <h2>Roadmap</h2>
+                                    <h2>Your collections</h2>
                                     <img src={BlobPurple} alt="BlobPurple" />
                                 </div>
+                                <p>4 collections</p>
                                 <div className="mainroadmap">
 
                                 </div>
@@ -133,4 +134,4 @@ const Roadmap = () => {
     )
 }
 
-export default Roadmap
+export default Vault
