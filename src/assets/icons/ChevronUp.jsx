@@ -12,7 +12,7 @@ const ChevronUp = (props) => {
       <path
         d="M0.857742 4.48511L4.38493 0.965107L7.91211 4.48511"
         stroke={props.color}
-        stroke-width="1.5"
+        strokeWidth="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
