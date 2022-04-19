@@ -22,7 +22,6 @@ import RefreshIcon from "../assets/icons/RefreshIcon";
 import MessagesIcon from "../assets/icons/MessagesIcon";
 import MoonIcon from "../assets/icons/MoonIcon";
 import WalletIcon from "../assets/icons/WalletIcon";
-
 const Home = () => {
   return (
     <div className="app light-theme">
@@ -132,6 +131,25 @@ const Home = () => {
                   alt="hero-glare"
                 />
                 <div className="hero-swiper-box">
+                  {/* <div className="hero-swiper">
+                    <div className="swiper-wrapper">
+                      <div className="swiper-slide">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                      <div className="swiper-slide">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                      <div className="swiper-slide">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div> */}
                   <div className="hero-swiper-img-1-box">
                     <img src={HeroImg} alt="HeroImg" />
                   </div>
