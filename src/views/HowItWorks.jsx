@@ -109,7 +109,7 @@ const HowItWorks = () => {
                         <p>
                           Depending on the tier you have decided to go with,
                           every tier unlocks certain perks and advantages. Visit (
-                          <a href="">Subscribe</a> ) to find out more.
+                          <a href=""> Subscribe</a> ) to find out more.
                         </p>
                       </div>
                     </Accordion.Body>
@@ -159,7 +159,7 @@ const HowItWorks = () => {
                       <div className="faq-a">
                         <p>
                           Feel free to reach out to us through email at (
-                          <a href="">info@thwwhitelist.com</a> ). Or the red button in the bottom right corner.
+                          <a href=""> info@thwwhitelist.com</a> ). Or the red button in the bottom right corner.
                         </p>
                       </div>
                     </Accordion.Body>
