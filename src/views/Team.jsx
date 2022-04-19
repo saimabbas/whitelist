@@ -1,5 +1,6 @@
 import React from 'react'
 import BlobPurple from "../assets/img/blob-purple.svg";
+import HeroBgLight from "./../assets/img/hero-bg-light.png";
 import Logo from "../assets/img/Logo";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
@@ -63,73 +64,79 @@ const Subscribe = () => {
                     </div>
                 </div>
             </header>
-            {/* Subscribe Section */}
-            <section className="subscribe subsmainpage">
-                <div className="box">
-                    <div className="subscribe-content">
-                        <div className="section-heading">
-                            <div className="sh-heading">
-                                <h2>Meet the Team </h2>
-                                <img src={BlobPurple} alt="BlobYellow" />
-                            </div>
-                        </div>
-                        <div className="team-grid">
-                            <h3>Founders</h3>
-                            <div className="team-grid-content">
-                                <div className="team-grid-main">
-                                    <img src={Team1} alt="" />
-                                    <h6>Serge Klassen</h6>
-                                </div>
-                                <div className="team-grid-main">
-                                    <img src={Team2} alt="" />
-                                    <h6>Evan Klassen</h6>
-                                </div>
-                                <div className="team-grid-main">
-                                    <img src={Team3} alt="" />
-                                    <h6>Kristian Hybschman</h6>
-                                </div>
-                                <div className="team-grid-main">
-                                    <img src={Team4} alt="" />
-                                    <h6>Connor Gregory</h6>
-                                </div>
-                                <div className="team-grid-main">
-                                    <img src={Team1} alt="" />
-                                    <h6>Charles Hiebert</h6>
-                                </div>
-                                <div className="team-grid-main">
-                                    <img src={Team5} alt="" />
-                                    <h6>Jennifer Hiebert</h6>
+            <div className="teammainbox">
+                <section className="teampage">
+                    <img
+                        className="team-bg-light light-img"
+                        src={HeroBgLight}
+                        alt="HeroBgLight"
+                    />
+                    <div className="box">
+                        <div className="subscribe-content subsmainpage">
+                            <div className="section-heading">
+                                <div className="sh-heading">
+                                    <h2>Meet the Team </h2>
+                                    <img src={BlobPurple} alt="BlobYellow" />
                                 </div>
                             </div>
-                        </div>
-                        <div className="team-grid">
-                            <h3>Advisory</h3>
-                            <div className="team-grid-content">
-                                <div className="team-grid-main">
-                                    <img src={Team1} alt="" />
-                                    <h6>TBD</h6>
+                            <div className="team-grid">
+                                <h3>Founders</h3>
+                                <div className="team-grid-content">
+                                    <div className="team-grid-main">
+                                        <img src={Team1} alt="" />
+                                        <h6>Serge Klassen</h6>
+                                    </div>
+                                    <div className="team-grid-main">
+                                        <img src={Team2} alt="" />
+                                        <h6>Evan Klassen</h6>
+                                    </div>
+                                    <div className="team-grid-main">
+                                        <img src={Team3} alt="" />
+                                        <h6>Kristian Hybschman</h6>
+                                    </div>
+                                    <div className="team-grid-main">
+                                        <img src={Team4} alt="" />
+                                        <h6>Connor Gregory</h6>
+                                    </div>
+                                    <div className="team-grid-main">
+                                        <img src={Team1} alt="" />
+                                        <h6>Charles Hiebert</h6>
+                                    </div>
+                                    <div className="team-grid-main">
+                                        <img src={Team5} alt="" />
+                                        <h6>Jennifer Hiebert</h6>
+                                    </div>
                                 </div>
-                                <div className="team-grid-main">
-                                    <img src={Team2} alt="" />
-                                    <h6>TBD</h6>
-                                </div>
-                                <div className="team-grid-main">
-                                    <img src={Team3} alt="" />
-                                    <h6>TBD</h6>
-                                </div>
-                                <div className="team-grid-main">
-                                    <img src={Team4} alt="" />
-                                    <h6>TBD</h6>
-                                </div>
-                                <div className="team-grid-main">
-                                    <img src={Team1} alt="" />
-                                    <h6>TBD</h6>
+                            </div>
+                            <div className="team-grid">
+                                <h3>Advisory</h3>
+                                <div className="team-grid-content">
+                                    <div className="team-grid-main">
+                                        <img src={Team1} alt="" />
+                                        <h6>TBD</h6>
+                                    </div>
+                                    <div className="team-grid-main">
+                                        <img src={Team2} alt="" />
+                                        <h6>TBD</h6>
+                                    </div>
+                                    <div className="team-grid-main">
+                                        <img src={Team3} alt="" />
+                                        <h6>TBD</h6>
+                                    </div>
+                                    <div className="team-grid-main">
+                                        <img src={Team4} alt="" />
+                                        <h6>TBD</h6>
+                                    </div>
+                                    <div className="team-grid-main">
+                                        <img src={Team1} alt="" />
+                                        <h6>TBD</h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
             {/* Footer */}
             <footer>
                 <div className="box">

@@ -588,11 +588,54 @@ button:hover {
   margin: 3rem 0;
 }
 
-.subscribe.subsmainpage {
+.subscribepage {
+  width: 100%;
+}
+.subscribepage .subimgbox {
+  width: 100%;
+}
+.subscribepage .subimgbox .subscribe-bg-light {
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  z-index: 1;
+}
+
+.subscribe-content.subsmainpage {
   margin: 25rem 0 15rem 0;
 }
-.subscribe.subsmainpage .section-heading p {
+.subscribe-content.subsmainpage .section-heading p {
   margin: 2.5rem 0 8rem 0;
+  z-index: 10;
+}
+.subscribe-content.subsmainpage .subscribe-grid-card {
+  z-index: 10;
+  cursor: pointer;
+}
+
+.teammainbox {
+  width: 100%;
+}
+.teammainbox .teampage {
+  width: 100%;
+}
+.teammainbox .teampage .team-bg-light {
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  z-index: 1;
 }
 
 .team-grid {
@@ -605,6 +648,7 @@ button:hover {
   margin: 4.5rem 0;
   color: #1F194D;
   font-size: 3.4rem;
+  z-index: 10;
 }
 .team-grid .team-grid-content {
   display: grid;
@@ -619,6 +663,7 @@ button:hover {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  z-index: 10;
 }
 .team-grid .team-grid-content .team-grid-main img {
   width: 100%;

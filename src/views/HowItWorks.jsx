@@ -60,8 +60,8 @@ const HowItWorks = () => {
           </div>
         </div>
       </header>
-      <div className="home letushelp">
-        {/* Hero Section */}
+      <div className="letushelp">
+        {/* Let Us Work Section */}
         <section className="luh-main">
           <img
             className="landing-bg-light light-img"
