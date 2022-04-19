@@ -22,6 +22,12 @@ import RefreshIcon from "../assets/icons/RefreshIcon";
 import MessagesIcon from "../assets/icons/MessagesIcon";
 import MoonIcon from "../assets/icons/MoonIcon";
 import WalletIcon from "../assets/icons/WalletIcon";
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+
 const Home = () => {
   return (
     <div className="app light-theme">
@@ -63,7 +69,7 @@ const Home = () => {
             <div className="header-right">
               <MessagesIcon color="#1F194D" />
               <MoonIcon color="#1F194D" />
-              <button className="light-blue-btn-filled btn-sm-ds">
+              <button className="light-blue-btn-filled">
                 {" "}
                 <WalletIcon color="#195BFF" /> Wallet
               </button>
@@ -131,27 +137,56 @@ const Home = () => {
                   alt="hero-glare"
                 />
                 <div className="hero-swiper-box">
-                  {/* <div className="hero-swiper">
-                    <div className="swiper-wrapper">
-                      <div className="swiper-slide">
+                  <Swiper
+                    pagination={true}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                    direction={"vertical"}
+                    spaceBetween={50}
+                  >
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
                         <div className="hero-swiper-img-1-box">
                           <img src={HeroImg} alt="HeroImg" />
                         </div>
                       </div>
-                      <div className="swiper-slide">
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
                         <div className="hero-swiper-img-1-box">
                           <img src={HeroImg} alt="HeroImg" />
                         </div>
                       </div>
-                      <div className="swiper-slide">
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
                         <div className="hero-swiper-img-1-box">
                           <img src={HeroImg} alt="HeroImg" />
                         </div>
                       </div>
-                    </div>
-                  </div> */}
-                  <div className="hero-swiper-img-1-box">
-                    <img src={HeroImg} alt="HeroImg" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </Swiper>
+                  <div className="hsb-round-btns-box">
+                    <span>
+                      <MdKeyboardArrowRight />
+                    </span>
+                    <span>
+                      <MdKeyboardArrowLeft />
+                    </span>
                   </div>
                 </div>
               </div>
