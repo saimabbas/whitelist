@@ -1,3 +1,19 @@
+.teammainbox {
+    width: 100%;
+    .teampage {
+      width: 100%;
+      .team-bg-light {
+        width: 100%;
+        height: 105vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: bottom;
+        z-index: 1;
+      }
+    }
+  }
 .team-grid
 {
     display: flex;
@@ -9,6 +25,7 @@
         margin: 4.5rem 0;
         color: #1F194D;
         font-size: 3.4rem;
+        z-index: 10;
     }
     .team-grid-content
     {
@@ -24,6 +41,7 @@
             justify-content: flex-start;
             align-items: center;
             flex-direction: column;
+            z-index: 10;
             img 
             {
                 width: 100%;

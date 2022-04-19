@@ -1,5 +1,6 @@
 import React from 'react'
 import BlobYellow from "../assets/img/blob-yellow.svg";
+import HeroBgLight from "./../assets/img/hero-bg-light.png";
 import Tick from "../assets/icons/Tick";
 import Logo from "../assets/img/Logo";
 import Instagram from "../assets/icons/Instagram";
@@ -59,201 +60,208 @@ const Subscribe = () => {
                     </div>
                 </div>
             </header>
-            {/* Subscribe Section */}
-            <section className="subscribe subsmainpage">
-                <div className="box">
-                    <div className="subscribe-content">
-                        <div className="section-heading">
-                            <div className="sh-heading">
-                                <h2>Subscribe</h2>
-                                <img src={BlobYellow} alt="BlobYellow" />
+            <div className="subscribepage">
+                {/* Subscribe Section */}
+                <section className="subimgbox">
+                    <img
+                        className="subscribe-bg-light light-img"
+                        src={HeroBgLight}
+                        alt="HeroBgLight"
+                    />
+                    <div className="box">
+                        <div className="subscribe-content subsmainpage">
+                            <div className="section-heading">
+                                <div className="sh-heading">
+                                    <h2>Subscribe</h2>
+                                    <img src={BlobYellow} alt="BlobYellow" />
+                                </div>
+                                <p>Join the Whitelist by choose your perfect option below</p>
                             </div>
-                            <p>Join the Whitelist by choose your perfect option below</p>
-                        </div>
-                        <div className="subscribe-grid">
-                            <div className="subscribe-grid-card">
-                                <div className="top-notch top-notch-pink"></div>
-                                <h3>Tier 1</h3>
-                                <h4>0.3 ETH </h4>
-                                <div className="subscribe-options-grid">
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>3 Drops from The Whitelist (Season 1)</p>
+                            <div className="subscribe-grid">
+                                <div className="subscribe-grid-card">
+                                    <div className="top-notch top-notch-pink"></div>
+                                    <h3>Tier 1</h3>
+                                    <h4>0.3 ETH </h4>
+                                    <div className="subscribe-options-grid">
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>3 Drops from The Whitelist (Season 1)</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>Access to Community Prize Pools</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>
+                                                Voting Rights for Future Pools, Drops and artist
+                                                Collaborations
+                                            </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p className="soge-not-available">
+                                                Early Mint access (Higher Change of a legendary item)
+                                            </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p className="soge-not-available">Launchpad Access </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p className="soge-not-available">“Elixir” air drop</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p className="soge-not-available">
+                                                Access to “The inner Circle”
+                                            </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p className="soge-not-available">
+                                                Yield Farming access and yield farming prize pool
+                                            </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p className="soge-not-available">
+                                                Partnered projects Whitelist Spots{" "}
+                                            </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p className="soge-not-available">
+                                                Early Access to Season 2 with The Whitelist
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>Access to Community Prize Pools</p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>
-                                            Voting Rights for Future Pools, Drops and artist
-                                            Collaborations
-                                        </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p className="soge-not-available">
-                                            Early Mint access (Higher Change of a legendary item)
-                                        </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p className="soge-not-available">Launchpad Access </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p className="soge-not-available">“Elixir” air drop</p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p className="soge-not-available">
-                                            Access to “The inner Circle”
-                                        </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p className="soge-not-available">
-                                            Yield Farming access and yield farming prize pool
-                                        </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p className="soge-not-available">
-                                            Partnered projects Whitelist Spots{" "}
-                                        </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p className="soge-not-available">
-                                            Early Access to Season 2 with The Whitelist
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="subscribe-btn-box">
-                                    <button className="light-blue-btn-filled">
-                                        GET STARTED
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="subscribe-grid-card">
-                                <div className="top-notch top-notch-blue"></div>
-                                <h3>Tier 2</h3>
-                                <h4>0.4 ETH </h4>
-                                <div className="subscribe-options-grid">
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>3 Drops from The Whitelist (Season 1)</p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>Access to Community Prize Pools</p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>
-                                            Voting Rights for Future Pools, Drops and artist
-                                            Collaborations
-                                        </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>
-                                            Early Mint access (Higher Change of a legendary item)
-                                        </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>Launchpad Access </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>“Elixir” air drop</p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p>Access to “The inner Circle”</p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p>Yield Farming access and yield farming prize pool</p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p>Partnered projects Whitelist Spots </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#D9D9E4" />
-                                        <p>Early Access to Season 2 with The Whitelist</p>
+                                    <div className="subscribe-btn-box">
+                                        <button className="light-blue-btn-filled">
+                                            GET STARTED
+                                        </button>
                                     </div>
                                 </div>
-                                <div className="subscribe-btn-box">
-                                    <button className="dark-blue-btn-filled">
-                                        GET STARTED
-                                    </button>
+                                <div className="subscribe-grid-card">
+                                    <div className="top-notch top-notch-blue"></div>
+                                    <h3>Tier 2</h3>
+                                    <h4>0.4 ETH </h4>
+                                    <div className="subscribe-options-grid">
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>3 Drops from The Whitelist (Season 1)</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>Access to Community Prize Pools</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>
+                                                Voting Rights for Future Pools, Drops and artist
+                                                Collaborations
+                                            </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>
+                                                Early Mint access (Higher Change of a legendary item)
+                                            </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>Launchpad Access </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>“Elixir” air drop</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p>Access to “The inner Circle”</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p>Yield Farming access and yield farming prize pool</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p>Partnered projects Whitelist Spots </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#D9D9E4" />
+                                            <p>Early Access to Season 2 with The Whitelist</p>
+                                        </div>
+                                    </div>
+                                    <div className="subscribe-btn-box">
+                                        <button className="dark-blue-btn-filled">
+                                            GET STARTED
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="subscribe-grid-card">
-                                <div className="top-notch top-notch-yellow"></div>
-                                <h3>Tier 3 (The Inner Circle)</h3>
-                                <h4>0.6 ETH </h4>
-                                <div className="subscribe-options-grid">
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>3 Drops from The Whitelist (Season 1)</p>
+                                <div className="subscribe-grid-card">
+                                    <div className="top-notch top-notch-yellow"></div>
+                                    <h3>Tier 3 (The Inner Circle)</h3>
+                                    <h4>0.6 ETH </h4>
+                                    <div className="subscribe-options-grid">
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>3 Drops from The Whitelist (Season 1)</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>Access to Community Prize Pools</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>
+                                                Voting Rights for Future Pools, Drops and artist
+                                                Collaborations
+                                            </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>
+                                                Early Mint access (Higher Change of a legendary item)
+                                            </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>Launchpad Access </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>“Elixir” air drop</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>Access to “The inner Circle”</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>Yield Farming access and yield farming prize pool</p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>Partnered projects Whitelist Spots </p>
+                                        </div>
+                                        <div className="subscribe-options-grid-entry">
+                                            <Tick color="#2BD182" />
+                                            <p>Early Access to Season 2 with The Whitelist</p>
+                                        </div>
                                     </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>Access to Community Prize Pools</p>
+                                    <div className="subscribe-btn-box">
+                                        <button className="light-blue-btn-filled">
+                                            GET STARTED
+                                        </button>
                                     </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>
-                                            Voting Rights for Future Pools, Drops and artist
-                                            Collaborations
-                                        </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>
-                                            Early Mint access (Higher Change of a legendary item)
-                                        </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>Launchpad Access </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>“Elixir” air drop</p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>Access to “The inner Circle”</p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>Yield Farming access and yield farming prize pool</p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>Partnered projects Whitelist Spots </p>
-                                    </div>
-                                    <div className="subscribe-options-grid-entry">
-                                        <Tick color="#2BD182" />
-                                        <p>Early Access to Season 2 with The Whitelist</p>
-                                    </div>
-                                </div>
-                                <div className="subscribe-btn-box">
-                                    <button className="light-blue-btn-filled">
-                                        GET STARTED
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
             {/* Footer */}
             <footer>
                 <div className="box">
