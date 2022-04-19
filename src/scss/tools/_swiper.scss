@@ -1,5 +1,25 @@
-/* .hero-swiper-box .swiper-slide {
-  width: 20rem !important;
-  overflow: hidden;
-  border: 5px dotted green;
-} */
+.hero-swiper-box {
+  .swiper-slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .swiper-pagination-bullet {
+    background-color: #1f194d;
+    opacity: 0.25 !important;
+    margin: 1rem 0 !important;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #1f194d;
+    opacity: 1 !important;
+  }
+  .swiper-pagination-vertical.swiper-pagination-bullets,
+  .swiper-vertical > .swiper-pagination-bullets {
+    position: absolute !important;
+    top: 50% !important;
+    right: 0 !important;
+    left: unset !important;
+    bottom: unset !important;
+    transform: translate(0, -50%) !important;
+  }
+}

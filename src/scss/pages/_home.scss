@@ -115,12 +115,44 @@
       justify-content: flex-end;
       position: relative;
       padding: 0 0 7.5rem 0;
+      .hsb-round-btns-box {
+        width: max-content;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(1.75rem, 0);
+        span {
+          width: 3.5rem;
+          height: 3.5rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #fff;
+          margin: 1.5rem 0 0 0;
+          cursor: pointer;
+          transition: 0.5s;
+          color: #1f194d;
+          &:hover {
+            background-color: #1f194d;
+            color: #fff;
+          }
+          svg {
+            width: 2.25rem;
+            height: max-content;
+          }
+        }
+      }
       .hero-glare {
-        width: 125%;
+        width: 150%;
         object-fit: contain;
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 40%;
         transform: translate(-50%, -50%);
         opacity: 0.75;
       }
