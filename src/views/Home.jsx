@@ -181,10 +181,10 @@ const Home = () => {
                     </SwiperSlide>
                   </Swiper>
                   <div className="hsb-round-btns-box">
-                    <span>
+                    <span className="round-chevron-box">
                       <MdKeyboardArrowRight />
                     </span>
-                    <span>
+                    <span className="round-chevron-box">
                       <MdKeyboardArrowLeft />
                     </span>
                   </div>

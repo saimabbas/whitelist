@@ -125,27 +125,6 @@
         flex-direction: column;
         justify-content: center;
         transform: translate(1.75rem, 0);
-        span {
-          width: 3.5rem;
-          height: 3.5rem;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: #fff;
-          margin: 1.5rem 0 0 0;
-          cursor: pointer;
-          transition: 0.5s;
-          color: #1f194d;
-          &:hover {
-            background-color: #1f194d;
-            color: #fff;
-          }
-          svg {
-            width: 2.25rem;
-            height: max-content;
-          }
-        }
       }
       .hero-glare {
         width: 150%;
@@ -288,57 +267,6 @@
       grid-template-rows: auto;
       grid-gap: 5rem;
       margin: 7.5rem 0;
-    }
-    .collections-grid-card {
-      background-color: #fff;
-      padding: 2.5rem 3rem;
-      border-radius: 1.5rem;
-      box-shadow: 0 7px 10px rgba(0, 0, 0, 0.05);
-      .cgc-top {
-        width: 100%;
-        margin: 0 0 2rem 0;
-        h6 {
-          font-size: 2rem;
-          display: flex;
-          align-items: center;
-          font-weight: 500;
-          img {
-            width: 4rem;
-            margin: 0 0.75rem 0 0;
-          }
-        }
-      }
-      .cgc-bottom {
-        position: relative;
-        img {
-          width: 100%;
-          object-fit: cover;
-          border-radius: 1.5rem;
-        }
-        .coming-tag {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background-color: #fff;
-          padding: 1rem 2.5rem;
-          font-size: 1.75rem;
-          white-space: nowrap;
-          border-radius: 1000px;
-          font-weight: 600;
-          span {
-            width: 6.5rem;
-            height: 5px;
-            top: 0;
-            left: 50%;
-            background-color: #ff409c;
-            position: absolute;
-            display: block;
-            transform: translate(-50%, -100%);
-            border-radius: 5px 5px 0 0;
-          }
-        }
-      }
     }
   }
   .subscribe .subscribe-grid {
