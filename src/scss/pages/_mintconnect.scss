@@ -1,0 +1,30 @@
+.mintmainpage 
+{
+    .mintconnect
+    {
+        width: 53%;
+        margin: 5rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h6 
+        {
+            font-weight: 600;
+            color: #fff;
+            font-size: 1.3rem;  
+        }
+        button 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.85rem 2rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            background-color: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            border-radius: 0.75rem;
+            border: 3px solid rgba(255, 255, 255, 0.17);
+        }
+    }
+}
