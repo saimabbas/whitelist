@@ -1,5 +1,5 @@
 import React from "react";
-import Page from "./views/MintConnect";
+import Page from "./views/Checkout";
 const App = () => {
   return <Page />;
 };

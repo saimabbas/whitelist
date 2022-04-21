@@ -1443,6 +1443,254 @@ button:hover {
   border: 3px solid rgba(255, 255, 255, 0.17);
 }
 
+.checkoutmainpage {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 6rem 4rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  z-index: 10;
+  margin: 5rem 0 0 0;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.checkoutmainpage .checkoutleft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 10;
+  width: 70%;
+  padding: 2rem 4rem 0 0;
+  border-right: 1px solid #EEEEEE;
+}
+.checkoutmainpage .checkoutleft h4 {
+  font-size: 2.4rem;
+  color: #1F194D;
+  font-weight: 700;
+}
+.checkoutmainpage .checkoutleft .coleftimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+  flex-direction: column;
+}
+.checkoutmainpage .checkoutleft .coleftimg p {
+  font-size: 2rem;
+  color: #1F194D;
+  font-weight: 400;
+  margin: 6rem 0;
+  width: 55%;
+  text-align: center;
+}
+.checkoutmainpage .checkoutleft .coleftimg img {
+  width: 20rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.checkoutmainpage .checkoutleft .colwallet {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  margin: 6rem 0 0 0;
+}
+.checkoutmainpage .checkoutleft .colwallet h5 {
+  font-size: 2rem;
+  color: #1F194D;
+  font-weight: 700;
+}
+.checkoutmainpage .checkoutleft .colwallet p {
+  color: #69697C;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 1rem 0 4rem 0;
+}
+.checkoutmainpage .checkoutleft .colwallet .colwalbtn {
+  border: 1px solid #E1E4EB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 1rem 2rem;
+  border-radius: 0.75rem;
+  width: 100%;
+}
+.checkoutmainpage .checkoutleft .colwallet .colwalbtn .colwalp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+}
+.checkoutmainpage .checkoutleft .colwallet .colwalbtn .colwalp img {
+  width: 2.75rem;
+  height: 2.75rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.checkoutmainpage .checkoutleft .colwallet .colwalbtn .colwalp p {
+  color: #1F194D;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 0 1.5rem;
+}
+.checkoutmainpage .checkoutleft .colwallet .colwalbtn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 1.35rem 0;
+  color: #fff;
+  border-radius: 0.75rem;
+  border: unset;
+  background-color: #195BFF;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.checkoutmainpage .checkoutright {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 26%;
+  flex-direction: column;
+  padding: 2rem 0 0 0;
+  z-index: 10;
+}
+.checkoutmainpage .checkoutright h4 {
+  font-size: 2.4rem;
+  color: #1F194D;
+  font-weight: 700;
+}
+.checkoutmainpage .checkoutright .sumimgtext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 6rem 0 0 0;
+}
+.checkoutmainpage .checkoutright .sumimgtext img {
+  width: 35%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.checkoutmainpage .checkoutright .sumimgtext .sumtext {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.checkoutmainpage .checkoutright .sumimgtext .sumtext h6 {
+  font-size: 1.8rem;
+  color: #1F194D;
+  font-weight: 700;
+}
+.checkoutmainpage .checkoutright .sumimgtext .sumtext p {
+  font-size: 1.8rem;
+  color: #69697C;
+  font-weight: 500;
+  margin: 0.5rem 0 2.5rem 0;
+}
+.checkoutmainpage .checkoutright .sumimgtext .sumtext span {
+  font-size: 1.8rem;
+  color: #195BFF;
+  font-weight: 700;
+}
+.checkoutmainpage .checkoutright .checkouttotal {
+  margin: 4rem 0 2rem 0;
+  border-radius: 1rem;
+  background-color: rgba(221, 221, 229, 0.25);
+  padding: 2.5rem;
+  width: 100%;
+}
+.checkoutmainpage .checkoutright .checkouttotal .cotinner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 2rem 0;
+}
+.checkoutmainpage .checkoutright .checkouttotal .cotinner p {
+  font-size: 1.7rem;
+  color: #69697C;
+  font-weight: 500;
+}
+.checkoutmainpage .checkoutright .checkouttotal .cotinner h6 {
+  font-size: 1.7rem;
+  color: #1F194D;
+  font-weight: 600;
+}
+.checkoutmainpage .checkoutright .checkouttotal .cottotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+  border-top: 1px solid #BEC4D7;
+}
+.checkoutmainpage .checkoutright .checkouttotal .cottotal p {
+  font-size: 2rem;
+  color: #2BD182;
+  font-weight: 700;
+}
+.checkoutmainpage .checkoutright .checkouttotal .cottotal h6 {
+  font-size: 2rem;
+  color: #1F194D;
+  font-weight: 700;
+}
+.checkoutmainpage .checkoutright .cosub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: rgba(221, 221, 229, 0.25);
+  padding: 0.75rem 0.75rem 0.75rem 1.5rem;
+  width: 100%;
+}
+.checkoutmainpage .checkoutright .cosub input {
+  font-size: 1.4rem;
+  color: #9FA2B5;
+  font-weight: 400;
+  width: 50%;
+  border: unset;
+  background-color: unset;
+}
+.checkoutmainpage .checkoutright .cosub input:focus {
+  outline: none;
+}
+.checkoutmainpage .checkoutright .cosub input::-moz-placeholder {
+  font-size: 1.4rem;
+  color: #9FA2B5;
+  font-weight: 400;
+}
+.checkoutmainpage .checkoutright .cosub input:-ms-input-placeholder {
+  font-size: 1.4rem;
+  color: #9FA2B5;
+  font-weight: 400;
+}
+.checkoutmainpage .checkoutright .cosub input::placeholder {
+  font-size: 1.4rem;
+  color: #9FA2B5;
+  font-weight: 400;
+}
+.checkoutmainpage .checkoutright .cosub button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 1rem 0;
+  color: #fff;
+  border-radius: 1rem;
+  border: unset;
+  background-color: #195BFF;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
 h1 {
   font-size: 6.4rem;
   font-weight: 800;
