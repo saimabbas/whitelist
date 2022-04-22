@@ -1,0 +1,84 @@
+.coomsoondark.mintmainpage
+{
+    width: 100%;
+    height: 100vh;
+    padding: 5rem;
+    background-color: #243F71;
+    .coomsoonicons
+    {
+        width: 10%;
+    }
+    .passengerbtn
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 0.75rem;
+        padding: 0.75rem;
+        background-color: rgba(255, 255, 255, 0.04);
+        width: 53%;
+        margin: 0 auto;
+        button 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 1rem 0;
+            font-size: 1.6rem;
+            font-weight: 600;
+            background-image: linear-gradient(#394DFF, #6833FF);
+            color: #fff;
+            border: unset;
+            border-radius: 0.75rem;
+        }
+        .minttimer
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: 0.5rem 0 0 0;
+            h6 
+            {
+                font-size: 1.15rem;
+                color: rgba(255, 255, 255, 0.6);
+                font-weight: 500;
+                span 
+                {
+                    font-weight: 600;
+                    color: #fff;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    .mintdisconnect
+    {
+        width: 53%;
+        margin: 5rem auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h6 
+        {
+            font-weight: 600;
+            color: #fff;
+            font-size: 1.5rem;  
+        }
+        button 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            background-image: linear-gradient(#C24905, #8E0055);
+            color: #fff;
+            border: unset;
+            border-radius: 0.75rem;
+        }
+    }
+}
