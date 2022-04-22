@@ -86,6 +86,9 @@ body {
 .top-notch.top-notch-yellow {
   background-color: #fcc21b;
 }
+.top-notch.top-notch-purple {
+  background-color: #6c69ff;
+}
 button {
   outline: 0;
   &:hover {
@@ -289,4 +292,17 @@ button {
     transform: translate(-50%, -100%);
     border-radius: 5px 5px 0 0;
   }
+}
+.app-page {
+  width: 100%;
+}
+.app-page-hero-bg {
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: bottom;
+  z-index: 1;
 }

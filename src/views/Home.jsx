@@ -31,6 +31,10 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 const Home = () => {
   return (
     <div className="app light-theme">
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Collections</a>
+      </div>
       {/* Header */}
       <header>
         <div className="box">
