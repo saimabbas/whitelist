@@ -88,171 +88,108 @@ const HowItWorks = () => {
                         </button>
                       </div>
                     </LetUsHelpCard>
-                    <Accordion.Item eventKey={5}>
-                      <Accordion.Header>
-                        <div className="faq-q">
-                          <h5>How do I get in contact with The Whitelist?</h5>
-                          <ChevronUp color="#1F194D" />
-                        </div>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="faq-a">
-                          <p>
-                            Feel free to reach out to us through email at (
-                            <a href=""> info@thwwhitelist.com</a> ). Or the red
-                            button in the bottom right corner.
-                          </p>
-                        </div>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey={6}>
-                      <Accordion.Header>
-                        <div className="faq-q">
-                          <h5>
-                            How many collections will I get with my Tier pass?
-                          </h5>
-                          <ChevronUp color="#1F194D" />
-                        </div>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="faq-a">
-                          <p>
-                            Every season with the Whitelist, each tiered user
-                            will receive 3 NFT’s which is not including your
-                            tier pass. For more information about the tier
-                            levels please visit our subscription page.
-                          </p>
-                        </div>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey={7}>
-                      <Accordion.Header>
-                        <div className="faq-q">
-                          <h5>
-                            What is the benefit of holding an NFT from the
-                            whitelist?
-                          </h5>
-                          <ChevronUp color="#1F194D" />
-                        </div>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="faq-a">
-                          <p>
-                            At the whitelist we strive to provide our users with
-                            some of the best utility that the market has to
-                            offer. For an in-depth understanding of utility
-                            please visit
-                            <a href=""> Roadmap</a> and tier options
-                            <a href=""> Subscribe</a>.
-                          </p>
-                        </div>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey={8}>
-                      <Accordion.Header>
-                        <div className="faq-q">
-                          <h5>How do I partner with the Whitelist?</h5>
-                          <ChevronUp color="#1F194D" />
-                        </div>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="faq-a">
-                          <p>
-                            For all enquiries please email
-                            <a href=""> info@thwwhitelist.com</a>
-                          </p>
-                        </div>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey={9}>
-                      <Accordion.Header>
-                        <div className="faq-q">
-                          <h5>Who is behind the whitelist?</h5>
-                          <ChevronUp color="#1F194D" />
-                        </div>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="faq-a">
-                          <p>
-                            <a href="">Meet the Team</a>
-                          </p>
-                        </div>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey={10}>
-                      <Accordion.Header>
-                        <div className="faq-q">
-                          <h5>When will the collections be revealed?</h5>
-                          <ChevronUp color="#1F194D" />
-                        </div>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="faq-a">
-                          <p>
-                            Collection reveal date varies per collection. Please
-                            visit our collections page for more details.
-                          </p>
-                        </div>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey={11}>
-                      <Accordion.Header>
-                        <div className="faq-q">
-                          <h5>
-                            How often do I get an NFT with my Whitelist
-                            subscription?
-                          </h5>
-                          <ChevronUp color="#1F194D" />
-                        </div>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="faq-a">
-                          <p>
-                            With The whitelist a user will receive a guaranteed
-                            3 drops. Each drop will happen 1-2 months apart
-                            depending on the team and artists. At the whitelist
-                            we strive to provide you with the best product
-                            possible.
-                          </p>
-                        </div>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey={12}>
-                      <Accordion.Header>
-                        <div className="faq-q">
-                          <h5>
-                            How much does it cost to subscribe to The Whitelist?
-                          </h5>
-                          <ChevronUp color="#1F194D" />
-                        </div>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="faq-a">
-                          <p>
-                            Here at the whitelist, we have a multitude of
-                            subscription options that aim to fit all types of
-                            users. Please visit us at
-                            <a href=""> Subscribe</a> for details.
-                          </p>
-                        </div>
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey={13}>
-                      <Accordion.Header>
-                        <div className="faq-q">
-                          <h5>How Much will Mint be?</h5>
-                          <ChevronUp color="#1F194D" />
-                        </div>
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        <div className="faq-a">
-                          <p>
-                            Mint will vary per drop but will be anywhere between{" "}
-                            <span> 0.8-1.5 ETH</span>.
-                          </p>
-                        </div>
-                      </Accordion.Body>
-                    </Accordion.Item>
+                    <LetUsHelpCard
+                      eventKey={5}
+                      ques="How do I get in contact with The Whitelist?"
+                    >
+                      <p>
+                        Feel free to reach out to us through email at (
+                        <a href=""> info@thwwhitelist.com</a> ). Or the red
+                        button in the bottom right corner.
+                      </p>
+                    </LetUsHelpCard>
+                    <LetUsHelpCard
+                      eventKey={5}
+                      ques="How do I get in contact with The Whitelist?"
+                    >
+                      <p>
+                        Feel free to reach out to us through email at (
+                        <a href=""> info@thwwhitelist.com</a> ). Or the red
+                        button in the bottom right corner.
+                      </p>
+                    </LetUsHelpCard>
+                    <LetUsHelpCard
+                      eventKey={6}
+                      ques="   How many collections will I get with my Tier pass?"
+                    >
+                      <p>
+                        Every season with the Whitelist, each tiered user will
+                        receive 3 NFT’s which is not including your tier pass.
+                        For more information about the tier levels please visit
+                        our subscription page.
+                      </p>
+                    </LetUsHelpCard>
+                    <LetUsHelpCard
+                      eventKey={7}
+                      ques=" What is the benefit of holding an NFT from the
+                      whitelist??"
+                    >
+                      <p>
+                        At the whitelist we strive to provide our users with
+                        some of the best utility that the market has to offer.
+                        For an in-depth understanding of utility please visit
+                        <a href=""> Roadmap</a> and tier options
+                        <a href=""> Subscribe</a>.
+                      </p>
+                    </LetUsHelpCard>
+                    <LetUsHelpCard
+                      eventKey={8}
+                      ques=" How do I partner with the Whitelist?"
+                    >
+                      <p>
+                        For all enquiries please email
+                        <a href=""> info@thwwhitelist.com</a>
+                      </p>
+                    </LetUsHelpCard>
+                    <LetUsHelpCard
+                      eventKey={9}
+                      ques="Who is behind the whitelist? "
+                    >
+                      <p>
+                        <a href="">Meet the Team</a>
+                      </p>
+                    </LetUsHelpCard>
+                    <LetUsHelpCard
+                      eventKey={10}
+                      ques=" When will the collections be revealed?"
+                    >
+                      <p>
+                        Collection reveal date varies per collection. Please
+                        visit our collections page for more details.
+                      </p>
+                    </LetUsHelpCard>
+                    <LetUsHelpCard
+                      eventKey={11}
+                      ques=" How often do I get an NFT with my Whitelist
+                      subscription? "
+                    >
+                      <p>
+                        With The whitelist a user will receive a guaranteed 3
+                        drops. Each drop will happen 1-2 months apart depending
+                        on the team and artists. At the whitelist we strive to
+                        provide you with the best product possible.
+                      </p>
+                    </LetUsHelpCard>
+                    <LetUsHelpCard
+                      eventKey={12}
+                      ques=" How much does it cost to subscribe to The Whitelist? "
+                    >
+                      <p>
+                        Here at the whitelist, we have a multitude of
+                        subscription options that aim to fit all types of users.
+                        Please visit us at
+                        <a href=""> Subscribe</a> for details.
+                      </p>
+                    </LetUsHelpCard>
+                    <LetUsHelpCard
+                      eventKey={13}
+                      ques=" How Much will Mint be? "
+                    >
+                      <p>
+                        Mint will vary per drop but will be anywhere between{" "}
+                        <span> 0.8-1.5 ETH</span>.
+                      </p>
+                    </LetUsHelpCard>
                   </Accordion>
                 </div>
               </div>
