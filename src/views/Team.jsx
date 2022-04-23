@@ -18,55 +18,14 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import Footer from "../components/modules/Footer";
+import Header from "../components/modules/Header";
+import TeamCard from "../components/pages/Team/TeamCard";
 const Subscribe = () => {
   return (
     <div className="app light-theme">
       {/* Header */}
-      <header>
-        <div className="box">
-          <div className="header-content">
-            <div className="header-left">
-              <Logo color="#1F194D" />
-              {/* <img src={LogoLight} alt="LogoLight" /> */}
-              <ul>
-                <li>
-                  <a href="#">
-                    <b>P</b>rize pool
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>S</b>ubscribe
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>R</b>oadmap
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>U</b>pcoming Drops
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>M</b>eet the Team
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="header-right">
-              <MessagesIcon color="#1F194D" />
-              <MoonIcon color="#1F194D" />
-              <button className="light-blue-btn-filled btn-sm-ds">
-                {" "}
-                <WalletIcon color="#195BFF" /> Wallet
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
       <div className="teammainbox">
         <section className="teampage">
           <img
@@ -85,10 +44,7 @@ const Subscribe = () => {
               <div className="team-grid">
                 <h3>Founders</h3>
                 <div className="team-grid-content">
-                  <div className="team-grid-main">
-                    <img src={Team1} alt="" />
-                    <h6>Serge Klassen</h6>
-                  </div>
+                  <TeamCard img={Team1} name="Serge Klassen" />
                   <div className="team-grid-main">
                     <img src={Team2} alt="" />
                     <h6>Evan Klassen</h6>
@@ -141,53 +97,8 @@ const Subscribe = () => {
         </section>
       </div>
       {/* Footer */}
-      <footer>
-        <div className="box">
-          <div className="footer-content">
-            <div className="footer-top">
-              <div className="footer-left">
-                <Logo color="#fff" />
-                <p>Follow us on social media</p>
-                <div className="fl-icons-grid">
-                  <Instagram color="#fff" />
-                  <TwitterIcon color="#fff" />
-                  <Discord color="#fff" />
-                </div>
-              </div>
-              <div className="footer-center">
-                <h6>The Whitelist Info</h6>
-                <div className="fc-grid">
-                  <a href="#">Subscribe</a>
-                  <a href="#">Upcoming Drops </a>
-                  <a href="#">Roadmap</a>
-                  <a href="#">
-                    <b>Meet the Team</b>
-                  </a>
-                  <a href="#">How it Works</a>
-                </div>
-              </div>
-              <div className="footer-right">
-                <h6>Join Newsletter</h6>
-                <p>
-                  Subscribe our newsletter to get latest <Logo color="#fff" />
-                  updates
-                </p>
-                <div className="fr-subscribe-input-box">
-                  <input type="text" placeholder="Enter your Email " />
-                  <button>Subscribe</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>Copyright © 2022. All rights reserved</p>
-        </div>
-        <div className="more-btn">
-          More <RefreshIcon color="#fff" />
-        </div>
-      </footer>
-      <>
+      <Footer />
+      {/* <>
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
           <SwiperSlide>Slide 1</SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
@@ -199,7 +110,7 @@ const Subscribe = () => {
           <SwiperSlide>Slide 8</SwiperSlide>
           <SwiperSlide>Slide 9</SwiperSlide>
         </Swiper>
-      </>
+      </> */}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Switch, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Switch, Routes, Route } from "react-router-dom";
 import PrizePools from "./views/PrizePools";
 import Home from "./views/Home";
 import Checkout from "./views/Checkout";
@@ -11,6 +11,7 @@ import Roadmap from "./views/Roadmap";
 import Team from "./views/Team";
 import Vault from "./views/Vault";
 import Subscribe from "./views/Subscribe";
+import HowItWorks from "./views/HowItWorks";
 const App = () => {
   return (
     <>
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/subscribe" element={<Subscribe />} />
           <Route path="/vault" element={<Vault />} />
           <Route path="/comingsoondark" element={<ComingSoonDark />} />
+          <Route path="/howitworks" element={<HowItWorks />} />
         </Routes>
       </Switch>
     </>

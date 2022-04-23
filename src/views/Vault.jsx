@@ -23,56 +23,15 @@ import {
   MdKeyboardArrowLeft,
   MdEast,
 } from "react-icons/md";
+import VaultCollectionCard from "../components/pages/Vault/VaultCollectionCard";
+import Header from "../components/modules/Header";
+import Footer from "../components/modules/Footer";
 
 const Vault = () => {
   return (
     <div className="app light-theme">
       {/* Header */}
-      <header>
-        <div className="box">
-          <div className="header-content">
-            <div className="header-left">
-              <Logo color="#1F194D" />
-              {/* <img src={LogoLight} alt="LogoLight" /> */}
-              <ul>
-                <li>
-                  <a href="#">
-                    <b>P</b>rize pool
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>S</b>ubscribe
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>R</b>oadmap
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>U</b>pcoming Drops
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>M</b>eet the Team
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="header-right">
-              <MessagesIcon color="#1F194D" />
-              <MoonIcon color="#1F194D" />
-              <button className="light-blue-btn-filled btn-sm-ds">
-                {" "}
-                <WalletIcon color="#195BFF" /> Wallet
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
       <div className="vaultmainpage">
         {/* Collection Section */}
         <img
@@ -90,337 +49,159 @@ const Vault = () => {
               <h6>4 collections</h6>
             </div>
             <div className="vault-grid">
-              <div className="vault-grid-card">
-                <div className="user-details-box">
-                  <div className="user-details-box-img">
-                    <img src={VaultProfilePic} alt="VaultProfilePic" />
-                  </div>
-                  <div>
-                    <h6>
-                      Passengers <VerifiedIcon color="#50C8FB" />
-                    </h6>
-                    <p>1000 items</p>
-                  </div>
-                </div>
-                <div className="vault-grid-card-bottom">
-                  <div className="vault-swiper">
-                    <Swiper
-                      navigation={{
-                        nextEl: ".vault-swiper-right-1",
-                        prevEl: ".vault-swiper-left-1",
-                      }}
-                      modules={[Navigation]}
-                      className="mySwiper"
-                      spaceBetween={25}
-                      slidesPerView={3}
-                    >
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg1} alt="VaultImg1" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg2} alt="VaultImg2" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg3} alt="VaultImg3" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg1} alt="VaultImg1" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg2} alt="VaultImg2" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg3} alt="VaultImg3" />
-                        </div>
-                      </SwiperSlide>
-                    </Swiper>
-                    <span className="round-chevron-box vault-swiper-left vault-swiper-left-1">
-                      <MdKeyboardArrowLeft />
-                    </span>
-                    <span className="round-chevron-box vault-swiper-right vault-swiper-right-1">
-                      <MdKeyboardArrowRight />
-                    </span>
-                  </div>
-                </div>
-                <a href="#" className="view-more-link-box">
-                  <p>View all items</p>
-                  <span>
-                    <MdEast />
-                  </span>
-                </a>
-              </div>
-              <div className="vault-grid-card">
-                <div className="user-details-box">
-                  <div className="user-details-box-img">
-                    <img src={VaultProfilePic} alt="VaultProfilePic" />
-                  </div>
-                  <div>
-                    <h6>
-                      Passengers <VerifiedIcon color="#50C8FB" />
-                    </h6>
-                    <p>1000 items</p>
-                  </div>
-                </div>
-                <div className="vault-grid-card-bottom">
-                  <div className="vault-swiper">
-                    <Swiper
-                      navigation={{
-                        nextEl: ".vault-swiper-right-2",
-                        prevEl: ".vault-swiper-left-2",
-                      }}
-                      modules={[Navigation]}
-                      className="mySwiper"
-                      spaceBetween={25}
-                      slidesPerView={3}
-                    >
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg1} alt="VaultImg1" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg2} alt="VaultImg2" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg3} alt="VaultImg3" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg1} alt="VaultImg1" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg2} alt="VaultImg2" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg3} alt="VaultImg3" />
-                        </div>
-                      </SwiperSlide>
-                    </Swiper>
-                    <span className="round-chevron-box vault-swiper-left vault-swiper-left-2">
-                      <MdKeyboardArrowLeft />
-                    </span>
-                    <span className="round-chevron-box vault-swiper-right vault-swiper-right-2">
-                      <MdKeyboardArrowRight />
-                    </span>
-                  </div>
-                </div>
-                <a href="#" className="view-more-link-box">
-                  <p>View all items</p>
-                  <span>
-                    <MdEast />
-                  </span>
-                </a>
-              </div>
-              <div className="vault-grid-card">
-                <div className="user-details-box">
-                  <div className="user-details-box-img">
-                    <img src={VaultProfilePic} alt="VaultProfilePic" />
-                  </div>
-                  <div>
-                    <h6>
-                      Passengers <VerifiedIcon color="#50C8FB" />
-                    </h6>
-                    <p>1000 items</p>
-                  </div>
-                </div>
-                <div className="vault-grid-card-bottom">
-                  <div className="vault-swiper">
-                    <Swiper
-                      navigation={{
-                        nextEl: ".vault-swiper-right-3",
-                        prevEl: ".vault-swiper-left-3",
-                      }}
-                      modules={[Navigation]}
-                      className="mySwiper"
-                      spaceBetween={25}
-                      slidesPerView={3}
-                    >
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg1} alt="VaultImg1" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg2} alt="VaultImg2" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg3} alt="VaultImg3" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg1} alt="VaultImg1" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg2} alt="VaultImg2" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg3} alt="VaultImg3" />
-                        </div>
-                      </SwiperSlide>
-                    </Swiper>
-                    <span className="round-chevron-box vault-swiper-left vault-swiper-left-3">
-                      <MdKeyboardArrowLeft />
-                    </span>
-                    <span className="round-chevron-box vault-swiper-right vault-swiper-right-3">
-                      <MdKeyboardArrowRight />
-                    </span>
-                  </div>
-                </div>
-                <a href="#" className="view-more-link-box">
-                  <p>View all items</p>
-                  <span>
-                    <MdEast />
-                  </span>
-                </a>
-              </div>
-              <div className="vault-grid-card">
-                <div className="user-details-box">
-                  <div className="user-details-box-img">
-                    <img src={VaultProfilePic} alt="VaultProfilePic" />
-                  </div>
-                  <div>
-                    <h6>
-                      Passengers <VerifiedIcon color="#50C8FB" />
-                    </h6>
-                    <p>1000 items</p>
-                  </div>
-                </div>
-                <div className="vault-grid-card-bottom">
-                  <div className="vault-swiper">
-                    <Swiper
-                      navigation={{
-                        nextEl: ".vault-swiper-right-4",
-                        prevEl: ".vault-swiper-left-4",
-                      }}
-                      modules={[Navigation]}
-                      className="mySwiper"
-                      spaceBetween={25}
-                      slidesPerView={3}
-                    >
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg1} alt="VaultImg1" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg2} alt="VaultImg2" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg3} alt="VaultImg3" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg1} alt="VaultImg1" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg2} alt="VaultImg2" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="swiper-slide-content">
-                          <img src={VaultImg3} alt="VaultImg3" />
-                        </div>
-                      </SwiperSlide>
-                    </Swiper>
-                    <span className="round-chevron-box vault-swiper-left vault-swiper-left-4">
-                      <MdKeyboardArrowLeft />
-                    </span>
-                    <span className="round-chevron-box vault-swiper-right vault-swiper-right-4">
-                      <MdKeyboardArrowRight />
-                    </span>
-                  </div>
-                </div>
-                <a href="#" className="view-more-link-box">
-                  <p>View all items</p>
-                  <span>
-                    <MdEast />
-                  </span>
-                </a>
-              </div>
+              <VaultCollectionCard
+                userImg={VaultProfilePic}
+                userName="Passengers"
+                noOfItems={1000}
+                swiperIconRight="vault-swiper-right-1"
+                swiperIconLeft="vault-swiper-left-1"
+              >
+                <Swiper
+                  navigation={{
+                    nextEl: ".vault-swiper-right-1",
+                    prevEl: ".vault-swiper-left-1",
+                  }}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                  spaceBetween={25}
+                  slidesPerView={3}
+                >
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg1} alt="VaultImg1" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg2} alt="VaultImg2" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg3} alt="VaultImg3" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg1} alt="VaultImg1" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg2} alt="VaultImg2" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg3} alt="VaultImg3" />
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </VaultCollectionCard>
+              <VaultCollectionCard
+                userImg={VaultProfilePic}
+                userName="Passengers"
+                noOfItems={1000}
+                swiperIconRight="vault-swiper-right-2"
+                swiperIconLeft="vault-swiper-left-2"
+              >
+                <Swiper
+                  navigation={{
+                    nextEl: ".vault-swiper-right-2",
+                    prevEl: ".vault-swiper-left-2",
+                  }}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                  spaceBetween={25}
+                  slidesPerView={3}
+                >
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg1} alt="VaultImg1" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg2} alt="VaultImg2" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg3} alt="VaultImg3" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg1} alt="VaultImg1" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg2} alt="VaultImg2" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg3} alt="VaultImg3" />
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </VaultCollectionCard>
+              <VaultCollectionCard
+                userImg={VaultProfilePic}
+                userName="Passengers"
+                noOfItems={1000}
+                swiperIconRight="vault-swiper-right-3"
+                swiperIconLeft="vault-swiper-left-3"
+              >
+                <Swiper
+                  navigation={{
+                    nextEl: ".vault-swiper-right-3",
+                    prevEl: ".vault-swiper-left-3",
+                  }}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                  spaceBetween={25}
+                  slidesPerView={3}
+                >
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg1} alt="VaultImg1" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg2} alt="VaultImg2" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg3} alt="VaultImg3" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg1} alt="VaultImg1" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg2} alt="VaultImg2" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <img src={VaultImg3} alt="VaultImg3" />
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </VaultCollectionCard>
             </div>
           </div>
         </div>
       </div>
       {/* Footer */}
-      <footer>
-        <div className="box">
-          <div className="footer-content">
-            <div className="footer-top">
-              <div className="footer-left">
-                <Logo color="#fff" />
-                <p>Follow us on social media</p>
-                <div className="fl-icons-grid">
-                  <Instagram color="#fff" />
-                  <TwitterIcon color="#fff" />
-                  <Discord color="#fff" />
-                </div>
-              </div>
-              <div className="footer-center">
-                <h6>The Whitelist Info</h6>
-                <div className="fc-grid">
-                  <a href="#">Subscribe</a>
-                  <a href="#">Upcoming Drops </a>
-                  <a href="#">Roadmap</a>
-                  <a href="#">
-                    <b>Meet the Team</b>
-                  </a>
-                  <a href="#">How it Works</a>
-                </div>
-              </div>
-              <div className="footer-right">
-                <h6>Join Newsletter</h6>
-                <p>
-                  Subscribe our newsletter to get latest <Logo color="#fff" />
-                  updates
-                </p>
-                <div className="fr-subscribe-input-box">
-                  <input type="text" placeholder="Enter your Email " />
-                  <button>Subscribe</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>Copyright © 2022. All rights reserved</p>
-        </div>
-        <div className="more-btn">
-          More <RefreshIcon color="#fff" />
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
