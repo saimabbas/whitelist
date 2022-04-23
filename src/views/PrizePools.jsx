@@ -65,7 +65,7 @@ const PrizePools = () => {
           </div>
         </div>
       </header>
-      <div className="prizepools app-page">
+      <div className="prizepools">
         {/* Collection Section */}
         <img
           className="col-bg-light light-img app-page-hero-bg"
@@ -135,6 +135,31 @@ const PrizePools = () => {
                         <div className="voting-closed-tag">Voting closed</div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div className="prizepools-grid-card">
+                <div className="prizepools-grid-card-top">
+                  <div className="pgc-top-left">
+                    <div className="pgc-top-left-profile">
+                      <img src={VaultProfilePic} alt="VaultProfilePic" />
+                    </div>
+
+                    <img
+                      className="pgc-top-left-logo"
+                      src={PassengersLogo}
+                      alt="PassengersLogo"
+                    />
+                  </div>
+                  <div className="pgc-top-right">
+                    <img src={VaultImg1} alt="VaultImg1" />
+                    <img src={VaultImg2} alt="VaultImg2" />
+                    <img src={VaultImg3} alt="VaultImg3" />
+                    <img src={VaultImg1} alt="VaultImg1" />
+                  </div>
+                </div>
+                <div className="prizepools-grid-card-bottom">
+                  <div className="pgc-bottom-content">
                     <div className="voting-open">
                       <div className="vo-grid">
                         <div className="vo-grid-card">
@@ -162,6 +187,110 @@ const PrizePools = () => {
                               <p>1x board ape NFT’s</p>
                             </div>
                             <div className="vo-option-right">
+                              <h6></h6>
+                              <div className="vo-option-checkbox">
+                                <input type="checkbox" name="" id="id1" />
+                                <label htmlFor="id1">
+                                  <div className="vo-checkbox-circle">
+                                    <MdDone />
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div className="vo-option-prog vo-option-prog-active"></div>
+                          </div>
+                          <div className="vo-option">
+                            <div className="vo-option-left">
+                              <div className="vo-info-box">
+                                <InfoIcon color="#1F194D" />
+                                <div className="vo-info-box-content">
+                                  <h6>1x Ferrari 488</h6>
+                                  <p>
+                                    2017-2021 Ferrari 488. Color and spec based
+                                    on availability. Winner Must follow pricing
+                                    guidelines 0-300,000 USD. Vehicle can be
+                                    purchase where the winner is located or
+                                    shipped from the UAE subject to receiving
+                                    countries export laws. Winner will get the
+                                    choice of prize won or equivalent cash
+                                    payout.
+                                  </p>
+                                </div>
+                              </div>
+                              <p>1x Ferrari 488</p>
+                            </div>
+                            <div className="vo-option-right">
+                              <h6></h6>
+                              <div className="vo-option-checkbox">
+                                <input type="checkbox" name="" id="id1" />
+                                <label htmlFor="id1">
+                                  <div className="vo-checkbox-circle">
+                                    <MdDone />
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div className="vo-option-prog vo-option-prog-active"></div>
+                          </div>
+                        </div>
+                        <div className="vo-grid-card">
+                          <div className="vo-grid-card-head">
+                            <div className="top-notch top-notch-magenda"></div>
+                            <p>
+                              <span>B</span> POOL
+                            </p>
+                          </div>
+                          <div className="vo-option">
+                            <div className="vo-option-left">
+                              <div className="vo-info-box">
+                                <InfoIcon color="#1F194D" />
+                                <div className="vo-info-box-content">
+                                  <h6>4x Mutant apes </h6>
+                                  <p>
+                                    The winners will get the choice of ape
+                                    within the first 8 of floor price and
+                                    purchased through openseas.io. Winners will
+                                    get the choice of prize won or equivalent
+                                    cash payout.
+                                  </p>
+                                </div>
+                              </div>
+                              <p>4x Mutant apes </p>
+                            </div>
+                            <div className="vo-option-right">
+                              <h6>35</h6>
+                              <div className="vo-option-checkbox">
+                                <input type="checkbox" name="" id="id1" />
+                                <label htmlFor="id1">
+                                  <div className="vo-checkbox-circle">
+                                    <MdDone />
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div className="vo-option-prog vo-option-prog-active"></div>
+                          </div>
+                          <div className="vo-option">
+                            <div className="vo-option-left">
+                              <div className="vo-info-box">
+                                <InfoIcon color="#1F194D" />
+                                <div className="vo-info-box-content">
+                                  <h6>2x Tesla model X or Y’s</h6>
+                                  <p>
+                                    2018-2021 Tesla model X or Y’s. Color and
+                                    spec based on availability. Winners Must
+                                    follow pricing guidelines between 0-100,000
+                                    USD. Vehicle can be purchase where the
+                                    winner is located or shipped from the UAE
+                                    subject to receiving countries export laws.
+                                    Winners will get the choice of prize won or
+                                    equivalent cash payout.
+                                  </p>
+                                </div>
+                              </div>
+                              <p>2x Tesla model X or Y’s</p>
+                            </div>
+                            <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
                                 <input type="checkbox" name="" id="id1" />
@@ -175,10 +304,97 @@ const PrizePools = () => {
                             <div className="vo-option-prog vo-option-prog-active"></div>
                           </div>
                         </div>
-                        <div className="vo-grid-card"></div>
-                        <div className="vo-grid-card"></div>
+                        <div className="vo-grid-card">
+                          <div className="vo-grid-card-head">
+                            <div className="top-notch top-notch-pink"></div>
+                            <p>
+                              <span>C</span> POOL
+                            </p>
+                          </div>
+                          <div className="vo-option">
+                            <div className="vo-option-left">
+                              <div className="vo-info-box">
+                                <InfoIcon color="#1F194D" />
+                                <div className="vo-info-box-content">
+                                  <h6>50x Xbox Series X</h6>
+                                  <p>
+                                    Xbox’s will ship from the UAE. Winners will
+                                    get the choice of prize won or equivalent
+                                    cash payout. (1TB model)
+                                  </p>
+                                </div>
+                              </div>
+                              <p>50x Xbox Series X</p>
+                            </div>
+                            <div className="vo-option-right">
+                              <h6></h6>
+                              <div className="vo-option-checkbox">
+                                <input type="checkbox" name="" id="id1" />
+                                <label htmlFor="id1">
+                                  <div className="vo-checkbox-circle">
+                                    <MdDone />
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div className="vo-option-prog vo-option-prog-active"></div>
+                          </div>
+                          <div className="vo-option">
+                            <div className="vo-option-left">
+                              <div className="vo-info-box">
+                                <InfoIcon color="#1F194D" />
+                                <div className="vo-info-box-content">
+                                  <h6>50x PlayStation 5</h6>
+                                  <p>
+                                    PlayStation’s will ship from the UAE.
+                                    Winners will get the choice of prize won or
+                                    equivalent cash payout. (1TB model)
+                                  </p>
+                                </div>
+                              </div>
+                              <p>50x PlayStation 5</p>
+                            </div>
+                            <div className="vo-option-right">
+                              <h6></h6>
+                              <div className="vo-option-checkbox">
+                                <input type="checkbox" name="" id="id1" />
+                                <label htmlFor="id1">
+                                  <div className="vo-checkbox-circle">
+                                    <MdDone />
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                            <div className="vo-option-prog vo-option-prog-active"></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div className="prizepools-grid-card">
+                <div className="prizepools-grid-card-top">
+                  <div className="pgc-top-left">
+                    <div className="pgc-top-left-profile">
+                      <img src={VaultProfilePic} alt="VaultProfilePic" />
+                    </div>
+
+                    <img
+                      className="pgc-top-left-logo"
+                      src={PassengersLogo}
+                      alt="PassengersLogo"
+                    />
+                  </div>
+                  <div className="pgc-top-right">
+                    <img src={VaultImg1} alt="VaultImg1" />
+                    <img src={VaultImg2} alt="VaultImg2" />
+                    <img src={VaultImg3} alt="VaultImg3" />
+                    <img src={VaultImg1} alt="VaultImg1" />
+                  </div>
+                </div>
+                <div className="prizepools-grid-card-bottom">
+                  <div className="pgc-bottom-content">
                     <div className="voting-comingsoon">
                       <div>
                         <span>Voting coming soon</span>

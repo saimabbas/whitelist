@@ -15,14 +15,14 @@
       width: 100%;
       background-color: #fff;
       padding: 5rem;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.075);
       border-radius: 2rem;
       display: grid;
       grid-template-columns: max-content 1fr;
       grid-template-rows: auto;
       grid-gap: 10rem;
       position: relative;
-      z-index: 10;
+      z-index: 9;
       .pgc-top-left {
         width: 100%;
         display: flex;
@@ -69,14 +69,14 @@
       position: relative;
       z-index: 5;
       .pgc-bottom-content {
-        padding: 3.5rem 0 0 0;
+        // padding: 3.5rem 0 0 0;
         width: 100%;
         background-color: #fff;
         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.05);
         border-radius: 0 0 2rem 2rem;
         .voting-closed {
           width: 100%;
-          padding: 3.5rem 5rem;
+          padding: 3.5rem;
           .vc-grid {
             width: 100%;
             display: grid;
@@ -248,7 +248,7 @@
                     background-color: #fff;
                     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
                     position: absolute;
-                    z-index: 10;
+                    z-index: 100;
                     bottom: 0;
                     left: 4.5rem;
                     transform: translate(0, 97.5%);

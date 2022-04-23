@@ -17,7 +17,7 @@
 }
 
 .app.light-theme {
-  --bg-color: #fff;
+  --bg-color: #f8fcff;
   --text-color: #000;
 }
 
@@ -104,6 +104,10 @@
 
 .top-notch.top-notch-purple {
   background-color: #6c69ff;
+}
+
+.top-notch.top-notch-magenda {
+  background-color: #43dff6;
 }
 
 button {
@@ -2518,8 +2522,8 @@ button:hover {
   width: 100%;
   background-color: #fff;
   padding: 5rem;
-  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.075);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.075);
   border-radius: 2rem;
   display: -ms-grid;
   display: grid;
@@ -2530,7 +2534,7 @@ button:hover {
       grid-template-rows: auto;
   grid-gap: 10rem;
   position: relative;
-  z-index: 10;
+  z-index: 9;
 }
 
 .prizepools-grid .prizepools-grid-card .prizepools-grid-card-top .pgc-top-left {
@@ -2607,7 +2611,6 @@ button:hover {
 }
 
 .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content {
-  padding: 3.5rem 0 0 0;
   width: 100%;
   background-color: #fff;
   -webkit-box-shadow: 0 7px 10px rgba(0, 0, 0, 0.05);
@@ -2617,7 +2620,7 @@ button:hover {
 
 .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-closed {
   width: 100%;
-  padding: 3.5rem 5rem;
+  padding: 3.5rem;
 }
 
 .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-closed .vc-grid {
@@ -2884,7 +2887,7 @@ button:hover {
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   bottom: 0;
   left: 4.5rem;
   -webkit-transform: translate(0, 97.5%);

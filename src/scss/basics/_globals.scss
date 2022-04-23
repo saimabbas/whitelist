@@ -18,7 +18,7 @@ body {
   --text-color: #fff;
 }
 .app.light-theme {
-  --bg-color: #fff;
+  --bg-color: #f8fcff;
   --text-color: #000;
 }
 .app {
@@ -88,6 +88,9 @@ body {
 }
 .top-notch.top-notch-purple {
   background-color: #6c69ff;
+}
+.top-notch.top-notch-magenda {
+  background-color: #43dff6;
 }
 button {
   outline: 0;
