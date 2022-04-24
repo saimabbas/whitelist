@@ -141,10 +141,13 @@ const Checkout = () => {
         <Link to="/comingsoondark">comingsoondark</Link>
         <Link to="/team">Team</Link>
         <Link to="/roadmap">Roadmap</Link>
+        <Link to="/howitworks">HowitWorks</Link>
+        <Link to="/mintconnect">MintConnect</Link>
+        <Link to="/mintdisconnect">MintDisconnect</Link>
         <Link to="/landingpage">landingpage</Link>
         <Link to="/prizepools">Prizepools</Link>
         <Link to="/subscribe">Subscribe</Link>
-        <Link to="/vault"></Link>
+        <Link to="/vault">vault</Link>
       </div>
       {/* Footer */}
       <footer>

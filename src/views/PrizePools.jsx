@@ -222,8 +222,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-1" />
+                                <label htmlFor="vo-1">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -255,8 +255,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-2" />
+                                <label htmlFor="vo-2">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -288,8 +288,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-3" />
+                                <label htmlFor="vo-3">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -321,8 +321,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-4" />
+                                <label htmlFor="vo-4">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -348,8 +348,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-5" />
+                                <label htmlFor="vo-5">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -381,8 +381,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-6" />
+                                <label htmlFor="vo-6">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -408,8 +408,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-7" />
+                                <label htmlFor="vo-7">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -442,8 +442,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-8" />
+                                <label htmlFor="vo-8">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -471,8 +471,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-9" />
+                                <label htmlFor="vo-9">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -509,8 +509,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-11" />
+                                <label htmlFor="vo-11">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -542,8 +542,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-12" />
+                                <label htmlFor="vo-12">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -575,8 +575,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-13" />
+                                <label htmlFor="vo-13">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -606,8 +606,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-14" />
+                                <label htmlFor="vo-14">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -637,8 +637,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-15" />
+                                <label htmlFor="vo-15">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -671,8 +671,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-16" />
+                                <label htmlFor="vo-16">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -705,8 +705,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-17" />
+                                <label htmlFor="vo-17">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -738,8 +738,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-18" />
+                                <label htmlFor="vo-18">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -771,8 +771,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-19" />
+                                <label htmlFor="vo-19">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -798,8 +798,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-20" />
+                                <label htmlFor="vo-20">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -834,8 +834,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-21" />
+                                <label htmlFor="vo-21">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -862,8 +862,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-22" />
+                                <label htmlFor="vo-22">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -891,8 +891,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-23" />
+                                <label htmlFor="vo-23">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -919,8 +919,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-24" />
+                                <label htmlFor="vo-24">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -948,8 +948,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-25" />
+                                <label htmlFor="vo-25">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -977,8 +977,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-26" />
+                                <label htmlFor="vo-26">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -1006,8 +1006,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-27" />
+                                <label htmlFor="vo-27">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>
@@ -1036,8 +1036,8 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6></h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="id1" />
-                                <label htmlFor="id1">
+                                <input type="checkbox" name="" id="vo-28" />
+                                <label htmlFor="vo-28">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
                                   </div>

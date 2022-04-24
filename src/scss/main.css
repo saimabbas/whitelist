@@ -465,6 +465,27 @@ button:hover {
   z-index: 1;
 }
 
+.links-page {
+  width: 100%;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.links-page a {
+  text-decoration: none;
+  color: white;
+}
+
 .home {
   width: 100%;
   /* Hero Section */

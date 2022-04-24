@@ -331,3 +331,17 @@ button {
   object-position: bottom;
   z-index: 1;
 }
+.links-page {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  a {
+    text-decoration: none;
+    // color: red;
+    color: white;
+  }
+}
