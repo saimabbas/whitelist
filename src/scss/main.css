@@ -379,7 +379,6 @@ button:hover {
   src: local(conthrax-sb), url("../assets/fonts/conthrax-sb.ttf") format("truetype");
   font-display: swap;
 }
-
 .conthrax {
   font-family: conthrax;
 }
@@ -1493,7 +1492,7 @@ button:hover {
 
 .coomsoondark {
   width: 100%;
-  padding: 4rem;
+  padding: 5rem;
   background-color: #243f71;
 }
 .coomsoondark .comsoondmain {
@@ -1510,10 +1509,10 @@ button:hover {
   left: 0;
 }
 .coomsoondark .comsoondmain header .header-left {
-  padding: 0 0 0 3rem;
+  padding: 0 0 0 6rem;
 }
 .coomsoondark .comsoondmain header .header-left img {
-  width: 25rem;
+  width: 20rem;
 }
 .coomsoondark .comsoondmain .comsoondcontent {
   z-index: 1001;
@@ -1522,44 +1521,43 @@ button:hover {
   margin: 0 auto;
 }
 .coomsoondark .comsoondmain .comsoondcontent h1 {
-  font-size: 12rem;
+  font-size: 10rem;
   letter-spacing: 7px;
   font-weight: 600;
   color: #fff;
   white-space: nowrap;
-  padding: 15rem 0 0 10rem;
+  padding: 15rem 0rem 0 5rem;
 }
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 2rem 0 4rem 0;
+  margin: 4rem 0 8rem 0;
 }
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday {
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 2rem;
+  border-radius: 2.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 17rem;
-  height: 7rem;
+  padding: 2rem 3rem;
 }
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 {
-  font-size: 4.75rem;
+  font-size: 3.55rem;
   color: #fff;
   font-weight: 700;
 }
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 span {
   color: rgba(255, 255, 255, 0.4);
-  font-size: 1.75rem;
-  font-weight: 400;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer p {
   font-size: 3rem;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.6);
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 .coomsoondark .comsoondmain p {
   font-size: 3rem;
@@ -1583,23 +1581,23 @@ button:hover {
 }
 .coomsoondark h4 {
   color: #43dff6;
-  font-size: 2/2rem;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1px;
   text-align: center;
-  margin: 3rem 0 8rem 0;
+  margin: 2rem 0 8rem 0;
 }
 .coomsoondark .coomsoonicons {
   text-align: center;
   margin: 0 auto;
-  width: 15%;
+  width: 11%;
 }
 .coomsoondark .comdarkinput {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 75%;
-  margin: 3rem auto 8rem auto;
+  width: 47%;
+  margin: 3rem auto 7rem auto;
 }
 .coomsoondark .comdarkinput input {
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -1646,9 +1644,9 @@ button:hover {
 }
 .comdarkinput input {
   border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 2rem;
+  border-radius: 2.75rem;
   padding: 1.5rem 1.75rem;
-  width: 65%;
+  width: 67%;
   font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
@@ -1676,7 +1674,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: #fff;
   background-image: linear-gradient(#394dff, #6833ff);
   border-radius: 2rem;
@@ -1687,7 +1685,8 @@ button:hover {
 
 @media screen and (max-width: 1150px) {
   .coomsoondark .comsoondmain .comsoondcontent h1 {
-    padding: 15rem 0 0 2rem;
+    padding: 15rem 0 0 0rem;
+    font-size: 9rem;
   }
 }
 @media screen and (max-width: 850px) {

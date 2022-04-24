@@ -1,7 +1,7 @@
 .coomsoondark {
   width: 100%;
   //   height: 130vh;
-  padding: 4rem;
+  padding: 5rem;
   background-color: #243f71;
   .comsoondmain {
     width: 100%;
@@ -15,9 +15,9 @@
       top: 0;
       left: 0;
       .header-left {
-        padding: 0 0 0 3rem;
+        padding: 0 0 0 6rem;
         img {
-          width: 25rem;
+          width: 20rem;
         }
       }
     }
@@ -27,35 +27,34 @@
       max-width: 1000px;
       margin: 0 auto;
       h1 {
-        font-size: 12rem;
+        font-size: 10rem;
         letter-spacing: 7px;
         font-weight: 600;
         color: #fff;
         white-space: nowrap;
-        padding: 15rem 0 0 10rem;
+        padding: 15rem 0rem 0 5rem;
       }
       .comdarktimer {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin: 2rem 0 4rem 0;
+        margin: 4rem 0 8rem 0;
         .comdarkday {
           border: 1px solid rgba(255, 255, 255, 0.4);
-          border-radius: 2rem;
+          border-radius: 2.75rem;
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 17rem;
-          height: 7rem;
+          padding: 2rem 3rem;
           h6 {
-            font-size: 4.75rem;
+            font-size: 3.55rem;
             color: #fff;
             font-weight: 700;
             span {
               color: rgba(255, 255, 255, 0.4);
-              font-size: 1.75rem;
-              font-weight: 400;
+              font-size: 2.5rem;
+              font-weight: 500;
             }
           }
         }
@@ -63,7 +62,7 @@
           font-size: 3rem;
           font-weight: 700;
           color: rgba(255, 255, 255, 0.6);
-          margin: 0 1rem;
+          margin: 0 2rem;
         }
       }
     }
@@ -90,23 +89,23 @@
   }
   h4 {
     color: #43dff6;
-    font-size: 2/2rem;
+    font-size: 2rem;
     font-weight: 400;
     letter-spacing: 1px;
     text-align: center;
-    margin: 3rem 0 8rem 0;
+    margin: 2rem 0 8rem 0;
   }
   .coomsoonicons {
     text-align: center;
     margin: 0 auto;
-    width: 15%;
+    width: 11%;
   }
   .comdarkinput {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
-    margin: 3rem auto 8rem auto;
+    width: 47%;
+    margin: 3rem auto 7rem auto;
     input {
       border: 1px solid rgba(255, 255, 255, 0.6);
       border-radius: 2rem;
@@ -152,9 +151,9 @@
   margin: 3rem auto 4rem auto;
   input {
     border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 2rem;
+    border-radius: 2.75rem;
     padding: 1.5rem 1.75rem;
-    width: 65%;
+    width: 67%;
     font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
@@ -172,7 +171,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #fff;
     background-image: linear-gradient(#394dff, #6833ff);
     border-radius: 2rem;
@@ -185,7 +184,8 @@
 
 @media screen and (max-width: 1150px) {
   .coomsoondark .comsoondmain .comsoondcontent h1 {
-    padding: 15rem 0 0 2rem;
+    padding: 15rem 0 0 0rem;
+    font-size: 9rem;
 }
 }
 

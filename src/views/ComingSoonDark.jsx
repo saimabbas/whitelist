@@ -53,36 +53,36 @@ const ComingSoonDark = () => {
           <div className="comsoondcontent">
             <h1 className="comingsoon-heading">
               <span className="conthrax">C</span>
-              <span className="conthrax">O</span>
-              <span className="conthrax">M</span>
-              <span className="conthrax">I</span>
-              <span className="conthrax">N</span>
-              <span className="conthrax">G</span>
+              <span className="conthrax">o</span>
+              <span className="conthrax">m</span>
+              <span className="conthrax">i</span>
+              <span className="conthrax">n</span>
+              <span className="conthrax">g</span>
               <span className="conthrax">S</span>
-              <span className="conthrax">O</span>
-              <span className="conthrax">O</span>
-              <span className="conthrax">N</span>
+              <span className="conthrax">o</span>
+              <span className="conthrax">o</span>
+              <span className="conthrax">n</span>
             </h1>
             <div className="comdarktimer">
               <div className="comdarkday">
-                <h6>
+                <h6 className="conthrax">
                   25 <span>DAYS</span>
                 </h6>
               </div>
-              <p>:</p>
+              <p className="conthrax">:</p>
               <div className="comdarkday">
-                <h6>
-                  25 <span>DAYS</span>
+                <h6 className="conthrax">
+                  25 <span>HOURS</span>
                 </h6>
               </div>
-              <p>:</p>
+              <p className="conthrax">:</p>
               <div className="comdarkday">
-                <h6>
-                  25 <span>DAYS</span>
+                <h6 className="conthrax">
+                  25 <span>MINUTES</span>
                 </h6>
               </div>
             </div>
-            <h5>Get notified when we are close to blast off:</h5>
+            <h5 >Get notified when we are close to blast off:</h5>
             <div className="comdarkinput">
               <input
                 type="text"
