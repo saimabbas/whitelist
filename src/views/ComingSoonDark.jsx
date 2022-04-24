@@ -12,7 +12,7 @@ const ComingSoonDark = () => {
       delay: 0.4,
     });
     tl.fromTo(
-      ".comingsoon-heading",
+      ".comsoondcontent",
       {
         scale: 0.9,
         opacity: 0,
