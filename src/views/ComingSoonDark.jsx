@@ -82,7 +82,7 @@ const ComingSoonDark = () => {
                 </h6>
               </div>
             </div>
-            <h5 >Get notified when we are close to blast off:</h5>
+            <h5>Get notified when we are close to blast off:</h5>
             <div className="comdarkinput">
               <input
                 type="text"
