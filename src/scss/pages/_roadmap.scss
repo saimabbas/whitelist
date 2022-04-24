@@ -14,3 +14,209 @@
     }
   }
 }
+.roadmap-content {
+  width: 100%;
+  margin: 10rem 0 30rem 0;
+  display: flex;
+  align-items: center;
+  height: 25rem;
+  .roadmap-grid {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+  }
+}
+.swiper-free-mode > .swiper-wrapper {
+  transition: 0.5s !important;
+}
+
+.roadmap-swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    width: min-content !important;
+    height: 100%;
+  }
+  .swiper-slide-content {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+  }
+  .swiper-wrapper {
+    align-items: center;
+  }
+}
+
+.roadmap-startpoint {
+  min-width: 7.5rem;
+  min-height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0 2.5rem 2.5rem;
+  position: relative;
+  z-index: 10;
+  span {
+    transform: rotate(45deg);
+    min-width: 7.5rem;
+    min-height: 7.5rem;
+    background-color: #2bd182;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    font-size: 3.25rem;
+    color: #fff;
+    font-weight: 700;
+    transform: rotate(-45deg);
+  }
+}
+.roadmap-endpoint {
+  min-width: 7.5rem;
+  min-height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  padding: 2.5rem 2.5rem 2.5rem 0;
+  span {
+    transform: rotate(45deg);
+    min-width: 7.5rem;
+    min-height: 7.5rem;
+    background-color: #2bd182;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    font-size: 3.25rem;
+    color: #fff;
+    font-weight: 700;
+    transform: rotate(-45deg);
+  }
+}
+.roadmap-done {
+  position: relative;
+  z-index: 5;
+}
+.roadmap-current {
+  position: relative;
+  z-index: 5;
+}
+.roadmap-pending {
+  position: relative;
+  z-index: 5;
+}
+.roadmap-step-line {
+  width: 25rem;
+  height: 0.5rem;
+  background-color: #e0e3ec;
+}
+.roadmap-step {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .roadmap-step-dot {
+    width: 3rem;
+    height: 3rem;
+    background-color: #e0e3ec;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #1f194d;
+      white-space: nowrap;
+    }
+    .roadmap-step-text-bottom {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 7.5rem);
+      z-index: 100;
+    }
+    .roadmap-step-text-top {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -7.5rem);
+      z-index: 100;
+    }
+    svg {
+      font-size: 2rem;
+      color: #fff;
+      opacity: 0;
+    }
+    .roadmap-step-dot-inner-1 {
+      position: absolute;
+      width: 6rem;
+      height: 6rem;
+      background-color: #ffa901;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      display: none;
+    }
+    .roadmap-step-dot-inner-2 {
+      position: absolute;
+      width: 8.5rem;
+      height: 8.5rem;
+      background-color: #ffa901;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      display: none;
+    }
+  }
+}
+.roadmap-done {
+  .roadmap-step-line {
+    background-color: #2bd182 !important;
+  }
+  .roadmap-step-dot {
+    background-color: #2bd182 !important;
+    svg {
+      opacity: 1 !important;
+    }
+  }
+}
+.roadmap-current {
+  .roadmap-step-line {
+    background-color: #ffa901 !important;
+  }
+  .roadmap-step-dot {
+    background-color: #ffa901 !important;
+    p {
+      font-weight: 700;
+    }
+    .roadmap-step-dot-inner-1 {
+      opacity: 0.2;
+      display: block !important;
+    }
+    .roadmap-step-dot-inner-2 {
+      opacity: 0.1;
+      display: block !important;
+    }
+  }
+}
+.roadmap-endpoint-box {
+  display: flex;
+  align-items: center;
+}
