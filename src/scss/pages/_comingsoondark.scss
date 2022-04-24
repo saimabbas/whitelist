@@ -1,81 +1,61 @@
 .coomsoondark {
   width: 100%;
-  height: 130vh;
+  //   height: 130vh;
   padding: 4rem;
   background-color: #243f71;
   .comsoondmain {
     width: 100%;
-    padding: 5rem;
-    background-color: #243F71;
-    .comsoondmain
-    {
-        width: 100%;
-        height: 100%;
-    position: relative;
     min-height: 100vh;
-    header 
-    {
-        position: absolute;
-        top: 0;
-        left: 0;
-        .header-left
-        {
-            padding: 0 0 0 3rem;
-            img 
-            {
-                width: 25rem;
-            }
+    position: relative;
+    width: 100%;
+    padding: 5rem;
+    background-color: #243f71;
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      .header-left {
+        padding: 0 0 0 3rem;
+        img {
+          width: 25rem;
         }
+      }
     }
-    .comsoondcontent
-    {
-        z-index: 1001;
-        position: relative;
-        max-width: 1000px;
-        margin: 0 auto;
-        h1 
-        {
-            font-size: 12rem;
-            letter-spacing: 7px;
-            font-weight: 600;
+    .comsoondcontent {
+      z-index: 1001;
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      h1 {
+        font-size: 12rem;
+        letter-spacing: 7px;
+        font-weight: 600;
+        color: #fff;
+        white-space: nowrap;
+        padding: 15rem 0 0 10rem;
+      }
+      .comdarktimer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 2rem 0 4rem 0;
+        .comdarkday {
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          border-radius: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 17rem;
+          height: 7rem;
+          h6 {
+            font-size: 4.75rem;
             color: #fff;
-            white-space: nowrap;
-            padding: 15rem 0 0 10rem;
-        }
-        .comdarktimer
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            margin: 2rem 0 4rem 0;
-            .comdarkday
-            {
-               border: 1px solid rgba(255, 255, 255, 0.40);
-               border-radius: 2rem;
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               width: 17rem;
-               height:7rem;
-               h6 
-               {
-                   font-size:4.75rem;
-                   color: #fff;
-                   font-weight: 700;
-                   span 
-                   {
-                       color: rgba(255, 255, 255, 0.40);
-                       font-size: 1.75rem;
-                       font-weight: 400;
-                   }
-               }
-            }
-            p {
-                font-size: 3rem;
-                font-weight: 700;
-                color: rgba(255, 255, 255, 0.60);
-                margin: 0 1rem;
+            font-weight: 700;
+            span {
+              color: rgba(255, 255, 255, 0.4);
+              font-size: 1.75rem;
+              font-weight: 400;
             }
           }
         }
@@ -86,117 +66,118 @@
           margin: 0 1rem;
         }
       }
-      h5 {
-        font-size: 2rem;
-        color: rgba(255, 255, 255, 0.6);
-        font-weight: 400;
-        text-align: center;
-        letter-spacing: 1px;
-      }
-      h6 {
-        font-size: 1.75rem;
-        color: rgba(255, 255, 255, 0.6);
-        font-weight: 400;
-        letter-spacing: 1px;
-        text-align: center;
-      }
-      h4 {
-        color: #43dff6;
-        font-size: 2/2rem;
-        font-weight: 400;
-        letter-spacing: 1px;
-        text-align: center;
-        margin: 3rem 0 8rem 0;
-      }
-      .coomsoonicons {
-        text-align: center;
-        margin: 0 auto;
-        width: 15%;
-      }
-      .comdarkinput {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 75%;
-        margin: 3rem auto 8rem auto;
-        input {
-          border: 1px solid rgba(255, 255, 255, 0.6);
-          border-radius: 2rem;
-          padding: 1.5rem 1.75rem;
-          width: 65%;
-          font-size: 1.6rem;
-          color: rgba(255, 255, 255, 0.6);
-          font-weight: 400;
-          background: transparent;
-        }
-        h4 
-        {
-            color: #43DFF6;
-            font-size: 2/2rem;
-            font-weight: 400;
-            letter-spacing: 1px;
-            text-align: center;
-            margin: 1.5rem 0 4rem 0;
-        }
-        .coomsoonicons
-        {
-            text-align: center;
-            margin: 0 auto;
-            width: 15%;
-            padding: 0 0 4rem 0;
-        }
-        .comdarkinput
-        {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 40%;
-            margin: 3rem auto 4rem auto;
-            input 
-            {
-                border: 1px solid rgba(255, 255, 255, 0.6);
-                border-radius: 2rem;
-                padding: 1.5rem 1.75rem;
-                width: 65%;
-                font-size: 1.6rem;
-                color: rgba(255, 255, 255, 0.6);
-                font-weight: 400;
-                background: transparent;
-            }
-            input:focus 
-            {
-                outline: none;
-            }
-            input::placeholder 
-            {
-                font-size: 1.6rem;
-                color: rgba(255, 255, 255, 0.6);
-                font-weight: 400;
-            }
-            button 
-            {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 2rem;
-                color: #fff;
-                background-image: linear-gradient(#394DFF, #6833FF);
-                border-radius: 2rem;
-                width: 30%;
-                border: unset;
-                padding: 1.25rem 1.75rem;
-            }
-        }
-      }
     }
-    .backvideo {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    p {
+      font-size: 3rem;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.6);
+      margin: 0 1rem;
     }
   }
+  h5 {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  h6 {
+    font-size: 1.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  h4 {
+    color: #43dff6;
+    font-size: 2/2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 3rem 0 8rem 0;
+  }
+  .coomsoonicons {
+    text-align: center;
+    margin: 0 auto;
+    width: 15%;
+  }
+  .comdarkinput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 3rem auto 8rem auto;
+    input {
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 2rem;
+      padding: 1.5rem 1.75rem;
+      width: 65%;
+      font-size: 1.6rem;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
+      background: transparent;
+    }
+    h4 {
+      color: #43dff6;
+      font-size: 2/2rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-align: center;
+      margin: 1.5rem 0 4rem 0;
+    }
+    .coomsoonicons {
+      text-align: center;
+      margin: 0 auto;
+      width: 15%;
+      padding: 0 0 4rem 0;
+    }
+  }
+}
 
+.backvideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comdarkinput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  margin: 3rem auto 4rem auto;
+  input {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2rem;
+    padding: 1.5rem 1.75rem;
+    width: 65%;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    background: transparent;
+  }
+  input:focus {
+    outline: none;
+  }
+  input::placeholder {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    background-image: linear-gradient(#394dff, #6833ff);
+    border-radius: 2rem;
+    width: 30%;
+    border: unset;
+    padding: 1.25rem 1.75rem;
+  }
+}
