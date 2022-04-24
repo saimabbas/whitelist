@@ -14,11 +14,9 @@ const ComingSoonDark = () => {
                         <source src={ComingVideo} type='video/mp4' />
                     </video>
                     <header>
-                        <div className="box">
-                            <div className="header-content">
-                                <div className="header-left">
-                                    <img src={Passengers} alt="" />
-                                </div>
+                        <div className="header-content">
+                            <div className="header-left">
+                                <img src={Passengers} alt="" />
                             </div>
                         </div>
                     </header>
