@@ -8,18 +8,28 @@ import { gsap } from "gsap";
 
 const ComingSoonDark = () => {
   useEffect(() => {
-    gsap.fromTo(
+    let tl = gsap.timeline();
+    tl.fromTo(
+      ".comingsoon-heading",
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 2,
+      }
+    );
+    tl.fromTo(
       ".comingsoon-heading span",
       {
         opacity: 0,
       },
       {
         opacity: 1,
-        delay: 0,
         duration: 0.25,
         stagger: {
-          repeat: 5,
-          each: 0.075,
+          repeat: 3,
+          each: 0.1,
           from: "random",
         },
       }
