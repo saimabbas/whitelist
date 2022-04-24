@@ -1839,12 +1839,12 @@ button:hover {
 }
 .coomsoondark.mintmainpage {
   width: 100%;
-  height: 100vh;
   padding: 5rem;
   background-color: #243F71;
 }
 .coomsoondark.mintmainpage .coomsoonicons {
-  width: 10%;
+  width: 9%;
+  margin: 0 6rem 0 auto;
 }
 .coomsoondark.mintmainpage .passengerbtn {
   display: flex;
@@ -1852,18 +1852,19 @@ button:hover {
   align-items: center;
   justify-content: flex-start;
   border-radius: 0.75rem;
-  padding: 0.75rem;
+  padding: 1.5rem;
   background-color: rgba(255, 255, 255, 0.04);
   width: 53%;
-  margin: 0 auto;
+  margin: 3rem auto 0 auto;
 }
 .coomsoondark.mintmainpage .passengerbtn button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1rem 0;
-  font-size: 1.6rem;
+  padding: 2rem 0;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
   font-weight: 600;
   background-image: linear-gradient(#394DFF, #6833FF);
   color: #fff;
@@ -1897,13 +1898,13 @@ button:hover {
 .coomsoondark.mintmainpage .mintdisconnect h6 {
   font-weight: 600;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 .coomsoondark.mintmainpage .mintdisconnect button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1.25rem 2rem;
   font-size: 1.4rem;
   font-weight: 600;
   background-image: linear-gradient(#C24905, #8E0055);
@@ -1912,6 +1913,48 @@ button:hover {
   border-radius: 0.75rem;
 }
 
+@media screen and (max-width: 1150px) {
+  .coomsoondark.mintmainpage .coomsoonicons {
+    width: 12%;
+  }
+
+  .coomsoondark .comsoondmain .comsoondcontent.passcontent h1 {
+    padding: 15rem 0 0 5rem;
+    font-size: 7.5rem;
+  }
+
+  .coomsoondark.mintmainpage .passengerbtn {
+    width: 65%;
+  }
+
+  .coomsoondark.mintmainpage .mintdisconnect {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .coomsoondark.mintmainpage .mintdisconnect {
+    width: 80%;
+  }
+
+  .coomsoondark.mintmainpage .mintdisconnect button {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .coomsoondark.mintmainpage .mintdisconnect h6 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .coomsoondark.mintmainpage .mintdisconnect {
+    width: 100%;
+    flex-direction: column;
+  }
+  .coomsoondark.mintmainpage .mintdisconnect button {
+    width: 100%;
+    margin-top: 4rem;
+  }
+}
 .mintmainpage .mintconnect {
   width: 53%;
   margin: 5rem auto 0 auto;
@@ -1928,7 +1971,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.85rem 2rem;
+  padding: 1.35rem 4rem;
   font-size: 1.4rem;
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.08);
@@ -1937,6 +1980,107 @@ button:hover {
   border: 3px solid rgba(255, 255, 255, 0.17);
 }
 
+@media screen and (max-width: 1150px) {
+  .coomsoondark.mintmainpage .coomsoonicons {
+    width: 12%;
+  }
+
+  .coomsoondark .comsoondmain .comsoondcontent.passcontent h1 {
+    padding: 15rem 0 0 5rem;
+    font-size: 7.5rem;
+  }
+
+  .coomsoondark.mintmainpage .passengerbtn {
+    width: 65%;
+  }
+
+  .mintmainpage .mintconnect {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .coomsoondark .comsoondmain .comsoondcontent.passcontent h1 {
+    padding: 15rem 0 0 3rem;
+    font-size: 5.5rem;
+  }
+
+  .coomsoondark .comsoondmain header .header-left {
+    padding: 0 0 0 4rem;
+  }
+
+  .coomsoondark.mintmainpage .coomsoonicons {
+    width: 15%;
+    margin: 0 4rem 0 auto;
+  }
+
+  .coomsoondark.mintmainpage .passengerbtn {
+    width: 80%;
+  }
+
+  .mintmainpage .mintconnect {
+    width: 80%;
+  }
+
+  .coomsoondark.mintmainpage .passengerbtn .minttimer h6 {
+    font-size: 1rem;
+  }
+  .coomsoondark.mintmainpage .passengerbtn .minttimer h6 span {
+    font-size: 1.35rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  header .header-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 0 0;
+    height: 9.5rem;
+  }
+
+  .coomsoondark.mintmainpage {
+    padding: 3.5rem;
+  }
+
+  .coomsoondark.mintmainpage .coomsoonicons {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  .coomsoondark .comsoondmain header .header-left {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coomsoondark .comsoondmain .comsoondcontent.passcontent h1 {
+    padding: 20rem 0 0 0;
+    font-size: 2.5rem;
+  }
+
+  .coomsoondark.mintmainpage .passengerbtn {
+    width: 100%;
+  }
+
+  .coomsoondark.mintmainpage .passengerbtn .minttimer {
+    flex-direction: column;
+  }
+  .coomsoondark.mintmainpage .passengerbtn .minttimer h6 {
+    margin: 0 0 2rem 0;
+  }
+
+  .mintmainpage .mintconnect {
+    width: 100%;
+    flex-direction: column;
+  }
+  .mintmainpage .mintconnect button {
+    width: 100%;
+  }
+  .mintmainpage .mintconnect h6 {
+    display: none;
+  }
+}
 .checkoutmainpage {
   display: flex;
   justify-content: space-between;
