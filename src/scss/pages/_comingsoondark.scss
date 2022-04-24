@@ -181,3 +181,22 @@
     padding: 1.25rem 1.75rem;
   }
 }
+
+
+@media screen and (max-width: 1150px) {
+  .coomsoondark .comsoondmain .comsoondcontent h1 {
+    padding: 15rem 0 0 2rem;
+}
+}
+
+@media screen and (max-width: 850px) {
+  .coomsoondark .comsoondmain .comsoondcontent h1 {
+    padding: 10rem 2rem 0 0rem;
+    font-size: 8.75rem;
+}
+.coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday
+{
+  width: 15rem;
+  height: 7rem;
+}
+}
