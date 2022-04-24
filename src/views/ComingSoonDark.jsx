@@ -58,6 +58,7 @@ const ComingSoonDark = () => {
               <span className="conthrax">i</span>
               <span className="conthrax">n</span>
               <span className="conthrax">g</span>
+              <br />
               <span className="conthrax">S</span>
               <span className="conthrax">o</span>
               <span className="conthrax">o</span>
@@ -66,19 +67,19 @@ const ComingSoonDark = () => {
             <div className="comdarktimer">
               <div className="comdarkday">
                 <h6 className="conthrax">
-                  25 <span>DAYS</span>
+                  25 <span className="conthrax">DAYS</span>
                 </h6>
               </div>
               <p className="conthrax">:</p>
               <div className="comdarkday">
                 <h6 className="conthrax">
-                  25 <span>HOURS</span>
+                  25 <span className="conthrax">HOURS</span>
                 </h6>
               </div>
               <p className="conthrax">:</p>
               <div className="comdarkday">
                 <h6 className="conthrax">
-                  25 <span>MINUTES</span>
+                  25 <span className="conthrax">MINUTES</span>
                 </h6>
               </div>
             </div>

@@ -26,6 +26,10 @@
       position: relative;
       max-width: 1000px;
       margin: 0 auto;
+      br 
+      {
+        display: none;
+      }
       h1 {
         font-size: 10rem;
         letter-spacing: 7px;
@@ -74,14 +78,14 @@
     }
   }
   h5 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     text-align: center;
     letter-spacing: 1px;
   }
   h6 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     letter-spacing: 1px;
@@ -191,12 +195,88 @@
 
 @media screen and (max-width: 850px) {
   .coomsoondark .comsoondmain .comsoondcontent h1 {
-    padding: 10rem 2rem 0 0rem;
-    font-size: 8.75rem;
+    padding: 10rem 0 0 0rem;
+    font-size: 6.25rem;
 }
-.coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday
+.coomsoondark .comsoondmain .comsoondcontent .comdarktimer {
+  p 
+  {
+  margin: 0 1.5rem;
+  }
+  .comdarkday
 {
-  width: 15rem;
-  height: 7rem;
+  padding: 1.5rem 2rem;
+h6 
+{
+  font-size: 2.75rem;
+  display: flex;
+  justify-content: center;
+  span 
+  {
+    font-size: 1.75rem;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+  }
 }
+}
+}
+.coomsoondark .comdarkinput
+{
+  width: 85%;
+}
+.coomsoondark h4
+{
+  margin: 2rem 0 5rem 0;
+}
+.coomsoondark .coomsoonicons {
+  width: 20%;
+}
+}
+
+@media screen and (max-width: 650px) {
+  .coomsoondark
+  {
+    padding: 3.5rem;
+    .comsoondmain
+    {
+      padding: 2rem ;
+    }
+  }
+  .coomsoondark .comsoondmain .comsoondcontent 
+  { h1 
+    {
+      font-size: 5rem;
+      text-align: center;
+    }
+    br
+  {
+    display: block;
+  }
+  }
+  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer
+  {
+    flex-direction: column;
+  }
+  .coomsoondark .comdarkinput
+  {
+    flex-direction: column;
+    input 
+    {
+      width: 100%;
+      margin: 0 0 2rem 0;
+    }
+    button 
+    {
+      width: 100%;
+    }
+  }
+  .coomsoondark .coomsoonicons
+  {
+    width: 40%;
+  }
+  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday
+  {
+    width: 100%;
+    height: 8rem;
+    padding: 0;
+  }
 }
