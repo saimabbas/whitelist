@@ -5,18 +5,23 @@ import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import { gsap } from "gsap";
-
+import { Power4, Linear } from "gsap/dist/gsap";
 const ComingSoonDark = () => {
   useEffect(() => {
-    let tl = gsap.timeline();
+    let tl = gsap.timeline({
+      delay: 0.4,
+    });
     tl.fromTo(
       ".comingsoon-heading",
       {
+        scale: 0.9,
         opacity: 0,
       },
       {
+        scale: 1,
         opacity: 1,
-        duration: 2,
+        duration: 1.5,
+        ease: Power4.easeIn,
       }
     );
     tl.fromTo(
@@ -32,7 +37,8 @@ const ComingSoonDark = () => {
           each: 0.1,
           from: "random",
         },
-      }
+      },
+      "<0.75"
     );
   }, []);
 
