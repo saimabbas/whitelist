@@ -68,3 +68,34 @@
         margin: 3rem 0;
     }
 }
+
+
+@media screen and (max-width: 1440px) {
+    .landing-content .landing-head
+    {
+        margin: 0 0 15rem 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .landing-content .landing-progres
+    {
+        width: 15rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .landing-content h5
+    {
+        font-size: 3rem;
+    }
+    .landing-content p
+    {
+        font-size: 1.85rem;
+    }
+    .landing-content .landing-head h3
+    {
+        display: none;
+    }
+    .landing-content .landing-head {
+        margin: 12rem 0 8rem 0;
+    }
+}
