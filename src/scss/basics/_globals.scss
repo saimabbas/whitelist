@@ -336,7 +336,7 @@ button {
   height: 100vh;
   padding: 5rem;
   font-size: 1.75rem;
-  background-color: #195bff;
+  background-color: #1f194d;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -344,7 +344,7 @@ button {
     text-decoration: none;
     color: white;
     text-transform: capitalize;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.75rem 0;
     &:hover {
       span {
         text-decoration: underline;
