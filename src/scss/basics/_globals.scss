@@ -18,7 +18,7 @@ body {
   --text-color: #fff;
 }
 .app.light-theme {
-  --bg-color: #fff;
+  --bg-color: #f8fcff;
   --text-color: #000;
 }
 .app {
@@ -89,8 +89,12 @@ body {
 .top-notch.top-notch-purple {
   background-color: #6c69ff;
 }
+.top-notch.top-notch-magenda {
+  background-color: #43dff6;
+}
 button {
   outline: 0;
+  transition: 0.75s;
   &:hover {
     cursor: pointer;
   }
@@ -126,11 +130,29 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.25s;
   svg {
     width: max-content;
     height: 2.25rem;
     object-fit: contain;
     margin: 0 0.75rem 0 0;
+    transition: 0.25s;
+    path {
+      transition: 0.25s;
+    }
+  }
+  &:hover {
+    background-color: #195bff;
+    color: #fff;
+    svg {
+      fill: #fff !important;
+      color: #fff !important;
+      path {
+        stroke: #fff !important;
+        fill: #fff !important;
+        color: #fff !important;
+      }
+    }
   }
 }
 .light-blue-btn-filled.btn-sm-ds,
@@ -244,12 +266,12 @@ button {
 }
 .collections-grid-card {
   background-color: #fff;
-  padding: 2.5rem 3rem;
-  border-radius: 1.5rem;
+  padding: 2rem 2rem;
+  border-radius: 2.5rem;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.05);
   .cgc-top {
     width: 100%;
-    margin: 0 0 2rem 0;
+    margin: 1rem 0 2.5rem 0;
     h6 {
       font-size: 2rem;
       display: flex;
@@ -265,8 +287,9 @@ button {
     position: relative;
     img {
       width: 100%;
+      height: 32.5rem;
       object-fit: cover;
-      border-radius: 1.5rem;
+      border-radius: 2.5rem;
     }
   }
 }
@@ -295,6 +318,8 @@ button {
 }
 .app-page {
   width: 100%;
+  position: relative;
+  z-index: 5;
 }
 .app-page-hero-bg {
   width: 100%;

@@ -1,5 +1,9 @@
-.coomsoondark
-{
+.coomsoondark {
+  width: 100%;
+  height: 130vh;
+  padding: 4rem;
+  background-color: #243f71;
+  .comsoondmain {
     width: 100%;
     padding: 5rem;
     background-color: #243F71;
@@ -73,22 +77,57 @@
                 color: rgba(255, 255, 255, 0.60);
                 margin: 0 1rem;
             }
+          }
         }
-        h5 
-        {
-            font-size: 2rem;
-            color: rgba(255, 255, 255, 0.6);
-            font-weight: 400;
-            text-align: center;
-            letter-spacing: 1px;
+        p {
+          font-size: 3rem;
+          font-weight: 700;
+          color: rgba(255, 255, 255, 0.6);
+          margin: 0 1rem;
         }
-        h6 
-        {
-            font-size: 1.75rem;
-            color: rgba(255, 255, 255, 0.6);
-            font-weight: 400;
-            letter-spacing: 1px;
-            text-align: center;
+      }
+      h5 {
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+      h6 {
+        font-size: 1.75rem;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-align: center;
+      }
+      h4 {
+        color: #43dff6;
+        font-size: 2/2rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 3rem 0 8rem 0;
+      }
+      .coomsoonicons {
+        text-align: center;
+        margin: 0 auto;
+        width: 15%;
+      }
+      .comdarkinput {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+        margin: 3rem auto 8rem auto;
+        input {
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          border-radius: 2rem;
+          padding: 1.5rem 1.75rem;
+          width: 65%;
+          font-size: 1.6rem;
+          color: rgba(255, 255, 255, 0.6);
+          font-weight: 400;
+          background: transparent;
         }
         h4 
         {
@@ -148,16 +187,16 @@
                 padding: 1.25rem 1.75rem;
             }
         }
+      }
     }
-    .backvideo
-    {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .backvideo {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    }
-}
+  }
+

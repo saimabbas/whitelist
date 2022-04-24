@@ -27,56 +27,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import { FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
+import Header from "../components/modules/Header";
+import Footer from "../components/modules/Footer";
+import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
+import SubscribeCard from "../components/pages/Home/SubscribeCard";
+import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
 
 const Home = () => {
   return (
     <div className="app light-theme">
       {/* Header */}
-      <header>
-        <div className="box">
-          <div className="header-content">
-            <div className="header-left">
-              <Logo color="#1F194D" />
-              {/* <img src={LogoLight} alt="LogoLight" /> */}
-              <ul>
-                <li>
-                  <a href="#">
-                    <b>P</b>rize pool
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>S</b>ubscribe
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>R</b>oadmap
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>U</b>pcoming Drops
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>M</b>eet the Team
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="header-right">
-              <MessagesIcon color="#1F194D" />
-              <MoonIcon color="#1F194D" />
-              <button className="light-blue-btn-filled">
-                {" "}
-                <WalletIcon color="#195BFF" /> Wallet
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
       <div className="home">
         {/* Hero Section */}
         <section className="hero">
@@ -259,45 +221,18 @@ const Home = () => {
                 </p>
               </div>
               <div className="collections-grid">
-                <div className="collections-grid-card">
-                  <div className="cgc-top">
-                    <h6>
-                      <img src={LogoLight} alt="LogoLight" /> Passengers
-                    </h6>
-                  </div>
-                  <div className="cgc-bottom">
-                    <img src={CollectionsCard} alt="CollectionsCard" />
-                    <div className="coming-tag">
-                      Coming This April <span></span>
-                    </div>
-                  </div>
-                </div>
-                <div className="collections-grid-card">
-                  <div className="cgc-top">
-                    <h6>
-                      <img src={LogoLight} alt="LogoLight" /> Fractional Friends
-                    </h6>
-                  </div>
-                  <div className="cgc-bottom">
-                    <img src={CollectionsCard} alt="CollectionsCard" />
-                    <div className="coming-tag">
-                      Coming This April <span></span>
-                    </div>
-                  </div>
-                </div>
-                <div className="collections-grid-card">
-                  <div className="cgc-top">
-                    <h6>
-                      <img src={LogoLight} alt="LogoLight" /> Walt’s Vault
-                    </h6>
-                  </div>
-                  <div className="cgc-bottom">
-                    <img src={CollectionsCard} alt="CollectionsCard" />
-                    <div className="coming-tag">
-                      Coming This April <span></span>
-                    </div>
-                  </div>
-                </div>
+                <HomeCollectionsCard
+                  collectionLogoImg={LogoLight}
+                  collectionImg={CollectionsCard}
+                  collectionName="Passengers"
+                  collectionComingTime="Coming This April"
+                />
+                <HomeCollectionsCard
+                  collectionLogoImg={LogoLight}
+                  collectionImg={CollectionsCard}
+                  collectionName="Fractional Friends"
+                  collectionComingTime="Coming This April"
+                />
               </div>
             </div>
           </div>
@@ -314,185 +249,22 @@ const Home = () => {
                 <p>Join the Whitelist by choose your perfect option below</p>
               </div>
               <div className="subscribe-grid">
-                <div className="subscribe-grid-card">
-                  <div className="top-notch top-notch-pink"></div>
-                  <h3>Tier 1</h3>
-                  <h4>0.3 ETH </h4>
-                  <div className="subscribe-options-grid">
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>3 Drops from The Whitelist (Season 1)</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>Access to Community Prize Pools</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>
-                        Voting Rights for Future Pools, Drops and artist
-                        Collaborations
-                      </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p className="soge-not-available">
-                        Early Mint access (Higher Change of a legendary item)
-                      </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p className="soge-not-available">Launchpad Access </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p className="soge-not-available">“Elixir” air drop</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p className="soge-not-available">
-                        Access to “The inner Circle”
-                      </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p className="soge-not-available">
-                        Yield Farming access and yield farming prize pool
-                      </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p className="soge-not-available">
-                        Partnered projects Whitelist Spots{" "}
-                      </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p className="soge-not-available">
-                        Early Access to Season 2 with The Whitelist
-                      </p>
-                    </div>
-                  </div>
-                  <div className="subscribe-btn-box">
-                    <button className="light-blue-btn-filled">
-                      GET STARTED
-                    </button>
-                  </div>
-                </div>
-                <div className="subscribe-grid-card">
-                  <div className="top-notch top-notch-blue"></div>
-                  <h3>Tier 2</h3>
-                  <h4>0.4 ETH </h4>
-                  <div className="subscribe-options-grid">
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>3 Drops from The Whitelist (Season 1)</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>Access to Community Prize Pools</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>
-                        Voting Rights for Future Pools, Drops and artist
-                        Collaborations
-                      </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>
-                        Early Mint access (Higher Change of a legendary item)
-                      </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>Launchpad Access </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>“Elixir” air drop</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p>Access to “The inner Circle”</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p>Yield Farming access and yield farming prize pool</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p>Partnered projects Whitelist Spots </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#D9D9E4" />
-                      <p>Early Access to Season 2 with The Whitelist</p>
-                    </div>
-                  </div>
-                  <div className="subscribe-btn-box">
-                    <button className="dark-blue-btn-filled">
-                      GET STARTED
-                    </button>
-                  </div>
-                </div>
-                <div className="subscribe-grid-card">
-                  <div className="top-notch top-notch-yellow"></div>
-                  <h3>Tier 3 (The Inner Circle)</h3>
-                  <h4>0.6 ETH </h4>
-                  <div className="subscribe-options-grid">
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>3 Drops from The Whitelist (Season 1)</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>Access to Community Prize Pools</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>
-                        Voting Rights for Future Pools, Drops and artist
-                        Collaborations
-                      </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>
-                        Early Mint access (Higher Change of a legendary item)
-                      </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>Launchpad Access </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>“Elixir” air drop</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>Access to “The inner Circle”</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>Yield Farming access and yield farming prize pool</p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>Partnered projects Whitelist Spots </p>
-                    </div>
-                    <div className="subscribe-options-grid-entry">
-                      <Tick color="#2BD182" />
-                      <p>Early Access to Season 2 with The Whitelist</p>
-                    </div>
-                  </div>
-                  <div className="subscribe-btn-box">
-                    <button className="light-blue-btn-filled">
-                      GET STARTED
-                    </button>
-                  </div>
-                </div>
+                <SubscribeCard
+                  isNotActive4="soge-not-available"
+                  isNotActive5="soge-not-available"
+                  isNotActive6="soge-not-available"
+                  isNotActive7="soge-not-available"
+                  isNotActive8="soge-not-available"
+                  isNotActive9="soge-not-available"
+                  isNotActive10="soge-not-available"
+                />
+                <SubscribeCard
+                  isNotActive7="soge-not-available"
+                  isNotActive8="soge-not-available"
+                  isNotActive9="soge-not-available"
+                  isNotActive10="soge-not-available"
+                />
+                <SubscribeCard />
               </div>
             </div>
           </div>
@@ -513,124 +285,58 @@ const Home = () => {
               </div>
               <div className="letushelp-grid">
                 <Accordion>
-                  <Accordion.Item eventKey={1}>
-                    <Accordion.Header>
-                      <div className="faq-q">
-                        <h5>Does the Whitelist have a roadmap?</h5>
-                        <ChevronUp color="#1F194D" />
-                      </div>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <div className="faq-a">
-                        <p>
-                          <a href="">Roadmap</a>
-                        </p>
-                      </div>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey={2}>
-                    <Accordion.Header>
-                      <div className="faq-q">
-                        <h5>What does My Subscription get me?</h5>
-                        <ChevronUp color="#1F194D" />
-                      </div>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <div className="faq-a">
-                        <p>
-                          Depending on the tier you have decided to go with,
-                          every tier unlocks certain perks and advantages. Visit
-                          (Link to subscriptions) to find out more.
-                        </p>
-                      </div>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey={3}>
-                    <Accordion.Header>
-                      <div className="faq-q">
-                        <h5>Can I Buy, sell or trade my Tier Pass?</h5>
-                        <ChevronUp color="#1F194D" />
-                      </div>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <div className="faq-a">
-                        <p>
-                          When you purchase a subscription through The Whitelist
-                          you will receive your own Unique NFT pass. The
-                          whitelist has 3 tier options to pick from. Choose
-                          wisely 😉
-                        </p>
-                      </div>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item eventKey={4}>
-                    <Accordion.Header>
-                      <div className="faq-q">
-                        <h5>Do we have social media?</h5>
-                        <ChevronUp color="#1F194D" />
-                      </div>
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <div className="faq-a">
-                        <p>
-                          You can find us and our community on Discord, Twitter
-                          and Instagram!
-                        </p>
-                      </div>
-                    </Accordion.Body>
-                  </Accordion.Item>
+                  <LetUsHelpCard
+                    eventKey={1}
+                    ques="Does the Whitelist have a roadmap?"
+                  >
+                    <p>
+                      <a href="">Roadmap</a>
+                    </p>
+                  </LetUsHelpCard>
+                  <LetUsHelpCard
+                    eventKey={2}
+                    ques="What does My Subscription get me?"
+                  >
+                    <p>
+                      Depending on the tier you have decided to go with, every
+                      tier unlocks certain perks and advantages. Visit (Link to
+                      subscriptions) to find out more.
+                    </p>
+                  </LetUsHelpCard>
+                  <LetUsHelpCard
+                    eventKey={3}
+                    ques="Can I Buy, sell or trade my Tier Pass?"
+                  >
+                    <p>
+                      When you purchase a subscription through The Whitelist you
+                      will receive your own Unique NFT pass. The whitelist has 3
+                      tier options to pick from. Choose wisely 😉
+                    </p>
+                  </LetUsHelpCard>
+                  <LetUsHelpCard eventKey={4} ques="Do we have social media?">
+                    <p>
+                      You can find us and our community on Discord, Twitter and
+                      Instagram!
+                    </p>
+                    <div className="luh-social-grid">
+                      <button className="light-blue-btn-filled">
+                        <FaInstagram /> thenftwhitelist
+                      </button>
+                      <button className="light-blue-btn-filled">
+                        <FaTwitter /> theNFTwhitelist
+                      </button>
+                      <button className="light-blue-btn-filled">
+                        <FaDiscord /> theWhitelist
+                      </button>
+                    </div>
+                  </LetUsHelpCard>
                 </Accordion>
               </div>
             </div>
           </div>
         </section>
         {/* Footer */}
-        <footer>
-          <div className="box">
-            <div className="footer-content">
-              <div className="footer-top">
-                <div className="footer-left">
-                  <Logo color="#fff" />
-                  <p>Follow us on social media</p>
-                  <div className="fl-icons-grid">
-                    <Instagram color="#fff" />
-                    <TwitterIcon color="#fff" />
-                    <Discord color="#fff" />
-                  </div>
-                </div>
-                <div className="footer-center">
-                  <h6>The Whitelist Info</h6>
-                  <div className="fc-grid">
-                    <a href="#">Subscribe</a>
-                    <a href="#">Upcoming Drops </a>
-                    <a href="#">Roadmap</a>
-                    <a href="#">
-                      <b>Meet the Team</b>
-                    </a>
-                    <a href="#">How it Works</a>
-                  </div>
-                </div>
-                <div className="footer-right">
-                  <h6>Join Newsletter</h6>
-                  <p>
-                    Subscribe our newsletter to get latest <Logo color="#fff" />
-                    updates
-                  </p>
-                  <div className="fr-subscribe-input-box">
-                    <input type="text" placeholder="Enter your Email " />
-                    <button>Subscribe</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p>Copyright © 2022. All rights reserved</p>
-          </div>
-          <div className="more-btn">
-            More <RefreshIcon color="#fff" />
-          </div>
-        </footer>
+        <Footer moreBtn={true} />
       </div>
     </div>
   );
