@@ -333,15 +333,22 @@ button {
 }
 .links-page {
   width: 100%;
-  background-color: red;
+  height: 100vh;
+  padding: 5rem;
+  font-size: 1.75rem;
+  background-color: #195bff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  font-size: 1.2rem;
+  flex-direction: column;
+  align-items: flex-start;
   a {
     text-decoration: none;
-    // color: red;
     color: white;
+    text-transform: capitalize;
+    margin: 0 0 0.5rem 0;
+    &:hover {
+      span {
+        text-decoration: underline;
+      }
+    }
   }
 }
