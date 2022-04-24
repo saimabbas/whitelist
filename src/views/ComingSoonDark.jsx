@@ -52,16 +52,16 @@ const ComingSoonDark = () => {
           </header>
           <div className="comsoondcontent">
             <h1 className="comingsoon-heading">
-              <span>C</span>
-              <span>O</span>
-              <span>M</span>
-              <span>I</span>
-              <span>N</span>
-              <span>G</span>
-              <span>S</span>
-              <span>O</span>
-              <span>O</span>
-              <span>N</span>
+              <span className="conthrax">C</span>
+              <span className="conthrax">O</span>
+              <span className="conthrax">M</span>
+              <span className="conthrax">I</span>
+              <span className="conthrax">N</span>
+              <span className="conthrax">G</span>
+              <span className="conthrax">S</span>
+              <span className="conthrax">O</span>
+              <span className="conthrax">O</span>
+              <span className="conthrax">N</span>
             </h1>
             <div className="comdarktimer">
               <div className="comdarkday">
