@@ -20,6 +20,7 @@ const App = () => {
     <>
       <Switch>
         <Routes>
+          <Route path="/" element={<LinksPage />} />
           <Route exact path="/home" element={<Home />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/collections" element={<Collections />} />
@@ -34,7 +35,6 @@ const App = () => {
           <Route path="/subscribe" element={<Subscribe />} />
           <Route path="/vault" element={<Vault />} />
           <Route path="/comingsoondark" element={<ComingSoonDark />} />
-          <Route path="/links" element={<LinksPage />} />
         </Routes>
       </Switch>
     </>
