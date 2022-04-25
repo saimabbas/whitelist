@@ -74,9 +74,13 @@ const Roadmap = () => {
                               <MdDone />
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
-                              <p className="roadmap-step-text-bottom">
-                                UI and Site Development
-                              </p>
+                              <div className="roadmap-step-text-bottom">
+                                <h6>UI and Site Development</h6>
+                                <p>
+                                  We are working to bring our users the best
+                                  experience possible.{" "}
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -89,9 +93,13 @@ const Roadmap = () => {
                               <MdDone />
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
-                              <p className="roadmap-step-text-top">
-                                Advisory and team build out
-                              </p>
+                              <div className="roadmap-step-text-top">
+                                <h6>UI and Site Development</h6>
+                                <p>
+                                  We are working to bring our users the best
+                                  experience possible.{" "}
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -104,9 +112,13 @@ const Roadmap = () => {
                               <MdDone />
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
-                              <p className="roadmap-step-text-bottom">
-                                Community structure
-                              </p>
+                              <div className="roadmap-step-text-bottom">
+                                <h6>UI and Site Development</h6>
+                                <p>
+                                  We are working to bring our users the best
+                                  experience possible.{" "}
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -119,7 +131,13 @@ const Roadmap = () => {
                               <MdDone />
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
-                              <p className="roadmap-step-text-top">Site Drop</p>
+                              <div className="roadmap-step-text-top">
+                                <h6>UI and Site Development</h6>
+                                <p>
+                                  We are working to bring our users the best
+                                  experience possible.{" "}
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -132,9 +150,13 @@ const Roadmap = () => {
                               <MdDone />
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
-                              <p className="roadmap-step-text-bottom">
-                                Voting system implementation
-                              </p>
+                              <div className="roadmap-step-text-bottom">
+                                <h6>UI and Site Development</h6>
+                                <p>
+                                  We are working to bring our users the best
+                                  experience possible.{" "}
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -147,9 +169,13 @@ const Roadmap = () => {
                               <MdDone />
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
-                              <p className="roadmap-step-text-top">
-                                Sample Text
-                              </p>
+                              <div className="roadmap-step-text-top">
+                                <h6>UI and Site Development</h6>
+                                <p>
+                                  We are working to bring our users the best
+                                  experience possible.{" "}
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -162,9 +188,13 @@ const Roadmap = () => {
                               <MdDone />
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
-                              <p className="roadmap-step-text-bottom">
-                                Sample Text
-                              </p>
+                              <div className="roadmap-step-text-bottom">
+                                <h6>UI and Site Development</h6>
+                                <p>
+                                  We are working to bring our users the best
+                                  experience possible.{" "}
+                                </p>
+                              </div>
                             </div>
                           </div>
                         </div>

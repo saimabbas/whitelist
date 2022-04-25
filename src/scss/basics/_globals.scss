@@ -16,10 +16,12 @@ body {
 .app.dark-theme {
   --bg-color: #000;
   --text-color: #fff;
+  --abc: #fff;
 }
 .app.light-theme {
   --bg-color: #f8fcff;
   --text-color: #000;
+  --abc: #1f194d;
 }
 .app {
   width: 100%;
@@ -352,7 +354,6 @@ button {
     }
   }
 }
-
 
 // @media screen and (max-width: 650px) {
 // .light-blue-btn-filled
