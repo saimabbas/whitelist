@@ -5,6 +5,7 @@ const TeamCard = (props) => {
     <div className="team-grid-main">
       <img src={props.img} alt="" />
       <h6>{props.name}</h6>
+      <p>{props.role}</p>
     </div>
   );
 };

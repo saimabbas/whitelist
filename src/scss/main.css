@@ -2164,6 +2164,19 @@ button:hover {
   z-index: 1;
 }
 
+.teammainbox .teampage .team-bg-dark {
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  z-index: 1;
+}
+
 .team-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2178,6 +2191,7 @@ button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 10rem 0 0 0;
 }
 
 .team-grid h3 {
@@ -2194,8 +2208,8 @@ button:hover {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  grid-gap: 3rem 8rem;
-  width: 55%;
+  grid-gap: 2.5rem 7.5rem;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -2226,7 +2240,14 @@ button:hover {
 .team-grid .team-grid-content .team-grid-main h6 {
   color: #1f194d;
   margin: 1rem 0 0 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.team-grid .team-grid-content .team-grid-main p {
+  color: #69697c;
+  font-size: 1.75rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 850px) {
