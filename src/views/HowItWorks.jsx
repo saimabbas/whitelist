@@ -99,16 +99,6 @@ const HowItWorks = () => {
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
-                      eventKey={5}
-                      ques="How do I get in contact with The Whitelist?"
-                    >
-                      <p>
-                        Feel free to reach out to us through email at (
-                        <a href=""> info@thwwhitelist.com</a> ). Or the red
-                        button in the bottom right corner.
-                      </p>
-                    </LetUsHelpCard>
-                    <LetUsHelpCard
                       eventKey={6}
                       ques="   How many collections will I get with my Tier pass?"
                     >
