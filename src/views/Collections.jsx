@@ -1,6 +1,7 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import HeroBgLight from "../assets/img/hero-bg-light.png";
+import HeroBgDark from "../assets/img/right-moon.png";
 import CollectionsCardImg from "../assets/img/collections-card.png";
 import VaultProfilePic from "../assets/img/vault-profile-pic.png";
 import VerifiedIcon from "../assets/icons/VerifiedIcon";
@@ -19,7 +20,7 @@ import CollectionsCard from "../components/pages/Collections/CollectionsCard";
 
 const Collections = () => {
   return (
-    <div className="app light-theme">
+    <div className="app Dark-theme">
       {/* Header */}
       <Header />
       <div className="colmainpage">
@@ -28,6 +29,11 @@ const Collections = () => {
           className="col-bg-light light-img"
           src={HeroBgLight}
           alt="HeroBgLight"
+        />
+        <img
+          className="col-bg-dark dark-img"
+          src={HeroBgDark}
+          alt="HeroBgDark"
         />
         <div className="box">
           <div className="page-body-con">

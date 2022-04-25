@@ -1,6 +1,7 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgDark from "./../assets/img/right-moon.png";
 import { Accordion } from "react-bootstrap";
 import ChevronUp from "../assets/icons/ChevronUp";
 import Logo from "../assets/img/Logo";
@@ -17,7 +18,7 @@ import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
 import { FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
 const HowItWorks = () => {
   return (
-    <div className="app light-theme">
+    <div className="app Dark-theme">
       {/* Header */}
       <Header />
       <div className="letushelp">
@@ -27,6 +28,11 @@ const HowItWorks = () => {
             className="landing-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
+          />
+          <img
+            className="landing-bg-dark dark-img"
+            src={HeroBgDark}
+            alt="HeroBgDark"
           />
           <div className="app-page">
             <div className="box">

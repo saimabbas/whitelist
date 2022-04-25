@@ -1,6 +1,7 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgDark from "./../assets/img/right-moon.png";
 import Header from "../components/modules/Header";
 import Footer from "../components/modules/Footer";
 import { Mousewheel, FreeMode } from "swiper";
@@ -22,6 +23,11 @@ const Roadmap = () => {
             className="roadmap-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
+          />
+          <img
+            className="roadmap-bg-dark dark-img"
+            src={HeroBgDark}
+            alt="HeroBgDark"
           />
           <div className="app-page">
             <div className="box">

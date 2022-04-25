@@ -1,6 +1,7 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgDark from "./../assets/img/right-moon.png";
 import QRcode from "./../assets/img/qrcode.png";
 import Wallet from "./../assets/img/wallet.png";
 import SumImg from "./../assets/img/checkoutimg.png";
@@ -69,6 +70,11 @@ const Checkout = () => {
             className="roadmap-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
+          />
+          <img
+            className="roadmap-bg-dark dark-img"
+            src={HeroBgDark}
+            alt="HeroBgDark"
           />
           <div className="box">
             <div className="letushelp-content hiwsection">

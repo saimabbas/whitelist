@@ -1,6 +1,7 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgDark from "./../assets/img/right-moon.png";
 import Logo from "../assets/img/Logo";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
@@ -23,7 +24,7 @@ import Header from "../components/modules/Header";
 import TeamCard from "../components/pages/Team/TeamCard";
 const Subscribe = () => {
   return (
-    <div className="app light-theme">
+    <div className="app Dark-theme">
       {/* Header */}
       <Header />
       <div className="teammainbox">
@@ -32,6 +33,11 @@ const Subscribe = () => {
             className="team-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
+          />
+          <img
+            className="team-bg-dark dark-img"
+            src={HeroBgDark}
+            alt="HeroBgDark"
           />
           <div className="box">
             <div className="subscribe-content subsmainpage">
