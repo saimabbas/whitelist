@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
@@ -18,6 +18,8 @@ import VaultImg2 from "../assets/img/vault-img-2.png";
 import VaultImg3 from "../assets/img/vault-img-3.png";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Header from "../components/modules/Header";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import {
@@ -26,14 +28,23 @@ import {
   MdEast,
 } from "react-icons/md";
 import VaultCollectionCard from "../components/pages/Vault/VaultCollectionCard";
-import Header from "../components/modules/Header";
 import Footer from "../components/modules/Footer";
 
 const Vault = () => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const changeToDarkTheme = () => {
+    setIsLightTheme(false);
+  };
+  const changeToLightTheme = () => {
+    setIsLightTheme(true);
+  };
   return (
-    <div className="app light-theme">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
-      <Header />
+      <Header
+        changeToDarkTheme={changeToDarkTheme}
+        changeToLightTheme={changeToLightTheme}
+      />
       <div className="vaultmainpage">
         {/* Collection Section */}
         <img

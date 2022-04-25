@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
@@ -12,11 +12,21 @@ import "swiper/css/free-mode";
 import { MdDone } from "react-icons/md";
 
 const Roadmap = () => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const changeToDarkTheme = () => {
+    setIsLightTheme(false);
+  };
+  const changeToLightTheme = () => {
+    setIsLightTheme(true);
+  };
   return (
-    <div className="app light-theme">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
 
-      <Header />
+      <Header
+        changeToDarkTheme={changeToDarkTheme}
+        changeToLightTheme={changeToLightTheme}
+      />
       <div className="roadmapmainpage">
         {/* Roadmap Section */}
         <section className="roadmapmain">

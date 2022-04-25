@@ -17,17 +17,7 @@ import EllipseYellow from "./../assets/img/ellipse-yellow.svg";
 import CollectionsBg from "./../assets/img/collections-bg.svg";
 import CollectionsBg2 from "./../assets/img/collections-bg2.png";
 import CollectionsCard from "./../assets/img/collections-card.png";
-import Tick from "../assets/icons/Tick";
 import { Accordion } from "react-bootstrap";
-import ChevronUp from "../assets/icons/ChevronUp";
-import Logo from "../assets/img/Logo";
-import Instagram from "../assets/icons/Instagram";
-import TwitterIcon from "../assets/icons/TwitterIcon";
-import Discord from "../assets/icons/Discord";
-import RefreshIcon from "../assets/icons/RefreshIcon";
-import MessagesIcon from "../assets/icons/MessagesIcon";
-import MoonIcon from "../assets/icons/MoonIcon";
-import WalletIcon from "../assets/icons/WalletIcon";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -43,11 +33,9 @@ import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
 const Home = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
   const changeToDarkTheme = () => {
-    console.log("Changes to Dark Theme");
     setIsLightTheme(false);
   };
   const changeToLightTheme = () => {
-    console.log("Changes to Light Theme");
     setIsLightTheme(true);
   };
   return (

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BlobYellow from "../assets/img/blob-yellow.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
@@ -17,10 +17,20 @@ import Footer from "../components/modules/Footer";
 import Header from "../components/modules/Header";
 
 const Subscribe = () => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const changeToDarkTheme = () => {
+    setIsLightTheme(false);
+  };
+  const changeToLightTheme = () => {
+    setIsLightTheme(true);
+  };
   return (
-    <div className="app light-theme">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
-      <Header />
+      <Header
+        changeToDarkTheme={changeToDarkTheme}
+        changeToLightTheme={changeToLightTheme}
+      />
       <div className="subscribepage">
         {/* Subscribe Section */}
         <section className="subimgbox">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
@@ -16,57 +16,25 @@ import VaultImg2 from "../assets/img/vault-img-2.png";
 import VaultImg3 from "../assets/img/vault-img-3.png";
 import VaultProfilePic from "../assets/img/vault-profile-pic.png";
 import PassengersLogo from "../assets/img/passengers-logo.svg";
+import Header from "../components/modules/Header";
+
 import InfoIcon from "../assets/icons/InfoIcon";
 import { MdDone } from "react-icons/md";
 const PrizePools = () => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const changeToDarkTheme = () => {
+    setIsLightTheme(false);
+  };
+  const changeToLightTheme = () => {
+    setIsLightTheme(true);
+  };
   return (
-    <div className="app dark-theme">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
-      <header>
-        <div className="box">
-          <div className="header-content">
-            <div className="header-left">
-              <Logo color="#1F194D" />
-              {/* <img src={LogoLight} alt="LogoLight" /> */}
-              <ul>
-                <li>
-                  <a href="#">
-                    <b>P</b>rize pool
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>S</b>ubscribe
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>R</b>oadmap
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>U</b>pcoming Drops
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <b>M</b>eet the Team
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="header-right">
-              <MessagesIcon color="#1F194D" />
-              <MoonIcon color="#1F194D" />
-              <button className="light-blue-btn-filled btn-sm-ds">
-                {" "}
-                <WalletIcon color="#195BFF" /> Wallet
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header
+        changeToDarkTheme={changeToDarkTheme}
+        changeToLightTheme={changeToLightTheme}
+      />
       <div className="prizepools">
         {/* Collection Section */}
         <img

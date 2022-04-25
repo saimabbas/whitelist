@@ -1,6 +1,6 @@
 import React from "react";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
-import HeroBgDark from "./../assets/img/right-moon.png";
+import HeroBgDark from "./../assets/img/middle-moon.png";
 import Logo from "../assets/img/Logo";
 
 const LandingPage = () => {

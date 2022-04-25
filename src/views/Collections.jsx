@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "../assets/img/hero-bg-light.png";
 import HeroBgDark from "../assets/img/right-moon.png";
 import CollectionsCardImg from "../assets/img/collections-card.png";
 import VaultProfilePic from "../assets/img/vault-profile-pic.png";
+import Header from "../components/modules/Header";
+
 import VerifiedIcon from "../assets/icons/VerifiedIcon";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,15 +17,24 @@ import {
   MdKeyboardArrowLeft,
   MdEast,
 } from "react-icons/md";
-import Header from "../components/modules/Header";
 import Footer from "../components/modules/Footer";
 import CollectionsCard from "../components/pages/Collections/CollectionsCard";
 
 const Collections = () => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const changeToDarkTheme = () => {
+    setIsLightTheme(false);
+  };
+  const changeToLightTheme = () => {
+    setIsLightTheme(true);
+  };
   return (
-    <div className="app light-theme">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
-      <Header />
+      <Header
+        changeToDarkTheme={changeToDarkTheme}
+        changeToLightTheme={changeToLightTheme}
+      />
       <div className="colmainpage">
         {/* Collection Section */}
         <img
