@@ -1,11 +1,16 @@
+// .header-content.cslmainheader
+// {
+//   margin: 2rem 0 0 8rem;
+// }
 .comesoonpage {
     width: 100%;
     .coomsoon-main {
       width: 100%;
+      height: unset;
       .coomsoon-bg-light {
         width: 100%;
-        height: 100vh;
         position: absolute;
+        height: 110vh;
         top: 0;
         left: 0;
         object-fit: cover;
@@ -16,18 +21,19 @@
   }
 .landing-content.comesoonsection
 {
-    margin: 17rem 0 0 0;
+    margin: 18rem 0 5rem 0;
   .section-heading 
   {
       h2 
       {
-         letter-spacing: 4px; 
-         font-size: 6.4rem;
+         letter-spacing: 9px; 
+         font-size:9rem;
       }
     p 
     {
-      margin: 2.5rem 0 0rem 0;
+      margin: 5rem 0 0rem 0;
     z-index: 10;
+    font-size: 2.35rem;
     }
     img 
     {
@@ -115,7 +121,7 @@
          align-items: center;
          width: 45rem;
          border-radius: 4rem;
-         padding: 1.25rem;
+         padding: 1rem;
          background-color: #fff;
          input 
          {
@@ -148,7 +154,7 @@
              font-size: 1.4rem;
              font-weight: 500;
              border: unset;
-             padding: 1.75rem;
+             padding: 1.25rem;
          }
      }
 }
@@ -159,4 +165,64 @@
     align-items: center;
     margin: 4rem 0;
     width: 30%;
+}
+
+
+@media screen and (max-width: 850px) {
+  .landing-content.comesoonsection .section-heading h2
+  {
+    letter-spacing: 7px;
+  }
+  .comesoonpage .coomsoon-main .coomsoon-bg-light
+  {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .comesoonpage .coomsoon-main .coomsoon-bg-light
+  {
+    height: 100vh;
+  }
+  .landing-content.comesoonsection .section-heading {
+    h2
+    {
+      letter-spacing: 3px;
+      font-size: 5rem;
+    }
+    p 
+    {
+      margin: 3rem 0 0rem 0;
+    z-index: 10;
+    font-size: 2.35rem;
+    width: 100%;
+    }
+  }
+  
+  header .header-content.cslmainheader
+  {
+    align-items: flex-start;
+  }
+  .coomsoontimer .hc-time-box {
+    margin: 0 1.5rem 0 0;
+}
+.coomsoontimer .hc-time-box-top {
+  height: 9.5rem;
+  width: 7.5rem;
+  border-radius: 0.75rem;
+}
+.hc-time-box.hcnmar
+{
+  margin: 0;
+}
+.coomsoonlast
+{
+  margin: 4rem 0 0 0;
+  width: 100%;
+}
+.coomsoonlast .coomsooninput
+{
+  width: 100%;
+  padding: 0.75rem 1rem;
+}
 }

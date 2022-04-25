@@ -7,7 +7,7 @@ import ComingVideo from "../assets/videos/comingsoon.mp4";
 
 const MintPage = () => {
   return (
-    <div className="app light-theme">
+    <div className="app dark-theme">
       <div className="coomsoondark mintmainpage">
         <div className="comsoondmain">
           <video autoPlay muted playsInline className="backvideo">
@@ -32,7 +32,7 @@ const MintPage = () => {
               <div className="minttimer">
                 <h6 className="conthrax">
                   MINTING BEGINS: <span className="conthrax"> 00:54:15:07</span>
-                </h6 >
+                </h6>
                 <h6 className="conthrax">
                   PRICE: <span className="conthrax"> 0.0 ETH</span>
                 </h6>

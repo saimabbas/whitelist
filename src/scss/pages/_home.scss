@@ -307,6 +307,102 @@
   grid-gap: 1.5rem;
   margin: 1.5rem 0 0 0;
 }
+
+.logininfo {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  margin: 2rem auto;
+  .loginnameimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    img {
+      width: 8rem;
+      height: 8rem;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2.5px solid #ededed;
+    }
+    .logintext {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1.5rem 0 0.5rem 0;
+      h6 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #1f194d;
+        margin: 0 0.5rem 0 0;
+      }
+      img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        border: unset;
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #807e8e;
+    }
+  }
+  .loginbottombox {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0rem 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    .loginicontext {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      margin: 0 0 1.75rem 0;
+      svg {
+        width: 13%;
+      }
+      h5 {
+        width: 87%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #1f194d;
+        padding: 0 0 2rem 0.95rem;
+        margin: 0 0 0 0.85rem;
+        border-bottom: 1px solid #ededed;
+      }
+    }
+    .loginicontext.lcdisconnect {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      margin: 0 0 1.75rem 0;
+      svg {
+        width: 13%;
+      }
+      h5 {
+        width: 87%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #fd3766;
+        padding: 0 0 2rem 0.95rem;
+        margin: 0 0 0 0.85rem;
+        border: unset;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .home .hero .hero-left h1 {
     font-size: 4rem;
@@ -370,6 +466,8 @@
   }
 }
 @media screen and (max-width: 850px) {
+}
+@media screen and (max-width: 650px) {
   .luh-social-grid {
     grid-template-columns: max-content max-content;
   }
