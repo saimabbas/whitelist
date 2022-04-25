@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <div className="app light-theme">
       {/* Header */}
-      <Header />
+      {/* <Header /> */}
       <div className="home">
         {/* Hero Section */}
         <section className="hero">
