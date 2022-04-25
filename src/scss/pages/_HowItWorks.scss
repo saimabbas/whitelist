@@ -43,10 +43,59 @@
     }
   }
 }
+.light-blue-btn-filled.hiwbtnmain {
+  width: max-content;
+  background-color: rgba(25, 90, 255, 0.15);
+  color: #195bff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.25rem 3.5rem;
+  border: 1px solid transparent;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+  svg {
+    width: max-content;
+    height: 2.25rem;
+    object-fit: contain;
+    margin: 0 0.75rem 0 0;
+    transition: 0.25s;
+    path {
+      transition: 0.25s;
+    }
+  }
+  &:hover {
+    background-color: #195bff;
+    color: #fff;
+    svg {
+      fill: #fff !important;
+      color: #fff !important;
+      path {
+        stroke: #fff !important;
+        fill: #fff !important;
+        color: #fff !important;
+      }
+    }
+  }
+}
+.light-blue-btn-filled.hiwbtnmain.btn-sm-ds{
+  padding: 1rem 3rem;
+}
 
 @media screen and (max-width: 650px) {
   .letushelp-content.hiwsection .letushelp-grid .accordion-item
   {
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+  .letushelp-content.hiwsection .section-heading p
+  {
+    width: 100%;
+    margin: 2.5rem 0 6rem 0;
+  }
+  .light-blue-btn-filled.hiwbtnmain
+  {
+    padding: 1.15rem 1.15rem;
   }
 }

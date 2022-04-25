@@ -306,3 +306,11 @@
 }
 
 
+
+
+@media screen and (max-width: 650px) {
+.luh-social-grid
+{
+  grid-template-columns: max-content max-content;
+}
+}
