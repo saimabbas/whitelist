@@ -36,9 +36,9 @@ import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
 
 const Home = () => {
   return (
-    <div className="app light-theme">
+    <div className="">
       {/* Header */}
-      {/* <Header /> */}
+      <Header />
       <div className="home">
         {/* Hero Section */}
         <section className="hero">
