@@ -592,19 +592,19 @@ button:hover {
   margin: 2.5rem 0 0 0;
 }
 
-.home .hero .hero-left .hero-countdopwn-box {
+.home .hero .hero-countdopwn-box {
   width: 100%;
   margin: 7.5rem 0 0 0;
 }
 
-.home .hero .hero-left .hero-countdopwn-box > h6 {
+.home .hero .hero-countdopwn-box > h6 {
   font-size: 1.65rem;
   color: #1f194d;
   margin: 0 0 1.5rem 0;
   font-weight: 600;
 }
 
-.home .hero .hero-left .hero-countdown {
+.home .hero .hero-countdown {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,11 +617,11 @@ button:hover {
           justify-content: flex-start;
 }
 
-.home .hero .hero-left .hero-countdown > * {
+.home .hero .hero-countdown > * {
   margin: 0 0 2.5rem 0;
 }
 
-.home .hero .hero-left .hc-time-box {
+.home .hero .hc-time-box {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -641,7 +641,7 @@ button:hover {
   margin: 0 2.5rem 0 0;
 }
 
-.home .hero .hero-left .hc-time-box-top {
+.home .hero .hc-time-box-top {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -651,7 +651,7 @@ button:hover {
   grid-gap: 0.5rem;
 }
 
-.home .hero .hero-left .hc-time-box-top span {
+.home .hero .hc-time-box-top span {
   font-size: 3.5rem;
   background-color: #1f194d;
   color: #fff;
@@ -661,7 +661,7 @@ button:hover {
   display: block;
 }
 
-.home .hero .hero-left .hc-time-box h6 {
+.home .hero .hc-time-box h6 {
   font-size: 1.5rem;
   color: #1f194d;
   margin: 0.65rem 0 0 0;
@@ -762,6 +762,7 @@ button:hover {
   max-height: 47.5rem;
   -o-object-fit: contain;
      object-fit: contain;
+  max-height: 65vh;
 }
 
 .home .hero .hero-right .hero-swiper-box .hero-swiper-img-1-box {
@@ -961,12 +962,79 @@ button:hover {
   margin: 1.5rem 0 0 0;
 }
 
-@media screen and (max-width: 650px) {
-  .luh-social-grid {
-    grid-template-columns: -webkit-max-content -webkit-max-content;
-    grid-template-columns: max-content max-content;
+@media screen and (max-width: 1000px) {
+  .home .hero .hero-left h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  .home .hero .hero-right .hero-swiper-box {
+    height: 45rem;
+  }
+  .home .hero .hero-right {
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home .hero .hero-right .hero-swiper-box img {
+    max-height: 35rem;
+  }
+  .home .hero .hc-time-box-top span {
+    font-size: 2.5rem;
+  }
+  .home .hero .hc-time-box h6 {
+    font-size: 1.25rem;
+  }
+  .home .about .about-content {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .home .about .about-content .about-left img {
+    width: 100%;
+  }
+  .subscribe-grid
+.subscribe-grid-card
+.subscribe-options-grid
+.subscribe-options-grid-entry {
+    padding: 0 1.5rem !important;
+  }
+  .subscribe-grid {
+    grid-gap: 1.5rem !important;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .home .hero {
+    min-height: 100vh;
+    height: 100%;
+  }
+  .home .hero .hero-content.hero-content-pc {
+    display: none;
+  }
+  .home .hero .hero-content.hero-content-mob {
+    display: block;
+  }
+  .home .hero .hero-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .home .about .about-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .luh-social-grid {
+    -ms-grid-columns: max-content max-content;
+        grid-template-columns: -webkit-max-content -webkit-max-content;
+        grid-template-columns: max-content max-content;
+  }
+}
+
 .letushelp {
   width: 100%;
 }
@@ -1018,11 +1086,19 @@ button:hover {
   padding: 1.25rem 3.5rem;
   border: 1px solid transparent;
   border-radius: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
+
 .light-blue-btn-filled.hiwbtnmain svg {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -1031,19 +1107,25 @@ button:hover {
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 0.75rem 0 0;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
+
 .light-blue-btn-filled.hiwbtnmain svg path {
+  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
+
 .light-blue-btn-filled.hiwbtnmain:hover {
   background-color: #195bff;
   color: #fff;
 }
+
 .light-blue-btn-filled.hiwbtnmain:hover svg {
   fill: #fff !important;
   color: #fff !important;
 }
+
 .light-blue-btn-filled.hiwbtnmain:hover svg path {
   stroke: #fff !important;
   fill: #fff !important;
@@ -1058,12 +1140,10 @@ button:hover {
   .letushelp-content.hiwsection .letushelp-grid .accordion-item {
     padding: 1.5rem;
   }
-
   .letushelp-content.hiwsection .section-heading p {
     width: 100%;
     margin: 2.5rem 0 6rem 0;
   }
-
   .light-blue-btn-filled.hiwbtnmain {
     padding: 1.15rem 1.15rem;
   }
@@ -1151,7 +1231,7 @@ button:hover {
           align-items: center;
   width: 10%;
   height: 0.65rem;
-  background-color: #C9DBE5;
+  background-color: #c9dbe5;
   border-radius: 0.35rem;
 }
 
@@ -1159,7 +1239,7 @@ button:hover {
   width: 64%;
   height: 0.65rem;
   border-radius: 0.35rem;
-  background-color: #195BFF;
+  background-color: #195bff;
 }
 
 .landing-content h5 {
@@ -3900,6 +3980,9 @@ header .header-content .header-right .header-right-icon {
   header .header-content .header-left ul li a {
     font-size: 1.65rem;
   }
+  header .header-content {
+    height: 8.5rem;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -3916,7 +3999,7 @@ header .header-content .header-right .header-right-icon {
     display: none;
   }
   header .header-content .header-right > * {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -4326,8 +4409,8 @@ footer .more-btn svg {
 
 @media screen and (max-width: 850px) {
   .subscribe-grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-gap: 3.5rem;
   }
 }
@@ -4437,6 +4520,7 @@ footer .more-btn svg {
     width: 100%;
   }
 }
+
 .hero-swiper-box .swiper-slide-content {
   display: -webkit-box;
   display: -ms-flexbox;
