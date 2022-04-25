@@ -77,13 +77,13 @@ const HowItWorks = () => {
                         and Instagram!
                       </p>
                       <div className="luh-social-grid">
-                        <button className="light-blue-btn-filled">
+                        <button className="light-blue-btn-filled hiwbtnmain">
                           <FaInstagram /> thenftwhitelist
                         </button>
-                        <button className="light-blue-btn-filled">
+                        <button className="light-blue-btn-filled hiwbtnmain">
                           <FaTwitter /> theNFTwhitelist
                         </button>
-                        <button className="light-blue-btn-filled">
+                        <button className="light-blue-btn-filled hiwbtnmain">
                           <FaDiscord /> theWhitelist
                         </button>
                       </div>

@@ -961,6 +961,12 @@ button:hover {
   margin: 1.5rem 0 0 0;
 }
 
+@media screen and (max-width: 650px) {
+  .luh-social-grid {
+    grid-template-columns: -webkit-max-content -webkit-max-content;
+    grid-template-columns: max-content max-content;
+  }
+}
 .letushelp {
   width: 100%;
 }
@@ -1001,9 +1007,65 @@ button:hover {
   font-weight: 700;
 }
 
+.light-blue-btn-filled.hiwbtnmain {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: rgba(25, 90, 255, 0.15);
+  color: #195bff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.25rem 3.5rem;
+  border: 1px solid transparent;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+}
+.light-blue-btn-filled.hiwbtnmain svg {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 2.25rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 0.75rem 0 0;
+  transition: 0.25s;
+}
+.light-blue-btn-filled.hiwbtnmain svg path {
+  transition: 0.25s;
+}
+.light-blue-btn-filled.hiwbtnmain:hover {
+  background-color: #195bff;
+  color: #fff;
+}
+.light-blue-btn-filled.hiwbtnmain:hover svg {
+  fill: #fff !important;
+  color: #fff !important;
+}
+.light-blue-btn-filled.hiwbtnmain:hover svg path {
+  stroke: #fff !important;
+  fill: #fff !important;
+  color: #fff !important;
+}
+
+.light-blue-btn-filled.hiwbtnmain.btn-sm-ds {
+  padding: 1rem 3rem;
+}
+
 @media screen and (max-width: 650px) {
   .letushelp-content.hiwsection .letushelp-grid .accordion-item {
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+
+  .letushelp-content.hiwsection .section-heading p {
+    width: 100%;
+    margin: 2.5rem 0 6rem 0;
+  }
+
+  .light-blue-btn-filled.hiwbtnmain {
+    padding: 1.15rem 1.15rem;
   }
 }
 
@@ -4367,6 +4429,14 @@ footer .more-btn svg {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 650px) {
+  .letushelp-grid .faq-q {
+    width: 100%;
+  }
+  .letushelp-grid .faq-q h5 {
+    width: 100%;
+  }
+}
 .hero-swiper-box .swiper-slide-content {
   display: -webkit-box;
   display: -ms-flexbox;
