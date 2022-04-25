@@ -964,10 +964,12 @@ button:hover {
 
 @media screen and (max-width: 650px) {
   .luh-social-grid {
-    grid-template-columns: -webkit-max-content -webkit-max-content;
-    grid-template-columns: max-content max-content;
+    -ms-grid-columns: max-content max-content;
+        grid-template-columns: -webkit-max-content -webkit-max-content;
+        grid-template-columns: max-content max-content;
   }
 }
+
 .letushelp {
   width: 100%;
 }
@@ -1019,11 +1021,19 @@ button:hover {
   padding: 1.25rem 3.5rem;
   border: 1px solid transparent;
   border-radius: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
+
 .light-blue-btn-filled.hiwbtnmain svg {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -1032,19 +1042,25 @@ button:hover {
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 0.75rem 0 0;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
+
 .light-blue-btn-filled.hiwbtnmain svg path {
+  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
+
 .light-blue-btn-filled.hiwbtnmain:hover {
   background-color: #195bff;
   color: #fff;
 }
+
 .light-blue-btn-filled.hiwbtnmain:hover svg {
   fill: #fff !important;
   color: #fff !important;
 }
+
 .light-blue-btn-filled.hiwbtnmain:hover svg path {
   stroke: #fff !important;
   fill: #fff !important;
@@ -1059,12 +1075,10 @@ button:hover {
   .letushelp-content.hiwsection .letushelp-grid .accordion-item {
     padding: 1.5rem;
   }
-
   .letushelp-content.hiwsection .section-heading p {
     width: 100%;
     margin: 2.5rem 0 6rem 0;
   }
-
   .light-blue-btn-filled.hiwbtnmain {
     padding: 1.15rem 1.15rem;
   }
@@ -1373,8 +1387,7 @@ button:hover {
   width: 100%;
 }
 
-.roadmapmainpage .roadmapmain .roadmap-bg-light,
-.roadmapmainpage .roadmapmain .roadmap-bg-dark {
+.roadmapmainpage .roadmapmain .roadmap-bg-light {
   width: 100%;
   height: 105vh;
   position: absolute;
@@ -1385,6 +1398,20 @@ button:hover {
   -o-object-position: bottom;
      object-position: bottom;
   z-index: 1;
+}
+
+.roadmapmainpage .roadmapmain .roadmap-bg-dark {
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  z-index: 1;
+  margin: 0;
 }
 
 .roadmap-content {
@@ -1694,8 +1721,7 @@ button:hover {
   width: 100%;
 }
 
-.colmainpage .col-bg-light,
-.colmainpage .col-bg-dark {
+.colmainpage .col-bg-light {
   width: 100%;
   height: 105vh;
   position: absolute;
@@ -1705,6 +1731,17 @@ button:hover {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
+  z-index: 1;
+}
+
+.colmainpage .col-bg-dark {
+  width: 100%;
+  height: 105vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 1;
 }
 
@@ -4453,6 +4490,7 @@ footer .more-btn svg {
     width: 100%;
   }
 }
+
 .hero-swiper-box .swiper-slide-content {
   display: -webkit-box;
   display: -ms-flexbox;

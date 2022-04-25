@@ -5,7 +5,7 @@ import Logo from "../assets/img/Logo";
 
 const LandingPage = () => {
   return (
-    <div className="app Dark-theme">
+    <div className="app dark-theme">
       <div className="landingpage">
         {/* Hero Section */}
         <section className="landing-main">

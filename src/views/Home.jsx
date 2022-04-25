@@ -42,7 +42,7 @@ import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="app dark-theme">
       {/* Header */}
       <Header />
       <div className="home">

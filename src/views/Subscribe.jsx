@@ -1,6 +1,8 @@
 import React from "react";
 import BlobYellow from "../assets/img/blob-yellow.svg";
+import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgDark from "./../assets/img/right-moon.png";
 import Tick from "../assets/icons/Tick";
 import Logo from "../assets/img/Logo";
 import Instagram from "../assets/icons/Instagram";
@@ -27,13 +29,28 @@ const Subscribe = () => {
             src={HeroBgLight}
             alt="HeroBgLight"
           />
+          <img
+            className="subscribe-bg-dark dark-img"
+            src={HeroBgDark}
+            alt="HeroBgDark"
+          />
           <div className="app-page">
             <div className="box">
               <div className="subscribe-content subsmainpage">
                 <div className="section-heading">
                   <div className="sh-heading">
                     <h2>Subscribe</h2>
-                    <img src={BlobYellow} alt="BlobYellow" />
+                    <img
+                      className="light-img"
+                      src={BlobYellow}
+                      alt="BlobYellow"
+                    />
+
+                    <img
+                      className="dark-img"
+                      src={BlobPurpleDark}
+                      alt="BlobPurpleDark"
+                    />
                   </div>
                   <p>Join the Whitelist by choose your perfect option below</p>
                 </div>

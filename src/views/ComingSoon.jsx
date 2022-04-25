@@ -1,5 +1,6 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
+import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
 import HeroBgDark from "./../assets/img/right-moon.png";
 import Logo from "../assets/img/Logo";
@@ -9,7 +10,7 @@ import Discord from "../assets/icons/Discord";
 
 const ComingSoon = () => {
   return (
-    <div className="app Dark-theme">
+    <div className="app light-theme">
       {/* Header */}
       <header>
         <div className="box">
@@ -38,7 +39,16 @@ const ComingSoon = () => {
               <div className="section-heading">
                 <div className="sh-heading">
                   <h2>Coming Soon</h2>
-                  <img src={BlobPurple} alt="BlobPurple" />
+                  <img
+                    className="light-img"
+                    src={BlobPurple}
+                    alt="BlobPurple"
+                  />
+                  <img
+                    className="dark-img"
+                    src={BlobPurpleDark}
+                    alt="BlobPurpleDark"
+                  />
                 </div>
                 <p>We're working hard to bring you the best!</p>
               </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
+import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "../assets/img/hero-bg-light.png";
 import HeroBgDark from "../assets/img/right-moon.png";
 import CollectionsCardImg from "../assets/img/collections-card.png";
@@ -20,7 +21,7 @@ import CollectionsCard from "../components/pages/Collections/CollectionsCard";
 
 const Collections = () => {
   return (
-    <div className="app Dark-theme">
+    <div className="app light-theme">
       {/* Header */}
       <Header />
       <div className="colmainpage">
@@ -40,7 +41,12 @@ const Collections = () => {
             <div className="section-heading">
               <div className="sh-heading">
                 <h2>Collections</h2>
-                <img src={BlobPurple} alt="BlobPurple" />
+                <img className="light-img" src={BlobPurple} alt="BlobPurple" />
+                <img
+                  className="dark-img"
+                  src={BlobPurpleDark}
+                  alt="BlobPurpleDark"
+                />
               </div>
               <div className="mainroadmap"></div>
             </div>
