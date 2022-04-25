@@ -379,9 +379,9 @@ const Home = () => {
                 <Swiper
                   modules={[FreeMode, Mousewheel]}
                   className="mySwiper"
-                  slidesPerView={"1.5"}
+                  slidesPerView={"1.25"}
+                  spaceBetween={"20"}
                   freeMode={true}
-                  mousewheel={true}
                 >
                   <SwiperSlide>
                     <HomeCollectionsCard

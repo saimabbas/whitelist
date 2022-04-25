@@ -298,6 +298,10 @@
     }
   }
 }
+.collections-swiper-mob
+{
+  display: none;
+}
 
 .luh-social-grid {
   width: max-content;
@@ -473,5 +477,33 @@
   }
   .home .hero .hero-countdopwn-box {
     margin: 0;
+  }
+  .section-heading p
+  {
+    width: 100%;
+  }
+  .home .about .about-content .about-right h6
+  {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 0 1rem 0;
+  }
+  .home .about .about-content .about-right p
+  {
+    margin: 0 0 3rem 0;
+  }
+  .home .collections .collections-grid
+  {
+    display: none;
+  }
+  .collections-swiper-mob
+  {
+    display: block;
+    margin: 3rem 0 0 0;
+  }
+  .home .hero .hero-right .hsb-round-btns-box
+  {
+    display: none;
   }
 }

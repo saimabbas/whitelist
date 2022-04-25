@@ -38,3 +38,16 @@
     font-weight: 500;
   }
 }
+
+
+
+@media screen and (max-width: 650px) {
+  .section-heading p
+  {
+    width: 100%;
+  }
+  .section-heading .sh-heading h2
+  {
+    font-size: 3.75rem;
+  }
+}
