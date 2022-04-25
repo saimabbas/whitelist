@@ -14,27 +14,21 @@
     }
   }
 }
-.letushelp-content.hiwsection
-{
+.letushelp-content.hiwsection {
   margin: 25rem 0 15rem 0;
-  .section-heading 
-  {
-    p 
-    {
+  .section-heading {
+    p {
       margin: 2.5rem 0 8rem 0;
-    z-index: 10;
+      z-index: 10;
     }
   }
-  .letushelp-grid
-  {
-    .accordion-item
-    {
+  .letushelp-grid {
+    .accordion-item {
       margin: 0 0 3rem 0 !important;
-    z-index: 10;
+      z-index: 10;
     }
   }
-  .faq-a
-  {
+  .faq-a {
     p {
       span {
         color: #000000;
@@ -80,22 +74,19 @@
     }
   }
 }
-.light-blue-btn-filled.hiwbtnmain.btn-sm-ds{
+.light-blue-btn-filled.hiwbtnmain.btn-sm-ds {
   padding: 1rem 3rem;
 }
 
 @media screen and (max-width: 650px) {
-  .letushelp-content.hiwsection .letushelp-grid .accordion-item
-  {
+  .letushelp-content.hiwsection .letushelp-grid .accordion-item {
     padding: 1.5rem;
   }
-  .letushelp-content.hiwsection .section-heading p
-  {
+  .letushelp-content.hiwsection .section-heading p {
     width: 100%;
     margin: 2.5rem 0 6rem 0;
   }
-  .light-blue-btn-filled.hiwbtnmain
-  {
+  .light-blue-btn-filled.hiwbtnmain {
     padding: 1.15rem 1.15rem;
   }
 }

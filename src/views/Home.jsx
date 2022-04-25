@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroImg from "../assets/img/hero-img-1.png";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurple2 from "../assets/img/blob-purple2.png";
@@ -41,10 +41,22 @@ import SubscribeCard from "../components/pages/Home/SubscribeCard";
 import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
 
 const Home = () => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const changeToDarkTheme = () => {
+    console.log("Changes to Dark Theme");
+    setIsLightTheme(false);
+  };
+  const changeToLightTheme = () => {
+    console.log("Changes to Light Theme");
+    setIsLightTheme(true);
+  };
   return (
-    <div className="app dark-theme">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
-      <Header />
+      <Header
+        changeToDarkTheme={changeToDarkTheme}
+        changeToLightTheme={changeToLightTheme}
+      />
       <div className="home">
         {/* Hero Section */}
         <section className="hero">
@@ -54,7 +66,7 @@ const Home = () => {
             alt="HeroBgLight"
           />
           <div className="box">
-            <div className="hero-content">
+            <div className="hero-content hero-content-pc">
               <div className="hero-left">
                 <h1>
                   <span>
@@ -164,6 +176,111 @@ const Home = () => {
                     <span className="round-chevron-box">
                       <MdKeyboardArrowLeft />
                     </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="hero-content hero-content-mob">
+              <div className="hero-left">
+                <h1>
+                  <span>
+                    <b>Welcome</b> To <br />
+                    The <b>WhiteList.</b>
+                  </span>
+                  <img src={BlobPurple} alt="BlobPurple" />
+                </h1>
+                <p>
+                  The Best Artists, Projects <br /> and Utility. No Compromise.
+                </p>
+              </div>
+              <div className="hero-right">
+                <img
+                  className="hero-glare light-img"
+                  src={GlareLight}
+                  alt="hero-glare"
+                />
+                <img
+                  className="hero-glare dark-img"
+                  src={GlareLight}
+                  alt="hero-glare"
+                />
+                <div className="hero-swiper-box">
+                  <Swiper
+                    pagination={true}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                    direction={"vertical"}
+                    spaceBetween={50}
+                  >
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </Swiper>
+                  <div className="hsb-round-btns-box">
+                    <span className="round-chevron-box">
+                      <MdKeyboardArrowRight />
+                    </span>
+                    <span className="round-chevron-box">
+                      <MdKeyboardArrowLeft />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="hero-countdopwn-box">
+                <h6>Join Us In...</h6>
+                <div className="hero-countdown">
+                  <div className="hc-time-box">
+                    <div className="hc-time-box-top">
+                      <span>0</span>
+                      <span>5</span>
+                    </div>
+                    <h6>DAYS</h6>
+                  </div>
+                  <div className="hc-time-box">
+                    <div className="hc-time-box-top">
+                      <span>2</span>
+                      <span>6</span>
+                    </div>
+                    <h6>HOURS</h6>
+                  </div>
+                  <div className="hc-time-box">
+                    <div className="hc-time-box-top">
+                      <span>1</span>
+                      <span>9 </span>
+                    </div>
+                    <h6>MINUTES</h6>
                   </div>
                 </div>
               </div>

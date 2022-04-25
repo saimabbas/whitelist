@@ -63,6 +63,9 @@ header {
   header .header-content .header-left ul li a {
     font-size: 1.65rem;
   }
+  header .header-content {
+    height: 8.5rem;
+  }
 }
 @media screen and (max-width: 1150px) {
   header .header-content .header-left ul {
@@ -77,6 +80,6 @@ header {
     display: none;
   }
   header .header-content .header-right > * {
-    display: none;
+    display: none !important;
   }
 }
