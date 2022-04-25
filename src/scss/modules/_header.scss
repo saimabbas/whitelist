@@ -44,11 +44,39 @@ header {
       & > * {
         margin: 0 0 0 2.5rem;
       }
-      & > svg {
+      .header-right-icon {
         width: max-content;
         height: 2.5rem;
         cursor: pointer;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  header .header-content .header-left ul {
+    margin: 0 0 0 3.5rem;
+  }
+  header .header-content .header-left ul li {
+    margin: 0 3.5rem 0 0;
+  }
+  header .header-content .header-left ul li a {
+    font-size: 1.65rem;
+  }
+}
+@media screen and (max-width: 1150px) {
+  header .header-content .header-left ul {
+    margin: 0 0 0 2.5rem;
+  }
+  header .header-content .header-left ul li {
+    margin: 0 2.5rem 0 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  header .header-content .header-left ul {
+    display: none;
+  }
+  header .header-content .header-right > * {
+    display: none;
   }
 }

@@ -962,6 +962,12 @@ button:hover {
   margin: 1.5rem 0 0 0;
 }
 
+@media screen and (max-width: 650px) {
+  .luh-social-grid {
+    grid-template-columns: -webkit-max-content -webkit-max-content;
+    grid-template-columns: max-content max-content;
+  }
+}
 .letushelp {
   width: 100%;
 }
@@ -1000,6 +1006,68 @@ button:hover {
 .letushelp-content.hiwsection .faq-a p span {
   color: #000000;
   font-weight: 700;
+}
+
+.light-blue-btn-filled.hiwbtnmain {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: rgba(25, 90, 255, 0.15);
+  color: #195bff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.25rem 3.5rem;
+  border: 1px solid transparent;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+}
+.light-blue-btn-filled.hiwbtnmain svg {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 2.25rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 0.75rem 0 0;
+  transition: 0.25s;
+}
+.light-blue-btn-filled.hiwbtnmain svg path {
+  transition: 0.25s;
+}
+.light-blue-btn-filled.hiwbtnmain:hover {
+  background-color: #195bff;
+  color: #fff;
+}
+.light-blue-btn-filled.hiwbtnmain:hover svg {
+  fill: #fff !important;
+  color: #fff !important;
+}
+.light-blue-btn-filled.hiwbtnmain:hover svg path {
+  stroke: #fff !important;
+  fill: #fff !important;
+  color: #fff !important;
+}
+
+.light-blue-btn-filled.hiwbtnmain.btn-sm-ds {
+  padding: 1rem 3rem;
+}
+
+@media screen and (max-width: 650px) {
+  .letushelp-content.hiwsection .letushelp-grid .accordion-item {
+    padding: 1.5rem;
+  }
+
+  .letushelp-content.hiwsection .section-heading p {
+    width: 100%;
+    margin: 2.5rem 0 6rem 0;
+  }
+
+  .light-blue-btn-filled.hiwbtnmain {
+    padding: 1.15rem 1.15rem;
+  }
 }
 
 .landingpage {
@@ -1174,6 +1242,23 @@ button:hover {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1440px) {
+  .subscribe-content.subsmainpage {
+    margin: 20rem 0 15rem 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .subscribe-content.subsmainpage {
+    margin: 15rem 0;
+  }
+  .subscribe-content.subsmainpage .section-heading p {
+    margin: 2.5rem 0 6rem 0;
+    z-index: 10;
+    width: 100%;
+  }
+}
+
 .teammainbox {
   width: 100%;
 }
@@ -1258,6 +1343,26 @@ button:hover {
   color: #1f194d;
   margin: 1rem 0 0 0;
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 850px) {
+  .team-grid .team-grid-content {
+    width: 75%;
+  }
+  .team-grid .team-grid-content .team-grid-main h6 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .team-grid .team-grid-content {
+    width: 85%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .team-grid .team-grid-content .team-grid-main h6 {
+    text-align: center;
+  }
 }
 
 .roadmapmainpage {
@@ -3793,12 +3898,42 @@ header .header-content .header-right > * {
   margin: 0 0 0 2.5rem;
 }
 
-header .header-content .header-right > svg {
+header .header-content .header-right .header-right-icon {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 2.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  header .header-content .header-left ul {
+    margin: 0 0 0 3.5rem;
+  }
+  header .header-content .header-left ul li {
+    margin: 0 3.5rem 0 0;
+  }
+  header .header-content .header-left ul li a {
+    font-size: 1.65rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  header .header-content .header-left ul {
+    margin: 0 0 0 2.5rem;
+  }
+  header .header-content .header-left ul li {
+    margin: 0 2.5rem 0 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header .header-content .header-left ul {
+    display: none;
+  }
+  header .header-content .header-right > * {
+    display: none;
+  }
 }
 
 footer {
@@ -4205,6 +4340,25 @@ footer .more-btn svg {
   stroke: #d9d9e4 !important;
 }
 
+@media screen and (max-width: 850px) {
+  .subscribe-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .subscribe-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 3.5rem;
+  }
+  .box {
+    padding: 0 2rem;
+  }
+}
+
 .letushelp-grid .accordion-body {
   padding: 1.5rem 0 0 0;
 }
@@ -4291,6 +4445,14 @@ footer .more-btn svg {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 650px) {
+  .letushelp-grid .faq-q {
+    width: 100%;
+  }
+  .letushelp-grid .faq-q h5 {
+    width: 100%;
+  }
+}
 .hero-swiper-box .swiper-slide-content {
   display: -webkit-box;
   display: -ms-flexbox;

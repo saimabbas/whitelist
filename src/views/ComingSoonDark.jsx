@@ -72,6 +72,22 @@ const ComingSoonDark = () => {
       )
 
       .fromTo(
+        comingsoonHeadingChars,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.2,
+          stagger: {
+            repeat: 2,
+            each: 0.1,
+            from: "random",
+          },
+        },
+        "<0.25"
+      )
+      .fromTo(
         ".comdarktimer",
         {
           opacity: 0,
@@ -92,7 +108,7 @@ const ComingSoonDark = () => {
           opacity: 1,
           duration: 0.2,
           stagger: {
-            repeat: 2,
+            repeat: 1,
             each: 0.1,
             from: "random",
           },
@@ -132,7 +148,7 @@ const ComingSoonDark = () => {
           opacity: 1,
           duration: 0.2,
           stagger: {
-            repeat: 1,
+            repeat: 0,
             each: 0.05,
             from: "random",
           },

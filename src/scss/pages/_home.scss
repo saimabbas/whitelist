@@ -305,3 +305,13 @@
   grid-gap: 1.5rem;
   margin: 1.5rem 0 0 0;
 }
+
+
+
+
+@media screen and (max-width: 650px) {
+.luh-social-grid
+{
+  grid-template-columns: max-content max-content;
+}
+}

@@ -83,26 +83,16 @@ const HowItWorks = () => {
                         and Instagram!
                       </p>
                       <div className="luh-social-grid">
-                        <button className="light-blue-btn-filled">
+                        <button className="light-blue-btn-filled hiwbtnmain">
                           <FaInstagram /> thenftwhitelist
                         </button>
-                        <button className="light-blue-btn-filled">
+                        <button className="light-blue-btn-filled hiwbtnmain">
                           <FaTwitter /> theNFTwhitelist
                         </button>
-                        <button className="light-blue-btn-filled">
+                        <button className="light-blue-btn-filled hiwbtnmain">
                           <FaDiscord /> theWhitelist
                         </button>
                       </div>
-                    </LetUsHelpCard>
-                    <LetUsHelpCard
-                      eventKey={5}
-                      ques="How do I get in contact with The Whitelist?"
-                    >
-                      <p>
-                        Feel free to reach out to us through email at (
-                        <a href=""> info@thwwhitelist.com</a> ). Or the red
-                        button in the bottom right corner.
-                      </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
                       eventKey={5}
