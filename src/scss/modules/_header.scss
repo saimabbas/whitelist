@@ -52,6 +52,29 @@ header {
     }
   }
 }
+.mobmenuicon
+{
+  display: none;
+}
+.mobmenubox
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  min-width: 4rem;
+  min-height: 4rem;
+  max-height: 4rem;
+  max-width: 4rem;
+  box-shadow: 1px 5px 5px rgba(0,0,0,0.15);
+  svg 
+  {
+    width: 2.25rem;
+    height: max-content;
+    color: #1F194D;
+  }
+}
 
 @media screen and (max-width: 1250px) {
   header .header-content .header-left ul {
@@ -82,4 +105,20 @@ header {
   header .header-content .header-right > * {
     display: none !important;
   }
+}
+@media screen and (max-width: 850px) {
+  header .header-content {
+    height: 7.5rem;
+  }
+  .mobmenuicon
+{
+  display: block;
+}
+header .header-content .header-left
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 }

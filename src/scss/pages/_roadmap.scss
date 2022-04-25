@@ -148,25 +148,41 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    p {
+    h6 {
       font-size: 1.5rem;
       font-weight: 500;
       color: #1f194d;
       white-space: nowrap;
     }
+    p {
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: #807e8e;
+      margin: 0.5rem 0 0rem 0;
+    }
     .roadmap-step-text-bottom {
       position: absolute;
       left: 50%;
       bottom: 0;
-      transform: translate(-50%, 7.5rem);
+      transform: translate(-50%, 10rem);
       z-index: 100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 30rem;
     }
     .roadmap-step-text-top {
       position: absolute;
       left: 50%;
       top: 0;
-      transform: translate(-50%, -7.5rem);
+      transform: translate(-50%, -10rem);
       z-index: 100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 30rem;
     }
     svg {
       font-size: 2rem;
@@ -214,7 +230,7 @@
   }
   .roadmap-step-dot {
     background-color: #ffa901 !important;
-    p {
+    h6 {
       font-weight: 700;
     }
     .roadmap-step-dot-inner-1 {

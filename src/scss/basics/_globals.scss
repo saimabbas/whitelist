@@ -11,19 +11,18 @@
 }
 html,
 body {
-  // background-color: #e5e5e5;
+  width: 100%;
+  max-width: 100%;
 }
 .app.dark-theme {
   --bg-color: #000;
   --text-color: #fff;
-  --abc: #e6f5ff;
-  --bg-accord: #33f333;
+  --abc: #fff;
 }
 .app.light-theme {
   --bg-color: #f8fcff;
   --text-color: #000;
-  // --abc: red; ye hi color diye hen jo samny hen bus.....
-  --main-color: #1f194d;
+  --abc: #1f194d;
 }
 .app {
   width: 100%;

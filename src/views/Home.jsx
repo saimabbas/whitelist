@@ -18,10 +18,8 @@ import CollectionsBg from "./../assets/img/collections-bg.svg";
 import CollectionsBg2 from "./../assets/img/collections-bg2.png";
 import CollectionsCard from "./../assets/img/collections-card.png";
 import { Accordion } from "react-bootstrap";
-import { Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
+import BlueTick from "./../assets/img/bluetick.png";
+import PersonImg from "./../assets/img/personimg.png";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
 import Header from "../components/modules/Header";
@@ -29,6 +27,21 @@ import Footer from "../components/modules/Footer";
 import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
 import SubscribeCard from "../components/pages/Home/SubscribeCard";
 import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
+import WalletIcon from "../assets/icons/WalletIcon";
+import Collection from "../assets/icons/Collection";
+import Logout from "../assets/icons/Logout";
+import Profile from "../assets/icons/Profile";
+import { MdMenu } from "react-icons/md";
+import MessagesIcon from "../assets/icons/MessagesIcon";
+import MoonIcon from "../assets/icons/MoonIcon";
+
+import { Mousewheel, FreeMode, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/free-mode";
+import { MdDone } from "react-icons/md";
+import "swiper/css";
+import "swiper/css/pagination";
+import Logo from "../assets/img/Logo";
 
 const Home = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
@@ -365,6 +378,56 @@ const Home = () => {
                   collectionComingTime="Coming This April"
                 />
               </div>
+              <div className="collections-swiper-mob">
+                <Swiper
+                  modules={[FreeMode, Mousewheel]}
+                  className="mySwiper"
+                  slidesPerView={"1.25"}
+                  spaceBetween={"20"}
+                  freeMode={true}
+                >
+                  <SwiperSlide>
+                    <HomeCollectionsCard
+                      collectionLogoImg={LogoLight}
+                      collectionImg={CollectionsCard}
+                      collectionName="Passengers"
+                      collectionComingTime="Coming This April"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <HomeCollectionsCard
+                      collectionLogoImg={LogoLight}
+                      collectionImg={CollectionsCard}
+                      collectionName="Passengers"
+                      collectionComingTime="Coming This April"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <HomeCollectionsCard
+                      collectionLogoImg={LogoLight}
+                      collectionImg={CollectionsCard}
+                      collectionName="Passengers"
+                      collectionComingTime="Coming This April"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <HomeCollectionsCard
+                      collectionLogoImg={LogoLight}
+                      collectionImg={CollectionsCard}
+                      collectionName="Passengers"
+                      collectionComingTime="Coming This April"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <HomeCollectionsCard
+                      collectionLogoImg={LogoLight}
+                      collectionImg={CollectionsCard}
+                      collectionName="Passengers"
+                      collectionComingTime="Coming This April"
+                    />
+                  </SwiperSlide>
+                </Swiper>
+              </div>
             </div>
           </div>
         </section>
@@ -478,6 +541,62 @@ const Home = () => {
         </section>
         {/* Footer */}
         <Footer moreBtn={true} />
+        <div className="logininfo">
+          <div className="loginnameimg">
+            <img src={PersonImg} alt="" />
+            <div className="logintext">
+              <h6>Mohammad Reza</h6>
+              <img src={BlueTick} alt="" />
+            </div>
+            <p>0xc4c16a645...b21a</p>
+          </div>
+          <div className="loginbottombox">
+            <div className="loginicontext">
+              <Profile />
+              <h5>Edit Profile</h5>
+            </div>
+            <div className="loginicontext">
+              <Collection />
+              <h5>My Collections</h5>
+            </div>
+            <div className="loginicontext lcdisconnect">
+              <Logout />
+              <h5>Disconnect</h5>
+            </div>
+          </div>
+        </div>
+        <div className="headermobilebox">
+          <div className="headermobilecontent">
+            <div className="headermobicon">
+              <div className="headermic-left">
+                <div className="mobmenubox">
+                  <MoonIcon color="#1F194D" />
+                </div>
+                <div className="mobmenubox">
+                  <MessagesIcon color="#1F194D" />
+                </div>
+              </div>
+              <div className="headermic-right">
+                <div className="mobmenubox">
+                  <MdMenu />
+                </div>
+              </div>
+            </div>
+            <div className="headermobtext">
+              <Logo color="#fff" />
+              <h6>The White List</h6>
+              <p>Subscribe</p>
+              <p>Prize Pool</p>
+              <p>Roadmap</p>
+              <p>Upcoming Drops</p>
+              <p>Meet the Team</p>
+              <button className="light-blue-btn-filled">
+                {" "}
+                <WalletIcon color="#fff" /> Wallet
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

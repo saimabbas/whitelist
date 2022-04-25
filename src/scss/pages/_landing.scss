@@ -72,6 +72,331 @@
   }
 }
 
+
+
+.wlsuccesfulmodal
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(31, 25, 77, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    .maincontentmodal
+    {
+        width: 24%;
+        background-color: #fff;
+        border-radius: 2rem;
+        padding: 6rem 5.5rem 3rem 5.5rem;
+        box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img 
+        {
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+        }
+        h6 
+        {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2BD182;
+            margin: 2rem 0 0 0;
+        }
+        p 
+        {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #69697C;
+            margin: 2rem 0;
+        }
+        button 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border: 1px solid #C0D0EE;
+            border-radius: 1000px;
+            padding: 1.5rem 0;
+            font-size: 1.6rem;
+            color: #1F194D;
+            background-color: transparent;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.wlfailedmodal
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(31, 25, 77, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .maincontentmodal
+    {
+        width: 24%;
+        background-color: #fff;
+        border-radius: 2rem;
+        padding: 6rem 5.5rem 3rem 5.5rem;
+        box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img 
+        {
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+        }
+        h6 
+        {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #FF409C;
+            margin: 2rem 0 0 0;
+        }
+        p 
+        {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #69697C;
+            margin: 2rem 0;
+            width: 90%;
+            text-align: center;
+        }
+        button 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border: 1px solid #C0D0EE;
+            border-radius: 1000px;
+            padding: 1.5rem 0;
+            font-size: 1.6rem;
+            color: #1F194D;
+            background-color: transparent;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+.wlupdatemodal
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(31, 25, 77, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .wlupdatecontent
+    {
+        width: 60%;
+        background-color: #fff;
+        border-radius: 2rem;
+        padding: 4rem 6rem;
+        box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column; 
+        svg 
+        {
+            font-size: 2rem;
+            color: #1F194D;
+            cursor: pointer;
+        }
+        .wlupdatemainbox
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            .wlupdateleft
+            {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 40%;
+                margin: 2rem 0 0 0;
+                padding: 0 3rem 0 0;
+                border-right: 1px solid #EEEEEE;
+                p 
+                {
+                    font-size: 1.8rem;
+                    color: #1F194D;
+                    font-weight: 400;
+                    margin: 0 0 1rem 0;
+                }
+                .wlloadingdiv
+                {
+                    width: 100%;
+                    height: 20rem;
+                }
+                button 
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(25, 90, 255, 0.10);
+                    border-radius: 1000px;
+                    font-size: 1.6rem;
+                    color: #195BFF;
+                    font-weight: 800;
+                    width: 100%;
+                    padding: 1.75rem 0;
+                    border: unset;
+                    margin: 3rem 0 4rem 0;
+                }
+                h6 
+                {
+                    font-size: 1.4rem;
+                    color: #807E8E;
+                    font-weight: 400; 
+                    text-align: center;
+                    width: 100%;
+                    span {
+                        font-weight: 700;
+                        color: #1F194D;
+                    }
+                }
+            }
+            .wlupdateright
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: 2rem 0 0 0;
+                width: 55%;
+                p 
+                {
+                    font-size: 1.8rem;
+                    color: #1F194D;
+                    font-weight: 400;
+                    margin: 0 0 1rem 0; 
+                }
+                .wlupinput
+                {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 100%;
+                    margin: 3.5rem 0 0 0;
+                    label 
+                    {
+                        font-size: 1.4rem;
+                        color: #1F194D;
+                        font-weight: 400;
+                        margin: 0 0 0.75rem 0;
+                    }
+                    input 
+                    {
+                        border: 1px solid #E1E4EB;
+                        border-radius: 0.75rem;
+                        font-size: 1.6rem;
+                        color: #1F194D;
+                        font-weight: 600;
+                        width: 100%;
+                        padding: 1.5rem 0.75rem;
+                    }
+                    input:focus 
+                    {
+                        outline: none;
+                    }
+                    input::placeholder 
+                    {
+                        font-size: 1.6rem;
+                        color: #807E8E;
+                        font-weight: 400;  
+                    } 
+                }
+                button 
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #195BFF;
+                    border-radius: 1000px;
+                    font-size: 1.6rem;
+                    color: #ffffff;
+                    font-weight: 700;
+                    width: 100%;
+                    padding: 1.75rem 0;
+                    border: unset;
+                    margin: 3rem 0 4rem 0;  
+                }
+            }
+        }
+    }
+    .wlwalletdisconnect
+    { 
+        width: 37%;
+        background-color: #fff;
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2rem 0;
+        .wlwallettext
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 50%;
+            p 
+            {
+               font-size: 1.4rem;
+               color: #807E8E;
+               font-weight: 500;
+            }
+            h6 
+            {
+                font-size: 1.4rem;
+                color: #1F194D;
+                font-weight: 500;
+            }
+        }
+        button 
+        {
+            width: 44%;
+            border: unset;
+            border-radius: 1000px;
+            background-color: rgba(108, 107, 118, 0.10);
+            padding: 1.25rem 2rem;
+            font-size: 1.4rem;
+            color: #1F194D;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img 
+            {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 1440px) {
   .landing-content .landing-head {
     margin: 0 0 15rem 0;

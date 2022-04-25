@@ -4,6 +4,7 @@ import MoonIcon from "../../assets/icons/MoonIcon";
 import SunIcon from "../../assets/icons/SunIcon";
 import WalletIcon from "../../assets/icons/WalletIcon";
 import Logo from "../../assets/img/Logo";
+import { MdMenu } from 'react-icons/md'
 
 const Header = (props) => {
   return (
@@ -12,6 +13,11 @@ const Header = (props) => {
         <div className="header-content">
           <div className="header-left">
             <Logo color="#1F194D" />
+            <div className="mobmenuicon">
+              <div className="mobmenubox">
+                <MdMenu />
+              </div>
+            </div>
             {/* <img src={LogoLight} alt="LogoLight" /> */}
             <ul>
               <li>
