@@ -469,8 +469,92 @@
     padding: 0;
   }
 }
-@media screen and (max-width: 850px) {
+
+
+
+.headermobilebox
+{
+  width: 100%;
+    height: 100vh;
+    background-color: rgba(31, 25, 77, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .headermobilecontent
+    {
+      width: 30%;
+      background-color: rgba(104, 94, 172, 0.65);
+      padding: 2rem;
+      box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column; 
+      .headermobicon
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .headermic-left
+        {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 60%;
+          .mobmenubox
+          {
+            margin: 0 2rem 0 0;
+          }
+        }
+        .headermic-right 
+        {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+      }
+      .headermobtext
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 3rem 0 0 0;
+        width: 100%;
+        text-align: center;
+        h6 
+        {
+          font-size: 2.3rem;
+          color: #fff;
+          font-weight: 500;
+        }
+        p 
+        {
+          margin: 4rem 0 0 0;
+          font-size: 1.6rem;
+          color: rgba(255, 255, 255, 0.60);
+          font-weight: 400;
+        }
+        button 
+        {
+          background-color: #195BFF;
+          width: 60%;
+          color: #ffffff;
+          margin: 3rem auto 0 auto;
+        }
+      }
+    }
 }
+
+
+
+
+
+
+
+// RESPONSIVENESS 
 @media screen and (max-width: 650px) {
   .luh-social-grid {
     grid-template-columns: max-content max-content;

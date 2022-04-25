@@ -27,9 +27,14 @@ import Footer from "../components/modules/Footer";
 import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
 import SubscribeCard from "../components/pages/Home/SubscribeCard";
 import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
+import WalletIcon from "../assets/icons/WalletIcon";
 import Collection from "../assets/icons/Collection";
 import Logout from "../assets/icons/Logout";
 import Profile from "../assets/icons/Profile";
+import { MdMenu } from 'react-icons/md'
+import MessagesIcon from "../assets/icons/MessagesIcon";
+import MoonIcon from "../assets/icons/MoonIcon";
+
 
 import { Mousewheel, FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -37,6 +42,7 @@ import "swiper/css/free-mode";
 import { MdDone } from "react-icons/md";
 import "swiper/css";
 import "swiper/css/pagination";
+import Logo from "../assets/img/Logo";
 
 const Home = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
@@ -559,6 +565,38 @@ const Home = () => {
             <div className="loginicontext lcdisconnect">
               <Logout />
               <h5>Disconnect</h5>
+            </div>
+          </div>
+        </div>
+        <div className="headermobilebox">
+          <div className="headermobilecontent">
+            <div className="headermobicon">
+              <div className="headermic-left">
+                <div className="mobmenubox">
+                  <MoonIcon color="#1F194D" />
+                </div>
+                <div className="mobmenubox">
+                  <MessagesIcon color="#1F194D" />
+                </div>
+              </div>
+              <div className="headermic-right">
+                <div className="mobmenubox">
+                  <MdMenu />
+                </div>
+              </div>
+            </div>
+            <div className="headermobtext">
+              <Logo color="#fff" />
+              <h6>The White List</h6>
+              <p>Subscribe</p>
+              <p>Prize Pool</p>
+              <p>Roadmap</p>
+              <p>Upcoming Drops</p>
+              <p>Meet the Team</p>
+              <button className="light-blue-btn-filled">
+                {" "}
+                <WalletIcon color="#fff" /> Wallet
+              </button>
             </div>
           </div>
         </div>
