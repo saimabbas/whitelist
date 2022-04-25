@@ -108,7 +108,7 @@ const ComingSoonDark = () => {
           opacity: 1,
           duration: 0.2,
           stagger: {
-            repeat: 2,
+            repeat: 1,
             each: 0.1,
             from: "random",
           },
@@ -148,7 +148,7 @@ const ComingSoonDark = () => {
           opacity: 1,
           duration: 0.2,
           stagger: {
-            repeat: 1,
+            repeat: 0,
             each: 0.05,
             from: "random",
           },

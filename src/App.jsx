@@ -15,9 +15,11 @@ import HowItWorks from "./views/HowItWorks";
 import LinksPage from "./views/Links";
 import MintConnect from "./views/MintConnect";
 import MintDisconnect from "./views/MintDisconnect";
+import Header from "./components/modules/Header";
 const App = () => {
   return (
     <>
+      <Header />
       <Switch>
         <Routes>
           <Route path="/" element={<LinksPage />} />
