@@ -31,3 +31,24 @@
         cursor: pointer;
     }  
 }
+
+
+
+@media screen and (max-width: 1440px) {
+  .subscribe-content.subsmainpage
+  {
+    margin: 20rem 0 15rem 0;
+  }
+}
+
+
+@media screen and (max-width: 650px){
+.subscribe-content.subsmainpage {
+    margin: 15rem 0;
+}
+.subscribe-content.subsmainpage .section-heading p {
+  margin: 2.5rem 0 6rem 0;
+  z-index: 10;
+  width: 100%;
+}
+}

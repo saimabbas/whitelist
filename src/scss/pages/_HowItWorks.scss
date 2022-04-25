@@ -43,3 +43,10 @@
     }
   }
 }
+
+@media screen and (max-width: 650px) {
+  .letushelp-content.hiwsection .letushelp-grid .accordion-item
+  {
+    padding: 2rem;
+  }
+}
