@@ -68,24 +68,17 @@ const Subscribe = () => {
                 </div>
               </div>
               <div className="team-grid">
-                <h3>Founders</h3>
                 <div className="team-grid-content">
-                  <TeamCard img={Team1} name="Serge Klassen" />
+                  <TeamCard
+                    img={Team1}
+                    name="Serge Klassen"
+                    role="Co Founder"
+                  />
                   <TeamCard img={Team2} name="Evan Klassen" />
                   <TeamCard img={Team3} name="Kristian Hybschman" />
                   <TeamCard img={Team4} name="Connor Gregory" />
                   <TeamCard img={Team1} name="Charles Hiebert" />
                   <TeamCard img={Team5} name="Jennifer Hiebert" />
-                </div>
-              </div>
-              <div className="team-grid">
-                <h3>Advisory</h3>
-                <div className="team-grid-content">
-                  <TeamCard img={Team1} name="TBD" />
-                  <TeamCard img={Team2} name="TBD" />
-                  <TeamCard img={Team3} name="TBD" />
-                  <TeamCard img={Team4} name="TBD" />
-                  <TeamCard img={Team1} name="TBD" />
                 </div>
               </div>
             </div>
