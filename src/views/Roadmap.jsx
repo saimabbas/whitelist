@@ -104,10 +104,11 @@ const Roadmap = () => {
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
                               <div className="roadmap-step-text-top">
-                                <h6>UI and Site Development</h6>
+                                <h6>Advisory and team build out</h6>
                                 <p>
-                                  We are working to bring our users the best
-                                  experience possible.{" "}
+                                  we want to make sure that we have the right
+                                  people with The Whitelist so hang tight while
+                                  we assemble the dream team 😊.{" "}
                                 </p>
                               </div>
                             </div>
@@ -123,11 +124,8 @@ const Roadmap = () => {
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
                               <div className="roadmap-step-text-bottom">
-                                <h6>UI and Site Development</h6>
-                                <p>
-                                  We are working to bring our users the best
-                                  experience possible.{" "}
-                                </p>
+                                <h6>Community structure</h6>
+                                <p>Buildout of all discord and all socials. </p>
                               </div>
                             </div>
                           </div>
@@ -142,10 +140,10 @@ const Roadmap = () => {
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
                               <div className="roadmap-step-text-top">
-                                <h6>UI and Site Development</h6>
+                                <h6>Site Drop</h6>
                                 <p>
-                                  We are working to bring our users the best
-                                  experience possible.{" "}
+                                  Site will go live as soon once we have the
+                                  team and artist in place :){" "}
                                 </p>
                               </div>
                             </div>
@@ -161,10 +159,13 @@ const Roadmap = () => {
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
                               <div className="roadmap-step-text-bottom">
-                                <h6>UI and Site Development</h6>
+                                <h6>Voting system implementation</h6>
                                 <p>
-                                  We are working to bring our users the best
-                                  experience possible.{" "}
+                                  Every season pass holder will get the
+                                  opportunity to vote in the prize pools. Ever
+                                  holder will be able to cast one vote per pool.
+                                  Once cast it can not be changed so choose
+                                  wisely.{" "}
                                 </p>
                               </div>
                             </div>
@@ -180,10 +181,14 @@ const Roadmap = () => {
                               <div className="roadmap-step-dot-inner-1"></div>
                               <div className="roadmap-step-dot-inner-2"></div>
                               <div className="roadmap-step-text-top">
-                                <h6>UI and Site Development</h6>
+                                <h6>Prize pool announcement</h6>
                                 <p>
-                                  We are working to bring our users the best
-                                  experience possible.{" "}
+                                  Prize pools is another exciting reason to be
+                                  apart of The Whitelist and its community. Each
+                                  pool will be open before every project drop,
+                                  and close before each mint. The most voted
+                                  items in each pool will be given away after
+                                  mint.{" "}
                                 </p>
                               </div>
                             </div>
