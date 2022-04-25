@@ -31,3 +31,14 @@
         cursor: pointer;
     }  
 }
+
+@media screen and (max-width: 1440px) {
+  header .header-content .header-left ul
+  {
+    margin: 0 0 0 2rem;
+    li 
+    {
+      margin: 0 2rem 0 0;
+    }
+  }
+}
