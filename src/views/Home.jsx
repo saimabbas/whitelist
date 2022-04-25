@@ -17,23 +17,9 @@ import EllipseYellow from "./../assets/img/ellipse-yellow.svg";
 import CollectionsBg from "./../assets/img/collections-bg.svg";
 import CollectionsBg2 from "./../assets/img/collections-bg2.png";
 import CollectionsCard from "./../assets/img/collections-card.png";
-import Tick from "../assets/icons/Tick";
 import { Accordion } from "react-bootstrap";
-import ChevronUp from "../assets/icons/ChevronUp";
-import Logo from "../assets/img/Logo";
-import Instagram from "../assets/icons/Instagram";
-import TwitterIcon from "../assets/icons/TwitterIcon";
-import Discord from "../assets/icons/Discord";
-import RefreshIcon from "../assets/icons/RefreshIcon";
-import MessagesIcon from "../assets/icons/MessagesIcon";
-import MoonIcon from "../assets/icons/MoonIcon";
-import WalletIcon from "../assets/icons/WalletIcon";
 import BlueTick from "./../assets/img/bluetick.png";
 import PersonImg from "./../assets/img/personimg.png";
-import { Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
 import Header from "../components/modules/Header";
@@ -44,6 +30,13 @@ import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
 import Collection from "../assets/icons/Collection";
 import Logout from "../assets/icons/Logout";
 import Profile from "../assets/icons/Profile";
+
+import { Mousewheel, FreeMode, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/free-mode";
+import { MdDone } from "react-icons/md";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Home = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
@@ -381,6 +374,56 @@ const Home = () => {
                   collectionName="Fractional Friends"
                   collectionComingTime="Coming This April"
                 />
+              </div>
+              <div className="collections-swiper-mob">
+                <Swiper
+                  modules={[FreeMode, Mousewheel]}
+                  className="mySwiper"
+                  slidesPerView={"1.5"}
+                  freeMode={true}
+                  mousewheel={true}
+                >
+                  <SwiperSlide>
+                    <HomeCollectionsCard
+                      collectionLogoImg={LogoLight}
+                      collectionImg={CollectionsCard}
+                      collectionName="Passengers"
+                      collectionComingTime="Coming This April"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <HomeCollectionsCard
+                      collectionLogoImg={LogoLight}
+                      collectionImg={CollectionsCard}
+                      collectionName="Passengers"
+                      collectionComingTime="Coming This April"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <HomeCollectionsCard
+                      collectionLogoImg={LogoLight}
+                      collectionImg={CollectionsCard}
+                      collectionName="Passengers"
+                      collectionComingTime="Coming This April"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <HomeCollectionsCard
+                      collectionLogoImg={LogoLight}
+                      collectionImg={CollectionsCard}
+                      collectionName="Passengers"
+                      collectionComingTime="Coming This April"
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <HomeCollectionsCard
+                      collectionLogoImg={LogoLight}
+                      collectionImg={CollectionsCard}
+                      collectionName="Passengers"
+                      collectionComingTime="Coming This April"
+                    />
+                  </SwiperSlide>
+                </Swiper>
               </div>
             </div>
           </div>
