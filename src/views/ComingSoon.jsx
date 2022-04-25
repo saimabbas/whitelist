@@ -12,18 +12,18 @@ const ComingSoon = () => {
             {/* Header */}
             <header>
                 <div className="box">
-                    <div className="header-content">
+                    <div className="header-content cslmainheader">
                         <div className="header-left">
                             <Logo color="#1F194D" />
                         </div>
                     </div>
                 </div>
             </header>
-            <div className="landingpage">
+            <div className="landingpage comesoonpage">
                 {/* Hero Section */}
-                <section className="landing-main">
+                <section className="landing-main coomsoon-main">
                     <img
-                        className="landing-bg-light light-img"
+                        className="coomsoon-bg-light light-img"
                         src={HeroBgLight}
                         alt="HeroBgLight"
                     />
@@ -59,7 +59,7 @@ const ComingSoon = () => {
                                                 <h6>Minutes</h6>
                                             </div>
                                         </div>
-                                        <div className="hc-time-box">
+                                        <div className="hc-time-box hcnmar">
                                             <div className="hc-time-box-top">
                                                 <span>53</span>
                                                 <h6>Seconds</h6>

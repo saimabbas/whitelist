@@ -22,6 +22,8 @@ import RefreshIcon from "../assets/icons/RefreshIcon";
 import MessagesIcon from "../assets/icons/MessagesIcon";
 import MoonIcon from "../assets/icons/MoonIcon";
 import WalletIcon from "../assets/icons/WalletIcon";
+import BlueTick from "./../assets/img/bluetick.png";
+import PersonImg from "./../assets/img/personimg.png";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -33,6 +35,9 @@ import Footer from "../components/modules/Footer";
 import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
 import SubscribeCard from "../components/pages/Home/SubscribeCard";
 import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
+import Collection from "../assets/icons/Collection";
+import Logout from "../assets/icons/Logout";
+import Profile from "../assets/icons/Profile";
 
 const Home = () => {
   return (
@@ -337,6 +342,30 @@ const Home = () => {
         </section>
         {/* Footer */}
         <Footer moreBtn={true} />
+        <div className="logininfo">
+          <div className="loginnameimg">
+            <img src={PersonImg} alt="" />
+            <div className="logintext">
+              <h6>Mohammad Reza</h6>
+              <img src={BlueTick} alt="" />
+            </div>
+            <p>0xc4c16a645...b21a</p>
+          </div>
+          <div className="loginbottombox">
+            <div className="loginicontext">
+              <Profile />
+              <h5>Edit Profile</h5>
+            </div>
+            <div className="loginicontext">
+              <Collection />
+              <h5>My Collections</h5>
+            </div>
+            <div className="loginicontext lcdisconnect">
+              <Logout />
+              <h5>Disconnect</h5>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ import Header from "./components/modules/Header";
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Routes>
           <Route path="/" element={<LinksPage />} />
