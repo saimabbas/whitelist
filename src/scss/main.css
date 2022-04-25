@@ -1017,6 +1017,7 @@ button:hover {
   }
   .home .hero .hero-content.hero-content-mob {
     display: block;
+    padding: 10rem 0 5rem 0;
   }
   .home .hero .hero-content {
     -ms-grid-columns: 1fr;
@@ -1026,13 +1027,25 @@ button:hover {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+  .home .hero .hero-left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
   .luh-social-grid {
     -ms-grid-columns: max-content max-content;
         grid-template-columns: -webkit-max-content -webkit-max-content;
         grid-template-columns: max-content max-content;
+  }
+  .home .hero .hero-countdopwn-box {
+    margin: 0;
   }
 }
 
@@ -4016,6 +4029,12 @@ header .header-content .header-right .header-right-icon {
   }
   header .header-content .header-right > * {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  header .header-content {
+    height: 7.5rem;
   }
 }
 

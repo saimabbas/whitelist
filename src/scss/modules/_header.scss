@@ -83,3 +83,8 @@ header {
     display: none !important;
   }
 }
+@media screen and (max-width: 850px) {
+  header .header-content {
+    height: 7.5rem;
+  }
+}

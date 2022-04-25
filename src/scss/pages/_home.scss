@@ -355,6 +355,7 @@
   }
   .home .hero .hero-content.hero-content-mob {
     display: block;
+    padding: 10rem 0 5rem 0;
   }
   .home .hero .hero-content {
     grid-template-columns: 1fr;
@@ -362,9 +363,17 @@
   .home .about .about-content {
     grid-template-columns: 1fr;
   }
+  .home .hero .hero-left {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
   .luh-social-grid {
     grid-template-columns: max-content max-content;
+  }
+  .home .hero .hero-countdopwn-box {
+    margin: 0;
   }
 }
