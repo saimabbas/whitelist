@@ -1,6 +1,8 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
+import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgDark from "./../assets/img/right-moon.png";
 import { Accordion } from "react-bootstrap";
 import ChevronUp from "../assets/icons/ChevronUp";
 import Logo from "../assets/img/Logo";
@@ -28,13 +30,27 @@ const HowItWorks = () => {
             src={HeroBgLight}
             alt="HeroBgLight"
           />
+          <img
+            className="landing-bg-dark dark-img"
+            src={HeroBgDark}
+            alt="HeroBgDark"
+          />
           <div className="app-page">
             <div className="box">
               <div className="letushelp-content hiwsection">
                 <div className="section-heading">
                   <div className="sh-heading">
                     <h2>Let us help</h2>
-                    <img src={BlobPurple} alt="BlobPurple" />
+                    <img
+                      className="light-img"
+                      src={BlobPurple}
+                      alt="BlobPurple"
+                    />
+                    <img
+                      className="dark-img"
+                      src={BlobPurpleDark}
+                      alt="BlobPurpleDark"
+                    />
                   </div>
                   <p>
                     Find the Most Frequently asked questions and there answers

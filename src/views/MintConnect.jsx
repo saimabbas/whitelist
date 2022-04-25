@@ -7,7 +7,7 @@ import ComingVideo from "../assets/videos/comingsoon.mp4";
 
 const MintConnect = () => {
   return (
-    <div className="app light-theme">
+    <div className="app dark-theme">
       <div className="coomsoondark mintmainpage">
         <div className="comsoondmain">
           <video autoPlay muted playsInline className="backvideo">

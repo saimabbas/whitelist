@@ -1,6 +1,8 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
+import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgDark from "./../assets/img/right-moon.png";
 import Logo from "../assets/img/Logo";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
@@ -23,7 +25,7 @@ import Header from "../components/modules/Header";
 import TeamCard from "../components/pages/Team/TeamCard";
 const Subscribe = () => {
   return (
-    <div className="app light-theme">
+    <div className="app dark-theme">
       {/* Header */}
       <Header />
       <div className="teammainbox">
@@ -33,12 +35,26 @@ const Subscribe = () => {
             src={HeroBgLight}
             alt="HeroBgLight"
           />
+          <img
+            className="team-bg-dark dark-img"
+            src={HeroBgDark}
+            alt="HeroBgDark"
+          />
           <div className="box">
             <div className="subscribe-content subsmainpage">
               <div className="section-heading">
                 <div className="sh-heading">
                   <h2>Meet the Team </h2>
-                  <img src={BlobPurple} alt="BlobYellow" />
+                  <img
+                    className="light-img"
+                    src={BlobPurple}
+                    alt="BlobPurple"
+                  />
+                  <img
+                    className="dark-img"
+                    src={BlobPurpleDark}
+                    alt="BlobPurpleDark"
+                  />
                 </div>
               </div>
               <div className="team-grid">

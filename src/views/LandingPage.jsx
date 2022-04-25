@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
 import Successful from "./../assets/img/successful.png";
 import Metamask from "./../assets/img/metamask.png";
@@ -90,4 +90,4 @@ const LandingPage = () => {
     )
 }
 
-export default LandingPage
+export default LandingPage;

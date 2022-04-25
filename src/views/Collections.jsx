@@ -1,6 +1,8 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
+import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "../assets/img/hero-bg-light.png";
+import HeroBgDark from "../assets/img/right-moon.png";
 import CollectionsCardImg from "../assets/img/collections-card.png";
 import VaultProfilePic from "../assets/img/vault-profile-pic.png";
 import VerifiedIcon from "../assets/icons/VerifiedIcon";
@@ -29,12 +31,22 @@ const Collections = () => {
           src={HeroBgLight}
           alt="HeroBgLight"
         />
+        <img
+          className="col-bg-dark dark-img"
+          src={HeroBgDark}
+          alt="HeroBgDark"
+        />
         <div className="box">
           <div className="page-body-con">
             <div className="section-heading">
               <div className="sh-heading">
                 <h2>Collections</h2>
-                <img src={BlobPurple} alt="BlobPurple" />
+                <img className="light-img" src={BlobPurple} alt="BlobPurple" />
+                <img
+                  className="dark-img"
+                  src={BlobPurpleDark}
+                  alt="BlobPurpleDark"
+                />
               </div>
               <div className="mainroadmap"></div>
             </div>

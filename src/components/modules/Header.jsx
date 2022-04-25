@@ -1,10 +1,11 @@
 import React from "react";
 import MessagesIcon from "../../assets/icons/MessagesIcon";
 import MoonIcon from "../../assets/icons/MoonIcon";
+import SunIcon from "../../assets/icons/SunIcon";
 import WalletIcon from "../../assets/icons/WalletIcon";
 import Logo from "../../assets/img/Logo";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
       <div className="box">
@@ -41,8 +42,14 @@ const Header = () => {
             </ul>
           </div>
           <div className="header-right">
-            <MessagesIcon color="#1F194D" />
-            <MoonIcon color="#1F194D" />
+            <MessagesIcon className="header-right-icon" color="#1F194D" />
+            <div className="light-img" onClick={props.changeToDarkTheme}>
+              <MoonIcon className="header-right-icon" color="#1F194D" />
+            </div>
+            <div className="dark-img" onClick={props.changeToLightTheme}>
+              <SunIcon className="header-right-icon" color="#FFFF" />
+            </div>
+
             <button className="light-blue-btn-filled">
               {" "}
               <WalletIcon color="#195BFF" /> Wallet

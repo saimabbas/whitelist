@@ -1,6 +1,8 @@
 import React from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
+import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgDark from "./../assets/img/right-moon.png";
 import Logo from "../assets/img/Logo";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
@@ -18,7 +20,7 @@ import InfoIcon from "../assets/icons/InfoIcon";
 import { MdDone } from "react-icons/md";
 const PrizePools = () => {
   return (
-    <div className="app light-theme">
+    <div className="app dark-theme">
       {/* Header */}
       <header>
         <div className="box">
@@ -72,12 +74,22 @@ const PrizePools = () => {
           src={HeroBgLight}
           alt="HeroBgLight"
         />
+        <img
+          className="col-bg-dark dark-img app-page-hero-bg"
+          src={HeroBgDark}
+          alt="HeroBgDark"
+        />
         <div className="box">
           <div className="page-body-con">
             <div className="section-heading">
               <div className="sh-heading">
                 <h2>Collections</h2>
-                <img src={BlobPurple} alt="BlobPurple" />
+                <img className="light-img" src={BlobPurple} alt="BlobPurple" />
+                <img
+                  className="dark-img"
+                  src={BlobPurpleDark}
+                  alt="BlobPurpleDark"
+                />
               </div>
               <p>
                 Prize pools are another exciting reason to be apart of The

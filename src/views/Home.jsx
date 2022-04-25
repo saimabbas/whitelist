@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroImg from "../assets/img/hero-img-1.png";
 import BlobPurple from "../assets/img/blob-purple.svg";
+import BlobPurple2 from "../assets/img/blob-purple2.png";
+import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import BlobLightBlue from "../assets/img/blob-lightblue.svg";
+import BlobLightBlue2 from "../assets/img/blob-lightblue2.png";
 import BlobGreen from "../assets/img/blob-green.svg";
+import BlobGreen2 from "../assets/img/blob-green2.png";
 import BlobYellow from "../assets/img/blob-yellow.svg";
+import BlobYellow2 from "../assets/img/blob-yellow2.png";
 import LogoLight from "./../assets/img/logo-light.svg";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
 import GlareLight from "./../assets/img/glare-light.svg";
 import AboutImg from "./../assets/img/home-about-img.png";
 import EllipseYellow from "./../assets/img/ellipse-yellow.svg";
 import CollectionsBg from "./../assets/img/collections-bg.svg";
+import CollectionsBg2 from "./../assets/img/collections-bg2.png";
 import CollectionsCard from "./../assets/img/collections-card.png";
 import Tick from "../assets/icons/Tick";
 import { Accordion } from "react-bootstrap";
@@ -40,10 +46,22 @@ import Logout from "../assets/icons/Logout";
 import Profile from "../assets/icons/Profile";
 
 const Home = () => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const changeToDarkTheme = () => {
+    console.log("Changes to Dark Theme");
+    setIsLightTheme(false);
+  };
+  const changeToLightTheme = () => {
+    console.log("Changes to Light Theme");
+    setIsLightTheme(true);
+  };
   return (
-    <div className="app light-theme">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
-      {/* <Header /> */}
+      <Header
+        changeToDarkTheme={changeToDarkTheme}
+        changeToLightTheme={changeToLightTheme}
+      />
       <div className="home">
         {/* Hero Section */}
         <section className="hero">
@@ -53,14 +71,23 @@ const Home = () => {
             alt="HeroBgLight"
           />
           <div className="box">
-            <div className="hero-content">
+            <div className="hero-content hero-content-pc">
               <div className="hero-left">
                 <h1>
                   <span>
                     <b>Welcome</b> To <br />
                     The <b>WhiteList.</b>
                   </span>
-                  <img src={BlobPurple} alt="BlobPurple" />
+                  <img
+                    className="light-img"
+                    src={BlobPurple}
+                    alt="BlobPurple"
+                  />
+                  <img
+                    className="dark-img"
+                    src={BlobPurple2}
+                    alt="BlobPurple2"
+                  />
                 </h1>
                 <p>
                   The Best Artists, Projects <br /> and Utility. No Compromise.
@@ -158,6 +185,111 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <div className="hero-content hero-content-mob">
+              <div className="hero-left">
+                <h1>
+                  <span>
+                    <b>Welcome</b> To <br />
+                    The <b>WhiteList.</b>
+                  </span>
+                  <img src={BlobPurple} alt="BlobPurple" />
+                </h1>
+                <p>
+                  The Best Artists, Projects <br /> and Utility. No Compromise.
+                </p>
+              </div>
+              <div className="hero-right">
+                <img
+                  className="hero-glare light-img"
+                  src={GlareLight}
+                  alt="hero-glare"
+                />
+                <img
+                  className="hero-glare dark-img"
+                  src={GlareLight}
+                  alt="hero-glare"
+                />
+                <div className="hero-swiper-box">
+                  <Swiper
+                    pagination={true}
+                    modules={[Pagination]}
+                    className="mySwiper"
+                    direction={"vertical"}
+                    spaceBetween={50}
+                  >
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="swiper-slide-content">
+                        <div className="hero-swiper-img-1-box">
+                          <img src={HeroImg} alt="HeroImg" />
+                        </div>
+                      </div>
+                    </SwiperSlide>
+                  </Swiper>
+                  <div className="hsb-round-btns-box">
+                    <span className="round-chevron-box">
+                      <MdKeyboardArrowRight />
+                    </span>
+                    <span className="round-chevron-box">
+                      <MdKeyboardArrowLeft />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="hero-countdopwn-box">
+                <h6>Join Us In...</h6>
+                <div className="hero-countdown">
+                  <div className="hc-time-box">
+                    <div className="hc-time-box-top">
+                      <span>0</span>
+                      <span>5</span>
+                    </div>
+                    <h6>DAYS</h6>
+                  </div>
+                  <div className="hc-time-box">
+                    <div className="hc-time-box-top">
+                      <span>2</span>
+                      <span>6</span>
+                    </div>
+                    <h6>HOURS</h6>
+                  </div>
+                  <div className="hc-time-box">
+                    <div className="hc-time-box-top">
+                      <span>1</span>
+                      <span>9 </span>
+                    </div>
+                    <h6>MINUTES</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         {/* About Section */}
@@ -174,9 +306,14 @@ const Home = () => {
                   alt="EllipseYellow"
                 />
                 <img
-                  className="blob-lightblue"
+                  className="blob-lightblue light-img"
                   src={BlobLightBlue}
                   alt="BlobLightBlue"
+                />
+                <img
+                  className="blob-lightblue2 dark-img"
+                  src={BlobLightBlue2}
+                  alt="BlobLightBlue2"
                 />
                 <h6>
                   About the
@@ -209,16 +346,22 @@ const Home = () => {
         {/* Collections Section */}
         <section className="collections">
           <img
-            className="collections-bg"
+            className="collections-bg light-img"
             src={CollectionsBg}
             alt="CollectionsBg"
+          />
+          <img
+            className="collections-bg dark-img"
+            src={CollectionsBg2}
+            alt="CollectionsBg2"
           />
           <div className="box">
             <div className="collections-content">
               <div className="section-heading">
                 <div className="sh-heading">
                   <h2>Collections</h2>
-                  <img src={BlobGreen} alt="BlobGreen" />
+                  <img className="light-img" src={BlobGreen} alt="BlobGreen" />
+                  <img className="dark-img" src={BlobGreen2} alt="BlobGreen2" />
                 </div>
                 <p>
                   Join The Whitelist by choosing the option <br /> that fits you
@@ -250,6 +393,7 @@ const Home = () => {
                 <div className="sh-heading">
                   <h2>Subscribe to Season 1</h2>
                   <img src={BlobYellow} alt="BlobYellow" />
+                  <img src={BlobYellow2} alt="BlobYellow2" />
                 </div>
                 <p>Join the Whitelist by choose your perfect option below</p>
               </div>
@@ -281,7 +425,16 @@ const Home = () => {
               <div className="section-heading">
                 <div className="sh-heading">
                   <h2>Let us help</h2>
-                  <img src={BlobPurple} alt="BlobPurple" />
+                  <img
+                    className="light-img"
+                    src={BlobPurple}
+                    alt="BlobPurple"
+                  />
+                  <img
+                    className="dark-img"
+                    src={BlobPurpleDark}
+                    alt="BlobPurple2"
+                  />
                 </div>
                 <p>
                   Find the Most Frequently asked questions and there answers

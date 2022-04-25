@@ -58,54 +58,55 @@
         color: #69697c;
         margin: 2.5rem 0 0 0;
       }
-      .hero-countdopwn-box {
-        width: 100%;
-        margin: 7.5rem 0 0 0;
+    }
+
+    .hero-countdopwn-box {
+      width: 100%;
+      margin: 7.5rem 0 0 0;
+    }
+    .hero-countdopwn-box > h6 {
+      font-size: 1.65rem;
+      color: #1f194d;
+      margin: 0 0 1.5rem 0;
+      font-weight: 600;
+    }
+    .hero-countdown {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .hero-countdown > * {
+      margin: 0 0 2.5rem 0;
+    }
+    .hc-time-box {
+      width: max-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 2.5rem 0 0;
+    }
+    .hc-time-box-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 0.5rem;
+      span {
+        font-size: 3.5rem;
+        background-color: #1f194d;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 1rem;
+        font-weight: 700;
+        display: block;
       }
-      .hero-countdopwn-box > h6 {
-        font-size: 1.65rem;
-        color: #1f194d;
-        margin: 0 0 1.5rem 0;
-        font-weight: 600;
-      }
-      .hero-countdown {
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-      }
-      .hero-countdown > * {
-        margin: 0 0 2.5rem 0;
-      }
-      .hc-time-box {
-        width: max-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 2.5rem 0 0;
-      }
-      .hc-time-box-top {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-gap: 0.5rem;
-        span {
-          font-size: 3.5rem;
-          background-color: #1f194d;
-          color: #fff;
-          padding: 0.75rem 1.5rem;
-          border-radius: 1rem;
-          font-weight: 700;
-          display: block;
-        }
-      }
-      .hc-time-box h6 {
-        font-size: 1.5rem;
-        color: #1f194d;
-        margin: 0.65rem 0 0 0;
-        font-weight: 500;
-      }
+    }
+    .hc-time-box h6 {
+      font-size: 1.5rem;
+      color: #1f194d;
+      margin: 0.65rem 0 0 0;
+      font-weight: 500;
     }
     .hero-right {
       width: 100%;
@@ -159,6 +160,7 @@
         img {
           max-height: 47.5rem;
           object-fit: contain;
+          max-height: 65vh;
         }
         .hero-swiper-img-1-box {
           background-color: #fff;
@@ -205,7 +207,8 @@
           top: 20%;
           right: 0%;
         }
-        .blob-lightblue {
+        .blob-lightblue,
+        .blob-lightblue2 {
           width: 6.5rem;
           position: relative;
           z-index: 10;
@@ -304,6 +307,7 @@
   grid-gap: 1.5rem;
   margin: 1.5rem 0 0 0;
 }
+<<<<<<< HEAD
 
 
 
@@ -418,9 +422,66 @@
 
 
 
-@media screen and (max-width: 650px) {
-.luh-social-grid
-{
-  grid-template-columns: max-content max-content;
+=======
+@media screen and (max-width: 1000px) {
+  .home .hero .hero-left h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  .home .hero .hero-right .hero-swiper-box {
+    height: 45rem;
+  }
+  .home .hero .hero-right {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .hero .hero-right .hero-swiper-box img {
+    max-height: 35rem;
+  }
+  .home .hero .hc-time-box-top span {
+    font-size: 2.5rem;
+  }
+  .home .hero .hc-time-box h6 {
+    font-size: 1.25rem;
+  }
+  .home .about .about-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .home .about .about-content .about-left img {
+    width: 100%;
+  }
+  .subscribe-grid
+    .subscribe-grid-card
+    .subscribe-options-grid
+    .subscribe-options-grid-entry {
+    padding: 0 1.5rem !important;
+  }
+  .subscribe-grid {
+    grid-gap: 1.5rem !important;
+  }
 }
+@media screen and (max-width: 850px) {
+  .home .hero {
+    min-height: 100vh;
+    height: 100%;
+  }
+  .home .hero .hero-content.hero-content-pc {
+    display: none;
+  }
+  .home .hero .hero-content.hero-content-mob {
+    display: block;
+  }
+  .home .hero .hero-content {
+    grid-template-columns: 1fr;
+  }
+  .home .about .about-content {
+    grid-template-columns: 1fr;
+  }
+}
+>>>>>>> e239ee171acc9c14a8cc347d07dfc5c1f4b1dca0
+@media screen and (max-width: 650px) {
+  .luh-social-grid {
+    grid-template-columns: max-content max-content;
+  }
 }
