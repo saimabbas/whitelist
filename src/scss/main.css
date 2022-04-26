@@ -4170,6 +4170,7 @@ footer .more-btn svg {
   }
   footer .footer-mob .footer-top .footer-center-mob {
     width: 100%;
+    margin: 2rem 0 0 0;
   }
   footer .footer-mob .footer-top .footer-center-mob .fc-grid-mob {
     width: 100%;
@@ -4195,7 +4196,7 @@ footer .more-btn svg {
     width: 100%;
   }
   footer .footer-mob .footer-top .footer-center-header-mob h6 {
-    font-size: 2.25rem;
+    font-size: 2.05rem;
     font-weight: 700;
     color: #fff;
     margin: 0;
@@ -4216,6 +4217,7 @@ footer .more-btn svg {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: unset;
   }
   footer .footer-bottom p {
     max-width: 75%;
