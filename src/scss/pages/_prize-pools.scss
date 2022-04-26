@@ -59,6 +59,8 @@
         grid-gap: 2.5rem;
         img {
           width: 100%;
+          height: 100%;
+          object-fit: cover;
           border-radius: 1.5rem;
         }
       }
@@ -194,7 +196,7 @@
                     cursor: pointer;
                   }
                   p {
-                    font-size: 1.75rem;
+                    font-size: 1.65rem;
                     color: #69697c;
                   }
                 }
@@ -310,5 +312,47 @@
         }
       }
     }
+  }
+}
+@media screen and (max-width: 1150px) {
+  .prizepools-grid .prizepools-grid-card .prizepools-grid-card-top {
+    padding: 2.5rem;
+    grid-gap: 2.5rem;
+  }
+  .prizepools-grid
+    .prizepools-grid-card
+    .prizepools-grid-card-bottom
+    .pgc-bottom-content
+    .voting-closed {
+    padding: 2.5rem;
+  }
+  .prizepools-grid
+    .prizepools-grid-card
+    .prizepools-grid-card-bottom
+    .pgc-bottom-content
+    .voting-closed
+    .vc-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .prizepools-grid
+    .prizepools-grid-card
+    .prizepools-grid-card-bottom
+    .pgc-bottom-content
+    .voting-closed
+    .vc-grid {
+    grid-template-columns: 1fr;
+  }
+  .prizepools-grid
+    .prizepools-grid-card
+    .prizepools-grid-card-bottom
+    .pgc-bottom-content
+    .voting-open
+    .vo-grid {
+    grid-template-columns: 1fr;
   }
 }

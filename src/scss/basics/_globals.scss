@@ -14,16 +14,6 @@ body {
   width: 100%;
   max-width: 100%;
 }
-.app.dark-theme {
-  --bg-color: #000;
-  --text-color: #fff;
-  --abc: #fff;
-}
-.app.light-theme {
-  --bg-color: #f8fcff;
-  --text-color: #000;
-  --abc: #1f194d;
-}
 .app {
   width: 100%;
   min-height: 100vh;
@@ -123,8 +113,8 @@ button {
 }
 .light-blue-btn-filled {
   width: max-content;
-  background-color: rgba(25, 90, 255, 0.15);
-  color: #195bff;
+  background-color: var(--light-blue-btn-filled-bg);
+  color: var(--light-blue-btn-filled-color);
   font-size: 1.5rem;
   font-weight: 700;
   padding: 1.25rem 3.5rem;
@@ -151,7 +141,6 @@ button {
       fill: #fff !important;
       color: #fff !important;
       path {
-        stroke: #fff !important;
         fill: #fff !important;
         color: #fff !important;
       }
@@ -174,11 +163,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: var(--round-chevron-box);
   margin: 1.5rem 0 0 0;
   cursor: pointer;
-  transition: 0.5s;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   &:hover {
     background-color: #1f194d;
     color: #fff;
@@ -195,15 +183,15 @@ button {
   text-decoration: none;
   p {
     font-size: 1.6rem;
-    color: #1f194d;
+    color: var(--dark-blue-white);
     font-weight: 600;
     margin: 0 2.5rem 0 0;
   }
   span {
     width: 3rem;
     height: 3rem;
-    background-color: #eef4f6;
-    color: #1f194d;
+    background-color: var(--view-more-link-box);
+    color: var(--dark-blue-white);
     border-radius: 50%;
     position: relative;
     transition: 0.2s;
@@ -221,8 +209,8 @@ button {
       left: 50%;
     }
     span {
-      color: #eef4f6;
-      background-color: #1f194d;
+      color: var(--white-dark-blue);
+      background-color: var(--dark-blue-white);
     }
   }
 }
@@ -237,7 +225,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #d8d8d8;
+    border: 1px solid var(--user-details-border);
     margin: 0 1rem 0 0;
     border-radius: 50%;
     img {
@@ -246,7 +234,6 @@ button {
       border-radius: 50%;
     }
   }
-
   div {
     display: flex;
     flex-direction: column;
@@ -254,7 +241,7 @@ button {
     h6 {
       font-size: 2rem;
       font-weight: 700;
-      color: #1f194d;
+      color: var(--dark-blue-white);
       display: flex;
       align-items: center;
       justify-content: flex-start;
@@ -264,6 +251,10 @@ button {
         object-fit: contain;
         margin: 0 0 0 1rem;
       }
+    }
+    p {
+      font-size: 1.5rem;
+      color: var(--user-details-p);
     }
   }
 }

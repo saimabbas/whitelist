@@ -3,6 +3,7 @@ import React from "react";
 const MessagesIcon = (props) => {
   return (
     <svg
+      className={props.className}
       width="32"
       height="32"
       viewBox="0 0 32 32"

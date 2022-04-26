@@ -4,7 +4,7 @@ import MoonIcon from "../../assets/icons/MoonIcon";
 import SunIcon from "../../assets/icons/SunIcon";
 import WalletIcon from "../../assets/icons/WalletIcon";
 import Logo from "../../assets/img/Logo";
-import { MdMenu } from 'react-icons/md'
+import { MdMenu } from "react-icons/md";
 
 const Header = (props) => {
   return (
@@ -12,7 +12,8 @@ const Header = (props) => {
       <div className="box">
         <div className="header-content">
           <div className="header-left">
-            <Logo color="#1F194D" />
+            <Logo className="light-img" color="#1F194D" />
+            <Logo className="dark-img" color="#fff" />
             <div className="mobmenuicon">
               <div className="mobmenubox">
                 <MdMenu />
@@ -48,7 +49,14 @@ const Header = (props) => {
             </ul>
           </div>
           <div className="header-right">
-            <MessagesIcon className="header-right-icon" color="#1F194D" />
+            <MessagesIcon
+              className="header-right-icon light-img"
+              color="#1F194D"
+            />
+            <MessagesIcon
+              className="header-right-icon dark-img"
+              color="#FFFF"
+            />
             <div className="light-img" onClick={props.changeToDarkTheme}>
               <MoonIcon className="header-right-icon" color="#1F194D" />
             </div>
@@ -58,7 +66,9 @@ const Header = (props) => {
 
             <button className="light-blue-btn-filled">
               {" "}
-              <WalletIcon color="#195BFF" /> Wallet
+              <WalletIcon className="light-img" color="#195BFF" />
+              <WalletIcon className="dark-img" color="#fff" />
+              Wallet
             </button>
           </div>
         </div>
