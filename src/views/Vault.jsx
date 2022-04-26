@@ -1,48 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
 import HeroBgDark from "./../assets/img/right-moon.png";
-import Logo from "../assets/img/Logo";
-import Instagram from "../assets/icons/Instagram";
-import TwitterIcon from "../assets/icons/TwitterIcon";
-import Discord from "../assets/icons/Discord";
-import RefreshIcon from "../assets/icons/RefreshIcon";
-import MessagesIcon from "../assets/icons/MessagesIcon";
-import MoonIcon from "../assets/icons/MoonIcon";
-import WalletIcon from "../assets/icons/WalletIcon";
 import VaultProfilePic from "../assets/img/vault-profile-pic.png";
-import VerifiedIcon from "../assets/icons/VerifiedIcon";
 import VaultImg1 from "../assets/img/vault-img-1.png";
 import VaultImg2 from "../assets/img/vault-img-2.png";
 import VaultImg3 from "../assets/img/vault-img-3.png";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Header from "../components/modules/Header";
+
 import "swiper/css";
 import "swiper/css/navigation";
-import {
-  MdKeyboardArrowRight,
-  MdKeyboardArrowLeft,
-  MdEast,
-} from "react-icons/md";
 import VaultCollectionCard from "../components/pages/Vault/VaultCollectionCard";
-import Header from "../components/modules/Header";
 import Footer from "../components/modules/Footer";
 
 const Vault = () => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const changeToDarkTheme = () => {
+    setIsLightTheme(false);
+  };
+  const changeToLightTheme = () => {
+    setIsLightTheme(true);
+  };
   return (
-    <div className="app light-theme">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
-      <Header />
+      <Header
+        changeToDarkTheme={changeToDarkTheme}
+        changeToLightTheme={changeToLightTheme}
+      />
       <div className="vaultmainpage">
         {/* Collection Section */}
         <img
-          className="vault-bg-light light-img"
+          className="hr-bg-light light-img"
           src={HeroBgLight}
           alt="HeroBgLight"
         />
         <img
-          className="vault-bg-dark dark-img"
+          className="hr-bg-dark dark-img"
           src={HeroBgDark}
           alt="HeroBgDark"
         />
@@ -75,8 +72,14 @@ const Vault = () => {
                   }}
                   modules={[Navigation]}
                   className="mySwiper"
-                  spaceBetween={25}
-                  slidesPerView={3}
+                  spaceBetween={15}
+                  slidesPerView={2.35}
+                  breakpoints={{
+                    650: {
+                      slidesPerView: 3,
+                      spaceBetween: 25,
+                    },
+                  }}
                 >
                   <SwiperSlide>
                     <div className="swiper-slide-content">
@@ -124,8 +127,14 @@ const Vault = () => {
                   }}
                   modules={[Navigation]}
                   className="mySwiper"
-                  spaceBetween={25}
-                  slidesPerView={3}
+                  spaceBetween={15}
+                  slidesPerView={2.35}
+                  breakpoints={{
+                    650: {
+                      slidesPerView: 3,
+                      spaceBetween: 25,
+                    },
+                  }}
                 >
                   <SwiperSlide>
                     <div className="swiper-slide-content">
@@ -173,8 +182,14 @@ const Vault = () => {
                   }}
                   modules={[Navigation]}
                   className="mySwiper"
-                  spaceBetween={25}
-                  slidesPerView={3}
+                  spaceBetween={15}
+                  slidesPerView={2.35}
+                  breakpoints={{
+                    650: {
+                      slidesPerView: 3,
+                      spaceBetween: 25,
+                    },
+                  }}
                 >
                   <SwiperSlide>
                     <div className="swiper-slide-content">

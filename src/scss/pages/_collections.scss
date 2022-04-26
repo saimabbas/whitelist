@@ -43,6 +43,7 @@
       .collections-grid-card-right {
         width: 75%;
         position: relative;
+
         .collections-swiper-box {
           width: 100%;
           overflow: hidden;
@@ -78,11 +79,44 @@
       }
       .collections-grid-card-left {
         width: 25%;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
 
+        .collections-swiper-box {
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+        }
+        .collections-swiper-left {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(-50%, -50%);
+          z-index: 10;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .collections-swiper-right {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(50%, -50%);
+          z-index: 10;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .swiper-slide-content {
+          width: 100%;
+          overflow: hidden;
+          .collections-grid-card-right-card {
+            width: 100%;
+            position: relative;
+            img {
+              width: 100%;
+            }
+          }
+        }
         .collections-user-details-box {
           display: flex;
           flex-direction: column;
@@ -126,5 +160,25 @@
         }
       }
     }
+  }
+}
+.collections-swiper-mob {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .collections-swiper-mob {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .collections-grid-card-right {
+    display: none;
+  }
+  .colmainpage
+    .collections-grid
+    .collections-grid-card-content
+    .collections-grid-card-left {
+    width: 100%;
   }
 }

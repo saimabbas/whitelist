@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "../assets/img/hero-bg-light.png";
 import HeroBgDark from "../assets/img/right-moon.png";
 import CollectionsCardImg from "../assets/img/collections-card.png";
 import VaultProfilePic from "../assets/img/vault-profile-pic.png";
+import VaultProfilePic1 from "../assets/img/may.png";
+import VaultProfilePic2 from "../assets/img/june.png";
+import Header from "../components/modules/Header";
+
 import VerifiedIcon from "../assets/icons/VerifiedIcon";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,24 +19,33 @@ import {
   MdKeyboardArrowLeft,
   MdEast,
 } from "react-icons/md";
-import Header from "../components/modules/Header";
 import Footer from "../components/modules/Footer";
 import CollectionsCard from "../components/pages/Collections/CollectionsCard";
 
 const Collections = () => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const changeToDarkTheme = () => {
+    setIsLightTheme(false);
+  };
+  const changeToLightTheme = () => {
+    setIsLightTheme(true);
+  };
   return (
-    <div className="app light-theme">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
-      <Header />
+      <Header
+        changeToDarkTheme={changeToDarkTheme}
+        changeToLightTheme={changeToLightTheme}
+      />
       <div className="colmainpage">
         {/* Collection Section */}
         <img
-          className="col-bg-light light-img"
+          className="hr-bg-light light-img"
           src={HeroBgLight}
           alt="HeroBgLight"
         />
         <img
-          className="col-bg-dark dark-img"
+          className="hr-bg-dark dark-img"
           src={HeroBgDark}
           alt="HeroBgDark"
         />
@@ -64,8 +77,14 @@ const Collections = () => {
                   }}
                   modules={[Navigation]}
                   className="mySwiper"
-                  spaceBetween={25}
-                  slidesPerView={3}
+                  spaceBetween={15}
+                  slidesPerView={2}
+                  breakpoints={{
+                    1150: {
+                      slidesPerView: 3,
+                      spaceBetween: 25,
+                    },
+                  }}
                 >
                   <SwiperSlide>
                     <div className="swiper-slide-content">
@@ -113,8 +132,75 @@ const Collections = () => {
                 </Swiper>
               </CollectionsCard>
               <CollectionsCard
-                profileImg={VaultProfilePic}
-                collectionName="Passengers"
+                profileImg={VaultProfilePic1}
+                collectionName="Fractional Friends"
+                swiperIconLeft="collections-swiper-left-2"
+                swiperIconRight="collections-swiper-right-2"
+              >
+                <Swiper
+                  navigation={{
+                    nextEl: ".collections-swiper-right-2",
+                    prevEl: ".collections-swiper-left-2",
+                  }}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                  spaceBetween={15}
+                  slidesPerView={2}
+                  breakpoints={{
+                    1150: {
+                      slidesPerView: 3,
+                      spaceBetween: 25,
+                    },
+                  }}
+                >
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <div className="collections-grid-card-right-card">
+                        <img src={CollectionsCardImg} alt="CollectionsCard" />
+                        <div className="coming-tag">
+                          Coming This May <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <div className="collections-grid-card-right-card">
+                        <img src={CollectionsCardImg} alt="CollectionsCard" />
+                        <div className="coming-tag">
+                          Coming This May <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <div className="collections-grid-card-right-card">
+                        <img src={CollectionsCardImg} alt="CollectionsCard" />
+                        <div className="coming-tag">
+                          Coming This May <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <div className="swiper-slide-content">
+                      <div className="collections-grid-card-right-card">
+                        <img src={CollectionsCardImg} alt="CollectionsCard" />
+                        <div className="coming-tag">
+                          Coming This May <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </CollectionsCard>
+              <CollectionsCard
+                profileImg={VaultProfilePic2}
+                collectionName="Walt's Vault"
                 swiperIconLeft="collections-swiper-left-2"
                 swiperIconRight="collections-swiper-right-2"
               >
@@ -133,7 +219,7 @@ const Collections = () => {
                       <div className="collections-grid-card-right-card">
                         <img src={CollectionsCardImg} alt="CollectionsCard" />
                         <div className="coming-tag">
-                          Coming This April <span></span>
+                          Coming This June <span></span>
                         </div>
                       </div>
                     </div>
@@ -144,7 +230,7 @@ const Collections = () => {
                       <div className="collections-grid-card-right-card">
                         <img src={CollectionsCardImg} alt="CollectionsCard" />
                         <div className="coming-tag">
-                          Coming This April <span></span>
+                          Coming This June <span></span>
                         </div>
                       </div>
                     </div>
@@ -155,7 +241,7 @@ const Collections = () => {
                       <div className="collections-grid-card-right-card">
                         <img src={CollectionsCardImg} alt="CollectionsCard" />
                         <div className="coming-tag">
-                          Coming This April <span></span>
+                          Coming This June <span></span>
                         </div>
                       </div>
                     </div>
@@ -166,7 +252,7 @@ const Collections = () => {
                       <div className="collections-grid-card-right-card">
                         <img src={CollectionsCardImg} alt="CollectionsCard" />
                         <div className="coming-tag">
-                          Coming This April <span></span>
+                          Coming This June <span></span>
                         </div>
                       </div>
                     </div>

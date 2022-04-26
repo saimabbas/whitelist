@@ -59,15 +59,46 @@
     }
   }
 }
-
-
-@media screen and (max-width: 650px) {
-.letushelp-grid .faq-q
-{
-  width: 100%;
-  h5 
-  {
-    width: 100%;
+.footer-mob {
+  .accordion-body {
+    padding: 0;
+  }
+  .accordion-item {
+    border-radius: 0 !important;
+    border: 0 !important;
+    padding: 0;
+    background-color: unset !important;
+  }
+  .accordion-button:not(.collapsed) {
+    color: unset;
+    box-shadow: unset !important;
+    border: 0 !important;
+    background-color: unset !important;
+    padding: 0;
+    svg {
+      transform: rotate(0) !important;
+    }
+  }
+  .accordion-button {
+    background-color: unset !important;
+  }
+  .accordion-button::after {
+    display: none !important;
+  }
+  .accordion-button:focus {
+    border: 0 !important;
+    box-shadow: unset !important;
+  }
+  .accordion-button {
+    padding: 0;
   }
 }
+
+@media screen and (max-width: 650px) {
+  .letushelp-grid .faq-q {
+    width: 100%;
+    h5 {
+      width: 100%;
+    }
+  }
 }

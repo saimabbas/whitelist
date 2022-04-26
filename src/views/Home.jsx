@@ -31,10 +31,9 @@ import WalletIcon from "../assets/icons/WalletIcon";
 import Collection from "../assets/icons/Collection";
 import Logout from "../assets/icons/Logout";
 import Profile from "../assets/icons/Profile";
-import { MdMenu } from 'react-icons/md'
+import { MdMenu } from "react-icons/md";
 import MessagesIcon from "../assets/icons/MessagesIcon";
 import MoonIcon from "../assets/icons/MoonIcon";
-
 
 import { Mousewheel, FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -47,11 +46,9 @@ import Logo from "../assets/img/Logo";
 const Home = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
   const changeToDarkTheme = () => {
-    console.log("Changes to Dark Theme");
     setIsLightTheme(false);
   };
   const changeToLightTheme = () => {
-    console.log("Changes to Light Theme");
     setIsLightTheme(true);
   };
   return (

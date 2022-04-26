@@ -5,8 +5,8 @@ const SubscribeCard = (props) => {
   return (
     <div className="subscribe-grid-card">
       <div className="top-notch top-notch-pink"></div>
-      <h3>Tier 1</h3>
-      <h4>0.3 ETH </h4>
+      <h3>{props.tier}</h3>
+      <h4>{props.eth} </h4>
       <div className="subscribe-options-grid">
         <div className={`subscribe-options-grid-entry ${props.isNotActive1}`}>
           <Tick color="#2BD182" />

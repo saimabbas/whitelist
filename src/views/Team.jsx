@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
@@ -24,19 +24,29 @@ import Footer from "../components/modules/Footer";
 import Header from "../components/modules/Header";
 import TeamCard from "../components/pages/Team/TeamCard";
 const Subscribe = () => {
+  const [isLightTheme, setIsLightTheme] = useState(true);
+  const changeToDarkTheme = () => {
+    setIsLightTheme(false);
+  };
+  const changeToLightTheme = () => {
+    setIsLightTheme(true);
+  };
   return (
-    <div className="app dark-theme">
+    <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
-      <Header />
+      <Header
+        changeToDarkTheme={changeToDarkTheme}
+        changeToLightTheme={changeToLightTheme}
+      />
       <div className="teammainbox">
         <section className="teampage">
           <img
-            className="team-bg-light light-img"
+            className="hr-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
           <img
-            className="team-bg-dark dark-img"
+            className="hr-bg-dark dark-img"
             src={HeroBgDark}
             alt="HeroBgDark"
           />
@@ -58,24 +68,88 @@ const Subscribe = () => {
                 </div>
               </div>
               <div className="team-grid">
-                <h3>Founders</h3>
                 <div className="team-grid-content">
-                  <TeamCard img={Team1} name="Serge Klassen" />
-                  <TeamCard img={Team2} name="Evan Klassen" />
-                  <TeamCard img={Team3} name="Kristian Hybschman" />
-                  <TeamCard img={Team4} name="Connor Gregory" />
-                  <TeamCard img={Team1} name="Charles Hiebert" />
-                  <TeamCard img={Team5} name="Jennifer Hiebert" />
-                </div>
-              </div>
-              <div className="team-grid">
-                <h3>Advisory</h3>
-                <div className="team-grid-content">
-                  <TeamCard img={Team1} name="TBD" />
-                  <TeamCard img={Team2} name="TBD" />
-                  <TeamCard img={Team3} name="TBD" />
-                  <TeamCard img={Team4} name="TBD" />
-                  <TeamCard img={Team1} name="TBD" />
+                  <TeamCard
+                    img={Team1}
+                    name="Connor Gregoryn"
+                    role="Co Founder"
+                  />
+                  <TeamCard
+                    img={Team2}
+                    name="Charles Hiebert"
+                    role="Co Founder"
+                  />
+                  <TeamCard
+                    img={Team3}
+                    name="Serge Klassen"
+                    role="OPerations Manager"
+                  />
+                  <TeamCard
+                    img={Team4}
+                    name="Kristian Hybschmann"
+                    role="Community Manager"
+                  />
+                  <TeamCard
+                    img={Team1}
+                    name="Jenni Hiebertt"
+                    role="Project Manager"
+                  />
+                  <TeamCard
+                    img={Team5}
+                    name="Evan Klassen"
+                    role="Innovations"
+                  />
+                  <TeamCard
+                    img={Team5}
+                    name="Alex Merritt"
+                    role="Head of Marketing"
+                  />
+                  <TeamCard img={Team5} name="Sheraz Ahmed" role="Marketing" />
+                  <TeamCard
+                    img={Team5}
+                    name="Andy Ridgway"
+                    role="Lead Strategist"
+                  />
+                  <TeamCard
+                    img={Team5}
+                    name="Momodou Khan"
+                    role="Content Creator"
+                  />
+                  <TeamCard
+                    img={Team5}
+                    name="Nilian Studios"
+                    role="Artistic Lead Partner"
+                  />
+                  <TeamCard img={Team5} name="ALi " role="Creative Director" />
+                  <TeamCard img={Team5} name=" Ali " role="Art Supervisor" />
+                  <TeamCard img={Team5} name=" Ali" role="Artist" />
+                  <TeamCard img={Team5} name="Ali " role="Artist" />
+                  <TeamCard img={Team5} name="Ali " role="Artist" />
+                  <TeamCard
+                    img={Team5}
+                    name="Nina Laue"
+                    role="Head of Advisory"
+                  />
+                  <TeamCard img={Team5} name="NFTGUYY" role="Advisor" />
+                  <TeamCard img={Team5} name="DeltaCrypto" role="Advisor" />
+                  <TeamCard
+                    img={Team5}
+                    name="Salman Shawaf"
+                    role="Advisor(Founder of Dippies)"
+                  />
+                  <TeamCard img={Team5} name="Roland Dudko" role="Chief Dev" />
+                  <TeamCard img={Team5} name="Matt Kohn" role="Development" />
+                  <TeamCard
+                    img={Team5}
+                    name="Esteban Valbuena"
+                    role="Development"
+                  />
+                  <TeamCard
+                    img={Team5}
+                    name="Evan Klassen"
+                    role="Innovations"
+                  />
+                  <TeamCard img={Team5} name="Amir Bagian" role="UI/UX" />
                 </div>
               </div>
             </div>
