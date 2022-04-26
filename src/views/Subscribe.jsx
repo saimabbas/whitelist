@@ -26,12 +26,12 @@ const Subscribe = () => {
         {/* Subscribe Section */}
         <section className="subimgbox">
           <img
-            className="subscribe-bg-light light-img"
+            className="hr-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
           <img
-            className="subscribe-bg-dark dark-img"
+            className="hr-bg-dark dark-img"
             src={HeroBgDark}
             alt="HeroBgDark"
           />
@@ -57,6 +57,8 @@ const Subscribe = () => {
                 </div>
                 <div className="subscribe-grid">
                   <SubscribeCard
+                    tier="Tier 1"
+                    eth="0.3ETH"
                     isNotActive4="soge-not-available"
                     isNotActive5="soge-not-available"
                     isNotActive6="soge-not-available"
@@ -66,12 +68,14 @@ const Subscribe = () => {
                     isNotActive10="soge-not-available"
                   />
                   <SubscribeCard
+                    tier="Tier 2"
+                    eth="0.4ETH"
                     isNotActive7="soge-not-available"
                     isNotActive8="soge-not-available"
                     isNotActive9="soge-not-available"
                     isNotActive10="soge-not-available"
                   />
-                  <SubscribeCard />
+                  <SubscribeCard tier="Tier 3(The Inner Circle)" eth="0.5ETH" />
                 </div>
               </div>
             </div>

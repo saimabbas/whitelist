@@ -38,12 +38,12 @@ const PrizePools = () => {
       <div className="prizepools">
         {/* Collection Section */}
         <img
-          className="col-bg-light light-img app-page-hero-bg"
+          className="hr-bg-light light-img"
           src={HeroBgLight}
           alt="HeroBgLight"
         />
         <img
-          className="col-bg-dark dark-img app-page-hero-bg"
+          className="hr-bg-dark dark-img"
           src={HeroBgDark}
           alt="HeroBgDark"
         />
@@ -124,7 +124,6 @@ const PrizePools = () => {
                     <div className="pgc-top-left-profile">
                       <img src={VaultProfilePic} alt="VaultProfilePic" />
                     </div>
-
                     <img
                       className="pgc-top-left-logo"
                       src={PassengersLogo}

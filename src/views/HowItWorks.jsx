@@ -36,12 +36,12 @@ const HowItWorks = () => {
         {/* Let Us Work Section */}
         <section className="luh-main">
           <img
-            className="landing-bg-light light-img"
+            className="hr-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
           <img
-            className="landing-bg-dark dark-img"
+            className="hr-bg-dark dark-img"
             src={HeroBgDark}
             alt="HeroBgDark"
           />
