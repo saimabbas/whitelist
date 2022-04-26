@@ -221,7 +221,9 @@ const ComingSoonDark = () => {
             </div>
           </header>
           <div className="comsoondcontent">
-            <h1 className="comingsoon-heading conthrax">Coming Soon</h1>
+            <h1 className="comingsoon-heading conthrax">
+              Coming <br /> Soon
+            </h1>
             <div className="comdarktimer">
               <div className="comdarkday">
                 <h6 className="comingsoon-timer conthrax">
