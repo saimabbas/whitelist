@@ -15,7 +15,7 @@
       justify-content: center;
       align-items: center;
       padding: 1.35rem 4rem;
-      font-size: 1.4rem;
+      font-size: 1.75rem;
       font-weight: 600;
       background-color: rgba(255, 255, 255, 0.08);
       color: #fff;
@@ -76,11 +76,11 @@
     height: 9.5rem;
   }
   .coomsoondark.mintmainpage {
-    padding: 3.5rem;
+    padding: 1.5rem;
   }
   .coomsoondark.mintmainpage .coomsoonicons {
     width: 35%;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
   }
   .coomsoondark .comsoondmain header .header-left {
     padding: 0;
@@ -106,7 +106,8 @@
     width: 100%;
     flex-direction: column;
     button {
-      width: 100%;
+      width: 90%;
+      padding: 2rem 0;
     }
     h6 {
       display: none;

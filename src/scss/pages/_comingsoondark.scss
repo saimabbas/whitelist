@@ -230,7 +230,7 @@
 
 @media screen and (max-width: 650px) {
   .coomsoondark {
-    padding: 3.5rem;
+    padding: 1.5rem;
     .comsoondmain {
       padding: 2rem;
     }
@@ -264,11 +264,13 @@
     input {
       width: 100%;
       margin: 0 0 2rem 0;
-      border-radius: 1.75rem;
+      padding: 2rem;
+      border-radius: 1.5rem;
     }
     button {
-      border-radius: 1.75rem;
+      border-radius: 1.5rem;
       width: 100%;
+      padding: 2rem 0;
     }
   }
   .coomsoondark .coomsoonicons {
@@ -287,6 +289,6 @@
     font-size: 1.8rem;
   }
   .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday {
-    border-radius: 1.75rem;
+    border-radius: 1.5rem;
   }
 }
