@@ -2213,7 +2213,7 @@ button:hover {
   .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left .collections-user-details-box {
     flex-direction: row;
     align-items: center;
-    padding: 3rem 3rem 0 3rem;
+    padding: 2rem 2rem 0 2rem;
   }
 
   .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left .collections-user-details-box .user-details-box-img {
@@ -2231,7 +2231,7 @@ button:hover {
   }
 
   .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left .collections-swiper-box {
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 }
 .vaultmainpage {
@@ -2326,11 +2326,11 @@ button:hover {
   }
 
   .user-details-box {
-    padding: 3rem 3rem 0 3rem;
+    padding: 2rem 2rem 0 2rem;
   }
 
   .vaultmainpage .vault-grid .vault-grid-card .vault-grid-card-bottom .vault-swiper {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
   }
 
   .view-more-link-box {
@@ -3840,14 +3840,14 @@ header .header-content .header-right .header-right-icon {
   align-items: center;
   background-color: #fff;
   border-radius: 50%;
-  min-width: 4rem;
-  min-height: 4rem;
-  max-height: 4rem;
-  max-width: 4rem;
-  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.15);
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+  max-height: 4.5rem;
+  max-width: 4.5rem;
+  box-shadow: 0px 16px 34px -9px rgba(0, 76, 172, 0.61);
 }
 .mobmenubox svg {
-  width: 2.25rem;
+  width: 2.75rem;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -4217,7 +4217,11 @@ footer .more-btn svg {
   }
 
   .section-heading .sh-heading h2 {
-    font-size: 3.75rem;
+    font-size: 3.5rem;
+  }
+
+  .section-heading h6 {
+    font-size: 3rem;
   }
 }
 .subscribe-grid {
