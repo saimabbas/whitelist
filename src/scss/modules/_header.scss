@@ -59,7 +59,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--header-menu-mob);
   border-radius: 50%;
   min-width: 4rem;
   min-height: 4rem;
@@ -69,7 +69,7 @@ header {
   svg {
     width: 2.25rem;
     height: max-content;
-    color: #1f194d;
+    color: var(--dark-blue-white);
   }
 }
 
