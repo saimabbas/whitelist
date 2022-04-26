@@ -15,9 +15,9 @@
       color: #1f194d;
     }
     img {
-      width: 6.5rem;
+      width: 8rem;
       position: absolute;
-      top: 0rem;
+      top: -2rem;
       right: -2.5rem;
       z-index: 9;
     }
@@ -39,15 +39,11 @@
   }
 }
 
-
-
 @media screen and (max-width: 650px) {
-  .section-heading p
-  {
+  .section-heading p {
     width: 100%;
   }
-  .section-heading .sh-heading h2
-  {
+  .section-heading .sh-heading h2 {
     font-size: 3.75rem;
   }
 }

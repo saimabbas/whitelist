@@ -960,7 +960,7 @@ button:hover {
   font-weight: 400;
 }
 .headermobilebox .headermobilecontent .headermobtext button {
-  background-color: #195BFF;
+  background-color: #195bff;
   width: 60%;
   color: #ffffff;
   margin: 3rem auto 0 auto;
@@ -1002,6 +1002,10 @@ button:hover {
 
   .home .hero .hero-right .hsb-round-btns-box {
     display: none;
+  }
+
+  .subscribe-grid {
+    grid-gap: 4.5rem !important;
   }
 }
 .letushelp {
@@ -3780,9 +3784,9 @@ footer .more-btn svg {
   color: #1f194d;
 }
 .section-heading .sh-heading img {
-  width: 6.5rem;
+  width: 8rem;
   position: absolute;
-  top: 0rem;
+  top: -2rem;
   right: -2.5rem;
   z-index: 9;
 }
@@ -3896,6 +3900,7 @@ footer .more-btn svg {
 }
 .subscribe-grid .subscribe-grid-card .subscribe-btn-box button {
   width: calc(100% - 7rem);
+  padding: 2.25rem 0;
 }
 
 .soge-not-available p {
