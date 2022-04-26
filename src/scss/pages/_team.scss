@@ -29,7 +29,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10rem 0 0 0;
+  margin: 7.5rem 0 0 0;
   h3 {
     margin: 4.5rem 0;
     color: var(--dark-blue-white);
@@ -82,11 +82,17 @@
 @media screen and (max-width: 650px) {
   .team-grid .team-grid-content {
     width: 85%;
+    grid-gap: 4rem 6rem;
     grid-template-columns: 1fr 1fr;
     .team-grid-main {
       h6 {
         text-align: center;
       }
     }
+  }
+  .team-grid .team-grid-content .team-grid-main img {
+    width: 11rem;
+    max-height: 11rem;
+    object-fit: contain;
   }
 }
