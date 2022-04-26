@@ -24,12 +24,16 @@ const Vault = () => {
   const changeToLightTheme = () => {
     setIsLightTheme(true);
   };
+  const openMobHeader = () => {
+    console.log("HEADER MOBBBB");
+  };
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
       <Header
         changeToDarkTheme={changeToDarkTheme}
         changeToLightTheme={changeToLightTheme}
+        openMobHeader={openMobHeader}
       />
       <div className="vaultmainpage">
         {/* Collection Section */}

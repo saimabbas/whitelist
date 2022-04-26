@@ -14,7 +14,7 @@ const Header = (props) => {
           <div className="header-left">
             <Logo className="light-img" color="#1F194D" />
             <Logo className="dark-img" color="#fff" />
-            <div className="mobmenuicon">
+            <div className="mobmenuicon" onClick={props.openMobHeader}>
               <div className="mobmenubox">
                 <MdMenu />
               </div>
