@@ -10,7 +10,7 @@ import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
 
 const ComingSoon = () => {
-  const [isLightTheme, setIsLightTheme] = useState(false);
+  const [isLightTheme, setIsLightTheme] = useState(true);
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
@@ -33,12 +33,12 @@ const ComingSoon = () => {
             alt="HeroBgLight"
           />
           <img
-            className="hr-bg-dark dark-img"
+            className="hr-bg-dark dark-img comingsoon-dark-bg"
             src={HeroBgDark}
             alt="HeroBgDark"
           />
           <img
-            className="hr-bg-dark hr-bg-dark-mob dark-img"
+            className="hr-bg-dark hr-bg-dark-mob dark-img comingsoon-dark-bg"
             src={HeroBgDarkMob}
             alt="HeroBgDarkMob"
           />

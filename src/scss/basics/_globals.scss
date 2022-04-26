@@ -353,7 +353,7 @@ button {
 }
 .hr-bg-dark {
   width: 100%;
-  // height: 105vh;
+  height: 105vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -362,7 +362,9 @@ button {
   z-index: 1;
   margin: 0;
 }
-
+.comingsoon-dark-bg.hr-bg-dark{
+  height: 125vh !important;
+}
 @media screen and (max-width: 1000px) {
   .box {
     padding: 0 3.5rem;
@@ -373,6 +375,9 @@ button {
 }
 
 @media screen and (max-width: 650px) {
+  .comingsoon-dark-bg.hr-bg-dark{
+    height: 100vh !important;
+  }
   .box {
     padding: 0 2.5rem;
   }
@@ -380,6 +385,10 @@ button {
     display: none;
   }
   .hr-bg-dark-mob {
+    display: block !important;
+    object-position: top right;
+  }
+  .hr-bg-dark-mob.hr-bg-dark {
     display: block !important;
     object-position: top right;
   }
