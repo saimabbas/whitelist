@@ -514,6 +514,7 @@
     width: 100%;
     z-index: 10000000;
     position: relative;
+    margin: 2rem 0 0 0;
     .headermic-left {
       display: flex;
       justify-content: flex-start;
@@ -534,27 +535,33 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 3rem 0 0 0;
+    margin: 6rem 0 0 0;
     width: 100%;
     text-align: center;
     z-index: 10000000;
     position: relative;
     h6 {
-      font-size: 2.3rem;
+      font-size: 2.45rem;
       color: #fff;
       font-weight: 500;
+      margin: 2rem 0 0 0;
     }
     p {
-      margin: 4rem 0 0 0;
-      font-size: 1.6rem;
+      margin: 6rem 0 0 0;
+      font-size: 1.7rem;
       color: rgba(255, 255, 255, 0.6);
       font-weight: 400;
       position: relative;
+      display: flex;
+      justify-content: center;
+      white-space: nowrap;
+      align-items: center;
+      width: 5.5rem;
       &::before {
         content: "";
-        width: 5rem;
-        height: 2px;
-        background-color: red;
+        width: 3.5rem;
+        height: 3px;
+        background-color: #195bff;
         position: absolute;
         top: 50%;
         left: -5rem;
@@ -562,20 +569,29 @@
       }
       &::after {
         content: "";
-        width: 5rem;
-        height: 2px;
-        background-color: red;
+        width: 3.5rem;
+        height: 3px;
+        background-color: #195bff;
         position: absolute;
         top: 50%;
         right: -5rem;
         transform: translate(100%, -50%);
       }
     }
+    p:hover {
+      font-weight: 700;
+      color: #fff;
+    }
     button {
       background-color: #195bff;
-      width: 60%;
+      width: 75%;
+      padding: 2.25rem 0;
       color: #ffffff;
-      margin: 3rem auto 0 auto;
+      margin: 8rem auto 0 auto;
+      font-size: 1.8rem;
+      svg {
+        height: 3rem;
+      }
     }
   }
 }
