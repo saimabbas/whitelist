@@ -25,6 +25,9 @@ const CollectionsCard = (props) => {
             </h6>
           </div>
         </div>
+        <div className="collections-swiper-mob">
+          <div className="collections-swiper-box">{props.children}</div>
+        </div>
         <a href="#" className="view-more-link-box">
           <p>View collection</p>
           <span>
@@ -43,7 +46,9 @@ const CollectionsCard = (props) => {
         >
           <MdKeyboardArrowRight />
         </span>
-        <div className="collections-swiper-box">{props.children}</div>
+        <div className="collections-swiper-pc">
+          <div className="collections-swiper-box">{props.children}</div>
+        </div>
       </div>
     </div>
   );
