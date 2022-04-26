@@ -71,14 +71,85 @@ const Subscribe = () => {
                 <div className="team-grid-content">
                   <TeamCard
                     img={Team1}
-                    name="Serge Klassen"
+                    name="Connor Gregoryn"
                     role="Co Founder"
                   />
-                  <TeamCard img={Team2} name="Evan Klassen" />
-                  <TeamCard img={Team3} name="Kristian Hybschman" />
-                  <TeamCard img={Team4} name="Connor Gregory" />
-                  <TeamCard img={Team1} name="Charles Hiebert" />
-                  <TeamCard img={Team5} name="Jennifer Hiebert" />
+                  <TeamCard
+                    img={Team2}
+                    name="Charles Hiebert"
+                    role="Co Founder"
+                  />
+                  <TeamCard
+                    img={Team3}
+                    name="Serge Klassen"
+                    role="OPerations Manager"
+                  />
+                  <TeamCard
+                    img={Team4}
+                    name="Kristian Hybschmann"
+                    role="Community Manager"
+                  />
+                  <TeamCard
+                    img={Team1}
+                    name="Jenni Hiebertt"
+                    role="Project Manager"
+                  />
+                  <TeamCard
+                    img={Team5}
+                    name="Evan Klassen"
+                    role="Innovations"
+                  />
+                  <TeamCard
+                    img={Team5}
+                    name="Alex Merritt"
+                    role="Head of Marketing"
+                  />
+                  <TeamCard img={Team5} name="Sheraz Ahmed" role="Marketing" />
+                  <TeamCard
+                    img={Team5}
+                    name="Andy Ridgway"
+                    role="Lead Strategist"
+                  />
+                  <TeamCard
+                    img={Team5}
+                    name="Momodou Khan"
+                    role="Content Creator"
+                  />
+                  <TeamCard
+                    img={Team5}
+                    name="Nilian Studios"
+                    role="Artistic Lead Partner"
+                  />
+                  <TeamCard img={Team5} name="ALi " role="Creative Director" />
+                  <TeamCard img={Team5} name=" Ali " role="Art Supervisor" />
+                  <TeamCard img={Team5} name=" Ali" role="Artist" />
+                  <TeamCard img={Team5} name="Ali " role="Artist" />
+                  <TeamCard img={Team5} name="Ali " role="Artist" />
+                  <TeamCard
+                    img={Team5}
+                    name="Nina Laue"
+                    role="Head of Advisory"
+                  />
+                  <TeamCard img={Team5} name="NFTGUYY" role="Advisor" />
+                  <TeamCard img={Team5} name="DeltaCrypto" role="Advisor" />
+                  <TeamCard
+                    img={Team5}
+                    name="Salman Shawaf"
+                    role="Advisor(Founder of Dippies)"
+                  />
+                  <TeamCard img={Team5} name="Roland Dudko" role="Chief Dev" />
+                  <TeamCard img={Team5} name="Matt Kohn" role="Development" />
+                  <TeamCard
+                    img={Team5}
+                    name="Esteban Valbuena"
+                    role="Development"
+                  />
+                  <TeamCard
+                    img={Team5}
+                    name="Evan Klassen"
+                    role="Innovations"
+                  />
+                  <TeamCard img={Team5} name="Amir Bagian" role="UI/UX" />
                 </div>
               </div>
             </div>
