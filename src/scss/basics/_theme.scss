@@ -22,6 +22,11 @@
   --soge-not-available: #a9a9bf;
   --soge-available: #69697c;
   --soge-not-available-icon: #d9d9e4;
+
+  // Coming Soon
+  --var-timer-bg: #1f194d;
+  --var-input-bor: #fff;
+  --var-input-bgc: #fff;
 }
 .app.dark-theme {
   // Globals
@@ -47,4 +52,9 @@
   --soge-not-available: #69697c;
   --soge-not-available-icon: #69697c;
   --soge-available: #fff;
+
+  // Coming Soon
+  --var-timer-bg: #21274b;
+  --var-input-bor: #373e62;
+  --var-input-bgc: rgba(33, 39, 75, 0.29);
 }
