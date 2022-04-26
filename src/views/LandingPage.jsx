@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
-// import HeroBgLight2 from "./../assets/img/middle-moon.png";
-import Successful from "./../assets/img/successful.png";
-import Metamask from "./../assets/img/metamask.png";
-import Failed from "./../assets/img/failed.svg";
+import HeroBgDark from "./../assets/img/middle-moon.png";
 import Logo from "../assets/img/Logo";
-import { MdClear } from "react-icons/md";
 const LandingPage = () => {
+  const [isLightTheme, setIsLightTheme] = useState(false);
   return (
-    <div className="app light-theme">
+    <div
+      className={`app landingpage landingpage-scroll ${
+        isLightTheme ? "light-theme" : "dark-theme"
+      }`}
+    >
       <div className="landingpage">
         {/* Hero Section */}
         <section className="landing-main">
@@ -17,11 +18,11 @@ const LandingPage = () => {
             src={HeroBgLight}
             alt="HeroBgLight"
           />
-          {/* <img
-            className="hr-bg-light dark-img"
-            src={HeroBgLight2}
+          <img
+            className="hr-bg-dark dark-img"
+            src={HeroBgDark}
             alt="HeroBgLight"
-          /> */}
+          />
           <div className="box">
             <div className="landing-content">
               <div className="landing-head">
@@ -37,7 +38,7 @@ const LandingPage = () => {
           </div>
         </section>
       </div>
-      <div className="wlsuccesfulmodal">
+      {/* <div className="wlsuccesfulmodal">
         <div className="maincontentmodal">
           <img src={Successful} alt="" />
           <h6>Your payment was successful</h6>
@@ -88,7 +89,7 @@ const LandingPage = () => {
             <img src={Metamask} alt="" /> DISCONNECT METAMASK
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
