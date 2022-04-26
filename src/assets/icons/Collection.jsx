@@ -1,6 +1,6 @@
 import React from "react";
 
-const Collection = () => {
+const Collection = (props) => {
   return (
     <svg
       className={props.className}
