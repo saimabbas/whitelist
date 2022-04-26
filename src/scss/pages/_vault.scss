@@ -63,3 +63,28 @@
     }
   }
 }
+@media screen and (max-width: 1000px) {
+  .vaultmainpage .vault-grid {
+    grid-template-columns: 1fr;
+    margin: 7.5rem 0 0 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .page-body-con {
+    margin: 15rem 0 5rem 0;
+  }
+  .vaultmainpage
+    .vault-grid
+    .vault-grid-card
+    .vault-grid-card-bottom
+    .vault-swiper
+    .vault-swiper-left,
+  .vaultmainpage
+    .vault-grid
+    .vault-grid-card
+    .vault-grid-card-bottom
+    .vault-swiper
+    .vault-swiper-right {
+    display: none;
+  }
+}

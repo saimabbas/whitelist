@@ -356,9 +356,14 @@ button {
   }
 }
 
-// @media screen and (max-width: 650px) {
-// .light-blue-btn-filled
-// {
-//   padding: 1.15rem 1.15rem;
-// }
-// }
+@media screen and (max-width: 1000px) {
+  .box {
+    padding: 0 3.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .box {
+    padding: 0 2.5rem;
+  }
+}
