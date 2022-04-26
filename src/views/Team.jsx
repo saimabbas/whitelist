@@ -41,12 +41,12 @@ const Subscribe = () => {
       <div className="teammainbox">
         <section className="teampage">
           <img
-            className="team-bg-light light-img"
+            className="hr-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
           <img
-            className="team-bg-dark dark-img"
+            className="hr-bg-dark dark-img"
             src={HeroBgDark}
             alt="HeroBgDark"
           />

@@ -40,12 +40,12 @@ const Collections = () => {
       <div className="colmainpage">
         {/* Collection Section */}
         <img
-          className="col-bg-light light-img"
+          className="hr-bg-light light-img"
           src={HeroBgLight}
           alt="HeroBgLight"
         />
         <img
-          className="col-bg-dark dark-img"
+          className="hr-bg-dark dark-img"
           src={HeroBgDark}
           alt="HeroBgDark"
         />

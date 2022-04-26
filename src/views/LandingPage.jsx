@@ -1,5 +1,6 @@
 import React from "react";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+// import HeroBgLight2 from "./../assets/img/middle-moon.png";
 import Successful from "./../assets/img/successful.png";
 import Metamask from "./../assets/img/metamask.png";
 import Failed from "./../assets/img/failed.svg";
@@ -12,10 +13,15 @@ const LandingPage = () => {
         {/* Hero Section */}
         <section className="landing-main">
           <img
-            className="landing-bg-light light-img"
+            className="hr-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
+          {/* <img
+            className="hr-bg-light dark-img"
+            src={HeroBgLight2}
+            alt="HeroBgLight"
+          /> */}
           <div className="box">
             <div className="landing-content">
               <div className="landing-head">

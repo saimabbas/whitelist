@@ -26,12 +26,12 @@ const Subscribe = () => {
         {/* Subscribe Section */}
         <section className="subimgbox">
           <img
-            className="subscribe-bg-light light-img"
+            className="hr-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
           <img
-            className="subscribe-bg-dark dark-img"
+            className="hr-bg-dark dark-img"
             src={HeroBgDark}
             alt="HeroBgDark"
           />

@@ -31,12 +31,12 @@ const Roadmap = () => {
         {/* Roadmap Section */}
         <section className="roadmapmain">
           <img
-            className="roadmap-bg-light light-img"
+            className="hr-bg-light light-img"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
           <img
-            className="roadmap-bg-dark dark-img"
+            className="hr-bg-dark dark-img"
             src={HeroBgDark}
             alt="HeroBgDark"
           />
