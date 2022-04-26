@@ -3,6 +3,7 @@ import React from "react";
 const MoonIcon = (props) => {
   return (
     <svg
+      className={props.className}
       width="33"
       height="32"
       viewBox="0 0 33 32"

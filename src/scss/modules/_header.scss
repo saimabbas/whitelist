@@ -28,7 +28,7 @@ header {
           a {
             text-decoration: none;
             font-size: 1.75rem;
-            color: #4d4d62;
+            color: var(--header-links);
             b {
               font-size: 2rem;
               transition: 0.25s;
@@ -43,11 +43,11 @@ header {
       justify-content: flex-end;
       & > * {
         margin: 0 0 0 2.5rem;
+        cursor: pointer;
       }
       .header-right-icon {
         width: max-content;
         height: 2.5rem;
-        cursor: pointer;
       }
     }
   }

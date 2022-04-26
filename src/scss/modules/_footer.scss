@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  background-color: #1553cb;
+  background-color: var(--footer-bg);
   padding: 7.5rem 0 0 0;
   position: relative;
   .footer-top {
@@ -53,7 +53,7 @@ footer {
         a {
           font-size: 1.65rem;
           font-weight: 300;
-          color: #c0d0ee;
+          color: var(--footer-links-color);
           text-decoration: none;
           b {
             font-weight: 800;
@@ -72,7 +72,7 @@ footer {
       p {
         font-size: 1.65rem;
         font-weight: 300;
-        color: #c0d0ee;
+        color: var(--footer-links-color);
         margin: 4rem 0;
         svg {
           width: max-content;
@@ -86,7 +86,7 @@ footer {
         grid-template-columns: 1fr max-content;
         grid-template-rows: auto;
         grid-gap: 1rem;
-        background-color: #2352a1;
+        background-color: var(--footer-input-box);
         border-radius: 1rem;
         padding: 1rem;
         button {
@@ -107,7 +107,7 @@ footer {
           padding: 0 0 0 1.5rem;
           width: 100%;
           &::placeholder {
-            color: #c0d0ee;
+            color: var(--footer-links-color);
           }
         }
       }
@@ -115,14 +115,14 @@ footer {
   }
   .footer-bottom {
     width: 100%;
-    padding: 3.5rem 0;
-    margin: 3.5rem 0 0 0;
+    padding: 2.5rem 0;
+    margin: 2.5rem 0 0 0;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
     p {
       width: 100%;
       text-align: center;
       color: #fff;
-      font-size: 1.65rem;
+      font-size: 1.5rem;
     }
   }
   .more-btn {
@@ -143,6 +143,9 @@ footer {
       margin: 0 0 0 0.5rem;
     }
   }
+}
+.footer-mob {
+  display: none;
 }
 @media screen and (max-width: 1000px) {
   footer .footer-top {

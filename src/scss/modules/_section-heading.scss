@@ -12,7 +12,7 @@
       font-weight: 800;
       position: relative;
       z-index: 10;
-      color: #1f194d;
+      color: var(--dark-blue-white);
     }
     img {
       width: 8rem;
@@ -34,7 +34,7 @@
     margin: 0.5rem 0 0 0;
     z-index: 10;
     font-size: 3.5rem;
-    color: #1f194d;
+    color: var(--dark-blue-white);
     font-weight: 500;
   }
 }
