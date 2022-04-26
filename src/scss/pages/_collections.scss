@@ -35,7 +35,7 @@
       position: relative;
       display: flex;
       justify-content: space-between;
-      background-color: #fff;
+      background-color: var(--round-chevron-box);
       .top-notch {
         left: 3.5rem;
         transform: translate(0, -100%);
@@ -128,7 +128,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid #d8d8d8;
+            border: 1px solid var(--user-details-border);
             margin: 0 0 1rem 0;
             border-radius: 50%;
             img {
@@ -145,7 +145,7 @@
             h6 {
               font-size: 1.65rem;
               font-weight: 700;
-              color: #1f194d;
+              color: var(--dark-blue-white);
               display: flex;
               align-items: center;
               justify-content: flex-start;

@@ -292,12 +292,13 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: var(--round-chevron-box);
   padding: 1rem 2.5rem;
   font-size: 1.75rem;
   white-space: nowrap;
   border-radius: 1000px;
   font-weight: 600;
+  color: var(--dark-blue-white);
   span {
     width: 6.5rem;
     height: 5px;
