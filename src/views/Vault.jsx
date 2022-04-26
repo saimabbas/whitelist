@@ -28,9 +28,11 @@ const Vault = () => {
   };
   const openMobHeader = () => {
     setIsHeaderMobOpen(true);
+    document.body.classList.add("no-scroll");
   };
   const closeMobHeader = () => {
     setIsHeaderMobOpen(false);
+    document.body.classList.remove("no-scroll");
   };
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
