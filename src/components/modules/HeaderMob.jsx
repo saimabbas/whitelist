@@ -24,13 +24,17 @@ const HeaderMob = (props) => {
         </div>
       </div>
       <div className="headermobtext">
-        <Logo color="#fff" />
-        <h6>The White List</h6>
-        <p>Subscribe</p>
-        <p>Prize Pool</p>
-        <p>Roadmap</p>
-        <p>Upcoming Drops</p>
-        <p>Meet the Team</p>
+        <div className="headermoblogo">
+          <Logo color="#fff" />
+          <h6>The White List</h6>
+        </div>
+        <div className="headermenuopt">
+          <p>Subscribe</p>
+          <p>Prize Pool</p>
+          <p>Roadmap</p>
+          <p>Upcoming Drops</p>
+          <p>Meet the Team</p>
+        </div>
         <button className="light-blue-btn-filled">
           {" "}
           <WalletIcon color="#fff" /> Wallet
