@@ -194,15 +194,9 @@ button:hover {
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: var(--round-chevron-box);
   margin: 1.5rem 0 0 0;
   cursor: pointer;
@@ -265,15 +259,9 @@ button:hover {
 .user-details-box .user-details-box-img {
   width: 6rem;
   height: 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--user-details-border);
   margin: 0 1rem 0 0;
   border-radius: 50%;
@@ -292,8 +280,6 @@ button:hover {
   font-size: 2rem;
   font-weight: 700;
   color: var(--dark-blue-white);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -307,7 +293,6 @@ button:hover {
      object-fit: contain;
   margin: 0 0 0 1rem;
 }
-
 .user-details-box div p {
   font-size: 1.5rem;
   color: var(--user-details-p);
@@ -1166,20 +1151,8 @@ button:hover {
 }
 
 .light-blue-btn-filled.hiwbtnmain.greybgc {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   background-color: #efefef;
   color: #807e8e;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 1.5rem 2.5rem;
-  border: 1px solid transparent;
-  border-radius: 1000px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.25s;
 }
 .light-blue-btn-filled.hiwbtnmain.greybgc svg {
   width: -webkit-max-content;
@@ -1213,6 +1186,10 @@ button:hover {
 }
 
 @media screen and (max-width: 650px) {
+  .letushelp-content.hiwsection {
+    margin: 15rem 0;
+  }
+
   .letushelp-content.hiwsection .letushelp-grid .accordion-item {
     padding: 1.5rem;
   }
@@ -1223,7 +1200,8 @@ button:hover {
   }
 
   .light-blue-btn-filled.hiwbtnmain {
-    padding: 1.15rem 1.15rem;
+    padding: 1.15rem 1rem;
+    font-size: 1.45rem;
   }
 }
 .landingpage {
@@ -2145,7 +2123,7 @@ button:hover {
 .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left .collections-user-details-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -2198,6 +2176,7 @@ button:hover {
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin: 1.5rem 0 2.5rem 0;
   }
 
   .collections-grid-card-right {
@@ -2206,6 +2185,35 @@ button:hover {
 
   .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left {
     width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .colmainpage .collections-grid .collections-grid-card-content {
+    padding: 0;
+  }
+
+  .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left .collections-user-details-box {
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 3rem 0 3rem;
+  }
+
+  .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left .collections-user-details-box .user-details-box-img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left .collections-user-details-box .user-details-box-img img {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+  .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left .collections-user-details-box div h6 {
+    margin: 0 0 0 1rem;
+  }
+
+  .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left .collections-swiper-box {
+    padding: 0 3rem;
   }
 }
 .vaultmainpage {
@@ -2293,6 +2301,25 @@ button:hover {
   .vaultmainpage .vault-grid .vault-grid-card .vault-grid-card-bottom .vault-swiper .vault-swiper-left,
 .vaultmainpage .vault-grid .vault-grid-card .vault-grid-card-bottom .vault-swiper .vault-swiper-right {
     display: none;
+  }
+
+  .vaultmainpage .vault-grid .vault-grid-card {
+    padding: 0;
+  }
+
+  .user-details-box {
+    padding: 3rem 3rem 0 3rem;
+  }
+
+  .vaultmainpage .vault-grid .vault-grid-card .vault-grid-card-bottom .vault-swiper {
+    padding: 1rem 3rem;
+  }
+
+  .view-more-link-box {
+    justify-content: center;
+    padding: 2rem 0;
+    border-top: 1px solid #ededed;
+    width: 100%;
   }
 }
 .comesoonpage {
@@ -3666,48 +3693,28 @@ button:hover {
     padding: 2.5rem;
     grid-gap: 2.5rem;
   }
-  .prizepools-grid
-.prizepools-grid-card
-.prizepools-grid-card-bottom
-.pgc-bottom-content
-.voting-closed {
+
+  .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-closed {
     padding: 2.5rem;
   }
-  .prizepools-grid
-.prizepools-grid-card
-.prizepools-grid-card-bottom
-.pgc-bottom-content
-.voting-closed
-.vc-grid {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+
+  .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-closed .vc-grid {
+    grid-template-columns: 1fr 1fr 1fr;
   }
+
   .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom {
     padding: 0 2.5rem 2.5rem 2.5rem;
   }
 }
-
 @media screen and (max-width: 1000px) {
-  .prizepools-grid
-.prizepools-grid-card
-.prizepools-grid-card-bottom
-.pgc-bottom-content
-.voting-closed
-.vc-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+  .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-closed .vc-grid {
+    grid-template-columns: 1fr;
   }
-  .prizepools-grid
-.prizepools-grid-card
-.prizepools-grid-card-bottom
-.pgc-bottom-content
-.voting-open
-.vo-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+
+  .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-open .vo-grid {
+    grid-template-columns: 1fr;
   }
 }
-
 h1 {
   font-size: 6.4rem;
   font-weight: 800;
@@ -3998,18 +4005,12 @@ footer .footer-top .footer-right .fr-subscribe-input-box input {
   padding: 0 0 0 1.5rem;
   width: 100%;
 }
-
-footer .footer-top .footer-right .fr-subscribe-input-box input::-webkit-input-placeholder {
+footer .footer-top .footer-right .fr-subscribe-input-box input::-moz-placeholder {
   color: var(--footer-links-color);
 }
 footer .footer-top .footer-right .fr-subscribe-input-box input:-ms-input-placeholder {
   color: var(--footer-links-color);
 }
-
-footer .footer-top .footer-right .fr-subscribe-input-box input::-ms-input-placeholder {
-  color: var(--footer-links-color);
-}
-
 footer .footer-top .footer-right .fr-subscribe-input-box input::placeholder {
   color: var(--footer-links-color);
 }
@@ -4403,10 +4404,10 @@ footer .more-btn svg {
 
 @media screen and (max-width: 650px) {
   .letushelp-grid .faq-q {
-    width: 100%;
+    width: 95%;
   }
   .letushelp-grid .faq-q h5 {
-    width: 100%;
+    width: 97%;
   }
 }
 .hero-swiper-box .swiper-slide-content {

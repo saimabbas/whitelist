@@ -87,4 +87,23 @@
     .vault-swiper-right {
     display: none;
   }
+  .vaultmainpage .vault-grid .vault-grid-card {
+    padding: 0;
+  }
+  .user-details-box {
+    padding: 3rem 3rem 0 3rem;
+  }
+  .vaultmainpage
+    .vault-grid
+    .vault-grid-card
+    .vault-grid-card-bottom
+    .vault-swiper {
+    padding: 1rem 3rem;
+  }
+  .view-more-link-box {
+    justify-content: center;
+    padding: 2rem 0;
+    border-top: 1px solid #ededed;
+    width: 100%;
+  }
 }

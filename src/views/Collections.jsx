@@ -78,7 +78,7 @@ const Collections = () => {
                   modules={[Navigation]}
                   className="mySwiper"
                   spaceBetween={15}
-                  slidesPerView={2}
+                  slidesPerView={1.5}
                   breakpoints={{
                     1150: {
                       slidesPerView: 3,
@@ -145,7 +145,7 @@ const Collections = () => {
                   modules={[Navigation]}
                   className="mySwiper"
                   spaceBetween={15}
-                  slidesPerView={2}
+                  slidesPerView={1.5}
                   breakpoints={{
                     1150: {
                       slidesPerView: 3,
@@ -212,7 +212,7 @@ const Collections = () => {
                   modules={[Navigation]}
                   className="mySwiper"
                   spaceBetween={25}
-                  slidesPerView={3}
+                  slidesPerView={1.5}
                 >
                   <SwiperSlide>
                     <div className="swiper-slide-content">

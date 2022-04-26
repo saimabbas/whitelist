@@ -75,18 +75,8 @@
   }
 }
 .light-blue-btn-filled.hiwbtnmain.greybgc {
-  width: max-content;
   background-color: #efefef;
   color: #807e8e;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 1.5rem 2.5rem;
-  border: 1px solid transparent;
-  border-radius: 1000px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.25s;
   svg {
     width: max-content;
     height: 2.25rem;
@@ -116,6 +106,9 @@
 }
 
 @media screen and (max-width: 650px) {
+  .letushelp-content.hiwsection {
+    margin: 15rem 0;
+  }
   .letushelp-content.hiwsection .letushelp-grid .accordion-item {
     padding: 1.5rem;
   }
@@ -124,6 +117,7 @@
     margin: 2.5rem 0 6rem 0;
   }
   .light-blue-btn-filled.hiwbtnmain {
-    padding: 1.15rem 1.15rem;
+    padding: 1.15rem 1rem;
+    font-size: 1.45rem;
   }
 }

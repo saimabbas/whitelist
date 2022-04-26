@@ -120,7 +120,7 @@
         .collections-user-details-box {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
           width: max-content;
           .user-details-box-img {
             width: 10rem;
@@ -171,6 +171,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin: 1.5rem 0 2.5rem 0;
   }
   .collections-grid-card-right {
     display: none;
@@ -180,5 +181,55 @@
     .collections-grid-card-content
     .collections-grid-card-left {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .colmainpage .collections-grid .collections-grid-card-content {
+    padding: 0;
+  }
+  .colmainpage
+    .collections-grid
+    .collections-grid-card-content
+    .collections-grid-card-left
+    .collections-user-details-box {
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 3rem 0 3rem;
+  }
+  .colmainpage
+    .collections-grid
+    .collections-grid-card-content
+    .collections-grid-card-left
+    .collections-user-details-box
+    .user-details-box-img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .colmainpage
+    .collections-grid
+    .collections-grid-card-content
+    .collections-grid-card-left
+    .collections-user-details-box
+    .user-details-box-img
+    img {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+  .colmainpage
+    .collections-grid
+    .collections-grid-card-content
+    .collections-grid-card-left
+    .collections-user-details-box
+    div
+    h6 {
+    margin: 0 0 0 1rem;
+  }
+  .colmainpage
+    .collections-grid
+    .collections-grid-card-content
+    .collections-grid-card-left
+    .collections-swiper-box {
+    padding: 0 3rem;
   }
 }
