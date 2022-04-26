@@ -51,7 +51,7 @@ const PrizePools = () => {
           <div className="page-body-con">
             <div className="section-heading">
               <div className="sh-heading">
-                <h2>Collections</h2>
+                <h2>Prize Pools</h2>
                 <img className="light-img" src={BlobPurple} alt="BlobPurple" />
                 <img
                   className="dark-img"
@@ -124,7 +124,6 @@ const PrizePools = () => {
                     <div className="pgc-top-left-profile">
                       <img src={VaultProfilePic} alt="VaultProfilePic" />
                     </div>
-
                     <img
                       className="pgc-top-left-logo"
                       src={PassengersLogo}
