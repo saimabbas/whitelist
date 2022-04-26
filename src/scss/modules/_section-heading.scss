@@ -56,4 +56,11 @@
   .section-heading h6 {
     font-size: 2.5rem;
   }
+  .section-heading .sh-heading img {
+    width: 6.5rem;
+    position: absolute;
+    top: -1rem;
+    right: -2rem;
+    z-index: 9;
+  }
 }
