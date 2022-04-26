@@ -548,6 +548,9 @@ button:hover {
   --soge-available: #69697c;
   --soge-not-available-icon: #d9d9e4;
   --vault-card-border-mob: #ededed;
+  --var-timer-bg: #1f194d;
+  --var-input-bor: #fff;
+  --var-input-bgc: #fff;
 }
 
 .app.dark-theme {
@@ -569,6 +572,9 @@ button:hover {
   --soge-not-available-icon: #69697c;
   --soge-available: #fff;
   --vault-card-border-mob: #42464e;
+  --var-timer-bg: #21274b;
+  --var-input-bor: #373e62;
+  --var-input-bgc: rgba(33, 39, 75, 0.29);
 }
 
 .home {
@@ -3313,7 +3319,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #1f194d;
+  background-color: var(--var-timer-bg);
   color: #fff;
   height: 9.5rem;
   width: 8.5rem;
@@ -3369,7 +3375,8 @@ h6 {
   width: 45rem;
   border-radius: 4rem;
   padding: 1rem;
-  background-color: #fff;
+  background-color: var(--var-input-bgc);
+  border: 1px solid var(--var-input-bor);
 }
 
 .coomsoonlast .coomsooninput input {
@@ -3378,6 +3385,7 @@ h6 {
   font-size: 1.6rem;
   color: #69697c;
   font-weight: 400;
+  background-color: transparent;
   padding: 0 1rem;
 }
 
