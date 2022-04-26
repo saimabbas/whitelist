@@ -3,6 +3,7 @@ import React from "react";
 const ChevronUp = (props) => {
   return (
     <svg
+      className={props.className}
       width="9"
       height="6"
       viewBox="0 0 9 6"

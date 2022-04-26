@@ -3,6 +3,7 @@ import React from "react";
 const Instagram = (props) => {
   return (
     <svg
+      className={props.className}
       width="24"
       height="24"
       viewBox="0 0 24 24"

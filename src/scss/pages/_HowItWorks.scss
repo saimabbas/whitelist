@@ -39,8 +39,8 @@
 }
 .light-blue-btn-filled.hiwbtnmain {
   width: max-content;
-  background-color: rgba(25, 90, 255, 0.15);
-  color: #195bff;
+  background-color: var(--light-blue-btn-filled-bg);
+  color: var(--light-blue-btn-filled-color);
   font-size: 1.5rem;
   font-weight: 700;
   padding: 1.25rem 3.5rem;
@@ -89,4 +89,8 @@
   .light-blue-btn-filled.hiwbtnmain {
     padding: 1.15rem 1.15rem;
   }
+}
+.letushelp-card {
+  background-color: var(--round-chevron-box);
+  border-radius: 1.5rem;
 }

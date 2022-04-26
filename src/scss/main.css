@@ -423,12 +423,13 @@ button:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: var(--round-chevron-box);
   padding: 1rem 2.5rem;
   font-size: 1.75rem;
   white-space: nowrap;
   border-radius: 1000px;
   font-weight: 600;
+  color: var(--dark-blue-white);
 }
 
 .coming-tag span {
@@ -542,6 +543,9 @@ button:hover {
   --footer-bg: #1553cb;
   --footer-input-box: #2352a1;
   --footer-links-color: #c0d0ee;
+  --soge-not-available: #a9a9bf;
+  --soge-available: #69697c;
+  --soge-not-available-icon: #d9d9e4;
 }
 
 .app.dark-theme {
@@ -558,6 +562,9 @@ button:hover {
   --footer-bg: #3e4058;
   --footer-input-box: #30334e;
   --footer-links-color: #a3a3ab;
+  --soge-not-available: #69697c;
+  --soge-not-available-icon: #69697c;
+  --soge-available: #fff;
 }
 
 .home {
@@ -1419,7 +1426,6 @@ button:hover {
   .home .hero .hero-right .hsb-round-btns-box {
     display: none;
   }
-
   .subscribe-grid {
     grid-gap: 4.5rem !important;
   }
@@ -1469,8 +1475,8 @@ button:hover {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  background-color: rgba(25, 90, 255, 0.15);
-  color: #195bff;
+  background-color: var(--light-blue-btn-filled-bg);
+  color: var(--light-blue-btn-filled-color);
   font-size: 1.5rem;
   font-weight: 700;
   padding: 1.25rem 3.5rem;
@@ -1537,6 +1543,11 @@ button:hover {
   .light-blue-btn-filled.hiwbtnmain {
     padding: 1.15rem 1.15rem;
   }
+}
+
+.letushelp-card {
+  background-color: var(--round-chevron-box);
+  border-radius: 1.5rem;
 }
 
 .landingpage {
@@ -2261,7 +2272,7 @@ button:hover {
 
 .team-grid h3 {
   margin: 4.5rem 0;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   font-size: 3.4rem;
   z-index: 10;
 }
@@ -2303,14 +2314,14 @@ button:hover {
 }
 
 .team-grid .team-grid-content .team-grid-main h6 {
-  color: #1f194d;
+  color: var(--dark-blue-white);
   margin: 1rem 0 0 0;
   font-size: 2rem;
   text-align: center;
 }
 
 .team-grid .team-grid-content .team-grid-main p {
-  color: #69697c;
+  color: var(--user-details-p);
   font-size: 1.75rem;
   text-align: center;
 }
@@ -2728,7 +2739,7 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fff;
+  background-color: var(--round-chevron-box);
 }
 
 .colmainpage .collections-grid .collections-grid-card-content .top-notch {
@@ -2872,7 +2883,7 @@ button:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #d8d8d8;
+  border: 1px solid var(--user-details-border);
   margin: 0 0 1rem 0;
   border-radius: 50%;
 }
@@ -2899,7 +2910,7 @@ button:hover {
 .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-left .collections-user-details-box div h6 {
   font-size: 1.65rem;
   font-weight: 700;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5568,7 +5579,7 @@ footer .more-btn svg {
 
 .section-heading p {
   font-size: 2rem;
-  color: #69697c;
+  color: var(--user-details-p);
   text-align: center;
   line-height: 2.5rem;
   margin: 2.5rem 0 0 0;
@@ -5624,7 +5635,7 @@ footer .more-btn svg {
   transition: 0.75s;
   position: relative;
   z-index: 5;
-  background-color: #fff;
+  background-color: var(--round-chevron-box);
 }
 
 .subscribe-grid .subscribe-grid-card button.light-blue-btn-filled {
@@ -5647,7 +5658,7 @@ footer .more-btn svg {
   font-size: 2.5rem;
   line-height: 2.5rem;
   font-weight: 700;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   padding: 2.5rem 0 0 0;
   width: 100%;
   text-align: center;
@@ -5657,12 +5668,12 @@ footer .more-btn svg {
   font-size: 3.25rem;
   line-height: 3.25rem;
   font-weight: 800;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   padding: 2.5rem 0;
   margin: 2.5rem 0;
   width: 100%;
   text-align: center;
-  background-color: #ecf1fa94;
+  background-color: var(--view-more-link-box);
 }
 
 .subscribe-grid .subscribe-grid-card .subscribe-options-grid {
@@ -5698,7 +5709,7 @@ footer .more-btn svg {
 .subscribe-grid .subscribe-grid-card .subscribe-options-grid .subscribe-options-grid-entry p {
   font-size: 1.5rem;
   width: 75%;
-  color: #69697c;
+  color: var(--soge-available);
 }
 
 .subscribe-grid .subscribe-grid-card .subscribe-btn-box {
@@ -5721,11 +5732,11 @@ footer .more-btn svg {
 }
 
 .soge-not-available p {
-  color: #a9a9bf !important;
+  color: var(--soge-not-available) !important;
 }
 
 .soge-not-available svg path {
-  stroke: #d9d9e4 !important;
+  stroke: var(--soge-not-available-icon) !important;
 }
 
 @media screen and (max-width: 850px) {
@@ -5754,6 +5765,7 @@ footer .more-btn svg {
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.075);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.075);
   padding: 2.75rem;
+  background-color: unset !important;
 }
 
 .letushelp-grid .accordion-button:not(.collapsed) {
@@ -5782,6 +5794,7 @@ footer .more-btn svg {
 
 .letushelp-grid .accordion-button {
   padding: 0;
+  background-color: unset !important;
 }
 
 .letushelp-grid .faq-q {
@@ -5799,7 +5812,7 @@ footer .more-btn svg {
 
 .letushelp-grid .faq-q h5 {
   font-size: 1.85rem;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   font-weight: 700;
   width: 85%;
 }
@@ -5821,7 +5834,7 @@ footer .more-btn svg {
 
 .letushelp-grid .faq-a p {
   font-size: 1.65rem;
-  color: #807e8e;
+  color: var(--user-details-p);
 }
 
 .letushelp-grid .faq-a p a {

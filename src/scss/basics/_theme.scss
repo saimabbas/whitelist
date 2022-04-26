@@ -17,6 +17,11 @@
   --footer-bg: #1553cb;
   --footer-input-box: #2352a1;
   --footer-links-color: #c0d0ee;
+
+  // Subscription
+  --soge-not-available: #a9a9bf;
+  --soge-available: #69697c;
+  --soge-not-available-icon: #d9d9e4;
 }
 .app.dark-theme {
   // Globals
@@ -37,4 +42,9 @@
   --footer-bg: #3e4058;
   --footer-input-box: #30334e;
   --footer-links-color: #a3a3ab;
+
+  // Subscription
+  --soge-not-available: #69697c;
+  --soge-not-available-icon: #69697c;
+  --soge-available: #fff;
 }

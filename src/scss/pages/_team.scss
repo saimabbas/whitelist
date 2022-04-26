@@ -32,7 +32,7 @@
   margin: 10rem 0 0 0;
   h3 {
     margin: 4.5rem 0;
-    color: #1f194d;
+    color: var(--dark-blue-white);
     font-size: 3.4rem;
     z-index: 10;
   }
@@ -55,13 +55,13 @@
         object-fit: contain;
       }
       h6 {
-        color: #1f194d;
+        color: var(--dark-blue-white);
         margin: 1rem 0 0 0;
         font-size: 2rem;
         text-align: center;
       }
       p {
-        color: #69697c;
+        color: var(--user-details-p);
         font-size: 1.75rem;
         text-align: center;
       }

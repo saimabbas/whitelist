@@ -7,6 +7,7 @@
     border: 0 !important;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.075);
     padding: 2.75rem;
+    background-color: unset !important;
   }
   .accordion-button:not(.collapsed) {
     color: unset;
@@ -27,6 +28,7 @@
   }
   .accordion-button {
     padding: 0;
+    background-color: unset !important;
   }
   .faq-q {
     width: 100%;
@@ -35,7 +37,7 @@
     justify-content: space-between;
     h5 {
       font-size: 1.85rem;
-      color: #1f194d;
+      color: var(--dark-blue-white);
       font-weight: 700;
       width: 85%;
     }
@@ -50,7 +52,7 @@
     width: 100%;
     p {
       font-size: 1.65rem;
-      color: #807e8e;
+      color: var(--user-details-p);
       a {
         color: #195bff;
         font-weight: 700;
