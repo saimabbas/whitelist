@@ -83,8 +83,8 @@ const HowItWorks = () => {
                     >
                       <p>
                         Depending on the tier you have decided to go with, every
-                        tier unlocks certain perks and advantages. Visit (Link
-                        to subscriptions) to find out more.
+                        tier unlocks certain perks and advantages. Visit (
+                        <a href="#">Subscribe</a>) to find out more.
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
@@ -103,14 +103,14 @@ const HowItWorks = () => {
                         and Instagram!
                       </p>
                       <div className="luh-social-grid">
-                        <button className="light-blue-btn-filled hiwbtnmain">
-                          <FaInstagram /> thenftwhitelist
+                        <button className="light-blue-btn-filled hiwbtnmain greybgc">
+                          <FaInstagram color="#807E8E" /> thenftwhitelist
                         </button>
                         <button className="light-blue-btn-filled hiwbtnmain">
                           <FaTwitter /> theNFTwhitelist
                         </button>
-                        <button className="light-blue-btn-filled hiwbtnmain">
-                          <FaDiscord /> theWhitelist
+                        <button className="light-blue-btn-filled hiwbtnmain greybgc">
+                          <FaDiscord color="#807E8E" /> theWhitelist
                         </button>
                       </div>
                     </LetUsHelpCard>

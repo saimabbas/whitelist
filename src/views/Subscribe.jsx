@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BlobYellow from "../assets/img/blob-yellow.svg";
+import BlobYellow from "../assets/img/Purpleellipse.png";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
 import HeroBgDark from "./../assets/img/right-moon.png";
