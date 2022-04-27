@@ -104,7 +104,7 @@ const Checkout = () => {
                       <div className="colwalp">
                         <img className="light-img" src={Wallet} alt="Wallet" />
                         <img className="dark-img" src={WalletDark} alt="Wallet" />
-                        <p>1vtWSBkSF3wiuy1fN2UPx1Zn5nN2jszSf</p>
+                        <p>1vtWSBkSF3wiuy1fN2..jszSf</p>
                       </div>
                       <button>Copy</button>
                     </div>

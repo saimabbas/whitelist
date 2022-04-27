@@ -49,6 +49,56 @@ header {
         width: max-content;
         height: 2.5rem;
       }
+      .login-img-box
+      {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-right: 1px solid #D1E4EF;
+        .libimg
+        {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-width: 5rem;
+          max-width: 5rem;
+          min-height: 5rem;
+          max-height: 5rem;
+          background-color: #fff;
+          border-radius: 50%;
+          img 
+          {
+            min-width: 4.5rem;
+            max-width: 4.5rem;
+            min-height: 4.5rem;
+            max-height: 4.5rem;
+          }
+        }
+        h6 
+        {
+          font-size: 1.8rem;
+          color: #1f194d;
+          font-weight: 700;
+          margin: 0 1rem;
+        }
+        p 
+        {
+          font-size: 1.4rem;
+          color: #1f194d;
+          font-weight: 600;
+        }
+        svg 
+        {
+          font-size: 1.95rem;
+          color: #1f194d;
+          margin: 0 2rem;
+        }
+      }
+      svg 
+      {
+        font-size: 2rem;
+        margin: 0 0 0 1rem;
+      }
     }
   }
 }

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import HeroBgLight from "./../assets/img/coming-soon-bg-light.png";
 import HeroBgDark from "./../assets/img/middle-moon.png";
 import Logo from "../assets/img/Logo";
-
+import Support from "../assets/img/helpiconimg.png"
+import { MdClear } from "react-icons/md";
 const LandingPage = () => {
   const [isLightTheme, setIsLightTheme] = useState(false);
   return (
@@ -91,6 +92,7 @@ const LandingPage = () => {
           </button>
         </div>
       </div> */}
+      
     </div>
   );
 };
