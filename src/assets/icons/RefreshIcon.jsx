@@ -3,6 +3,7 @@ import React from "react";
 const RefreshIcon = (props) => {
   return (
     <svg
+    className={props.className}
       width="25"
       height="25"
       viewBox="0 0 25 25"

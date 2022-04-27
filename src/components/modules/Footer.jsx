@@ -126,7 +126,7 @@ const Footer = (props) => {
       </div>
       {props.moreBtn ? (
         <div className="more-btn">
-          More <RefreshIcon color="#fff" />
+          More  <RefreshIcon className='light-img' color="#fff" /> <RefreshIcon className='dark-img' color="#000" />
         </div>
       ) : null}
     </footer>
