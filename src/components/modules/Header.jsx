@@ -5,6 +5,9 @@ import SunIcon from "../../assets/icons/SunIcon";
 import WalletIcon from "../../assets/icons/WalletIcon";
 import Logo from "../../assets/img/Logo";
 import Menu from "../../assets/icons/Menu";
+import Person from "../../assets/img/personimg.png";
+import { MdExpandMore } from "react-icons/md";
+import Bell from "../../assets/icons/Bell";
 
 const Header = (props) => {
   return (
@@ -49,7 +52,7 @@ const Header = (props) => {
             </ul>
           </div>
           <div className="header-right">
-            <MessagesIcon
+            {/* <MessagesIcon
               className="header-right-icon light-img"
               color="#1F194D"
             />
@@ -69,7 +72,16 @@ const Header = (props) => {
               <WalletIcon className="light-img" color="#195BFF" />
               <WalletIcon className="dark-img" color="#fff" />
               Wallet
-            </button>
+            </button> */}
+              <div className="login-img-box">
+                <div className="libimg">
+                  <img src={Person} alt="" />
+                </div>
+                <h6>1.00461</h6>
+                <p>ETH</p>
+                <MdExpandMore />
+              </div>
+              <Bell />
           </div>
         </div>
       </div>
