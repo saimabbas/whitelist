@@ -11,7 +11,11 @@ import BlobYellow from "../assets/img/blob-yellow.svg";
 import BlobYellow2 from "../assets/img/blob-yellow2.png";
 import LogoLight from "./../assets/img/logo-light.svg";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
-import GlareLight from "./../assets/img/glare-light.svg";
+import HeroBgLightMob from "./../assets/img/hero-bg-light-mob.png";
+import HeroBgDark from "./../assets/img/home-hero-bg-dark-pc.png";
+import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
+import HeroGlareLight from "./../assets/img/glare-light.svg";
+import HeroGlareDark from "./../assets/img/hero-glare-dark.png";
 import AboutImg from "./../assets/img/home-about-img.png";
 import EllipseYellow from "./../assets/img/ellipse-yellow.svg";
 import CollectionsBg from "./../assets/img/collections-bg.svg";
@@ -61,11 +65,26 @@ const Home = () => {
       <div className="home">
         {/* Hero Section */}
         <section className="hero">
-          <img
-            className="hero-bg-light light-img"
-            src={HeroBgLight}
-            alt="HeroBgLight"
-          />
+        <img
+          className="hr-bg-light hr-bg-light-pc"
+          src={HeroBgLight}
+          alt="HeroBgLight"
+        />
+        <img
+          className="hr-bg-light hr-bg-light-mob"
+          src={HeroBgLightMob}
+          alt="HeroBgLightMob"
+        />
+        <img
+          className="hr-bg-dark hr-bg-dark-pc"
+          src={HeroBgDark}
+          alt="HeroBgDark"
+        />
+        <img
+          className="hr-bg-dark hr-bg-dark-mob"
+          src={HeroBgDarkMob}
+          alt="HeroBgDarkMob"
+        />
           <div className="box">
             <div className="hero-content hero-content-pc">
               <div className="hero-left">
@@ -118,12 +137,12 @@ const Home = () => {
               <div className="hero-right">
                 <img
                   className="hero-glare light-img"
-                  src={GlareLight}
+                  src={HeroGlareLight}
                   alt="hero-glare"
                 />
                 <img
                   className="hero-glare dark-img"
-                  src={GlareLight}
+                  src={HeroGlareDark}
                   alt="hero-glare"
                 />
                 <div className="hero-swiper-box">
@@ -195,16 +214,6 @@ const Home = () => {
                 </p>
               </div>
               <div className="hero-right">
-                <img
-                  className="hero-glare light-img"
-                  src={GlareLight}
-                  alt="hero-glare"
-                />
-                <img
-                  className="hero-glare dark-img"
-                  src={GlareLight}
-                  alt="hero-glare"
-                />
                 <div className="hero-swiper-box">
                   <Swiper
                     pagination={true}

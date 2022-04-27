@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgLight from "./../assets/img/coming-soon-bg-light.png";
 import HeroBgDark from "./../assets/img/middle-moon.png";
 import Logo from "../assets/img/Logo";
 const LandingPage = () => {
@@ -14,12 +14,12 @@ const LandingPage = () => {
         {/* Hero Section */}
         <section className="landing-main">
           <img
-            className="hr-bg-light light-img"
+            className="hr-bg-light light-img landing-page-bg"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
           <img
-            className="hr-bg-dark dark-img"
+            className="hr-bg-dark dark-img landing-page-bg"
             src={HeroBgDark}
             alt="HeroBgLight"
           />

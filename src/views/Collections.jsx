@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
-import HeroBgLight from "../assets/img/hero-bg-light.png";
-import HeroBgDark from "../assets/img/right-moon.png";
+import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgLightMob from "./../assets/img/hero-bg-light-mob.png";
+import HeroBgDark from "./../assets/img/right-moon.png";
+import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
 import CollectionsCardImg from "../assets/img/collections-card.png";
 import VaultProfilePic from "../assets/img/vault-profile-pic.png";
 import VaultProfilePic1 from "../assets/img/may.png";
@@ -40,14 +42,24 @@ const Collections = () => {
       <div className="colmainpage">
         {/* Collection Section */}
         <img
-          className="hr-bg-light light-img"
+          className="hr-bg-light hr-bg-light-pc"
           src={HeroBgLight}
           alt="HeroBgLight"
         />
         <img
-          className="hr-bg-dark dark-img"
+          className="hr-bg-light hr-bg-light-mob"
+          src={HeroBgLightMob}
+          alt="HeroBgLightMob"
+        />
+        <img
+          className="hr-bg-dark hr-bg-dark-pc"
           src={HeroBgDark}
           alt="HeroBgDark"
+        />
+        <img
+          className="hr-bg-dark hr-bg-dark-mob"
+          src={HeroBgDarkMob}
+          alt="HeroBgDarkMob"
         />
         <div className="box">
           <div className="page-body-con">

@@ -3,14 +3,14 @@ import BlobPurple from "../assets/img/blob-purple.svg";
 import HeroBgLight from "./../assets/img/coming-soon-bg-light.png";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgDark from "./../assets/img/comingsoon-dark-bg-pc.png";
-import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
+import HeroBgDarkMob from "./../assets/img/comingsoon-dark-mob.png";
 import Logo from "../assets/img/Logo";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
 
 const ComingSoon = () => {
-  const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isLightTheme, setIsLightTheme] = useState(false);
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
@@ -28,7 +28,7 @@ const ComingSoon = () => {
         {/* Hero Section */}
         <section className="landing-main coomsoon-main">
           <img
-            className="hr-bg-light hr-bg-light-comingsoon light-img"
+            className="hr-bg-light light-img landing-page-bg"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
