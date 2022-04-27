@@ -8,6 +8,7 @@ import { Accordion } from "react-bootstrap";
 import ChevronUp from "../../assets/icons/ChevronUp";
 import HelpIcon from "../../assets/img/help-icon.svg";
 
+
 const Footer = (props) => {
   return (
     <footer>
@@ -129,7 +130,9 @@ const Footer = (props) => {
           More  <RefreshIcon className='light-img' color="#fff" /> <RefreshIcon className='dark-img' color="#000" />
         </div>
       ) : null}
+      
     </footer>
+    
   );
 };
 
