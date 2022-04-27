@@ -106,6 +106,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
       grid-gap: 0.5rem;
+      z-index: 1;
 
       span {
         font-size: 3.5rem;
@@ -767,7 +768,7 @@
   }
 
   .home .hero .hero-right {
-    padding: 0 1.5rem;
+    padding: 0;
   }
 
   .home .hero .hero-content.hero-content-pc {
@@ -802,8 +803,24 @@
   }
 
   .home .hero .hero-countdopwn-box {
-    margin: 0;
+    margin: 0 0 0 1.5rem;
   }
+  .home .hero .hc-time-box
+  {
+    margin: 0 1.75rem 0 0;
+  }
+  .home .hero .hc-time-box h6 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0 0;
+}
+.home .hero .hero-content.hero-content-mob {
+  display: block;
+  padding: 12.5rem 0 3rem 0;
+}
+.home .about .about-content .about-right .blob-lightblue{
+  top: 5.5%;
+  left: -3%;
+}
 
   .section-heading p {
     width: 100%;
@@ -816,9 +833,17 @@
   }
 
   .home .about .about-content .about-right p {
-    margin: 0 0 3rem 0;
+    margin: 0 0 5rem 0;
+    font-weight: 400;
   }
-
+  .home .subscribe .subscribe-grid
+  {
+    margin: 7.5rem 0 5rem 0;
+  }
+  .home .letushelp-grid
+  {
+    margin: 5rem 0 7.5rem 0;
+  }
   .home .collections .collections-grid {
     display: none;
   }
@@ -839,6 +864,18 @@
   .home .collections {
     padding: 5.5rem 0;
     margin: 0 0 5.5rem 0;
+  }
+  .home .hero .hero-right .hero-swiper-box .hero-swiper-img-1-box {
+    border-radius: 2.5rem;
+    padding: 1rem;
+    width: 100%;
+
+    img {
+      border-radius: 2.5rem;
+      width: 32rem;
+    object-fit: cover;
+    height: 32rem;
+    }
   }
 }
 
