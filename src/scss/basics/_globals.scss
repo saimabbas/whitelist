@@ -248,7 +248,7 @@ button {
     transition: 0.2s;
 
     svg {
-      font-size: 1.85rem;
+      font-size: 2.25rem;
       position: relative;
       top: 50%;
       left: 0;
@@ -362,11 +362,11 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--round-chevron-box);
-  padding: 1rem 2.5rem;
-  font-size: 1.75rem;
+  padding: 1.25rem 3.5rem;
+  font-size: 1.5rem;
   white-space: nowrap;
   border-radius: 1000px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--dark-blue-white);
 
   span {
