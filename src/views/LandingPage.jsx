@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import HeroBgLight from "./../assets/img/coming-soon-bg-light.png";
 import HeroBgDark from "./../assets/img/middle-moon.png";
 import Logo from "../assets/img/Logo";
+
 const LandingPage = () => {
   const [isLightTheme, setIsLightTheme] = useState(false);
   return (

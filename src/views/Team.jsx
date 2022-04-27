@@ -17,13 +17,21 @@ import "swiper/css/pagination";
 import Footer from "../components/modules/Footer";
 import Header from "../components/modules/Header";
 import TeamCard from "../components/pages/Team/TeamCard";
+import HeaderMob from "../components/modules/HeaderMob";
+
 const Subscribe = () => {
   const [isLightTheme, setIsLightTheme] = useState(false);
+  const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
+
   const changeToDarkTheme = () => {
     setIsLightTheme(false);
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
+  };
+  const closeMobHeader = () => {
+    setIsHeaderMobOpen(false);
+    document.body.classList.remove("no-scroll");
   };
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
@@ -31,7 +39,9 @@ const Subscribe = () => {
       <Header
         changeToDarkTheme={changeToDarkTheme}
         changeToLightTheme={changeToLightTheme}
-      />
+      />   
+       {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
+
       <div className="teammainbox">
         <section className="teampage">
         <img
