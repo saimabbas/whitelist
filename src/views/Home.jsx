@@ -425,8 +425,8 @@ const Home = () => {
                 <Swiper
                   modules={[FreeMode]}
                   className="mySwiper"
-                  slidesPerView={1.25}
-                  spaceBetween={20}
+                  slidesPerView={1.15}
+                  spaceBetween={15}
                   freeMode={true}
                 >
                   <SwiperSlide>

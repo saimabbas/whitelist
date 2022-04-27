@@ -805,22 +805,25 @@
   .home .hero .hero-countdopwn-box {
     margin: 0 0 0 1.5rem;
   }
-  .home .hero .hc-time-box
-  {
+
+  .home .hero .hc-time-box {
     margin: 0 1.75rem 0 0;
   }
+
   .home .hero .hc-time-box h6 {
     font-size: 1.5rem;
     margin: 1rem 0 0 0;
-}
-.home .hero .hero-content.hero-content-mob {
-  display: block;
-  padding: 12.5rem 0 3rem 0;
-}
-.home .about .about-content .about-right .blob-lightblue{
-  top: 5.5%;
-  left: -3%;
-}
+  }
+
+  .home .hero .hero-content.hero-content-mob {
+    display: block;
+    padding: 12.5rem 0 3rem 0;
+  }
+
+  .home .about .about-content .about-right .blob-lightblue {
+    top: 5.5%;
+    left: -3%;
+  }
 
   .section-heading p {
     width: 100%;
@@ -836,14 +839,15 @@
     margin: 0 0 5rem 0;
     font-weight: 400;
   }
-  .home .subscribe .subscribe-grid
-  {
+
+  .home .subscribe .subscribe-grid {
     margin: 7.5rem 0 5rem 0;
   }
-  .home .letushelp-grid
-  {
+
+  .home .letushelp-grid {
     margin: 5rem 0 7.5rem 0;
   }
+
   .home .collections .collections-grid {
     display: none;
   }
@@ -865,6 +869,7 @@
     padding: 5.5rem 0;
     margin: 0 0 5.5rem 0;
   }
+
   .home .hero .hero-right .hero-swiper-box .hero-swiper-img-1-box {
     border-radius: 2.5rem;
     padding: 1rem;
@@ -872,9 +877,9 @@
 
     img {
       border-radius: 2.5rem;
-      width: 32rem;
-    object-fit: cover;
-    height: 32rem;
+      width: 100%;
+      object-fit: cover;
+      height: 30rem;
     }
   }
 }
