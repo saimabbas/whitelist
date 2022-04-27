@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
-import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgLight from "./../assets/img/coming-soon-bg-light.png";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
-import HeroBgDark from "./../assets/img/right-moon.png";
+import HeroBgDark from "./../assets/img/comingsoon-dark-bg-pc.png";
+import HeroBgDarkMob from "./../assets/img/comingsoon-dark-mob.png";
 import Logo from "../assets/img/Logo";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
@@ -23,18 +24,23 @@ const ComingSoon = () => {
           </div>
         </div>
       </header>
-      <div className="landingpage comesoonpage">
+      <div className="comesoonpage">
         {/* Hero Section */}
         <section className="landing-main coomsoon-main">
           <img
-            className="hr-bg-light light-img"
+            className="hr-bg-light light-img landing-page-bg"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
           <img
-            className="hr-bg-dark dark-img"
+            className="hr-bg-dark dark-img comingsoon-dark-bg"
             src={HeroBgDark}
             alt="HeroBgDark"
+          />
+          <img
+            className="hr-bg-dark hr-bg-dark-mob dark-img comingsoon-dark-bg"
+            src={HeroBgDarkMob}
+            alt="HeroBgDarkMob"
           />
           <div className="box">
             <div className="landing-content comesoonsection">

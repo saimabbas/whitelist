@@ -20,7 +20,8 @@
   }
 }
 .landing-content.comesoonsection {
-  margin: 18rem 0 5rem 0;
+  padding: 18rem 0 0 0 !important;
+  margin: 0 !important;
   .section-heading {
     h2 {
       letter-spacing: 9px;
@@ -32,9 +33,9 @@
       font-size: 2.35rem;
     }
     img {
-      width: 16.5rem;
+      width: 15rem;
       position: absolute;
-      top: -7rem;
+      top: -5rem;
       right: -4.5rem;
       z-index: 9;
     }
@@ -88,7 +89,7 @@
       display: block;
     }
     h6 {
-      color: #fff;
+      color: var(--user-details-p);
       font-size: 1.45rem;
       font-weight: 500;
     }
@@ -151,7 +152,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4rem 0;
+  margin: 5rem 0 0 0;
   width: 30%;
 }
 
@@ -165,18 +166,31 @@
 }
 
 @media screen and (max-width: 650px) {
+  .coomsoontimer .hero-countdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.5rem;
+  }
+  .coomsoontimer .hc-time-box {
+    width: 100%;
+    margin: 0 !important;
+  }
+  .coomsoontimer .hc-time-box-top span {
+    font-size: 2.75rem;
+  }
   .comesoonpage .coomsoon-main .coomsoon-bg-light {
     height: 100vh;
   }
   .landing-content.comesoonsection .section-heading {
     h2 {
       letter-spacing: 3px;
-      font-size: 5rem;
+      font-size: 4.5rem;
     }
     p {
       margin: 3rem 0 0rem 0;
       z-index: 10;
-      font-size: 2.35rem;
+      font-size: 2rem;
       width: 100%;
     }
   }
@@ -201,7 +215,7 @@
   }
   .coomsoonlast .coomsooninput {
     width: 100%;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem;
   }
   .landing-content.comesoonsection .section-heading img {
     width: 9rem;
@@ -212,10 +226,11 @@
   }
   .coomsoonlast .coomsooninput {
     input {
-      width: 55%;
+      width: 100%;
     }
     button {
-      width: 42%;
+      width: max-content;
+      padding: 1rem 2.5rem;
     }
   }
 }

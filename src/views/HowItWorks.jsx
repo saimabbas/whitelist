@@ -2,17 +2,10 @@ import React, { useState } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgLightMob from "./../assets/img/hero-bg-light-mob.png";
 import HeroBgDark from "./../assets/img/right-moon.png";
+import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
 import { Accordion } from "react-bootstrap";
-import ChevronUp from "../assets/icons/ChevronUp";
-import Logo from "../assets/img/Logo";
-import Instagram from "../assets/icons/Instagram";
-import TwitterIcon from "../assets/icons/TwitterIcon";
-import Discord from "../assets/icons/Discord";
-import RefreshIcon from "../assets/icons/RefreshIcon";
-import MessagesIcon from "../assets/icons/MessagesIcon";
-import MoonIcon from "../assets/icons/MoonIcon";
-import WalletIcon from "../assets/icons/WalletIcon";
 import Header from "../components/modules/Header";
 import Footer from "../components/modules/Footer";
 import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
@@ -35,16 +28,26 @@ const HowItWorks = () => {
       <div className="letushelp">
         {/* Let Us Work Section */}
         <section className="luh-main">
-          <img
-            className="hr-bg-light light-img"
-            src={HeroBgLight}
-            alt="HeroBgLight"
-          />
-          <img
-            className="hr-bg-dark dark-img"
-            src={HeroBgDark}
-            alt="HeroBgDark"
-          />
+        <img
+          className="hr-bg-light hr-bg-light-pc"
+          src={HeroBgLight}
+          alt="HeroBgLight"
+        />
+        <img
+          className="hr-bg-light hr-bg-light-mob"
+          src={HeroBgLightMob}
+          alt="HeroBgLightMob"
+        />
+        <img
+          className="hr-bg-dark hr-bg-dark-pc"
+          src={HeroBgDark}
+          alt="HeroBgDark"
+        />
+        <img
+          className="hr-bg-dark hr-bg-dark-mob"
+          src={HeroBgDarkMob}
+          alt="HeroBgDarkMob"
+        />
           <div className="app-page">
             <div className="box">
               <div className="letushelp-content hiwsection">

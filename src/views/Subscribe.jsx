@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import BlobYellow from "../assets/img/Purpleellipse.png";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
 import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgLightMob from "./../assets/img/hero-bg-light-mob.png";
 import HeroBgDark from "./../assets/img/right-moon.png";
+import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
 import SubscribeCard from "../components/pages/Home/SubscribeCard";
 import Footer from "../components/modules/Footer";
 import Header from "../components/modules/Header";
@@ -25,16 +27,26 @@ const Subscribe = () => {
       <div className="subscribepage">
         {/* Subscribe Section */}
         <section className="subimgbox">
-          <img
-            className="hr-bg-light light-img"
-            src={HeroBgLight}
-            alt="HeroBgLight"
-          />
-          <img
-            className="hr-bg-dark dark-img"
-            src={HeroBgDark}
-            alt="HeroBgDark"
-          />
+        <img
+          className="hr-bg-light hr-bg-light-pc"
+          src={HeroBgLight}
+          alt="HeroBgLight"
+        />
+        <img
+          className="hr-bg-light hr-bg-light-mob"
+          src={HeroBgLightMob}
+          alt="HeroBgLightMob"
+        />
+        <img
+          className="hr-bg-dark hr-bg-dark-pc"
+          src={HeroBgDark}
+          alt="HeroBgDark"
+        />
+        <img
+          className="hr-bg-dark hr-bg-dark-mob"
+          src={HeroBgDarkMob}
+          alt="HeroBgDarkMob"
+        />
           <div className="app-page">
             <div className="box">
               <div className="subscribe-content subsmainpage">

@@ -1,28 +1,28 @@
-import React from "react";
-import HeroBgLight from "./../assets/img/hero-bg-light.png";
-// import HeroBgLight2 from "./../assets/img/middle-moon.png";
-import Successful from "./../assets/img/successful.png";
-import Metamask from "./../assets/img/metamask.png";
-import Failed from "./../assets/img/failed.svg";
+import React, { useState } from "react";
+import HeroBgLight from "./../assets/img/coming-soon-bg-light.png";
+import HeroBgDark from "./../assets/img/middle-moon.png";
 import Logo from "../assets/img/Logo";
-import { MdClear } from "react-icons/md";
-import Support from "./../assets/img/helpiconimg.png";
 const LandingPage = () => {
+  const [isLightTheme, setIsLightTheme] = useState(false);
   return (
-    <div className="app light-theme">
+    <div
+      className={`app landingpage landingpage-scroll ${
+        isLightTheme ? "light-theme" : "dark-theme"
+      }`}
+    >
       <div className="landingpage">
         {/* Hero Section */}
         <section className="landing-main">
           <img
-            className="hr-bg-light light-img"
+            className="hr-bg-light light-img landing-page-bg"
             src={HeroBgLight}
             alt="HeroBgLight"
           />
-          {/* <img
-            className="hr-bg-light dark-img"
-            src={HeroBgLight2}
+          <img
+            className="hr-bg-dark dark-img landing-page-bg"
+            src={HeroBgDark}
             alt="HeroBgLight"
-          /> */}
+          />
           <div className="box">
             <div className="landing-content">
               <div className="landing-head">
@@ -38,7 +38,7 @@ const LandingPage = () => {
           </div>
         </section>
       </div>
-      <div className="wlsuccesfulmodal">
+      {/* <div className="wlsuccesfulmodal">
         <div className="maincontentmodal">
           <img src={Successful} alt="" />
           <h6>Your payment was successful</h6>
@@ -89,31 +89,7 @@ const LandingPage = () => {
             <img src={Metamask} alt="" /> DISCONNECT METAMASK
           </button>
         </div>
-      </div>
-      <div className="wlfootermodal">
-      <div className="helpiconmodel">
-          <div className="hiheader">
-            <div className="hihimg">
-              <img src={Support} alt="" />
-              <p>Support</p>
-            </div>
-            <MdClear />
-          </div>
-          <div className="wlupinput">
-                <label htmlFor="">Name</label>
-                <input type="text" placeholder="Enter Your Name" />
-          </div>
-          <div className="wlupinput">
-                <label htmlFor="">Email</label>
-                <input type="text" placeholder="Enter Your Email Address" />
-          </div>
-          <div className="wlupinput">
-                <label htmlFor="">Problem</label>
-                <textarea name="" id="" cols="20" rows="10" placeholder="What's the Problem?"></textarea>
-          </div>
-          <button>Send</button>
-      </div>
-      </div>
+      </div> */}
     </div>
   );
 };
