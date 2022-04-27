@@ -20,6 +20,7 @@ import Header from "../components/modules/Header";
 
 import InfoIcon from "../assets/icons/InfoIcon";
 import { MdDone } from "react-icons/md";
+import Footer from "../components/modules/Footer";
 const PrizePools = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
   const changeToDarkTheme = () => {
@@ -151,7 +152,8 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>1x board ape NFT’s</h6>
                                   <p>
@@ -176,12 +178,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog "></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>1x Ferrari 488</h6>
                                   <p>
@@ -209,12 +212,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>1x McLaren 720 </h6>
                                   <p>
@@ -242,12 +246,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 1x Nissan GTR</h6>
                                   <p>
@@ -275,12 +280,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 5x vacations to Disney land </h6>
                                   <p>
@@ -308,12 +314,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>20x cash prizes of 10,000USD</h6>
                                   <p>
@@ -335,12 +342,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 1x Lamborghini Huracan</h6>
                                   <p>
@@ -368,12 +376,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 4x 50k worth of ETH</h6>
                                   <p>
@@ -395,12 +404,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 2x Converted sprinter vans </h6>
                                   <p>
@@ -429,12 +439,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 1X Richard Mille </h6>
                                   <p>
@@ -458,7 +469,7 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                         </div>
                         <div className="vo-grid-card">
@@ -468,10 +479,11 @@ const PrizePools = () => {
                               <span>B</span> POOL
                             </p>
                           </div>
-                          <div className="vo-option">
+                          <div className="vo-option vo-option-active">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>4x Mutant apes </h6>
                                   <p>
@@ -488,7 +500,7 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="vo-11" />
+                                <input type="checkbox" name="" id="vo-11" defaultChecked={true} />
                                 <label htmlFor="vo-11">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
@@ -496,12 +508,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x Tesla model X or Y’s</h6>
                                   <p>
@@ -529,12 +542,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x jeep wranglers </h6>
                                   <p>
@@ -562,12 +576,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>10x Dream gaming set ups </h6>
                                   <p>
@@ -593,12 +608,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>3x Rolexes </h6>
                                   <p>
@@ -624,12 +640,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x World cup trip </h6>
                                   <p>
@@ -658,12 +675,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 2x 2023 super bowl trip </h6>
                                   <p>
@@ -692,12 +710,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x Dubai adventure trip </h6>
                                   <p>
@@ -725,12 +744,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 2x African adventure trip</h6>
                                   <p>
@@ -758,12 +778,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 4x 25,000k </h6>
                                   <p>
@@ -785,7 +806,7 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                         </div>
                         <div className="vo-grid-card">
@@ -798,7 +819,8 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>50x Xbox Series X</h6>
                                   <p>
@@ -821,12 +843,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>50x PlayStation 5</h6>
                                   <p>
@@ -849,12 +872,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>10x MacBook Pro’s</h6>
                                   <p>
@@ -878,12 +902,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>25x iPhone 13 ProMax</h6>
                                   <p>
@@ -906,12 +931,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>25 Peloton’s</h6>
                                   <p>
@@ -935,12 +961,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x Louis Vuitton travel sets</h6>
                                   <p>
@@ -964,12 +991,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>20x Microsoft surface pro’s</h6>
                                   <p>
@@ -993,12 +1021,13 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon color="#1F194D" />
+                                <InfoIcon className='light-img' color="#1F194D" />
+                                <InfoIcon className='dark-img' color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x invisible friends </h6>
                                   <p>
@@ -1023,7 +1052,7 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog vo-option-prog-active"></div>
+                            <div className="vo-option-prog"></div>
                           </div>
                         </div>
                       </div>
@@ -1066,52 +1095,7 @@ const PrizePools = () => {
         </div>
       </div>
       {/* Footer */}
-      <footer>
-        <div className="box">
-          <div className="footer-content">
-            <div className="footer-top">
-              <div className="footer-left">
-                <Logo color="#fff" />
-                <p>Follow us on social media</p>
-                <div className="fl-icons-grid">
-                  <Instagram color="#fff" />
-                  <TwitterIcon color="#fff" />
-                  <Discord color="#fff" />
-                </div>
-              </div>
-              <div className="footer-center">
-                <h6>The Whitelist Info</h6>
-                <div className="fc-grid">
-                  <a href="#">Subscribe</a>
-                  <a href="#">Upcoming Drops </a>
-                  <a href="#">Roadmap</a>
-                  <a href="#">
-                    <b>Meet the Team</b>
-                  </a>
-                  <a href="#">How it Works</a>
-                </div>
-              </div>
-              <div className="footer-right">
-                <h6>Join Newsletter</h6>
-                <p>
-                  Subscribe our newsletter to get latest <Logo color="#fff" />
-                  updates
-                </p>
-                <div className="fr-subscribe-input-box">
-                  <input type="text" placeholder="Enter your Email " />
-                  <button>Subscribe</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <p>Copyright © 2022. All rights reserved</p>
-        </div>
-        <div className="more-btn">
-          More <RefreshIcon color="#fff" />
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

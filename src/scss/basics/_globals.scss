@@ -216,6 +216,15 @@ button {
   }
 }
 
+.round-chevron-box.round-chevron-box-hero-home {
+  background-color: var(--round-chevron-box-home-hero);
+
+  &:hover {
+    background-color: var(--dark-blue-white);
+    color: var(--white-dark-blue);
+  }
+}
+
 .view-more-link-box {
   display: flex;
   align-items: center;
@@ -312,7 +321,7 @@ button {
 }
 
 .collections-grid-card {
-  background-color: #fff;
+  background-color: var(--round-chevron-box);
   padding: 2rem 2rem;
   border-radius: 2.5rem;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.05);
@@ -326,8 +335,9 @@ button {
       display: flex;
       align-items: center;
       font-weight: 500;
+      color: var(--dark-blue-white);
 
-      img {
+      svg {
         width: 4rem;
         margin: 0 0.75rem 0 0;
       }

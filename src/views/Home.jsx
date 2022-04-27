@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import HeroImg from "../assets/img/hero-img-1.png";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurple2 from "../assets/img/blob-purple2.png";
-import BlobPurpleDark from "../assets/img/blob-purple2.png";
+import BlobPurpleDark from "../assets/img/blob-gray.png";
 import BlobLightBlue from "../assets/img/blob-lightblue.svg";
 import BlobLightBlue2 from "../assets/img/blob-lightblue2.png";
 import BlobGreen from "../assets/img/blob-green.svg";
@@ -190,10 +190,10 @@ const Home = () => {
                     </SwiperSlide>
                   </Swiper>
                   <div className="hsb-round-btns-box">
-                    <span className="round-chevron-box">
+                    <span className="round-chevron-box round-chevron-box-hero-home">
                       <MdKeyboardArrowRight />
                     </span>
-                    <span className="round-chevron-box">
+                    <span className="round-chevron-box round-chevron-box-hero-home">
                       <MdKeyboardArrowLeft />
                     </span>
                   </div>
@@ -322,7 +322,8 @@ const Home = () => {
                 />
                 <h6>
                   About the
-                  <img src={LogoLight} alt="LogoLight" />
+            <Logo className="light-img" color="#1F194D" />
+            <Logo className="dark-img" color="#fff" />
                 </h6>
                 <h5>
                   Here at The <b>Whitelist</b>, we are dedicated to providing
@@ -383,7 +384,7 @@ const Home = () => {
                 <HomeCollectionsCard
                   collectionLogoImg={LogoLight}
                   collectionImg={CollectionsCard}
-                  collectionName="Fractional Friends"
+                  collectionName="Walt's Vault"
                   collectionComingTime="Coming This April"
                 />
               </div>
@@ -447,28 +448,32 @@ const Home = () => {
               <div className="section-heading">
                 <div className="sh-heading">
                   <h2>Subscribe to Season 1</h2>
-                  <img src={BlobYellow} alt="BlobYellow" />
-                  <img src={BlobYellow2} alt="BlobYellow2" />
+                  <img className="light-img" src={BlobYellow} alt="BlobYellow" />
+                  <img className="light-dark" src={BlobYellow2} alt="BlobYellow2" />
                 </div>
                 <p>Join the Whitelist by choose your perfect option below</p>
               </div>
               <div className="subscribe-grid">
-                <SubscribeCard
-                  isNotActive4="soge-not-available"
-                  isNotActive5="soge-not-available"
-                  isNotActive6="soge-not-available"
-                  isNotActive7="soge-not-available"
-                  isNotActive8="soge-not-available"
-                  isNotActive9="soge-not-available"
-                  isNotActive10="soge-not-available"
-                />
-                <SubscribeCard
-                  isNotActive7="soge-not-available"
-                  isNotActive8="soge-not-available"
-                  isNotActive9="soge-not-available"
-                  isNotActive10="soge-not-available"
-                />
-                <SubscribeCard />
+              <SubscribeCard
+                    tier="Tier 1"
+                    eth="0.3ETH"
+                    isNotActive4="soge-not-available"
+                    isNotActive5="soge-not-available"
+                    isNotActive6="soge-not-available"
+                    isNotActive7="soge-not-available"
+                    isNotActive8="soge-not-available"
+                    isNotActive9="soge-not-available"
+                    isNotActive10="soge-not-available"
+                  />
+                  <SubscribeCard
+                    tier="Tier 2"
+                    eth="0.4ETH"
+                    isNotActive7="soge-not-available"
+                    isNotActive8="soge-not-available"
+                    isNotActive9="soge-not-available"
+                    isNotActive10="soge-not-available"
+                  />
+                  <SubscribeCard tier="Tier 3" eth="0.5ETH" />
               </div>
             </div>
           </div>
@@ -550,7 +555,7 @@ const Home = () => {
         </section>
         {/* Footer */}
         <Footer moreBtn={true} />
-        <div className="logininfo">
+        {/* <div className="logininfo">
           <div className="loginnameimg">
             <img src={PersonImg} alt="" />
             <div className="logintext">
@@ -573,7 +578,7 @@ const Home = () => {
               <h5>Disconnect</h5>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

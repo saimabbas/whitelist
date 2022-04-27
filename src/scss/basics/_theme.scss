@@ -6,6 +6,7 @@
   --light-blue-btn-filled-color: #195bff;
   --light-blue-btn-filled-bg: rgba(25, 90, 255, 0.15);
   --round-chevron-box: #fff;
+  --round-chevron-box-home-hero: #fff;
   --view-more-link-box: #eef4f6;
   --user-details-p: #69697c;
   --user-details-border: #d8d8d8;
@@ -32,10 +33,19 @@
   --var-input-bor: #fff;
   --var-input-bgc: #fff;
 
-  // How it Works 
-  --var-hiw-eth: #000000;
+  // Home
+  --hero-timer-bg: #1F194D;
+  --home-about-p: #1F194D;
 
+  // Prize Pools
+  --prizepools-card-bg: #fff;
+  --voting-closed-bg: #F7F6F2;
+  --voting-closed-color: #4D4D62;
+  --vo-option-border: #eeeeee;
+  --prizepools-prog-bg: #C0D0EE;
+  --prizepools-center-grid-card-bg: rgba(192, 208, 238, 0.1);
 }
+
 .app.dark-theme {
   // Globals
   --bg-color: #1b1f31;
@@ -44,6 +54,7 @@
   --light-blue-btn-filled-color: #fff;
   --light-blue-btn-filled-bg: rgba(255, 255, 255, 0.15);
   --round-chevron-box: #292a37;
+  --round-chevron-box-home-hero: rgba(255, 255, 255, 0.15);
   --view-more-link-box: #434855;
   --user-details-p: #a3a3ab;
   --user-details-border: #42464e;
@@ -64,12 +75,21 @@
 
   // Vault
   --vault-card-border-mob: #42464e;
+
   // Coming Soon
   --var-timer-bg: #21274b;
   --var-input-bor: #373e62;
   --var-input-bgc: rgba(33, 39, 75, 0.29);
 
+  // Home
+  --hero-timer-bg: #353B57;
+  --home-about-p: rgba(255, 255, 255, 0.5);
 
-   // How it Works 
-   --var-hiw-eth: #fff;
+  // Prize Pools
+  --prizepools-card-bg: #3B3C4E;
+  --voting-closed-bg: rgba(255, 255, 255, 0.1);
+  --voting-closed-color: #848594;
+  --vo-option-border: #394359;
+  --prizepools-prog-bg: #8B8D9C;
+  --prizepools-center-grid-card-bg: rgba(192, 208, 238, 0.05);
 }

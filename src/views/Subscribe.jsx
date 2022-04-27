@@ -87,7 +87,7 @@ const Subscribe = () => {
                     isNotActive9="soge-not-available"
                     isNotActive10="soge-not-available"
                   />
-                  <SubscribeCard tier="Tier 3(The Inner Circle)" eth="0.5ETH" />
+                  <SubscribeCard tier="Tier 3" eth="0.5ETH" />
                 </div>
               </div>
             </div>
