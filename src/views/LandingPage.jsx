@@ -6,6 +6,7 @@ import Metamask from "./../assets/img/metamask.png";
 import Failed from "./../assets/img/failed.svg";
 import Logo from "../assets/img/Logo";
 import { MdClear } from "react-icons/md";
+import Support from "./../assets/img/helpiconimg.png";
 const LandingPage = () => {
   return (
     <div className="app light-theme">
@@ -88,6 +89,30 @@ const LandingPage = () => {
             <img src={Metamask} alt="" /> DISCONNECT METAMASK
           </button>
         </div>
+      </div>
+      <div className="wlfootermodal">
+      <div className="helpiconmodel">
+          <div className="hiheader">
+            <div className="hihimg">
+              <img src={Support} alt="" />
+              <p>Support</p>
+            </div>
+            <MdClear />
+          </div>
+          <div className="wlupinput">
+                <label htmlFor="">Name</label>
+                <input type="text" placeholder="Enter Your Name" />
+          </div>
+          <div className="wlupinput">
+                <label htmlFor="">Email</label>
+                <input type="text" placeholder="Enter Your Email Address" />
+          </div>
+          <div className="wlupinput">
+                <label htmlFor="">Problem</label>
+                <textarea name="" id="" cols="20" rows="10" placeholder="What's the Problem?"></textarea>
+          </div>
+          <button>Send</button>
+      </div>
       </div>
     </div>
   );
