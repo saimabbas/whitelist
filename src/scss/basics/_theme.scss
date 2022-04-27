@@ -44,6 +44,9 @@
   --vo-option-border: #eeeeee;
   --prizepools-prog-bg: #C0D0EE;
   --prizepools-center-grid-card-bg: rgba(192, 208, 238, 0.1);
+
+  // Checkout
+  --checkout-card-bg: rgba(221, 221, 229, 0.25);
 }
 
 .app.dark-theme {
@@ -92,4 +95,7 @@
   --vo-option-border: #394359;
   --prizepools-prog-bg: #8B8D9C;
   --prizepools-center-grid-card-bg: rgba(192, 208, 238, 0.05);
+
+  // Checkout
+  --checkout-card-bg: #38394B;
 }

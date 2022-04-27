@@ -12,6 +12,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 9;
 
     .prizepools-grid-card-top {
       width: 100%;
@@ -165,6 +167,7 @@
 
         .voting-open {
           width: 100%;
+          padding: 0 0 5rem 0;
 
           .vo-grid {
             width: 100%;
@@ -172,8 +175,6 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto;
             grid-gap: 0;
-            border-radius: 2rem;
-            overflow: hidden;
 
             .vo-grid-card {
               width: 100%;
@@ -290,10 +291,10 @@
                   .vo-info-box-content {
                     width: 100%;
                     max-width: 25rem;
-                    background-color: #fff;
+                    background-color: var(--prizepools-card-bg);
                     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
                     position: absolute;
-                    z-index: 100;
+                    z-index: 1000;
                     bottom: 0;
                     left: 4.5rem;
                     transform: translate(0, 97.5%);
@@ -304,13 +305,13 @@
                     h6 {
                       font-size: 1.85rem;
                       font-weight: 700;
-                      color: #1f194d;
+                      color: var(--dark-blue-white);
                       margin: 0 0 1rem 0;
                     }
 
                     P {
                       font-size: 1.5rem;
-                      color: #1f194d;
+                      color: var(--dark-blue-white);
                     }
                   }
 
@@ -405,4 +406,8 @@
 
 .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-open .vo-grid .vo-grid-card .vo-option.vo-option-active .vo-option-prog {
   background-color: #195BFF;
+}
+
+.prizepools-grid-card-voting-active {
+  z-index: 100;
 }

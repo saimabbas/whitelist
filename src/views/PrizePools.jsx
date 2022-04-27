@@ -119,7 +119,7 @@ const PrizePools = () => {
                   </div>
                 </div>
               </div>
-              <div className="prizepools-grid-card">
+              <div className="prizepools-grid-card prizepools-grid-card-voting-active">
                 <div className="prizepools-grid-card-top">
                   <div className="pgc-top-left">
                     <div className="pgc-top-left-profile">
