@@ -8,14 +8,22 @@ import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
 import SubscribeCard from "../components/pages/Home/SubscribeCard";
 import Footer from "../components/modules/Footer";
 import Header from "../components/modules/Header";
+import HeaderMob from "../components/modules/HeaderMob";
+
 
 const Subscribe = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
+
   const changeToDarkTheme = () => {
     setIsLightTheme(false);
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
+  };
+  const closeMobHeader = () => {
+    setIsHeaderMobOpen(false);
+    document.body.classList.remove("no-scroll");
   };
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
@@ -24,6 +32,8 @@ const Subscribe = () => {
         changeToDarkTheme={changeToDarkTheme}
         changeToLightTheme={changeToLightTheme}
       />
+        {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
+
       <div className="subscribepage">
         {/* Subscribe Section */}
         <section className="subimgbox">

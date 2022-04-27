@@ -28,13 +28,13 @@ const Footer = (props) => {
               <div className="footer-center">
                 <h6>The Whitelist Info</h6>
                 <div className="fc-grid">
-                  <a href="#">Subscribe</a>
-                  <a href="#">Upcoming Drops </a>
-                  <a href="#">Roadmap</a>
-                  <a href="#">
+                  <a href="https://www.youtube.com/">Subscribe</a>
+                  <a href="https://www.youtube.com/">Upcoming Drops </a>
+                  <a href="https://www.youtube.com/">Roadmap</a>
+                  <a href="https://www.youtube.com/">
                     <b>Meet the Team</b>
                   </a>
-                  <a href="#">How it Works</a>
+                  <a href="https://www.youtube.com/">How it Works</a>
                 </div>
               </div>
               <div className="footer-right">
@@ -80,13 +80,13 @@ const Footer = (props) => {
                     </Accordion.Header>
                     <Accordion.Body>
                       <div className="fc-grid-mob">
-                        <a href="#">Subscribe</a>
-                        <a href="#">Upcoming Drops </a>
-                        <a href="#">Roadmap</a>
-                        <a href="#">
+                        <a href="https://www.youtube.com/">Subscribe</a>
+                        <a href="https://www.youtube.com/">Upcoming Drops </a>
+                        <a href="https://www.youtube.com/">Roadmap</a>
+                        <a href="https://www.youtube.com/">
                           <b>Meet the Team</b>
                         </a>
-                        <a href="#">How it Works</a>
+                        <a href="https://www.youtube.com/">How it Works</a>
                       </div>
                     </Accordion.Body>
                   </Accordion.Item>

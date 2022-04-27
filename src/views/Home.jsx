@@ -31,6 +31,8 @@ import Footer from "../components/modules/Footer";
 import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
 import SubscribeCard from "../components/pages/Home/SubscribeCard";
 import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
+import HeaderMob from "../components/modules/HeaderMob";
+
 import WalletIcon from "../assets/icons/WalletIcon";
 import Collection from "../assets/icons/Collection";
 import Logout from "../assets/icons/Logout";
@@ -49,11 +51,17 @@ import Logo from "../assets/img/Logo";
 
 const Home = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
+
   const changeToDarkTheme = () => {
     setIsLightTheme(false);
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
+  };
+  const closeMobHeader = () => {
+    setIsHeaderMobOpen(false);
+    document.body.classList.remove("no-scroll");
   };
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
@@ -62,6 +70,8 @@ const Home = () => {
         changeToDarkTheme={changeToDarkTheme}
         changeToLightTheme={changeToLightTheme}
       />
+
+{isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
       <div className="home">
         {/* Hero Section */}
         <section className="hero">
@@ -508,7 +518,7 @@ const Home = () => {
                     ques="Does the Whitelist have a roadmap?"
                   >
                     <p>
-                      <a href="">Roadmap</a>
+                      <a href="https://www.youtube.com/">Roadmap</a>
                     </p>
                   </LetUsHelpCard>
                   <LetUsHelpCard

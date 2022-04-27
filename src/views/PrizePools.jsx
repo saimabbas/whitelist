@@ -21,13 +21,22 @@ import Header from "../components/modules/Header";
 import InfoIcon from "../assets/icons/InfoIcon";
 import { MdDone } from "react-icons/md";
 import Footer from "../components/modules/Footer";
+import HeaderMob from "../components/modules/HeaderMob";
+
 const PrizePools = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
+
+
   const changeToDarkTheme = () => {
     setIsLightTheme(false);
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
+  };
+  const closeMobHeader = () => {
+    setIsHeaderMobOpen(false);
+    document.body.classList.remove("no-scroll");
   };
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
@@ -36,6 +45,8 @@ const PrizePools = () => {
         changeToDarkTheme={changeToDarkTheme}
         changeToLightTheme={changeToLightTheme}
       />
+         {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
+
       <div className="prizepools">
         {/* Collection Section */}
         <img

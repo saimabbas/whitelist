@@ -22,27 +22,27 @@ const Header = (props) => {
             {/* <img src={LogoLight} alt="LogoLight" /> */}
             <ul>
               <li>
-                <a href="#">
+                <a href="https://www.youtube.com/">
                   <b>P</b>rize pool
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.youtube.com/">
                   <b>S</b>ubscribe
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.youtube.com/">
                   <b>R</b>oadmap
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.youtube.com/">
                   <b>U</b>pcoming Drops
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.youtube.com/">
                   <b>M</b>eet the Team
                 </a>
               </li>

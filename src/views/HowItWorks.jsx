@@ -10,13 +10,22 @@ import Header from "../components/modules/Header";
 import Footer from "../components/modules/Footer";
 import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
 import { FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
+import HeaderMob from "../components/modules/HeaderMob";
+
 const HowItWorks = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
+
+
   const changeToDarkTheme = () => {
     setIsLightTheme(false);
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
+  };
+  const closeMobHeader = () => {
+    setIsHeaderMobOpen(false);
+    document.body.classList.remove("no-scroll");
   };
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
@@ -25,6 +34,7 @@ const HowItWorks = () => {
         changeToDarkTheme={changeToDarkTheme}
         changeToLightTheme={changeToLightTheme}
       />
+       {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
       <div className="letushelp">
         {/* Let Us Work Section */}
         <section className="luh-main">
@@ -77,7 +87,7 @@ const HowItWorks = () => {
                       ques="Does the Whitelist have a roadmap?"
                     >
                       <p>
-                        <a href="">Roadmap</a>
+                        <a href="https://www.youtube.com/">Roadmap</a>
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
@@ -87,7 +97,7 @@ const HowItWorks = () => {
                       <p>
                         Depending on the tier you have decided to go with, every
                         tier unlocks certain perks and advantages. Visit (
-                        <a href="#">Subscribe</a>) to find out more.
+                        <a href="https://www.youtube.com/">Subscribe</a>) to find out more.
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
@@ -123,7 +133,7 @@ const HowItWorks = () => {
                     >
                       <p>
                         Feel free to reach out to us through email at (
-                        <a href=""> info@thwwhitelist.com</a> ). Or the red
+                        <a href="https://www.youtube.com/"> info@thwwhitelist.com</a> ). Or the red
                         button in the bottom right corner.
                       </p>
                     </LetUsHelpCard>
@@ -147,8 +157,8 @@ const HowItWorks = () => {
                         At the whitelist we strive to provide our users with
                         some of the best utility that the market has to offer.
                         For an in-depth understanding of utility please visit
-                        <a href=""> Roadmap</a> and tier options
-                        <a href=""> Subscribe</a>.
+                        <a href="https://www.youtube.com/"> Roadmap</a> and tier options
+                        <a href="https://www.youtube.com/"> Subscribe</a>.
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
@@ -157,7 +167,7 @@ const HowItWorks = () => {
                     >
                       <p>
                         For all enquiries please email
-                        <a href=""> info@thwwhitelist.com</a>
+                        <a href="https://www.youtube.com/"> info@thwwhitelist.com</a>
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
@@ -165,7 +175,7 @@ const HowItWorks = () => {
                       ques="Who is behind the whitelist? "
                     >
                       <p>
-                        <a href="">Meet the Team</a>
+                        <a href="https://www.youtube.com/">Meet the Team</a>
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
@@ -197,7 +207,7 @@ const HowItWorks = () => {
                         Here at the whitelist, we have a multitude of
                         subscription options that aim to fit all types of users.
                         Please visit us at
-                        <a href=""> Subscribe</a> for details.
+                        <a href="https://www.youtube.com/"> Subscribe</a> for details.
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard

@@ -28,7 +28,7 @@ const CollectionsCard = (props) => {
         <div className="collections-swiper-mob">
           <div className="collections-swiper-box">{props.children}</div>
         </div>
-        <a href="#" className="view-more-link-box">
+        <a href="https://www.youtube.com/" className="view-more-link-box">
           <p>View collection</p>
           <span>
             <MdEast />
