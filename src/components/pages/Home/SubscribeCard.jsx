@@ -4,7 +4,7 @@ import Tick from "../../../assets/icons/Tick";
 const SubscribeCard = (props) => {
   return (
     <div className="subscribe-grid-card">
-      <div className="top-notch top-notch-pink"></div>
+      <div className={`top-notch ${props.topNotchColor}`}></div>
       <h3>{props.tier}</h3>
       <h4>{props.eth} </h4>
       <div className="subscribe-options-grid">

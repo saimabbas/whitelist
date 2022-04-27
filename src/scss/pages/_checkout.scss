@@ -330,8 +330,37 @@
   }
 }
 
+.checkoutright-mob {
+  display: none;
+  width: 100%;
+
+  .accordion {
+    width: 100%;
+  }
+
+  .checkout-mob-acc-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    svg {
+      width: 1.25rem;
+      height: max-content;
+    }
+  }
+}
 
 @media screen and (max-width: 850px) {
+  .checkoutright-pc {
+    display: none;
+  }
+
+  .checkoutright-mob {
+    display: block;
+  }
+
   .checkoutmainpage {
     flex-direction: column-reverse;
   }

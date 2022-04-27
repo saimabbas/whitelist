@@ -18,6 +18,8 @@ import Header from "../components/modules/Header";
 import { Link } from "react-router-dom";
 import Footer from "../components/modules/Footer";
 import HeaderMob from "../components/modules/HeaderMob";
+import { Accordion } from "react-bootstrap";
+import ChevronUp from "../assets/icons/ChevronUp";
 
 const Checkout = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
@@ -120,37 +122,84 @@ const Checkout = () => {
                   </div>
                 </div>
                 <div className="checkoutright">
-                  <h4>Summary</h4>
-                  <div className="sumimgtext">
-                    <img src={SumImg} alt="" />
-                    <div className="sumtext">
-                      <h6>Season 1</h6>
-                      <p>Tier 3 (The Inner Circle)</p>
-                      <span>View Item</span>
+                  <div className="checkoutright-pc">
+                    <h4>Summary</h4>
+                    <div className="sumimgtext">
+                      <img src={SumImg} alt="" />
+                      <div className="sumtext">
+                        <h6>Season 1</h6>
+                        <p>Tier 3 (The Inner Circle)</p>
+                        <span>View Item</span>
+                      </div>
+                    </div>
+                    <div className="checkouttotal">
+                      <div className="cotinner">
+                        <p>Season 1</p>
+                        <h6>0.6 ETH</h6>
+                      </div>
+                      <div className="cotinner">
+                        <p>Gas</p>
+                        <h6>0.02 ETH</h6>
+                      </div>
+                      <div className="choty-choty-box">
+                        <span></span>
+                        <div></div>
+                        <span></span>
+                      </div>
+                      <div className="cottotal">
+                        <p>Total</p>
+                        <h6>0.62 ETH</h6>
+                      </div>
+                    </div>
+                    <div className="cosub">
+                      <input type="text" placeholder="Promo code" />
+                      <button>Submit</button>
                     </div>
                   </div>
-                  <div className="checkouttotal">
-                    <div className="cotinner">
-                      <p>Season 1</p>
-                      <h6>0.6 ETH</h6>
-                    </div>
-                    <div className="cotinner">
-                      <p>Gas</p>
-                      <h6>0.02 ETH</h6>
-                    </div>
-                    <div className="choty-choty-box">
-                      <span></span>
-                      <div></div>
-                      <span></span>
-                    </div>
-                    <div className="cottotal">
-                      <p>Total</p>
-                      <h6>0.62 ETH</h6>
-                    </div>
-                  </div>
-                  <div className="cosub">
-                    <input type="text" placeholder="Promo code" />
-                    <button>Submit</button>
+                  <div className="checkoutright-mob">
+                    <Accordion>
+                      <Accordion.Item eventKey={1}>
+                        <Accordion.Header>
+                          <div className="checkout-mob-acc-header">
+                            <h4>Summary</h4>
+                            <ChevronUp color="#fff" />
+                          </div>
+                        </Accordion.Header>
+                        <Accordion.Body>
+                          <div className="sumimgtext">
+                            <img src={SumImg} alt="" />
+                            <div className="sumtext">
+                              <h6>Season 1</h6>
+                              <p>Tier 3 (The Inner Circle)</p>
+                              <span>View Item</span>
+                            </div>
+                          </div>
+                          <div className="checkouttotal">
+                            <div className="cotinner">
+                              <p>Season 1</p>
+                              <h6>0.6 ETH</h6>
+                            </div>
+                            <div className="cotinner">
+                              <p>Gas</p>
+                              <h6>0.02 ETH</h6>
+                            </div>
+                            <div className="choty-choty-box">
+                              <span></span>
+                              <div></div>
+                              <span></span>
+                            </div>
+                            <div className="cottotal">
+                              <p>Total</p>
+                              <h6>0.62 ETH</h6>
+                            </div>
+                          </div>
+                          <div className="cosub">
+                            <input type="text" placeholder="Promo code" />
+                            <button>Submit</button>
+                          </div>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
                   </div>
                 </div>
               </div>

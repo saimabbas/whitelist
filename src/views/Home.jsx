@@ -505,6 +505,7 @@ const Home = () => {
                   isNotActive8="soge-not-available"
                   isNotActive9="soge-not-available"
                   isNotActive10="soge-not-available"
+                  topNotchColor="top-notch-pink"
                 />
                 <SubscribeCard
                   tier="Tier 2"
@@ -513,8 +514,13 @@ const Home = () => {
                   isNotActive8="soge-not-available"
                   isNotActive9="soge-not-available"
                   isNotActive10="soge-not-available"
+                  topNotchColor="top-notch-blue"
                 />
-                <SubscribeCard tier="Tier 3" eth="0.5ETH" />
+                <SubscribeCard
+                  tier="Tier 3"
+                  eth="0.5ETH"
+                  topNotchColor="top-notch-yellow"
+                />
               </div>
             </div>
           </div>
