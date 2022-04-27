@@ -42,10 +42,10 @@ const MintConnect = () => {
               <h6 className="conthrax">CONNECT:</h6>
               <button className="conthrax">CONNECT</button>
             </div>
-            {/* <div className="mintdisconnect">
+            <div className="mintdisconnect">
               <h6 className="conthrax">CONNECTED AS: 0xc43....45b21</h6>
               <button className="conthrax">DISCONNECT</button>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

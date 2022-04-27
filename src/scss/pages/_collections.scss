@@ -56,6 +56,12 @@
           transform: translate(-50%, -50%);
           z-index: 10;
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          width: 6rem;
+          height: 6rem;
+          svg 
+          {
+            width: 4rem;
+          }
         }
         .collections-swiper-right {
           position: absolute;
@@ -64,6 +70,12 @@
           transform: translate(50%, -50%);
           z-index: 10;
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          width: 6rem;
+          height: 6rem;
+          svg 
+          {
+            width: 4rem;
+          }
         }
         .swiper-slide-content {
           width: 100%;

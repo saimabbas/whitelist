@@ -1,7 +1,13 @@
-// .header-content.cslmainheader
-// {
-//   margin: 2rem 0 0 8rem;
-// }
+.cslmainheader
+{
+  padding: 0;
+  margin: 0;
+  .header-content 
+  {
+    margin: 0 0 0 8rem;
+    height: 23rem;
+  }
+}
 .comesoonpage {
   width: 100%;
   .coomsoon-main {
@@ -10,17 +16,21 @@
     .coomsoon-bg-light {
       width: 100%;
       position: absolute;
-      height: 110vh;
+      min-height: 130vh;
       top: 0;
       left: 0;
       object-fit: cover;
       object-position: bottom;
       z-index: 1;
     }
+    .hr-bg-dark
+    {
+      height: 125vh;
+    }
   }
 }
 .landing-content.comesoonsection {
-  padding: 18rem 0 0 0 !important;
+  padding: 30rem 0 0 0 !important;
   margin: 0 !important;
   .section-heading {
     h2 {
@@ -166,6 +176,21 @@
 }
 
 @media screen and (max-width: 650px) {
+  .cslmainheader
+  {
+    padding: 0;
+    margin: 0;
+    .header-content 
+    {
+      padding: 5rem 0 0 2.5rem;
+      height: 8.5rem;
+      margin: 0;
+    }
+  }
+.landing-content.comesoonsection {
+  padding: 20rem 0 0 0 !important;
+  margin: 0 !important;
+}
   .coomsoontimer .hero-countdown {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -230,7 +255,7 @@
     }
     button {
       width: max-content;
-      padding: 1rem 2.5rem;
+      padding: 1.25rem 2.5rem;
     }
   }
 }

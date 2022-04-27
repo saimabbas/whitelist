@@ -239,7 +239,7 @@ button:hover {
   transition: 0.2s;
 }
 .view-more-link-box span svg {
-  font-size: 1.85rem;
+  font-size: 2.25rem;
   position: relative;
   top: 50%;
   left: 0;
@@ -339,11 +339,11 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--round-chevron-box);
-  padding: 1rem 2.5rem;
-  font-size: 1.75rem;
+  padding: 1.25rem 3.5rem;
+  font-size: 1.5rem;
   white-space: nowrap;
   border-radius: 1000px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--dark-blue-white);
 }
 .coming-tag span {
@@ -530,6 +530,7 @@ button:hover {
   --var-timer-bg: #1f194d;
   --var-input-bor: #fff;
   --var-input-bgc: #fff;
+  --var-hiw-eth: #000000;
 }
 
 .app.dark-theme {
@@ -554,6 +555,7 @@ button:hover {
   --var-timer-bg: #21274b;
   --var-input-bor: #373e62;
   --var-input-bgc: rgba(33, 39, 75, 0.29);
+  --var-hiw-eth: #fff;
 }
 
 .home {
@@ -1266,7 +1268,7 @@ button:hover {
   z-index: 10;
 }
 .letushelp-content.hiwsection .faq-a p span {
-  color: #000000;
+  color: var(--var-hiw-eth);
   font-weight: 700;
 }
 
@@ -1432,6 +1434,7 @@ button:hover {
   margin: 0 0 0 1rem;
   font-size: 3.2rem;
   font-weight: 700;
+  color: var(--dark-blue-white);
 }
 .landing-content .landing-head svg {
   width: 7rem;
@@ -2382,6 +2385,11 @@ button:hover {
   transform: translate(-50%, -50%);
   z-index: 10;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 6rem;
+  height: 6rem;
+}
+.colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-right .collections-swiper-left svg {
+  width: 4rem;
 }
 .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-right .collections-swiper-right {
   position: absolute;
@@ -2390,6 +2398,11 @@ button:hover {
   transform: translate(50%, -50%);
   z-index: 10;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 6rem;
+  height: 6rem;
+}
+.colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-right .collections-swiper-right svg {
+  width: 4rem;
 }
 .colmainpage .collections-grid .collections-grid-card-content .collections-grid-card-right .swiper-slide-content {
   width: 100%;
@@ -2574,7 +2587,7 @@ button:hover {
 }
 .vaultmainpage .vault-grid .vault-grid-card .vault-grid-card-bottom {
   width: 100%;
-  margin: 2.5rem 0;
+  margin: 2rem 0;
 }
 .vaultmainpage .vault-grid .vault-grid-card .vault-grid-card-bottom .vault-swiper {
   width: 100%;
@@ -2644,6 +2657,15 @@ button:hover {
     width: 100%;
   }
 }
+.cslmainheader {
+  padding: 0;
+  margin: 0;
+}
+.cslmainheader .header-content {
+  margin: 0 0 0 8rem;
+  height: 23rem;
+}
+
 .comesoonpage {
   width: 100%;
 }
@@ -2654,7 +2676,7 @@ button:hover {
 .comesoonpage .coomsoon-main .coomsoon-bg-light {
   width: 100%;
   position: absolute;
-  height: 110vh;
+  min-height: 130vh;
   top: 0;
   left: 0;
   -o-object-fit: cover;
@@ -2663,9 +2685,12 @@ button:hover {
      object-position: bottom;
   z-index: 1;
 }
+.comesoonpage .coomsoon-main .hr-bg-dark {
+  height: 125vh;
+}
 
 .landing-content.comesoonsection {
-  padding: 18rem 0 0 0 !important;
+  padding: 30rem 0 0 0 !important;
   margin: 0 !important;
 }
 .landing-content.comesoonsection .section-heading h2 {
@@ -2823,6 +2848,21 @@ button:hover {
   }
 }
 @media screen and (max-width: 650px) {
+  .cslmainheader {
+    padding: 0;
+    margin: 0;
+  }
+  .cslmainheader .header-content {
+    padding: 5rem 0 0 2.5rem;
+    height: 8.5rem;
+    margin: 0;
+  }
+
+  .landing-content.comesoonsection {
+    padding: 20rem 0 0 0 !important;
+    margin: 0 !important;
+  }
+
   .coomsoontimer .hero-countdown {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -2897,7 +2937,7 @@ button:hover {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    padding: 1rem 2.5rem;
+    padding: 1.25rem 2.5rem;
   }
 }
 .coomsoondark {
@@ -2954,11 +2994,11 @@ button:hover {
 }
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday {
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 2.75rem;
+  border-radius: 2.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 1.25rem 3.75rem;
 }
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 {
   font-size: 3.55rem;
@@ -3279,8 +3319,8 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.25rem 2rem;
-  font-size: 1.75rem;
+  padding: 1.35rem 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   background-image: linear-gradient(#c24905, #8e0055);
   color: #fff;
@@ -3329,6 +3369,7 @@ button:hover {
     width: 90%;
     margin-top: 4rem;
     padding: 2.4rem 0;
+    font-size: 1.75rem;
   }
 }
 .mintmainpage .mintconnect {
@@ -3347,8 +3388,8 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.35rem 4rem;
-  font-size: 1.75rem;
+  padding: 1.25rem 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.08);
   color: #fff;
@@ -3398,7 +3439,7 @@ button:hover {
   }
 
   .coomsoondark.mintmainpage .passengerbtn .minttimer h6 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .coomsoondark.mintmainpage .passengerbtn .minttimer h6 span {
     font-size: 1.35rem;
@@ -3453,6 +3494,7 @@ button:hover {
   .mintmainpage .mintconnect button {
     width: 90%;
     padding: 2rem 0;
+    font-size: 1.75rem;
   }
   .mintmainpage .mintconnect h6 {
     display: none;
@@ -4779,7 +4821,7 @@ footer .more-btn svg {
     width: 95%;
   }
   .letushelp-grid .faq-q h5 {
-    width: 97%;
+    width: 93%;
   }
 }
 .hero-swiper-box .swiper-slide-content {

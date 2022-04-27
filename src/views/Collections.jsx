@@ -223,8 +223,14 @@ const Collections = () => {
                   }}
                   modules={[Navigation]}
                   className="mySwiper"
-                  spaceBetween={25}
+                  spaceBetween={15}
                   slidesPerView={1}
+                  breakpoints={{
+                    1150: {
+                      slidesPerView: 3,
+                      spaceBetween: 25,
+                    },
+                  }}
                 >
                   <SwiperSlide>
                     <div className="swiper-slide-content">
