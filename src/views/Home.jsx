@@ -22,8 +22,6 @@ import CollectionsBg from "./../assets/img/collections-bg.svg";
 import CollectionsBg2 from "./../assets/img/collections-bg2.png";
 import CollectionsCard from "./../assets/img/collections-card.png";
 import { Accordion } from "react-bootstrap";
-import BlueTick from "./../assets/img/bluetick.png";
-import PersonImg from "./../assets/img/personimg.png";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
 import Header from "../components/modules/Header";
@@ -32,24 +30,15 @@ import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
 import SubscribeCard from "../components/pages/Home/SubscribeCard";
 import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
 import HeaderMob from "../components/modules/HeaderMob";
-
-import WalletIcon from "../assets/icons/WalletIcon";
-import Collection from "../assets/icons/Collection";
-import Logout from "../assets/icons/Logout";
-import Profile from "../assets/icons/Profile";
-import { MdMenu } from "react-icons/md";
-import MessagesIcon from "../assets/icons/MessagesIcon";
-import MoonIcon from "../assets/icons/MoonIcon";
-
-import { Mousewheel, FreeMode, Pagination } from "swiper";
+import SwiperCore, { FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/free-mode";
-import { MdDone } from "react-icons/md";
 import "swiper/css";
 import "swiper/css/pagination";
 import Logo from "../assets/img/Logo";
 
 const Home = () => {
+  SwiperCore.use([Pagination]);
   const [isLightTheme, setIsLightTheme] = useState(true);
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
 
@@ -58,6 +47,10 @@ const Home = () => {
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
+  };   
+  const openMobHeader = () => {
+    setIsHeaderMobOpen(true);
+    document.body.classList.add("no-scroll");
   };
   const closeMobHeader = () => {
     setIsHeaderMobOpen(false);
@@ -69,6 +62,7 @@ const Home = () => {
       <Header
         changeToDarkTheme={changeToDarkTheme}
         changeToLightTheme={changeToLightTheme}
+        openMobHeader={openMobHeader}
       />
 
 {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
@@ -224,13 +218,24 @@ const Home = () => {
                 </p>
               </div>
               <div className="hero-right">
+                <img
+                  className="hero-glare light-img"
+                  src={HeroGlareLight}
+                  alt="hero-glare"
+                />
+                <img
+                  className="hero-glare dark-img"
+                  src={HeroGlareDark}
+                  alt="hero-glare"
+                />
                 <div className="hero-swiper-box">
                   <Swiper
-                    pagination={true}
-                    modules={[Pagination]}
                     className="mySwiper"
                     direction={"vertical"}
                     spaceBetween={50}
+                    pagination={{
+                      el: '.swiper-paginations'
+                    }}
                   >
                     <SwiperSlide>
                       <div className="swiper-slide-content">
@@ -303,6 +308,9 @@ const Home = () => {
                     <h6>MINUTES</h6>
                   </div>
                 </div>
+              </div>
+              <div className="hero-swiper-pagination-box">
+              <div className="swiper-paginations"></div>
               </div>
             </div>
           </div>
@@ -400,10 +408,10 @@ const Home = () => {
               </div>
               <div className="collections-swiper-mob collection-home-mob-swiper">
                 <Swiper
-                  modules={[FreeMode, Mousewheel]}
+                  modules={[FreeMode]}
                   className="mySwiper"
-                  slidesPerView={"1.25"}
-                  spaceBetween={"20"}
+                  slidesPerView={1.25}
+                  spaceBetween={20}
                   freeMode={true}
                 >
                   <SwiperSlide>

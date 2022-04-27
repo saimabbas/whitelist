@@ -185,6 +185,7 @@
           max-height: 47.5rem;
           object-fit: contain;
           max-height: 65vh;
+          width: 100%;
         }
 
         .hero-swiper-img-1-box {
@@ -327,6 +328,7 @@
       grid-gap: 5rem;
       margin: 7.5rem 0 0 0;
     }
+
     .coming-tag.home-collection-ctag {
       position: absolute;
       top: 50%;
@@ -339,7 +341,7 @@
       border-radius: 1000px;
       font-weight: 700;
       color: var(--dark-blue-white);
-    
+
       span {
         width: 6.5rem;
         height: 5px;
@@ -492,78 +494,28 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .home .hero .hero-left h1 {
-    font-size: 4rem;
-    line-height: 4.5rem;
-  }
+.hero-swiper-pagination-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 3.5rem 0 0 0;
 
-  .home .hero .hero-right .hero-swiper-box {
-    height: 45rem;
-  }
-
-  .home .hero .hero-right {
-    padding: 0;
+  .swiper-paginations {
+    display: flex;
     align-items: center;
     justify-content: center;
-  }
 
-  .home .hero .hero-right .hero-swiper-box img {
-    max-height: 35rem;
-  }
+    .swiper-pagination-bullet {
+      background-color: var(--dark-blue-white);
+      opacity: 0.25 !important;
+      margin: 0 0.5rem !important;
+    }
 
-  .home .hero .hc-time-box-top span {
-    font-size: 2.5rem;
-  }
-
-  .home .hero .hc-time-box h6 {
-    font-size: 1.25rem;
-  }
-
-  .home .about .about-content {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .home .about .about-content .about-left img {
-    width: 100%;
-  }
-
-  .subscribe-grid .subscribe-grid-card .subscribe-options-grid .subscribe-options-grid-entry {
-    padding: 0 1.5rem !important;
-  }
-
-  .subscribe-grid {
-    grid-gap: 1.5rem !important;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .home .hero {
-    min-height: 100vh;
-    height: 100%;
-  }
-
-  .home .hero .hero-content.hero-content-pc {
-    display: none;
-  }
-
-  .home .hero .hero-content.hero-content-mob {
-    display: block;
-    padding: 15rem 0 5rem 0;
-  }
-
-  .home .hero .hero-content {
-    grid-template-columns: 1fr;
-  }
-
-  .home .about .about-content {
-    grid-template-columns: 1fr;
-  }
-
-  .home .hero .hero-left {
-    align-items: center;
-    justify-content: center;
-    padding: 0;
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: var(--dark-blue-white);
+      opacity: 1 !important;
+    }
   }
 }
 
@@ -574,7 +526,7 @@
   top: 0;
   left: 0;
   z-index: 10000000;
-  padding: 2rem;
+  padding: 2rem 2.5rem;
   // box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
   display: flex;
   justify-content: flex-start;
@@ -712,27 +664,137 @@
   }
 }
 
-// RESPONSIVENESS
-@media screen and (max-width: 850px){
-  .home .about .about-content .about-right h6
-  {
+.app.dark-theme .home .collections .collections-bg {
+  opacity: 0.35;
+}
+
+.app.light-theme .home {
+  background-color: #f8fcff;
+}
+
+.app.dark-theme .home {
+  background-color: #111318;
+}
+
+@media screen and (max-width: 1000px) {
+  .home .hero .hero-left h1 {
+    font-size: 3.25rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  .home .hero .hero-left p {
+    text-align: center;
+  }
+
+  .home .hero .hero-right .hero-swiper-box {
+    height: 45rem;
+  }
+
+  .home .hero .hero-right {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home .hero .hero-right .hero-swiper-box img {
+    max-height: 35rem;
+  }
+
+  .home .hero .hc-time-box-top span {
+    font-size: 2.5rem;
+  }
+
+  .home .hero .hc-time-box h6 {
+    font-size: 1.25rem;
+  }
+
+  .home .about .about-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home .about .about-content .about-left img {
+    width: 100%;
+  }
+
+  .subscribe-grid .subscribe-grid-card .subscribe-options-grid .subscribe-options-grid-entry {
+    padding: 0 1.5rem !important;
+  }
+
+  .subscribe-grid {
+    grid-gap: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .home .about .about-content .about-right h6 {
     justify-content: center;
     width: 100%;
   }
-  .home .about .about-content .about-right p
-  {
+
+  .home .about .about-content .about-right p {
     margin: 0 0 2rem 0;
   }
-  .home .collections .coming-tag.home-collection-ctag
-  {
+
+  .home .collections .coming-tag.home-collection-ctag {
     padding: 1.25rem 4rem;
   }
-  .collections-swiper-mob.collection-home-mob-swiper
-  {
+
+  .collections-swiper-mob.collection-home-mob-swiper {
     display: none;
   }
-  
+
+  .home .hero {
+    min-height: 100vh;
+    height: 100%;
+    background-color: #EAF7FF;
+    margin: 0 0 5rem 0;
+  }
+
+  .home .hero .hero-right .hero-swiper-box .hero-swiper-img-1-box {
+    border-radius: 2.5rem;
+    padding: 1rem;
+
+    img {
+      border-radius: 2.5rem;
+    }
+  }
+
+  .home .hero .hero-right .hero-swiper-box {
+    height: 40rem;
+  }
+
+  .home .hero .hero-right {
+    padding: 0 1.5rem;
+  }
+
+  .home .hero .hero-content.hero-content-pc {
+    display: none;
+  }
+
+  .home .hero .hero-content.hero-content-mob {
+    display: block;
+    padding: 12.5rem 0 3.5rem 0;
+  }
+
+  .home .hero .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .home .about .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .home .hero .hero-left {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
 }
+
+
+
 @media screen and (max-width: 650px) {
   .luh-social-grid {
     grid-template-columns: max-content max-content;
@@ -764,6 +826,7 @@
     display: block;
     margin: 3rem 0 0 0;
   }
+
   .home .hero .hero-right .hsb-round-btns-box {
     display: none;
   }
@@ -771,21 +834,16 @@
   .subscribe-grid {
     grid-gap: 4.5rem !important;
   }
-  .home .collections
-  {
+
+  .home .collections {
     padding: 5.5rem 0;
     margin: 0 0 5.5rem 0;
   }
 }
 
-.app.dark-theme .home .collections .collections-bg {
-  opacity: 0.35;
-}
-
-.app.light-theme .home {
-  background-color: #f8fcff;
-}
-
-.app.dark-theme .home {
-  background-color: #111318;
+@media screen and (max-width: 400px) {
+  .home .hero .hero-right .hero-swiper-box {
+    height: 35rem;
+    margin: 2.5rem 0;
+  }
 }

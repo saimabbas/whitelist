@@ -12,6 +12,7 @@ import VaultImg3 from "../assets/img/vault-img-3.png";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Header from "../components/modules/Header";
+import HelpIcon from "../assets/img/help-icon.svg";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -253,6 +254,9 @@ const Vault = () => {
       </div>
       {/* Footer */}
       <Footer />
+      <div className="help-box">
+        <img src={HelpIcon} alt="HelpIcon" />
+      </div>
     </div>
   );
 };

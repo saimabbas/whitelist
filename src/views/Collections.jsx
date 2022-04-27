@@ -35,6 +35,10 @@ const Collections = () => {
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
+  };  
+  const openMobHeader = () => {
+    setIsHeaderMobOpen(true);
+    document.body.classList.add("no-scroll");
   };
   const closeMobHeader = () => {
     setIsHeaderMobOpen(false);
@@ -47,6 +51,7 @@ const Collections = () => {
       <Header
         changeToDarkTheme={changeToDarkTheme}
         changeToLightTheme={changeToLightTheme}
+        openMobHeader={openMobHeader}
       />
           {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
  
