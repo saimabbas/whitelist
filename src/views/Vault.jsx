@@ -12,7 +12,7 @@ import VaultImg3 from "../assets/img/vault-img-3.png";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Header from "../components/modules/Header";
-import Support from "../assets/img/helpiconimg.png"
+import Support from "../assets/img/helpiconimg.png";
 import { MdClear } from "react-icons/md";
 
 import "swiper/css";
@@ -46,7 +46,13 @@ const Vault = () => {
         changeToLightTheme={changeToLightTheme}
         openMobHeader={openMobHeader}
       />
-      {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
+      {isHeaderMobOpen ? (
+        <HeaderMob
+          changeToDarkTheme={changeToDarkTheme}
+          changeToLightTheme={changeToLightTheme}
+          closeMobHeader={closeMobHeader}
+        />
+      ) : null}
       <div className="vaultmainpage">
         {/* Collection Section */}
         <img
@@ -255,7 +261,7 @@ const Vault = () => {
       </div>
       {/* Footer */}
       <Footer />
-      <div className="wlfootermodal">
+      {/* <div className="wlfootermodal">
         <div className="helpiconmodel">
           <div className="hiheader">
             <div className="hihimg">
@@ -278,7 +284,7 @@ const Vault = () => {
               </div>
               <button>Send</button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

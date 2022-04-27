@@ -47,7 +47,7 @@ const Home = () => {
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
-  };   
+  };
   const openMobHeader = () => {
     setIsHeaderMobOpen(true);
     document.body.classList.add("no-scroll");
@@ -65,30 +65,36 @@ const Home = () => {
         openMobHeader={openMobHeader}
       />
 
-{isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
+      {isHeaderMobOpen ? (
+        <HeaderMob
+          changeToDarkTheme={changeToDarkTheme}
+          changeToLightTheme={changeToLightTheme}
+          closeMobHeader={closeMobHeader}
+        />
+      ) : null}
       <div className="home">
         {/* Hero Section */}
         <section className="hero">
-        <img
-          className="hr-bg-light hr-bg-light-pc"
-          src={HeroBgLight}
-          alt="HeroBgLight"
-        />
-        <img
-          className="hr-bg-light hr-bg-light-mob"
-          src={HeroBgLightMob}
-          alt="HeroBgLightMob"
-        />
-        <img
-          className="hr-bg-dark hr-bg-dark-pc"
-          src={HeroBgDark}
-          alt="HeroBgDark"
-        />
-        <img
-          className="hr-bg-dark hr-bg-dark-mob"
-          src={HeroBgDarkMob}
-          alt="HeroBgDarkMob"
-        />
+          <img
+            className="hr-bg-light hr-bg-light-pc"
+            src={HeroBgLight}
+            alt="HeroBgLight"
+          />
+          <img
+            className="hr-bg-light hr-bg-light-mob"
+            src={HeroBgLightMob}
+            alt="HeroBgLightMob"
+          />
+          <img
+            className="hr-bg-dark hr-bg-dark-pc"
+            src={HeroBgDark}
+            alt="HeroBgDark"
+          />
+          <img
+            className="hr-bg-dark hr-bg-dark-mob"
+            src={HeroBgDarkMob}
+            alt="HeroBgDarkMob"
+          />
           <div className="box">
             <div className="hero-content hero-content-pc">
               <div className="hero-left">
@@ -211,7 +217,16 @@ const Home = () => {
                     <b>Welcome</b> To <br />
                     The <b>WhiteList.</b>
                   </span>
-                  <img src={BlobPurple} alt="BlobPurple" />
+                  <img
+                    className="light-img"
+                    src={BlobPurple}
+                    alt="BlobPurple"
+                  />
+                  <img
+                    className="dark-img"
+                    src={BlobPurple2}
+                    alt="BlobPurple2"
+                  />
                 </h1>
                 <p>
                   The Best Artists, Projects <br /> and Utility. No Compromise.
@@ -234,7 +249,7 @@ const Home = () => {
                     direction={"vertical"}
                     spaceBetween={50}
                     pagination={{
-                      el: '.swiper-paginations'
+                      el: ".swiper-paginations",
                     }}
                   >
                     <SwiperSlide>
@@ -310,7 +325,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="hero-swiper-pagination-box">
-              <div className="swiper-paginations"></div>
+                <div className="swiper-paginations"></div>
               </div>
             </div>
           </div>
@@ -340,8 +355,8 @@ const Home = () => {
                 />
                 <h6>
                   About the
-            <Logo className="light-img" color="#1F194D" />
-            <Logo className="dark-img" color="#fff" />
+                  <Logo className="light-img" color="#1F194D" />
+                  <Logo className="dark-img" color="#fff" />
                 </h6>
                 <h5>
                   Here at The <b>Whitelist</b>, we are dedicated to providing
@@ -466,32 +481,40 @@ const Home = () => {
               <div className="section-heading">
                 <div className="sh-heading">
                   <h2>Subscribe to Season 1</h2>
-                  <img className="light-img" src={BlobYellow} alt="BlobYellow" />
-                  <img className="light-dark" src={BlobYellow2} alt="BlobYellow2" />
+                  <img
+                    className="light-img"
+                    src={BlobYellow}
+                    alt="BlobYellow"
+                  />
+                  <img
+                    className="light-dark"
+                    src={BlobYellow2}
+                    alt="BlobYellow2"
+                  />
                 </div>
                 <p>Join the Whitelist by choose your perfect option below</p>
               </div>
               <div className="subscribe-grid">
-              <SubscribeCard
-                    tier="Tier 1"
-                    eth="0.3ETH"
-                    isNotActive4="soge-not-available"
-                    isNotActive5="soge-not-available"
-                    isNotActive6="soge-not-available"
-                    isNotActive7="soge-not-available"
-                    isNotActive8="soge-not-available"
-                    isNotActive9="soge-not-available"
-                    isNotActive10="soge-not-available"
-                  />
-                  <SubscribeCard
-                    tier="Tier 2"
-                    eth="0.4ETH"
-                    isNotActive7="soge-not-available"
-                    isNotActive8="soge-not-available"
-                    isNotActive9="soge-not-available"
-                    isNotActive10="soge-not-available"
-                  />
-                  <SubscribeCard tier="Tier 3" eth="0.5ETH" />
+                <SubscribeCard
+                  tier="Tier 1"
+                  eth="0.3ETH"
+                  isNotActive4="soge-not-available"
+                  isNotActive5="soge-not-available"
+                  isNotActive6="soge-not-available"
+                  isNotActive7="soge-not-available"
+                  isNotActive8="soge-not-available"
+                  isNotActive9="soge-not-available"
+                  isNotActive10="soge-not-available"
+                />
+                <SubscribeCard
+                  tier="Tier 2"
+                  eth="0.4ETH"
+                  isNotActive7="soge-not-available"
+                  isNotActive8="soge-not-available"
+                  isNotActive9="soge-not-available"
+                  isNotActive10="soge-not-available"
+                />
+                <SubscribeCard tier="Tier 3" eth="0.5ETH" />
               </div>
             </div>
           </div>

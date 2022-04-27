@@ -28,7 +28,8 @@ const Subscribe = () => {
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
-  };  const openMobHeader = () => {
+  };
+  const openMobHeader = () => {
     setIsHeaderMobOpen(true);
     document.body.classList.add("no-scroll");
   };
@@ -43,31 +44,37 @@ const Subscribe = () => {
         changeToDarkTheme={changeToDarkTheme}
         changeToLightTheme={changeToLightTheme}
         openMobHeader={openMobHeader}
-      />   
-       {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
+      />
+      {isHeaderMobOpen ? (
+        <HeaderMob
+          changeToDarkTheme={changeToDarkTheme}
+          changeToLightTheme={changeToLightTheme}
+          closeMobHeader={closeMobHeader}
+        />
+      ) : null}
 
       <div className="teammainbox">
         <section className="teampage">
-        <img
-          className="hr-bg-light hr-bg-light-pc"
-          src={HeroBgLight}
-          alt="HeroBgLight"
-        />
-        <img
-          className="hr-bg-light hr-bg-light-mob"
-          src={HeroBgLightMob}
-          alt="HeroBgLightMob"
-        />
-        <img
-          className="hr-bg-dark hr-bg-dark-pc"
-          src={HeroBgDark}
-          alt="HeroBgDark"
-        />
-        <img
-          className="hr-bg-dark hr-bg-dark-mob"
-          src={HeroBgDarkMob}
-          alt="HeroBgDarkMob"
-        />
+          <img
+            className="hr-bg-light hr-bg-light-pc"
+            src={HeroBgLight}
+            alt="HeroBgLight"
+          />
+          <img
+            className="hr-bg-light hr-bg-light-mob"
+            src={HeroBgLightMob}
+            alt="HeroBgLightMob"
+          />
+          <img
+            className="hr-bg-dark hr-bg-dark-pc"
+            src={HeroBgDark}
+            alt="HeroBgDark"
+          />
+          <img
+            className="hr-bg-dark hr-bg-dark-mob"
+            src={HeroBgDarkMob}
+            alt="HeroBgDarkMob"
+          />
           <div className="box">
             <div className="subscribe-content subsmainpage">
               <div className="section-heading">

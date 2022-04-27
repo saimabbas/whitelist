@@ -27,13 +27,13 @@ const PrizePools = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
 
-
   const changeToDarkTheme = () => {
     setIsLightTheme(false);
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
-  };  const openMobHeader = () => {
+  };
+  const openMobHeader = () => {
     setIsHeaderMobOpen(true);
     document.body.classList.add("no-scroll");
   };
@@ -49,7 +49,13 @@ const PrizePools = () => {
         changeToLightTheme={changeToLightTheme}
         openMobHeader={openMobHeader}
       />
-         {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
+      {isHeaderMobOpen ? (
+        <HeaderMob
+          changeToDarkTheme={changeToDarkTheme}
+          changeToLightTheme={changeToLightTheme}
+          closeMobHeader={closeMobHeader}
+        />
+      ) : null}
 
       <div className="prizepools">
         {/* Collection Section */}
@@ -167,8 +173,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>1x board ape NFT’s</h6>
                                   <p>
@@ -198,8 +207,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>1x Ferrari 488</h6>
                                   <p>
@@ -232,8 +244,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>1x McLaren 720 </h6>
                                   <p>
@@ -266,8 +281,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 1x Nissan GTR</h6>
                                   <p>
@@ -300,8 +318,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 5x vacations to Disney land </h6>
                                   <p>
@@ -334,8 +355,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>20x cash prizes of 10,000USD</h6>
                                   <p>
@@ -362,8 +386,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 1x Lamborghini Huracan</h6>
                                   <p>
@@ -396,8 +423,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 4x 50k worth of ETH</h6>
                                   <p>
@@ -424,8 +454,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 2x Converted sprinter vans </h6>
                                   <p>
@@ -459,8 +492,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 1X Richard Mille </h6>
                                   <p>
@@ -497,8 +533,11 @@ const PrizePools = () => {
                           <div className="vo-option vo-option-active">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>4x Mutant apes </h6>
                                   <p>
@@ -515,7 +554,12 @@ const PrizePools = () => {
                             <div className="vo-option-right">
                               <h6>35</h6>
                               <div className="vo-option-checkbox">
-                                <input type="checkbox" name="" id="vo-11" defaultChecked={true} />
+                                <input
+                                  type="checkbox"
+                                  name=""
+                                  id="vo-11"
+                                  defaultChecked={true}
+                                />
                                 <label htmlFor="vo-11">
                                   <div className="vo-checkbox-circle">
                                     <MdDone />
@@ -528,8 +572,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x Tesla model X or Y’s</h6>
                                   <p>
@@ -562,8 +609,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x jeep wranglers </h6>
                                   <p>
@@ -596,8 +646,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>10x Dream gaming set ups </h6>
                                   <p>
@@ -628,8 +681,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>3x Rolexes </h6>
                                   <p>
@@ -660,8 +716,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x World cup trip </h6>
                                   <p>
@@ -695,8 +754,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 2x 2023 super bowl trip </h6>
                                   <p>
@@ -730,8 +792,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x Dubai adventure trip </h6>
                                   <p>
@@ -764,8 +829,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 2x African adventure trip</h6>
                                   <p>
@@ -798,8 +866,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6> 4x 25,000k </h6>
                                   <p>
@@ -834,8 +905,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>50x Xbox Series X</h6>
                                   <p>
@@ -863,8 +937,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>50x PlayStation 5</h6>
                                   <p>
@@ -892,8 +969,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>10x MacBook Pro’s</h6>
                                   <p>
@@ -922,8 +1002,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>25x iPhone 13 ProMax</h6>
                                   <p>
@@ -951,8 +1034,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>25 Peloton’s</h6>
                                   <p>
@@ -981,8 +1067,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x Louis Vuitton travel sets</h6>
                                   <p>
@@ -1011,8 +1100,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>20x Microsoft surface pro’s</h6>
                                   <p>
@@ -1041,8 +1133,11 @@ const PrizePools = () => {
                           <div className="vo-option">
                             <div className="vo-option-left">
                               <div className="vo-info-box">
-                                <InfoIcon className='light-img' color="#1F194D" />
-                                <InfoIcon className='dark-img' color="#fff" />
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
                                 <div className="vo-info-box-content">
                                   <h6>2x invisible friends </h6>
                                   <p>

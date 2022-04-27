@@ -4,6 +4,7 @@ import MoonIcon from "../../assets/icons/MoonIcon";
 import WalletIcon from "../../assets/icons/WalletIcon";
 import { MdClear } from "react-icons/md";
 import Logo from "../../assets/img/Logo";
+import SunIcon from "../../assets/icons/SunIcon";
 
 const HeaderMob = (props) => {
   return (
@@ -11,7 +12,12 @@ const HeaderMob = (props) => {
       <div className="headermobicon">
         <div className="headermic-left">
           <div className="mobmenubox">
+            <div className="light-img" onClick={props.changeToDarkTheme}>
             <MoonIcon color="#1F194D" />
+            </div>
+            <div className="dark-img" onClick={props.changeToLightTheme}>
+            <SunIcon color="#1F194D" />
+            </div>
           </div>
           <div className="mobmenubox">
             <MessagesIcon color="#1F194D" />

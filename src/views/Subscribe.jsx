@@ -10,7 +10,6 @@ import Footer from "../components/modules/Footer";
 import Header from "../components/modules/Header";
 import HeaderMob from "../components/modules/HeaderMob";
 
-
 const Subscribe = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
@@ -20,7 +19,8 @@ const Subscribe = () => {
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
-  };  const openMobHeader = () => {
+  };
+  const openMobHeader = () => {
     setIsHeaderMobOpen(true);
     document.body.classList.add("no-scroll");
   };
@@ -36,31 +36,37 @@ const Subscribe = () => {
         changeToLightTheme={changeToLightTheme}
         openMobHeader={openMobHeader}
       />
-        {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
+      {isHeaderMobOpen ? (
+        <HeaderMob
+          changeToDarkTheme={changeToDarkTheme}
+          changeToLightTheme={changeToLightTheme}
+          closeMobHeader={closeMobHeader}
+        />
+      ) : null}
 
       <div className="subscribepage">
         {/* Subscribe Section */}
         <section className="subimgbox">
-        <img
-          className="hr-bg-light hr-bg-light-pc"
-          src={HeroBgLight}
-          alt="HeroBgLight"
-        />
-        <img
-          className="hr-bg-light hr-bg-light-mob"
-          src={HeroBgLightMob}
-          alt="HeroBgLightMob"
-        />
-        <img
-          className="hr-bg-dark hr-bg-dark-pc"
-          src={HeroBgDark}
-          alt="HeroBgDark"
-        />
-        <img
-          className="hr-bg-dark hr-bg-dark-mob"
-          src={HeroBgDarkMob}
-          alt="HeroBgDarkMob"
-        />
+          <img
+            className="hr-bg-light hr-bg-light-pc"
+            src={HeroBgLight}
+            alt="HeroBgLight"
+          />
+          <img
+            className="hr-bg-light hr-bg-light-mob"
+            src={HeroBgLightMob}
+            alt="HeroBgLightMob"
+          />
+          <img
+            className="hr-bg-dark hr-bg-dark-pc"
+            src={HeroBgDark}
+            alt="HeroBgDark"
+          />
+          <img
+            className="hr-bg-dark hr-bg-dark-mob"
+            src={HeroBgDarkMob}
+            alt="HeroBgDarkMob"
+          />
           <div className="app-page">
             <div className="box">
               <div className="subscribe-content subsmainpage">

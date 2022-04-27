@@ -19,7 +19,6 @@ import { Link } from "react-router-dom";
 import Footer from "../components/modules/Footer";
 import HeaderMob from "../components/modules/HeaderMob";
 
-
 const Checkout = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
@@ -29,7 +28,7 @@ const Checkout = () => {
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
-  };  
+  };
   const openMobHeader = () => {
     setIsHeaderMobOpen(true);
     document.body.classList.add("no-scroll");
@@ -46,30 +45,36 @@ const Checkout = () => {
         changeToLightTheme={changeToLightTheme}
         openMobHeader={openMobHeader}
       />
-        {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
+      {isHeaderMobOpen ? (
+        <HeaderMob
+          changeToDarkTheme={changeToDarkTheme}
+          changeToLightTheme={changeToLightTheme}
+          closeMobHeader={closeMobHeader}
+        />
+      ) : null}
       <div className="roadmapmainpage">
         {/* Roadmap Section */}
         <section className="roadmapmain">
-        <img
-          className="hr-bg-light hr-bg-light-pc"
-          src={HeroBgLight}
-          alt="HeroBgLight"
-        />
-        <img
-          className="hr-bg-light hr-bg-light-mob"
-          src={HeroBgLightMob}
-          alt="HeroBgLightMob"
-        />
-        <img
-          className="hr-bg-dark hr-bg-dark-pc"
-          src={HeroBgDark}
-          alt="HeroBgDark"
-        />
-        <img
-          className="hr-bg-dark hr-bg-dark-mob"
-          src={HeroBgDarkMob}
-          alt="HeroBgDarkMob"
-        />
+          <img
+            className="hr-bg-light hr-bg-light-pc"
+            src={HeroBgLight}
+            alt="HeroBgLight"
+          />
+          <img
+            className="hr-bg-light hr-bg-light-mob"
+            src={HeroBgLightMob}
+            alt="HeroBgLightMob"
+          />
+          <img
+            className="hr-bg-dark hr-bg-dark-pc"
+            src={HeroBgDark}
+            alt="HeroBgDark"
+          />
+          <img
+            className="hr-bg-dark hr-bg-dark-mob"
+            src={HeroBgDarkMob}
+            alt="HeroBgDarkMob"
+          />
           <div className="box">
             <div className="letushelp-content hiwsection page-body-con">
               <div className="section-heading">
@@ -103,7 +108,11 @@ const Checkout = () => {
                     <div className="colwalbtn">
                       <div className="colwalp">
                         <img className="light-img" src={Wallet} alt="Wallet" />
-                        <img className="dark-img" src={WalletDark} alt="Wallet" />
+                        <img
+                          className="dark-img"
+                          src={WalletDark}
+                          alt="Wallet"
+                        />
                         <p>1vtWSBkSF3wiuy1fN2..jszSf</p>
                       </div>
                       <button>Copy</button>
@@ -150,7 +159,7 @@ const Checkout = () => {
         </section>
       </div>
       {/* Footer */}
-       <Footer />
+      <Footer />
     </div>
   );
 };

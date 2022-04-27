@@ -52,7 +52,7 @@ const Header = (props) => {
             </ul>
           </div>
           <div className="header-right">
-            {/* <MessagesIcon
+            <MessagesIcon
               className="header-right-icon light-img"
               color="#1F194D"
             />
@@ -72,8 +72,8 @@ const Header = (props) => {
               <WalletIcon className="light-img" color="#195BFF" />
               <WalletIcon className="dark-img" color="#fff" />
               Wallet
-            </button> */}
-              <div className="login-img-box">
+            </button>
+              {/* <div className="login-img-box">
                 <div className="libimg">
                   <img src={Person} alt="" />
                 </div>
@@ -81,7 +81,7 @@ const Header = (props) => {
                 <p>ETH</p>
                 <MdExpandMore />
               </div>
-              <Bell />
+              <Bell /> */}
           </div>
         </div>
       </div>

@@ -12,7 +12,6 @@ import VaultProfilePic2 from "../assets/img/june.png";
 import Header from "../components/modules/Header";
 import HeaderMob from "../components/modules/HeaderMob";
 
-
 import VerifiedIcon from "../assets/icons/VerifiedIcon";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -35,7 +34,7 @@ const Collections = () => {
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
-  };  
+  };
   const openMobHeader = () => {
     setIsHeaderMobOpen(true);
     document.body.classList.add("no-scroll");
@@ -53,8 +52,14 @@ const Collections = () => {
         changeToLightTheme={changeToLightTheme}
         openMobHeader={openMobHeader}
       />
-          {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
- 
+      {isHeaderMobOpen ? (
+        <HeaderMob
+          changeToDarkTheme={changeToDarkTheme}
+          changeToLightTheme={changeToLightTheme}
+          closeMobHeader={closeMobHeader}
+        />
+      ) : null}
+
       <div className="colmainpage">
         {/* Collection Section */}
         <img

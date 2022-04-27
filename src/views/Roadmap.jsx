@@ -12,18 +12,17 @@ import "swiper/css/free-mode";
 import { MdDone } from "react-icons/md";
 import HeaderMob from "../components/modules/HeaderMob";
 
-
 const Roadmap = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
-
 
   const changeToDarkTheme = () => {
     setIsLightTheme(false);
   };
   const changeToLightTheme = () => {
     setIsLightTheme(true);
-  };  const openMobHeader = () => {
+  };
+  const openMobHeader = () => {
     setIsHeaderMobOpen(true);
     document.body.classList.add("no-scroll");
   };
@@ -40,7 +39,13 @@ const Roadmap = () => {
         changeToLightTheme={changeToLightTheme}
         openMobHeader={openMobHeader}
       />
-     {isHeaderMobOpen ? <HeaderMob closeMobHeader={closeMobHeader} /> : null}
+      {isHeaderMobOpen ? (
+        <HeaderMob
+          changeToDarkTheme={changeToDarkTheme}
+          changeToLightTheme={changeToLightTheme}
+          closeMobHeader={closeMobHeader}
+        />
+      ) : null}
 
       <div className="roadmapmainpage">
         {/* Roadmap Section */}
