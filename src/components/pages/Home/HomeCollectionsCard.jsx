@@ -13,7 +13,7 @@ const HomeCollectionsCard = (props) => {
       </div>
       <div className="cgc-bottom">
         <img src={props.collectionImg} alt="CollectionsCard" />
-        <div className="coming-tag">
+        <div className="coming-tag home-collection-ctag">
           {props.collectionComingTime} <span></span>
         </div>
       </div>

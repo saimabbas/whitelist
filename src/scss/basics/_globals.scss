@@ -519,6 +519,19 @@ button {
   .app.dark-theme .hr-bg-dark.hr-bg-dark-mob {
     display: block;
   }
+  .collections-grid-card
+  {
+    padding: 1rem ;
+    border-radius: 1.75rem;
+  }
+  .collections-grid-card .cgc-bottom img
+  {
+    border-radius: 1.75rem;
+  }
+  .collections-grid-card .cgc-top
+  {
+    margin: 1rem 0;
+  }
 }
 
 .hr-bg-light.hr-bg-light-comingsoon {

@@ -502,6 +502,19 @@ button:hover {
   .app.dark-theme .hr-bg-dark.hr-bg-dark-mob {
     display: block;
   }
+
+  .collections-grid-card {
+    padding: 1rem;
+    border-radius: 1.75rem;
+  }
+
+  .collections-grid-card .cgc-bottom img {
+    border-radius: 1.75rem;
+  }
+
+  .collections-grid-card .cgc-top {
+    margin: 1rem 0;
+  }
 }
 .hr-bg-light.hr-bg-light-comingsoon {
   -o-object-position: top !important;
@@ -632,7 +645,7 @@ button:hover {
   color: var(--dark-blue-white);
 }
 .home .hero .hero-left h1 b {
-  font-weight: 700;
+  font-weight: 800;
 }
 .home .hero .hero-left h1 img {
   position: absolute;
@@ -883,6 +896,30 @@ button:hover {
   grid-gap: 5rem;
   margin: 7.5rem 0 0 0;
 }
+.home .collections .coming-tag.home-collection-ctag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--round-chevron-box);
+  padding: 1.25rem 9rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  border-radius: 1000px;
+  font-weight: 700;
+  color: var(--dark-blue-white);
+}
+.home .collections .coming-tag.home-collection-ctag span {
+  width: 6.5rem;
+  height: 5px;
+  top: 0;
+  left: 50%;
+  background-color: #ff409c;
+  position: absolute;
+  display: block;
+  transform: translate(-50%, -100%);
+  border-radius: 5px 5px 0 0;
+}
 .home .subscribe .subscribe-grid {
   margin: 7.5rem 0;
 }
@@ -1066,7 +1103,7 @@ button:hover {
 
   .home .hero .hero-content.hero-content-mob {
     display: block;
-    padding: 10rem 0 5rem 0;
+    padding: 15rem 0 5rem 0;
   }
 
   .home .hero .hero-content {
@@ -1213,6 +1250,24 @@ button:hover {
   height: 3rem;
 }
 
+@media screen and (max-width: 850px) {
+  .home .about .about-content .about-right h6 {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .home .about .about-content .about-right p {
+    margin: 0 0 2rem 0;
+  }
+
+  .home .collections .coming-tag.home-collection-ctag {
+    padding: 1.25rem 4rem;
+  }
+
+  .collections-swiper-mob.collection-home-mob-swiper {
+    display: none;
+  }
+}
 @media screen and (max-width: 650px) {
   .luh-social-grid {
     grid-template-columns: -webkit-max-content -webkit-max-content;
@@ -1230,7 +1285,6 @@ button:hover {
   .home .about .about-content .about-right h6 {
     width: 100%;
     text-align: center;
-    display: block;
     margin: 0 0 1rem 0;
   }
 
@@ -1242,7 +1296,7 @@ button:hover {
     display: none;
   }
 
-  .collections-swiper-mob {
+  .collections-swiper-mob.collection-home-mob-swiper {
     display: block;
     margin: 3rem 0 0 0;
   }
@@ -1253,6 +1307,11 @@ button:hover {
 
   .subscribe-grid {
     grid-gap: 4.5rem !important;
+  }
+
+  .home .collections {
+    padding: 5.5rem 0;
+    margin: 0 0 5.5rem 0;
   }
 }
 .app.dark-theme .home .collections .collections-bg {
@@ -1398,6 +1457,14 @@ button:hover {
   .light-blue-btn-filled.hiwbtnmain {
     padding: 1.15rem 1rem;
     font-size: 1.45rem;
+  }
+
+  .light-blue-btn-filled.hiwbtnmain svg {
+    height: 2rem;
+  }
+
+  .light-blue-btn-filled.hiwbtnmain.greybgc svg {
+    height: 2rem;
   }
 }
 .letushelp-card {
@@ -4869,6 +4936,10 @@ footer .more-btn svg {
   }
   .letushelp-grid .faq-q h5 {
     width: 93%;
+  }
+
+  .letushelp-grid .accordion-item {
+    padding: 1.25rem;
   }
 }
 .hero-swiper-box .swiper-slide-content {

@@ -388,7 +388,7 @@ const Home = () => {
                   collectionComingTime="Coming This April"
                 />
               </div>
-              <div className="collections-swiper-mob">
+              <div className="collections-swiper-mob collection-home-mob-swiper">
                 <Swiper
                   modules={[FreeMode, Mousewheel]}
                   className="mySwiper"
@@ -537,13 +537,13 @@ const Home = () => {
                       Instagram!
                     </p>
                     <div className="luh-social-grid">
-                      <button className="light-blue-btn-filled">
+                      <button className="light-blue-btn-filled hiwbtnmain greybgc">
                         <FaInstagram /> thenftwhitelist
                       </button>
-                      <button className="light-blue-btn-filled">
+                      <button className="light-blue-btn-filled hiwbtnmain">
                         <FaTwitter /> theNFTwhitelist
                       </button>
-                      <button className="light-blue-btn-filled">
+                      <button className="light-blue-btn-filled hiwbtnmain greybgc">
                         <FaDiscord /> theWhitelist
                       </button>
                     </div>
