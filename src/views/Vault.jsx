@@ -12,6 +12,8 @@ import VaultImg3 from "../assets/img/vault-img-3.png";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Header from "../components/modules/Header";
+import Support from "../assets/img/helpiconimg.png"
+import { MdClear } from "react-icons/md";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -253,6 +255,30 @@ const Vault = () => {
       </div>
       {/* Footer */}
       <Footer />
+      <div className="wlfootermodal">
+        <div className="helpiconmodel">
+          <div className="hiheader">
+            <div className="hihimg">
+              <img src={Support} alt="" />
+              <p>Support</p>
+            </div>
+            <MdClear />
+          </div>
+          <div className="wlupinput">
+                <label htmlFor="">Name</label>
+                <input type="text" placeholder="Enter Your Name" />
+              </div>
+              <div className="wlupinput">
+                <label htmlFor="">Email</label>
+                <input type="text" placeholder="Enter Your Email Address" />
+              </div>
+              <div className="wlupinput">
+                <label htmlFor="">Problem</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="What's the problem?"></textarea>
+              </div>
+              <button>Send</button>
+        </div>
+      </div>
     </div>
   );
 };

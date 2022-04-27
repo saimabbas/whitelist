@@ -301,3 +301,120 @@
     transform: translate(50%, 0);
   }
 }
+
+
+
+@media screen and (max-width: 1040px) {
+  .checkoutmainpage
+  {
+    padding: 4rem 2rem;
+  }
+  .checkoutmainpage .checkoutleft .coleftimg p
+  {
+    width: 70%;
+  }
+  .checkoutmainpage .checkoutleft
+  {
+    width: 65%;
+  }
+  .checkoutmainpage .checkoutleft .colwallet .colwalbtn .colwalp p
+  {
+    font-size: 1.6rem;
+  }
+  .checkoutmainpage .checkoutleft .colwallet .colwalbtn button
+  {
+    width: 23%;
+  }
+  .checkoutmainpage .checkoutright
+  {
+    width: 32%;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  .checkoutmainpage
+  {
+    flex-direction: column-reverse;
+  }
+  .checkoutmainpage .checkoutleft
+  {
+    width: 100%;
+    border: unset;
+    padding: 4rem 2rem;
+    background-color: var(--round-chevron-box);
+    border-radius: 0.75rem;
+    z-index: 10;
+    margin: 5rem 0 0 0;
+    box-shadow: 0 7.5px 20px 0 rgb(0 0 0 / 10%);
+  }
+  .checkoutmainpage .checkoutright
+  {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: var(--round-chevron-box);
+    border-radius: 0.75rem;
+    z-index: 10;
+    margin: 5rem 0 0 0;
+    box-shadow: 0 7.5px 20px 0 rgb(0 0 0 / 10%);
+  }
+  .checkoutmainpage .checkoutright .cosub button
+  {
+    padding: 1.5rem 0;
+  }
+  .checkoutmainpage .checkoutleft .colwallet .colwalbtn .colwalp p
+  {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .checkoutmainpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    background-color: unset;
+    border-radius: 0;
+    z-index: 10;
+    margin:0;
+    box-shadow: unset;
+}
+.checkoutmainpage .checkoutright .sumimgtext
+{
+  margin: 3rem 0 0 0;
+}
+}
+
+
+@media screen and (max-width: 650px) {
+  .checkoutmainpage .checkoutleft .coleftimg p
+  {
+    width: 100%;
+    margin: 4rem 0;
+  }
+  .checkoutmainpage .checkoutleft .colwallet .colwalbtn
+  {
+    flex-direction: column;
+    border: unset;
+  }
+  .checkoutmainpage .checkoutleft .colwallet .colwalbtn .colwalp
+  {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .checkoutmainpage .checkoutleft .colwallet .colwalbtn
+  {
+    padding: 0;
+  }
+  .checkoutmainpage .checkoutleft .colwallet .colwalbtn .colwalp p
+  {
+    font-size: 1.75rem;
+    margin: 0.25rem 0 0 1.5rem;
+  }
+  .checkoutmainpage .checkoutleft .colwallet .colwalbtn button
+  {
+    width: 100%;
+    margin: 2rem 0;
+    border-radius: 1000px;
+    padding: 1.75rem 0;
+  }
+}
