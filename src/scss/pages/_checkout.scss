@@ -348,6 +348,8 @@
     svg {
       width: 1.25rem;
       height: max-content;
+      transform: rotate(180deg);
+      transition: 0.5s;
     }
   }
 }

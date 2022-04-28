@@ -34,7 +34,7 @@ const Links = () => {
       <Link to="/mintdisconnect">
         10. <span>Mint Disconnect</span>
       </Link>
-      <Link to="/landingpage">
+      <Link to="/loadingpage">
         11. <span>Loading</span>
       </Link>
       <Link to="/prizepools">

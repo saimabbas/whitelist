@@ -1,15 +1,43 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MessagesIcon from "../../assets/icons/MessagesIcon";
 import MoonIcon from "../../assets/icons/MoonIcon";
 import SunIcon from "../../assets/icons/SunIcon";
 import WalletIcon from "../../assets/icons/WalletIcon";
 import Logo from "../../assets/img/Logo";
 import Menu from "../../assets/icons/Menu";
-import Person from "../../assets/img/personimg.png";
-import { MdExpandMore } from "react-icons/md";
-import Bell from "../../assets/icons/Bell";
+import { gsap } from "gsap";
+import {
+  Power1,
+  Power2,
+  Power3,
+  Power4,
+  Linear,
+  Back,
+  Expo,
+  Circ,
+} from "gsap/dist/gsap";
 
 const Header = (props) => {
+  useEffect(() => {
+    let headerAnim = gsap.timeline({
+      delay: 3,
+    });
+    headerAnim.fromTo(
+      ".header-left ul li",
+      {
+        opacity: 0,
+        x: "25rem",
+      },
+      {
+        opacity: 1,
+        x: "0",
+        duration: 1.25,
+        ease: Power4.easeInOut,
+        stagger: 0.1,
+      }
+    );
+  }, []);
+
   return (
     <header>
       <div className="box">
@@ -73,7 +101,7 @@ const Header = (props) => {
               <WalletIcon className="dark-img" color="#fff" />
               Wallet
             </button>
-              {/* <div className="login-img-box">
+            {/* <div className="login-img-box">
                 <div className="libimg">
                   <img src={Person} alt="" />
                 </div>

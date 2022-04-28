@@ -6,7 +6,7 @@ import Checkout from "./views/Checkout";
 import Collections from "./views/Collections";
 import ComingSoon from "./views/ComingSoon";
 import ComingSoonDark from "./views/ComingSoonDark";
-import LandingPage from "./views/LandingPage";
+import LoadingPage from "./views/LoadingPage";
 import Roadmap from "./views/Roadmap";
 import Team from "./views/Team";
 import Vault from "./views/Vault";
@@ -38,7 +38,7 @@ const App = () => {
               <Route path="/collections" element={<Collections />} />
               <Route path="/team" element={<Team />} />
               <Route path="/comingsoon" element={<ComingSoon />} />
-              <Route path="/landingpage" element={<LandingPage />} />
+              <Route path="/loadingpage" element={<LoadingPage />} />
               <Route path="/roadmap" element={<Roadmap />} />
               <Route path="/mintconnect" element={<MintConnect />} />
               <Route path="/mintdisconnect" element={<MintDisconnect />} />
@@ -60,7 +60,7 @@ const App = () => {
               <Route path="/collections" element={<Collections />} />
               <Route path="/team" element={<Team />} />
               <Route path="/comingsoon" element={<ComingSoon />} />
-              <Route path="/landingpage" element={<LandingPage />} />
+              <Route path="/loadingpage" element={<LoadingPage />} />
               <Route path="/roadmap" element={<Roadmap />} />
               <Route path="/mintconnect" element={<MintConnect />} />
               <Route path="/mintdisconnect" element={<MintDisconnect />} />

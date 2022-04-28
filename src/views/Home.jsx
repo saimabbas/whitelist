@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import HeroImg from "../assets/img/hero-img-1.png";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurple2 from "../assets/img/blob-purple2.png";
@@ -36,12 +36,23 @@ import "swiper/css/free-mode";
 import "swiper/css";
 import "swiper/css/pagination";
 import Logo from "../assets/img/Logo";
+import { gsap } from "gsap";
+import {
+  Power1,
+  Power2,
+  Power3,
+  Power4,
+  Linear,
+  Back,
+  Expo,
+  Circ,
+} from "gsap/dist/gsap";
+import LoadingPage from "./LoadingPage";
 
 const Home = () => {
   SwiperCore.use([Pagination]);
   const [isLightTheme, setIsLightTheme] = useState(true);
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
-
   const changeToDarkTheme = () => {
     setIsLightTheme(false);
   };
@@ -56,8 +67,46 @@ const Home = () => {
     setIsHeaderMobOpen(false);
     document.body.classList.remove("no-scroll");
   };
+
+  useEffect(() => {
+    let homeAnim = gsap.timeline({
+      delay: 2.5,
+    });
+    homeAnim
+      .to(".home-loading", {
+        top: "-150%",
+        duration: 1,
+        ease: Power4.easeIn,
+      })
+      .to(
+        ".home-loading",
+        {
+          opacity: 0,
+          duration: 1,
+          ease: Power4.easeIn,
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".swiper-slide-content",
+        {
+          opacity: 0,
+          y: "25rem",
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: Power4.easeIn,
+        },
+        "<0"
+      );
+  }, []);
+
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
+      {/* Loading Page */}
+      <LoadingPage className="home-loading" />
       {/* Header */}
       <Header
         changeToDarkTheme={changeToDarkTheme}
