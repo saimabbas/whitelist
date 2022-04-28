@@ -119,6 +119,10 @@ body {
   background-color: #43dff6;
 }
 
+.top-notch.top-notch-orange {
+  background-color: #ffad32;
+}
+
 button {
   outline: 0;
   transition: 0.75s;
@@ -432,7 +436,6 @@ button {
   z-index: 1;
 }
 
-
 .hr-bg-dark {
   width: 100%;
   min-height: 105vh;
@@ -488,7 +491,6 @@ button {
 }
 
 @media screen and (max-width: 650px) {
-
   .comingsoon-dark-bg.hr-bg-dark,
   .comingsoon-dark-bg.hr-bg-light {
     height: 100vh !important;
@@ -512,7 +514,6 @@ button {
   .app.dark-theme .hr-bg-dark.hr-bg-dark-pc {
     display: none;
   }
-
 
   .app.light-theme .hr-bg-light.hr-bg-light-mob {
     display: block;

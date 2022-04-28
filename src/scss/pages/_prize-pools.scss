@@ -22,7 +22,7 @@
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.075);
       border-radius: 2rem;
       display: grid;
-      grid-template-columns: max-content 1fr;
+      grid-template-columns: 1fr max-content;
       grid-template-rows: auto;
       grid-gap: 10rem;
       position: relative;
@@ -57,6 +57,11 @@
           width: max-content;
           height: 1.5rem;
           object-fit: contain;
+        }
+        h6 {
+          font-size: 1.65rem;
+          font-weight: 800;
+          color: var(--dark-blue-white);
         }
       }
 
@@ -268,7 +273,7 @@
                       }
                     }
 
-                    input:checked+label .vo-checkbox-circle {
+                    input:checked + label .vo-checkbox-circle {
                       svg {
                         opacity: 1;
                       }
@@ -315,7 +320,7 @@
                     }
                   }
 
-                  &:hover>.vo-info-box-content {
+                  &:hover > .vo-info-box-content {
                     display: block;
                   }
                 }
@@ -330,7 +335,7 @@
                 }
 
                 .vo-option-prog.vo-option-prog-active {
-                  background-color: #195BFF;
+                  background-color: #195bff;
                 }
               }
             }
@@ -376,11 +381,20 @@
     grid-gap: 2.5rem;
   }
 
-  .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-closed {
+  .prizepools-grid
+    .prizepools-grid-card
+    .prizepools-grid-card-bottom
+    .pgc-bottom-content
+    .voting-closed {
     padding: 2.5rem;
   }
 
-  .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-closed .vc-grid {
+  .prizepools-grid
+    .prizepools-grid-card
+    .prizepools-grid-card-bottom
+    .pgc-bottom-content
+    .voting-closed
+    .vc-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -390,22 +404,49 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-closed .vc-grid {
+  .prizepools-grid
+    .prizepools-grid-card
+    .prizepools-grid-card-bottom
+    .pgc-bottom-content
+    .voting-closed
+    .vc-grid {
     grid-template-columns: 1fr;
   }
 
-  .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-open .vo-grid {
+  .prizepools-grid
+    .prizepools-grid-card
+    .prizepools-grid-card-bottom
+    .pgc-bottom-content
+    .voting-open
+    .vo-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-open .vo-grid .vo-grid-card .vo-option.vo-option-active .vo-option-left p {
+.prizepools-grid
+  .prizepools-grid-card
+  .prizepools-grid-card-bottom
+  .pgc-bottom-content
+  .voting-open
+  .vo-grid
+  .vo-grid-card
+  .vo-option.vo-option-active
+  .vo-option-left
+  p {
   color: var(--dark-blue-white) !important;
   font-weight: 700 !important;
 }
 
-.prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom .pgc-bottom-content .voting-open .vo-grid .vo-grid-card .vo-option.vo-option-active .vo-option-prog {
-  background-color: #195BFF;
+.prizepools-grid
+  .prizepools-grid-card
+  .prizepools-grid-card-bottom
+  .pgc-bottom-content
+  .voting-open
+  .vo-grid
+  .vo-grid-card
+  .vo-option.vo-option-active
+  .vo-option-prog {
+  background-color: #195bff;
 }
 
 .prizepools-grid-card-voting-active {
