@@ -86,8 +86,7 @@ const HowItWorks = () => {
                     />
                   </div>
                   <p>
-                    Find the Most Frequently asked questions and there answers
-                    right here
+                    Find the most asked questions and their answer right here
                   </p>
                 </div>
                 <div className="letushelp-grid">
@@ -113,11 +112,12 @@ const HowItWorks = () => {
                     </LetUsHelpCard>
                     <LetUsHelpCard
                       eventKey={3}
-                      ques="Can I Buy, sell or trade my Tier Pass?"
+                      ques="Can I buy, sell or trade my Tier Pass?"
                     >
                       <p>
-                        When you purchase a subscription through The Whitelist
-                        you will receive your own Unique NFT pass. The whitelist
+                        When you purchase a subscription through Whitelist, you
+                        will receive your own Unique NFT pass, Which will be
+                        listed on the secondary market Openseas. The whitelist
                         has 3 tier options to pick from. Choose wisely 😉
                       </p>
                     </LetUsHelpCard>
@@ -146,7 +146,7 @@ const HowItWorks = () => {
                         Feel free to reach out to us through email at (
                         <a href="https://www.youtube.com/">
                           {" "}
-                          info@thwwhitelist.com
+                          info@thewhitelist.com
                         </a>{" "}
                         ). Or the red button in the bottom right corner.
                       </p>
@@ -164,8 +164,8 @@ const HowItWorks = () => {
                     </LetUsHelpCard>
                     <LetUsHelpCard
                       eventKey={7}
-                      ques=" What is the benefit of holding an NFT from the
-                      whitelist??"
+                      ques=" What is the benefit of holding an NFT from The
+                      Whitelist?"
                     >
                       <p>
                         At the whitelist we strive to provide our users with
@@ -178,19 +178,19 @@ const HowItWorks = () => {
                     </LetUsHelpCard>
                     <LetUsHelpCard
                       eventKey={8}
-                      ques=" How do I partner with the Whitelist?"
+                      ques=" How do I partner with The Whitelist?"
                     >
                       <p>
                         For all enquiries please email
                         <a href="https://www.youtube.com/">
                           {" "}
-                          info@thwwhitelist.com
+                          info@thewhitelist.com
                         </a>
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
                       eventKey={9}
-                      ques="Who is behind the whitelist? "
+                      ques="Who is behind The Whitelist? "
                     >
                       <p>
                         <a href="https://www.youtube.com/">Meet the Team</a>
@@ -211,7 +211,7 @@ const HowItWorks = () => {
                       subscription? "
                     >
                       <p>
-                        With The whitelist a user will receive a guaranteed 3
+                        With The Whitelist a user will receive a guaranteed 3
                         drops. Each drop will happen 1-2 months apart depending
                         on the team and artists. At the whitelist we strive to
                         provide you with the best product possible.
@@ -222,20 +222,11 @@ const HowItWorks = () => {
                       ques=" How much does it cost to subscribe to The Whitelist? "
                     >
                       <p>
-                        Here at the whitelist, we have a multitude of
+                        Here at The Whitelist, we have a multitude of
                         subscription options that aim to fit all types of users.
                         Please visit us at
                         <a href="https://www.youtube.com/"> Subscribe</a> for
                         details.
-                      </p>
-                    </LetUsHelpCard>
-                    <LetUsHelpCard
-                      eventKey={13}
-                      ques=" How Much will Mint be? "
-                    >
-                      <p>
-                        Mint will vary per drop but will be anywhere between{" "}
-                        <span> 0.8-1.5 ETH</span>.
                       </p>
                     </LetUsHelpCard>
                   </Accordion>

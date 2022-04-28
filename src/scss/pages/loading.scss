@@ -428,7 +428,6 @@
   align-items: center;
   flex-direction: column;
   margin: 2rem 0;
-
   .helpiconmodel {
     display: flex;
     justify-content: flex-start;
@@ -438,24 +437,20 @@
     padding: 2rem;
     background-color: #fff;
     border-radius: 0.75rem;
-
     .hiheader {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
-
       .hihimg {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-
         img {
           width: 2rem;
           height: 2rem;
           object-fit: cover;
         }
-
         p {
           font-size: 1.8rem;
           color: #1f194d;
@@ -463,7 +458,6 @@
           margin: 0 0 0 0.75rem;
         }
       }
-
       svg {
         font-size: 2rem;
         display: flex;
@@ -473,7 +467,6 @@
         cursor: pointer;
       }
     }
-
     .wlupinput {
       display: flex;
       flex-direction: column;
@@ -484,16 +477,16 @@
 
       label {
         font-size: 1.4rem;
-        color: #1F194D;
+        color: #1f194d;
         font-weight: 400;
         margin: 0 0 0.75rem 0;
       }
 
       input {
-        border: 1px solid #E1E4EB;
+        border: 1px solid #e1e4eb;
         border-radius: 0.75rem;
         font-size: 1.6rem;
-        color: #1F194D;
+        color: #1f194d;
         font-weight: 600;
         width: 100%;
         padding: 1.5rem 0.75rem;
@@ -505,15 +498,15 @@
 
       input::placeholder {
         font-size: 1.6rem;
-        color: #807E8E;
+        color: #807e8e;
         font-weight: 400;
       }
 
       textarea {
-        border: 1px solid #E1E4EB;
+        border: 1px solid #e1e4eb;
         border-radius: 0.75rem;
         font-size: 1.6rem;
-        color: #1F194D;
+        color: #1f194d;
         font-weight: 600;
         width: 100%;
         padding: 1.5rem 0.75rem;
@@ -526,7 +519,7 @@
 
       textarea::placeholder {
         font-size: 1.6rem;
-        color: #807E8E;
+        color: #807e8e;
         font-weight: 400;
       }
     }
@@ -535,7 +528,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #195BFF;
+      background-color: #195bff;
       border-radius: 0.75rem;
       font-size: 1.6rem;
       color: #ffffff;
@@ -548,9 +541,9 @@
   }
 }
 
-
 @media screen and (max-width: 1440px) {
-  .landing-content .landing-head {}
+  .landing-content .landing-head {
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -572,5 +565,6 @@
     display: none;
   }
 
-  .landing-content .landing-head {}
+  .landing-content .landing-head {
+  }
 }

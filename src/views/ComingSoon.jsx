@@ -15,14 +15,14 @@ const ComingSoon = () => {
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
       <header>
-          <div className="box cslmainheader">
+        <div className="box cslmainheader">
           <div className="header-content">
             <div className="header-left">
               <Logo className="light-img" color="#1F194D" />
               <Logo className="dark-img" color="#fff" />
             </div>
           </div>
-          </div>
+        </div>
       </header>
       <div className="comesoonpage">
         {/* Hero Section */}
@@ -92,7 +92,7 @@ const ComingSoon = () => {
                 </div>
               </div>
               <div className="coomsoonlast">
-                <p>Get notifed when site goes live</p>
+                <p>Get notified when site goes live</p>
                 <div className="coomsooninput">
                   <input
                     type="text"

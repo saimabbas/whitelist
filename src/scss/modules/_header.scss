@@ -49,14 +49,12 @@ header {
         width: max-content;
         height: 2.5rem;
       }
-      .login-img-box
-      {
+      .login-img-box {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        border-right: 1px solid #D1E4EF;
-        .libimg
-        {
+        border-right: 1px solid #d1e4ef;
+        .libimg {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -66,38 +64,33 @@ header {
           max-height: 5rem;
           background-color: #fff;
           border-radius: 50%;
-          img 
-          {
+          img {
             min-width: 4.5rem;
             max-width: 4.5rem;
             min-height: 4.5rem;
             max-height: 4.5rem;
           }
         }
-        h6 
-        {
+        h6 {
           font-size: 1.8rem;
           color: #1f194d;
           font-weight: 700;
           margin: 0 1rem;
         }
-        p 
-        {
+        p {
           font-size: 1.4rem;
           color: #1f194d;
           font-weight: 600;
         }
-        svg 
-        {
+        svg {
           font-size: 1.95rem;
           color: #1f194d;
           margin: 0 2rem;
         }
       }
-      svg 
-      {
+      svg {
         font-size: 2rem;
-        margin: 0 0 0 1rem;
+        margin: 0 1rem 0 0rem;
       }
     }
   }
