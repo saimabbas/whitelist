@@ -200,6 +200,48 @@ button {
   padding: 1rem 3rem;
 }
 
+.light-blue-btn-outlined {
+  width: max-content;
+  background-color: transparent;
+  border: 1px solid var(--light-blue-btn-filled-bg);
+  color: var(--light-blue-btn-filled-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.25rem 3.5rem;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.25s;
+
+  svg {
+    width: max-content;
+    height: 2.25rem;
+    object-fit: contain;
+    margin: 0 0.75rem 0 0;
+    transition: 0.25s;
+
+    path {
+      transition: 0.25s;
+    }
+  }
+
+  &:hover {
+    background-color: #195bff;
+    color: #fff;
+
+    svg {
+      fill: #fff !important;
+      color: #fff !important;
+
+      path {
+        fill: #fff !important;
+        color: #fff !important;
+      }
+    }
+  }
+}
+
 .page-body-con {
   margin: 22.5rem 0 15rem 0;
   position: relative;
