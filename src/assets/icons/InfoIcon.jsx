@@ -3,7 +3,7 @@ import React from "react";
 const InfoIcon = (props) => {
   return (
     <svg
-    className={props.className}
+      className={props.className}
       width="20"
       height="20"
       viewBox="0 0 20 20"
