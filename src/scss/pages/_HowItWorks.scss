@@ -43,7 +43,7 @@
   color: var(--light-blue-btn-filled-color);
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1.5rem 2.5rem;
+  padding: 1.65rem 2.65rem;
   border: 1px solid transparent;
   border-radius: 1000px;
   display: flex;
@@ -123,10 +123,10 @@
   }
   .light-blue-btn-filled.hiwbtnmain svg {
     height: 2rem;
-}
-.light-blue-btn-filled.hiwbtnmain.greybgc svg {
-  height: 2rem;
-}
+  }
+  .light-blue-btn-filled.hiwbtnmain.greybgc svg {
+    height: 2rem;
+  }
 }
 .letushelp-card {
   background-color: var(--round-chevron-box);

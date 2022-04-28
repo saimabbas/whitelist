@@ -543,16 +543,13 @@ const Home = () => {
                     alt="BlobPurple2"
                   />
                 </div>
-                <p>
-                  Find the Most Frequently asked questions and there answers
-                  right here
-                </p>
+                <p>Find the most asked questions and their answer right here</p>
               </div>
               <div className="letushelp-grid">
                 <Accordion>
                   <LetUsHelpCard
                     eventKey={1}
-                    ques="Does the Whitelist have a roadmap?"
+                    ques="Does The Whitelist have a roadmap?"
                   >
                     <p>
                       <a href="https://www.youtube.com/">Roadmap</a>
@@ -564,13 +561,14 @@ const Home = () => {
                   >
                     <p>
                       Depending on the tier you have decided to go with, every
-                      tier unlocks certain perks and advantages. Visit (Link to
-                      subscriptions) to find out more.
+                      tier unlocks certain perks and advantages. Visit (
+                      <a href="https://www.youtube.com/">Subscriptions</a>) to
+                      find out more.
                     </p>
                   </LetUsHelpCard>
                   <LetUsHelpCard
                     eventKey={3}
-                    ques="Can I Buy, sell or trade my Tier Pass?"
+                    ques="Can I buy, sell or trade my Tier Pass?"
                   >
                     <p>
                       When you purchase a subscription through The Whitelist you

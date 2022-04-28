@@ -8,7 +8,6 @@ import { Accordion } from "react-bootstrap";
 import ChevronUp from "../../assets/icons/ChevronUp";
 import HelpIcon from "../../assets/img/help-icon.svg";
 
-
 const Footer = (props) => {
   return (
     <footer>
@@ -18,7 +17,7 @@ const Footer = (props) => {
             <div className="footer-top">
               <div className="footer-left">
                 <Logo color="#fff" />
-                <p>Follow us on social media</p>
+                <p>Follow Us On Social Media</p>
                 <div className="fl-icons-grid">
                   <Instagram color="#fff" />
                   <TwitterIcon color="#fff" />
@@ -40,7 +39,8 @@ const Footer = (props) => {
               <div className="footer-right">
                 <h6>Join Newsletter</h6>
                 <p>
-                  Subscribe our newsletter to get latest <Logo color="#fff" />
+                  Subscribe our newsletter to get latest <Logo color="#fff" />{" "}
+                  <br />
                   updates
                 </p>
                 <div className="fr-subscribe-input-box">
@@ -61,7 +61,7 @@ const Footer = (props) => {
             <div className="footer-top">
               <div className="footer-left">
                 <Logo color="#fff" />
-                <p>Follow us on social media</p>
+                <p>Follow Us On Social Media</p>
                 <div className="fl-icons-grid">
                   <Instagram color="#fff" />
                   <TwitterIcon color="#fff" />
@@ -127,12 +127,11 @@ const Footer = (props) => {
       </div>
       {props.moreBtn ? (
         <div className="more-btn">
-          More  <RefreshIcon className='light-img' color="#fff" /> <RefreshIcon className='dark-img' color="#000" />
+          More <RefreshIcon className="light-img" color="#fff" />{" "}
+          <RefreshIcon className="dark-img" color="#000" />
         </div>
       ) : null}
-      
     </footer>
-    
   );
 };
 
