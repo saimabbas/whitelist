@@ -78,7 +78,7 @@ const Checkout = () => {
             alt="HeroBgDarkMob"
           />
           <div className="box">
-            <div className="letushelp-content hiwsection page-body-con">
+            <div className="letushelp-content hiwsection page-body-con checkout-nm">
               <div className="section-heading">
                 <div className="sh-heading">
                   <h2>Checkout</h2>
