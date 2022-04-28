@@ -5,7 +5,7 @@ import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import { gsap } from "gsap";
-import { Power4, Linear } from "gsap/dist/gsap";
+import { Power4 } from "gsap/dist/gsap";
 import { SplitText } from "gsap/SplitText";
 const ComingSoonDark = () => {
   gsap.registerPlugin(SplitText);
