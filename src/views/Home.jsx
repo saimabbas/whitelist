@@ -11,11 +11,14 @@ import BlobYellow from "../assets/img/blob-yellow.svg";
 import BlobYellow2 from "../assets/img/blob-yellow2.png";
 import LogoLight from "./../assets/img/logo-light.svg";
 import HeroBgLight from "./../assets/img/light-bg-without-clouds.png";
-import Cloud1 from "./../assets/img/cloud-1.png";
-import Cloud2 from "./../assets/img/cloud-2.png";
-import Cloud3 from "./../assets/img/cloud-3.png";
+import Cloud1Light from "./../assets/img/cloud-1.png";
+import Cloud1Dark from "./../assets/img/cloud-1-dark.png";
+import Cloud2Light from "./../assets/img/cloud-2.png";
+import Cloud2Dark from "./../assets/img/cloud-2-dark.png";
+import Cloud3Light from "./../assets/img/cloud-3.png";
+import Cloud3Dark from "./../assets/img/cloud-3-dark.png";
 import HeroBgLightMob from "./../assets/img/hero-bg-light-mob.png";
-import HeroBgDark from "./../assets/img/home-hero-bg-dark-pc.png";
+import HeroBgDark from "./../assets/img/dark-bg-without-clouds.png";
 import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
 import HeroGlareLight from "./../assets/img/glare-light.svg";
 import HeroGlareDark from "./../assets/img/hero-glare-dark.png";
@@ -209,6 +212,26 @@ const Home = () => {
             className="hr-bg-dark hr-bg-dark-mob"
             src={HeroBgDarkMob}
             alt="HeroBgDarkMob"
+          />
+          <img
+            className="light-img home-cloud-1"
+            src={Cloud2Light}
+            alt="Cloud2Light"
+          />
+          <img
+            className="dark-img home-cloud-1"
+            src={Cloud2Dark}
+            alt="Cloud2Light"
+          />
+          <img
+            className="light-img home-cloud-2"
+            src={Cloud1Light}
+            alt="Cloud1Light"
+          />
+          <img
+            className="dark-img home-cloud-2"
+            src={Cloud1Dark}
+            alt="Cloud1Light"
           />
           <div className="box">
             <div className="hero-content hero-content-pc">
