@@ -7,7 +7,8 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0;
-  font-family: "Cairo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Cairo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 html,
@@ -150,7 +151,7 @@ button:hover {
   width: max-content;
   height: 2.25rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 0.75rem 0 0;
 }
 
@@ -176,7 +177,7 @@ button:hover {
   width: max-content;
   height: 2.25rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 0.75rem 0 0;
   transition: 0.25s;
 }
@@ -250,8 +251,8 @@ button:hover {
 }
 
 .round-chevron-box {
-  width: 3.5rem;
-  height: 3.5rem;
+  min-width: 3.5rem;
+  min-height: 3.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -357,7 +358,7 @@ button:hover {
   height: -moz-max-content;
   height: max-content;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 0 0 1rem;
 }
 .user-details-box div p {
@@ -393,7 +394,7 @@ button:hover {
   width: 100%;
   height: 32.5rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 2.5rem;
 }
 
@@ -455,9 +456,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
   z-index: 1;
 }
 
@@ -469,9 +470,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
   z-index: 1;
   margin: 0;
 }
@@ -514,12 +515,12 @@ button:hover {
 
 .landing-page-bg {
   -o-object-position: top !important;
-     object-position: top !important;
+  object-position: top !important;
 }
 
 @media screen and (max-width: 650px) {
   .comingsoon-dark-bg.hr-bg-dark,
-.comingsoon-dark-bg.hr-bg-light {
+  .comingsoon-dark-bg.hr-bg-light {
     height: 100vh !important;
   }
 
@@ -533,13 +534,13 @@ button:hover {
 
   .hr-bg-dark-mob {
     -o-object-position: top right;
-       object-position: top right;
+    object-position: top right;
   }
 
   .app.light-theme .hr-bg-light.hr-bg-light-pc,
-.app.light-theme .hr-bg-dark.hr-bg-dark-pc,
-.app.dark-theme .hr-bg-light.hr-bg-light-pc,
-.app.dark-theme .hr-bg-dark.hr-bg-dark-pc {
+  .app.light-theme .hr-bg-dark.hr-bg-dark-pc,
+  .app.dark-theme .hr-bg-light.hr-bg-light-pc,
+  .app.dark-theme .hr-bg-dark.hr-bg-dark-pc {
     display: none;
   }
 
@@ -574,12 +575,13 @@ button:hover {
 }
 .hr-bg-light.hr-bg-light-comingsoon {
   -o-object-position: top !important;
-     object-position: top !important;
+  object-position: top !important;
 }
 
 @font-face {
   font-family: conthrax;
-  src: local(conthrax-sb), url("../assets/fonts/conthrax-sb.ttf") format("truetype");
+  src: local(conthrax-sb),
+    url("../assets/fonts/conthrax-sb.ttf") format("truetype");
   font-display: swap;
 }
 .conthrax {
@@ -678,9 +680,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
   z-index: 1;
 }
 .home .hero .hero-content {
@@ -813,7 +815,7 @@ button:hover {
 .home .hero .hero-right .hero-glare {
   width: 150%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -835,7 +837,7 @@ button:hover {
 .home .hero .hero-right .hero-swiper-box img {
   max-height: 47.5rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-height: 65vh;
   width: 100%;
 }
@@ -868,7 +870,7 @@ button:hover {
 .home .about .about-content .about-left img {
   width: 85%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .home .about .about-content .about-right {
   width: 100%;
@@ -947,7 +949,7 @@ button:hover {
   left: 0;
   z-index: 1;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .home .collections .collections-content {
   width: 100%;
@@ -1038,7 +1040,7 @@ button:hover {
   width: 8rem;
   height: 8rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   border: 2.5px solid #ededed;
 }
@@ -1058,7 +1060,7 @@ button:hover {
   width: 2rem;
   height: 2rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border: unset;
 }
 .logininfo .loginnameimg p {
@@ -1160,7 +1162,7 @@ button:hover {
   transform: translate(-50%, -50%) scale(1.1);
   z-index: 10000000;
   -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 .headermobilecontent .headermobicon {
   display: flex;
@@ -1483,7 +1485,7 @@ button:hover {
     border-radius: 2.5rem;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 30rem;
   }
 }
@@ -1506,9 +1508,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
   z-index: 1;
 }
 
@@ -1550,7 +1552,7 @@ button:hover {
   width: max-content;
   height: 2.25rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 0.75rem 0 0;
   transition: 0.25s;
 }
@@ -1581,7 +1583,7 @@ button:hover {
   width: max-content;
   height: 2.25rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 0.75rem 0 0;
   transition: 0.25s;
 }
@@ -1659,9 +1661,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
   z-index: 1;
 }
 .landingpage .landing-main .landing-bg-dark {
@@ -1671,9 +1673,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
   z-index: 1;
 }
 
@@ -1764,7 +1766,7 @@ button:hover {
   width: 10rem;
   height: 10rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .wlsuccesfulmodal .maincontentmodal h6 {
   font-size: 1.8rem;
@@ -1815,7 +1817,7 @@ button:hover {
   width: 10rem;
   height: 10rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .wlfailedmodal .maincontentmodal h6 {
   font-size: 1.8rem;
@@ -2071,7 +2073,7 @@ button:hover {
   width: 2rem;
   height: 2rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .wlfootermodal .helpiconmodel .hiheader .hihimg p {
   font-size: 1.8rem;
@@ -2201,9 +2203,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
   z-index: 1;
 }
 .subscribepage .subimgbox .subscribe-bg-dark {
@@ -2213,9 +2215,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
   z-index: 1;
 }
 
@@ -2260,9 +2262,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
   z-index: 1;
 }
 .teammainbox .teampage .team-bg-dark {
@@ -2272,9 +2274,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: top;
-     object-position: top;
+  object-position: top;
   z-index: 1;
 }
 
@@ -2310,7 +2312,7 @@ button:hover {
   width: 100%;
   max-height: 14rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .team-grid .team-grid-content .team-grid-main h6 {
   color: var(--dark-blue-white);
@@ -2346,7 +2348,7 @@ button:hover {
     width: 11rem;
     max-height: 11rem;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 .roadmapmainpage {
@@ -2358,10 +2360,17 @@ button:hover {
 
 .roadmap-content {
   width: 100%;
-  margin: 7.5rem 0 30rem 0;
+  margin: 5rem 0 30rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
-  height: 25rem;
+  height: 35rem;
+}
+
+.roadmap-content .round-chevron-box {
+  -webkit-transform: translate(0, -1rem);
+  transform: translate(0, -1rem);
 }
 .roadmap-content .roadmap-grid {
   width: 100%;
@@ -2380,6 +2389,7 @@ button:hover {
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 0 2.5rem;
 }
 .roadmap-swiper .swiper {
   width: 100%;
@@ -2480,8 +2490,8 @@ button:hover {
   justify-content: center;
 }
 .roadmap-step .roadmap-step-dot {
-  width: 3rem;
-  height: 3rem;
+  min-width: 3rem;
+  min-height: 3rem;
   background-color: #e0e3ec;
   border-radius: 50%;
   display: flex;
@@ -2494,36 +2504,38 @@ button:hover {
   font-weight: 500;
   color: #1f194d;
   white-space: nowrap;
+  margin: 0.75rem 0;
 }
 .roadmap-step .roadmap-step-dot p {
   font-size: 1.35rem;
   font-weight: 400;
   color: #807e8e;
-  margin: 0.5rem 0 0rem 0;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.roadmap-step .roadmap-step-dot:hover p {
+  opacity: 1;
 }
 .roadmap-step .roadmap-step-dot .roadmap-step-text-bottom {
   position: absolute;
   left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 10rem);
+  -webkit-transform: translate(-50%, 7.5rem);
+  transform: translate(-50%, 7.5rem);
   z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 30rem;
+  width: 50rem;
 }
 .roadmap-step .roadmap-step-dot .roadmap-step-text-top {
   position: absolute;
   left: 50%;
-  top: 0;
-  transform: translate(-50%, -10rem);
-  z-index: 100;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  width: 30rem;
+  width: 50rem;
 }
 .roadmap-step .roadmap-step-dot svg {
   font-size: 2rem;
@@ -2581,9 +2593,93 @@ button:hover {
   display: block !important;
 }
 
-.roadmap-endpoint-box {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 1000px) {
+  .roadmap-content {
+    display: none;
+  }
+  .roadmap-content-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .roadmap-step-line {
+    min-height: 10rem;
+    height: 100%;
+    width: 0.5rem;
+  }
+  .roadmap-startpoint {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .roadmap-startpoint .roadmap-step-line {
+    background-color: #2bd182;
+  }
+  .roadmap-step {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: max-content 1fr;
+    grid-template-columns: -webkit-max-content 1fr;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 2.5rem;
+    -webkit-box-align: unset;
+    -ms-flex-align: unset;
+    align-items: unset;
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    padding: 0 0 0 2.2rem;
+  }
+  .roadmap-step-line-dot-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .roadmap-startpoint {
+    padding: 0;
+  }
+  .roadmap-step-text-box {
+    width: 100%;
+    padding: 0 0 2.5rem 0;
+  }
+  .roadmap-step-text-box h6 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #1f194d;
+    margin: 0 0 0.5rem 0;
+  }
+  .roadmap-step-text-box p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #1f194d;
+  }
+  .roadmap-current .roadmap-step-text-box h6 {
+    font-weight: 700;
+  }
 }
 
 .colmainpage {
@@ -2596,9 +2692,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
   z-index: 1;
 }
 .colmainpage .col-bg-dark {
@@ -2608,7 +2704,7 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   z-index: 1;
 }
 .colmainpage .collections-grid {
@@ -2761,7 +2857,7 @@ button:hover {
   height: -moz-max-content;
   height: max-content;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 0 0 1rem;
 }
 
@@ -2825,9 +2921,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
   z-index: 1;
 }
 .vaultmainpage .vault-grid {
@@ -2882,7 +2978,7 @@ button:hover {
   height: -moz-max-content;
   height: max-content;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1rem;
 }
 
@@ -2944,9 +3040,9 @@ button:hover {
   top: 0;
   left: 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: bottom;
-     object-position: bottom;
+  object-position: bottom;
   z-index: 1;
 }
 .comesoonpage .coomsoon-main .hr-bg-dark {
@@ -3353,7 +3449,7 @@ button:hover {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .comdarkinput {
@@ -3427,7 +3523,13 @@ button:hover {
     display: flex;
     justify-content: center;
   }
-  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 span {
+  .coomsoondark
+    .comsoondmain
+    .comsoondcontent
+    .comdarktimer
+    .comdarkday
+    h6
+    span {
     font-size: 1.75rem;
     margin: 0.5rem 0.5rem 0 0.5rem;
   }
@@ -3464,7 +3566,13 @@ button:hover {
   .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 {
     font-size: 3.5rem;
   }
-  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 span {
+  .coomsoondark
+    .comsoondmain
+    .comsoondcontent
+    .comdarktimer
+    .comdarkday
+    h6
+    span {
     margin: 1.5rem 0.5rem 0 0.5rem;
   }
 
@@ -3810,7 +3918,7 @@ button:hover {
   width: 20rem;
   height: 20rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .checkoutmainpage .checkoutleft .colwallet {
   display: flex;
@@ -3850,7 +3958,7 @@ button:hover {
   width: 2.75rem;
   height: 2.75rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .checkoutmainpage .checkoutleft .colwallet .colwalbtn .colwalp p {
   color: var(--dark-blue-white);
@@ -3896,7 +4004,7 @@ button:hover {
   width: 35%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .checkoutmainpage .checkoutright .sumimgtext .sumtext {
   width: 60%;
@@ -4299,10 +4407,14 @@ button:hover {
   width: max-content;
   height: 1.5rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
-.prizepools-grid .prizepools-grid-card .prizepools-grid-card-top .pgc-top-left h6 {
-  font-size: 2.8rem;
+.prizepools-grid
+  .prizepools-grid-card
+  .prizepools-grid-card-top
+  .pgc-top-left
+  h6 {
+  font-size: 1.65rem;
   font-weight: 800;
   color: var(--dark-blue-white);
 }
@@ -4317,7 +4429,7 @@ button:hover {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 1.5rem;
 }
 .prizepools-grid .prizepools-grid-card .prizepools-grid-card-bottom {
@@ -4883,7 +4995,7 @@ header .header-content .header-left {
 header .header-content .header-left > svg {
   height: 2.5rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 header .header-content .header-left ul {
   display: inline-flex;
@@ -5064,7 +5176,7 @@ footer .footer-top .footer-left svg {
   width: max-content;
   height: 2.5rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 footer .footer-top .footer-left p {
   font-size: 2rem;
@@ -5083,7 +5195,7 @@ footer .footer-top .footer-left .fl-icons-grid svg {
   width: max-content;
   height: 2.5rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 2.5rem 0 0;
 }
 footer .footer-top .footer-center h6 {
@@ -5282,7 +5394,7 @@ footer .more-btn svg {
     height: -moz-max-content;
     height: max-content;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     color: #fff;
     transform: rotate(180deg);
     transition: 0.35s;
@@ -5304,7 +5416,7 @@ footer .more-btn svg {
     min-height: -moz-max-content;
     min-height: max-content;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
 }
 .section-heading {
