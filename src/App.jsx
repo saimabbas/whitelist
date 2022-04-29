@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Switch, Routes, Route } from "react-router-dom";
 import PrizePools from "./views/PrizePools";
 import Home from "./views/Home";
+import HomeDark from "./views/HomeDark";
 import Checkout from "./views/Checkout";
 import Collections from "./views/Collections";
 import ComingSoon from "./views/ComingSoon";
@@ -34,6 +35,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<LinksPage />} />
               <Route exact path="/home" element={<Home />} />
+              <Route exact path="/homedark" element={<HomeDark />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/collections" element={<Collections />} />
               <Route path="/team" element={<Team />} />
@@ -56,6 +58,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<LinksPage />} />
               <Route exact path="/home" element={<Home />} />
+              <Route exact path="/homedark" element={<HomeDark />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/collections" element={<Collections />} />
               <Route path="/team" element={<Team />} />

@@ -7,6 +7,9 @@ const Links = () => {
       <Link to="/home">
         1. <span>Home</span>
       </Link>
+      <Link to="/homedark">
+        1. <span>Home Dark</span>
+      </Link>
       <Link to="/checkout">
         2. <span>Checkout</span>
       </Link>

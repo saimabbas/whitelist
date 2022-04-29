@@ -6,6 +6,7 @@ import WalletIcon from "../../assets/icons/WalletIcon";
 import Logo from "../../assets/img/Logo";
 import Menu from "../../assets/icons/Menu";
 import { gsap } from "gsap";
+import { Link } from "react-router-dom";
 import {
   Power1,
   Power2,
@@ -126,29 +127,37 @@ const Header = (props) => {
             {/* <img src={LogoLight} alt="LogoLight" /> */}
             <ul>
               <li>
-                <a href="https://www.youtube.com/">
-                  <b>P</b>rize pool
-                </a>
+                <Link to="/prizepools">
+                  <a>
+                    <b>P</b>rize pool
+                  </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.youtube.com/">
-                  <b>S</b>ubscribe
-                </a>
+                <Link to="/subscribe">
+                  <a>
+                    <b>S</b>ubscribe
+                  </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.youtube.com/">
-                  <b>R</b>oadmap
-                </a>
+                <Link to="/roadmap">
+                  <a>
+                    <b>R</b>oadmap
+                  </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.youtube.com/">
+                <a>
                   <b>U</b>pcoming Drops
                 </a>
               </li>
               <li>
-                <a href="https://www.youtube.com/">
-                  <b>M</b>eet the Team
-                </a>
+                <Link to="/team">
+                  <a>
+                    <b>M</b>eet the Team
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
