@@ -1245,11 +1245,6 @@ const PrizePools = () => {
                                           equivalent cash payout.
                                         </p>
                                       </div>
-                                      {showInfoBox1 ? (
-                                        <PrizePoolsOptionMobModal
-                                          hideInfoBoxFun={hideInfoBox1Fun}
-                                        />
-                                      ) : null}
                                     </div>
                                     <p>1x board ape NFT’s</p>
                                   </div>
@@ -2622,6 +2617,9 @@ const PrizePools = () => {
       </div>
       {/* Footer */}
       <Footer />
+      {showInfoBox1 ? (
+        <PrizePoolsOptionMobModal hideInfoBoxFun={hideInfoBox1Fun} />
+      ) : null}
     </div>
   );
 };

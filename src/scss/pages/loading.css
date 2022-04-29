@@ -7,10 +7,12 @@
   width: 100%;
   max-height: 100vh;
 }
+
 .landingpage .landing-main {
   width: 100%;
   height: 100vh;
 }
+
 .landingpage .landing-main .landing-bg-light {
   width: 100%;
   height: 100vh;
@@ -23,6 +25,7 @@
      object-position: bottom;
   z-index: 1;
 }
+
 .landingpage .landing-main .landing-bg-dark {
   width: 100%;
   height: 100vh;
@@ -44,103 +47,160 @@
 }
 
 .loading-page-animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   z-index: 100;
 }
 
 .landing-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   z-index: 99;
   position: absolute;
   bottom: 0%;
   left: 50%;
-  transform: translate(-50%, -5rem);
+  -webkit-transform: translate(-50%, -5rem);
+          transform: translate(-50%, -5rem);
 }
+
 .landing-content .landing-progres {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 10%;
   height: 0.65rem;
   background-color: #c9dbe5;
   border-radius: 0.35rem;
   opacity: 0;
-  transform: translate(0, 5rem);
+  -webkit-transform: translate(0, 5rem);
+          transform: translate(0, 5rem);
 }
+
 .landing-content .landing-progres .land-inner-prog {
   width: 64%;
   height: 0.65rem;
   border-radius: 0.35rem;
   background-color: #195bff;
 }
+
 .landing-content h5 {
   margin: 3rem 0;
   font-size: 2.75rem;
   color: var(--dark-blue-white);
   opacity: 0;
-  transform: translate(0, 5rem);
+  -webkit-transform: translate(0, 5rem);
+          transform: translate(0, 5rem);
 }
+
 .landing-content p {
   font-size: 1.5rem;
   color: var(--user-details-p);
   opacity: 0;
-  transform: translate(0, 5rem);
+  -webkit-transform: translate(0, 5rem);
+          transform: translate(0, 5rem);
 }
 
 .wlsuccesfulmodal {
   width: 100%;
   height: 100vh;
   background-color: rgba(31, 25, 77, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 2rem 0;
 }
+
 .wlsuccesfulmodal .maincontentmodal {
   width: 24%;
   background-color: #fff;
   border-radius: 2rem;
   padding: 6rem 5.5rem 3rem 5.5rem;
-  box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  -webkit-box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+          box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .wlsuccesfulmodal .maincontentmodal img {
   width: 10rem;
   height: 10rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .wlsuccesfulmodal .maincontentmodal h6 {
   font-size: 1.8rem;
   font-weight: 700;
   color: #2bd182;
   margin: 2rem 0 0 0;
 }
+
 .wlsuccesfulmodal .maincontentmodal p {
   font-size: 1.6rem;
   font-weight: 400;
   color: #69697c;
   margin: 2rem 0;
 }
+
 .wlsuccesfulmodal .maincontentmodal button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   border: 1px solid #c0d0ee;
   border-radius: 1000px;
@@ -155,33 +215,53 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(31, 25, 77, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .wlfailedmodal .maincontentmodal {
   width: 24%;
   background-color: #fff;
   border-radius: 2rem;
   padding: 6rem 5.5rem 3rem 5.5rem;
-  box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  -webkit-box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+          box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .wlfailedmodal .maincontentmodal img {
   width: 10rem;
   height: 10rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .wlfailedmodal .maincontentmodal h6 {
   font-size: 1.8rem;
   font-weight: 700;
   color: #ff409c;
   margin: 2rem 0 0 0;
 }
+
 .wlfailedmodal .maincontentmodal p {
   font-size: 1.6rem;
   font-weight: 400;
@@ -190,10 +270,17 @@
   width: 90%;
   text-align: center;
 }
+
 .wlfailedmodal .maincontentmodal button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   border: 1px solid #c0d0ee;
   border-radius: 1000px;
@@ -208,57 +295,104 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(31, 25, 77, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .wlupdatemodal .wlupdatecontent {
   width: 60%;
   background-color: #fff;
   border-radius: 2rem;
   padding: 4rem 6rem;
-  box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  -webkit-box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+          box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .wlupdatemodal .wlupdatecontent svg {
   font-size: 2rem;
   color: #1f194d;
   cursor: pointer;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 40%;
   margin: 2rem 0 0 0;
   padding: 0 3rem 0 0;
   border-right: 1px solid #eeeeee;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft p {
   font-size: 1.8rem;
   color: #1f194d;
   font-weight: 400;
   margin: 0 0 1rem 0;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft .wlloadingdiv {
   width: 100%;
   height: 20rem;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(25, 90, 255, 0.1);
   border-radius: 1000px;
   font-size: 1.6rem;
@@ -269,6 +403,7 @@
   border: unset;
   margin: 3rem 0 4rem 0;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft h6 {
   font-size: 1.4rem;
   color: #807e8e;
@@ -276,38 +411,62 @@
   text-align: center;
   width: 100%;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft h6 span {
   font-weight: 700;
   color: #1f194d;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 2rem 0 0 0;
   width: 55%;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright p {
   font-size: 1.8rem;
   color: #1f194d;
   font-weight: 400;
   margin: 0 0 1rem 0;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
   margin: 3.5rem 0 0 0;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput label {
   font-size: 1.4rem;
   color: #1f194d;
   font-weight: 400;
   margin: 0 0 0.75rem 0;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input {
   border: 1px solid #e1e4eb;
   border-radius: 0.75rem;
@@ -317,28 +476,45 @@
   width: 100%;
   padding: 1.5rem 0.75rem;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input:focus {
   outline: none;
 }
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input::-moz-placeholder {
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input::-webkit-input-placeholder {
   font-size: 1.6rem;
   color: #807e8e;
   font-weight: 400;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input:-ms-input-placeholder {
   font-size: 1.6rem;
   color: #807e8e;
   font-weight: 400;
 }
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input::-ms-input-placeholder {
+  font-size: 1.6rem;
+  color: #807e8e;
+  font-weight: 400;
+}
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input::placeholder {
   font-size: 1.6rem;
   color: #807e8e;
   font-weight: 400;
 }
+
 .wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #195bff;
   border-radius: 1000px;
   font-size: 1.6rem;
@@ -349,34 +525,55 @@
   border: unset;
   margin: 3rem 0 4rem 0;
 }
+
 .wlupdatemodal .wlwalletdisconnect {
   width: 37%;
   background-color: #fff;
   border-radius: 2rem;
   padding: 1rem 2rem;
-  box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  -webkit-box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+          box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 2rem 0;
 }
+
 .wlupdatemodal .wlwalletdisconnect .wlwallettext {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 50%;
 }
+
 .wlupdatemodal .wlwalletdisconnect .wlwallettext p {
   font-size: 1.4rem;
   color: #807e8e;
   font-weight: 500;
 }
+
 .wlupdatemodal .wlwalletdisconnect .wlwallettext h6 {
   font-size: 1.4rem;
   color: #1f194d;
   font-weight: 500;
 }
+
 .wlupdatemodal .wlwalletdisconnect button {
   width: 44%;
   border: unset;
@@ -386,10 +583,17 @@
   font-size: 1.4rem;
   color: #1f194d;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .wlupdatemodal .wlwalletdisconnect button img {
   width: 3rem;
   height: 3rem;
@@ -399,67 +603,121 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(31, 25, 77, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 2rem 0;
 }
+
 .wlfootermodal .helpiconmodel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 40rem;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 2rem;
   background-color: #fff;
   border-radius: 0.75rem;
 }
+
 .wlfootermodal .helpiconmodel .hiheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
+
 .wlfootermodal .helpiconmodel .hiheader .hihimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .wlfootermodal .helpiconmodel .hiheader .hihimg img {
   width: 2rem;
   height: 2rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .wlfootermodal .helpiconmodel .hiheader .hihimg p {
   font-size: 1.8rem;
   color: #1f194d;
   font-weight: 800;
   margin: 0 0 0 0.75rem;
 }
+
 .wlfootermodal .helpiconmodel .hiheader svg {
   font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #1f194d;
   cursor: pointer;
 }
+
 .wlfootermodal .helpiconmodel .wlupinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
   margin: 2.5rem 0 0 0;
 }
+
 .wlfootermodal .helpiconmodel .wlupinput label {
   font-size: 1.4rem;
   color: #1f194d;
   font-weight: 400;
   margin: 0 0 0.75rem 0;
 }
+
 .wlfootermodal .helpiconmodel .wlupinput input {
   border: 1px solid #e1e4eb;
   border-radius: 0.75rem;
@@ -469,24 +727,35 @@
   width: 100%;
   padding: 1.5rem 0.75rem;
 }
+
 .wlfootermodal .helpiconmodel .wlupinput input:focus {
   outline: none;
 }
-.wlfootermodal .helpiconmodel .wlupinput input::-moz-placeholder {
+
+.wlfootermodal .helpiconmodel .wlupinput input::-webkit-input-placeholder {
   font-size: 1.6rem;
   color: #807e8e;
   font-weight: 400;
 }
+
 .wlfootermodal .helpiconmodel .wlupinput input:-ms-input-placeholder {
   font-size: 1.6rem;
   color: #807e8e;
   font-weight: 400;
 }
+
+.wlfootermodal .helpiconmodel .wlupinput input::-ms-input-placeholder {
+  font-size: 1.6rem;
+  color: #807e8e;
+  font-weight: 400;
+}
+
 .wlfootermodal .helpiconmodel .wlupinput input::placeholder {
   font-size: 1.6rem;
   color: #807e8e;
   font-weight: 400;
 }
+
 .wlfootermodal .helpiconmodel .wlupinput textarea {
   border: 1px solid #e1e4eb;
   border-radius: 0.75rem;
@@ -496,28 +765,45 @@
   width: 100%;
   padding: 1.5rem 0.75rem;
 }
+
 .wlfootermodal .helpiconmodel .wlupinput textarea:focus {
   outline: none;
 }
-.wlfootermodal .helpiconmodel .wlupinput textarea::-moz-placeholder {
+
+.wlfootermodal .helpiconmodel .wlupinput textarea::-webkit-input-placeholder {
   font-size: 1.6rem;
   color: #807e8e;
   font-weight: 400;
 }
+
 .wlfootermodal .helpiconmodel .wlupinput textarea:-ms-input-placeholder {
   font-size: 1.6rem;
   color: #807e8e;
   font-weight: 400;
 }
+
+.wlfootermodal .helpiconmodel .wlupinput textarea::-ms-input-placeholder {
+  font-size: 1.6rem;
+  color: #807e8e;
+  font-weight: 400;
+}
+
 .wlfootermodal .helpiconmodel .wlupinput textarea::placeholder {
   font-size: 1.6rem;
   color: #807e8e;
   font-weight: 400;
 }
+
 .wlfootermodal .helpiconmodel button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #195bff;
   border-radius: 0.75rem;
   font-size: 1.6rem;
@@ -534,16 +820,16 @@
     width: 15rem;
   }
 }
+
 @media screen and (max-width: 650px) {
   .landing-content h5 {
     font-size: 3rem;
   }
-
   .landing-content p {
     font-size: 1.85rem;
   }
-
   .landing-content .landing-head h3 {
     display: none;
   }
-}/*# sourceMappingURL=loading.css.map */
+}
+/*# sourceMappingURL=loading.css.map */

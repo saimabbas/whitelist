@@ -245,8 +245,8 @@ button {
 }
 
 .round-chevron-box {
-  width: 3.5rem;
-  height: 3.5rem;
+  min-width: 3.5rem;
+  min-height: 3.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
