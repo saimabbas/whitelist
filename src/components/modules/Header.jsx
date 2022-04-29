@@ -20,7 +20,7 @@ import {
 const Header = (props) => {
   useEffect(() => {
     let headerAnim = gsap.timeline({
-      delay: 1,
+      delay: 4,
     });
     headerAnim
       .fromTo(

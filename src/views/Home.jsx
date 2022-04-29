@@ -10,7 +10,10 @@ import BlobGreen2 from "../assets/img/blob-green2.png";
 import BlobYellow from "../assets/img/blob-yellow.svg";
 import BlobYellow2 from "../assets/img/blob-yellow2.png";
 import LogoLight from "./../assets/img/logo-light.svg";
-import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgLight from "./../assets/img/light-bg-without-clouds.png";
+import Cloud1 from "./../assets/img/cloud-1.png";
+import Cloud2 from "./../assets/img/cloud-2.png";
+import Cloud3 from "./../assets/img/cloud-3.png";
 import HeroBgLightMob from "./../assets/img/hero-bg-light-mob.png";
 import HeroBgDark from "./../assets/img/home-hero-bg-dark-pc.png";
 import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
@@ -75,15 +78,15 @@ const Home = () => {
     });
     const heroH1Lines = heroH1.lines; */
     let homeAnim = gsap.timeline({
-      delay: 1,
+      delay: 4,
     });
     homeAnim
-      /* .to(".home-loading", {
+      .to(".home-loading", {
         top: "-150%",
         duration: 1,
         ease: Power4.easeIn,
-      }) */
-      /* .to(
+      })
+      .to(
         ".home-loading",
         {
           opacity: 0,
@@ -91,7 +94,7 @@ const Home = () => {
           ease: Power4.easeIn,
         },
         "<0.5"
-      ) */
+      )
       .fromTo(
         ".swiper-slide-content",
         {
@@ -169,7 +172,7 @@ const Home = () => {
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Loading Page */}
-      {/* <LoadingPage className="home-loading" /> */}
+      <LoadingPage className="home-loading" />
       {/* Header */}
       <Header
         changeToDarkTheme={changeToDarkTheme}
