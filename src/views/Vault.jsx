@@ -9,6 +9,9 @@ import VaultProfilePic from "../assets/img/vault-profile-pic.png";
 import VaultImg1 from "../assets/img/vault-img-1.png";
 import VaultImg2 from "../assets/img/vault-img-2.png";
 import VaultImg3 from "../assets/img/vault-img-3.png";
+import VaultImg6 from "../assets/img/Vaultimg6.png";
+import VaultImg7 from "../assets/img/Vaultimg7.png";
+import VaultImg8 from "../assets/img/Vaultimg8.png";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Header from "../components/modules/Header";
@@ -115,17 +118,17 @@ const Vault = () => {
                 >
                   <SwiperSlide>
                     <div className="swiper-slide-content">
-                      <img src={VaultImg1} alt="VaultImg1" />
+                      <img src={VaultImg8} alt="VaultImg1" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="swiper-slide-content">
-                      <img src={VaultImg2} alt="VaultImg2" />
+                      <img src={VaultImg6} alt="VaultImg2" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="swiper-slide-content">
-                      <img src={VaultImg3} alt="VaultImg3" />
+                      <img src={VaultImg7} alt="VaultImg3" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
@@ -147,7 +150,7 @@ const Vault = () => {
               </VaultCollectionCard>
               <VaultCollectionCard
                 userImg={VaultProfilePic}
-                userName="Passengers"
+                userName="Fractional Friends"
                 noOfItems={1000}
                 swiperIconRight="vault-swiper-right-2"
                 swiperIconLeft="vault-swiper-left-2"
@@ -202,7 +205,7 @@ const Vault = () => {
               </VaultCollectionCard>
               <VaultCollectionCard
                 userImg={VaultProfilePic}
-                userName="Passengers"
+                userName="Walt's Vault"
                 noOfItems={1000}
                 swiperIconRight="vault-swiper-right-3"
                 swiperIconLeft="vault-swiper-left-3"
@@ -235,7 +238,7 @@ const Vault = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="swiper-slide-content">
-                      <img src={VaultImg3} alt="VaultImg3" />
+                      <img src={VaultImg6} alt="VaultImg3" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>

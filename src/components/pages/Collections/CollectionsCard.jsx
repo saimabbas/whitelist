@@ -13,7 +13,7 @@ import VerifiedIcon from "../../../assets/icons/VerifiedIcon";
 const CollectionsCard = (props) => {
   return (
     <div className="collections-grid-card-content">
-      <div className="top-notch top-notch-pink"></div>
+      <div className={`top-notch ${props.topNotchColor}`}></div>
       <div className="collections-grid-card-left">
         <div className="collections-user-details-box">
           <div className="user-details-box-img">

@@ -162,7 +162,7 @@ const Checkout = () => {
                         <Accordion.Header>
                           <div className="checkout-mob-acc-header">
                             <h4>Summary</h4>
-                            <ChevronUp color="#fff" />
+                            <ChevronUp color="var(--dark-blue-white)" />
                           </div>
                         </Accordion.Header>
                         <Accordion.Body>

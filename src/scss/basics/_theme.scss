@@ -48,6 +48,10 @@
 
   // Checkout
   --checkout-card-bg: rgba(221, 221, 229, 0.25);
+
+  // How it Works
+  --var-btn-bgc: #efefef;
+  --var-text-btn: #807e8e;
 }
 
 .app.dark-theme {
@@ -100,4 +104,8 @@
 
   // Checkout
   --checkout-card-bg: #38394b;
+
+  // How it Works
+  --var-btn-bgc: rgba(239, 239, 239, 0.1);
+  --var-text-btn: #ffffff;
 }

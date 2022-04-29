@@ -75,8 +75,8 @@
   }
 }
 .light-blue-btn-filled.hiwbtnmain.greybgc {
-  background-color: #efefef;
-  color: #807e8e;
+  background-color: var(--var-btn-bgc);
+  color: var(--var-text-btn);
   svg {
     width: max-content;
     height: 2.25rem;

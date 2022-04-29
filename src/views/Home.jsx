@@ -541,7 +541,7 @@ const Home = () => {
                     alt="BlobYellow2"
                   />
                 </div>
-                <p>Join the Whitelist by choose your perfect option below</p>
+                <p>Join the Whitelist by choosing your perfect option below</p>
               </div>
               <div className="subscribe-grid">
                 <SubscribeCard

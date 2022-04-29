@@ -74,7 +74,7 @@
       margin: 7.5rem 0 0 0;
     }
 
-    .hero-countdopwn-box>h6 {
+    .hero-countdopwn-box > h6 {
       font-size: 1.65rem;
       color: var(--dark-blue-white);
       margin: 0 0 1.5rem 0;
@@ -88,7 +88,7 @@
       justify-content: flex-start;
     }
 
-    .hero-countdown>* {
+    .hero-countdown > * {
       margin: 0 0 2.5rem 0;
     }
 
@@ -718,7 +718,10 @@
     width: 100%;
   }
 
-  .subscribe-grid .subscribe-grid-card .subscribe-options-grid .subscribe-options-grid-entry {
+  .subscribe-grid
+    .subscribe-grid-card
+    .subscribe-options-grid
+    .subscribe-options-grid-entry {
     padding: 0 1.5rem !important;
   }
 
@@ -726,9 +729,10 @@
     grid-gap: 1.5rem !important;
   }
 }
-
+.home .hero .hero-content.hero-content-mob {
+  display: none;
+}
 @media screen and (max-width: 850px) {
-
   .home .about .about-content .about-right h6 {
     justify-content: center;
     width: 100%;
@@ -749,7 +753,7 @@
   .home .hero {
     min-height: 100vh;
     height: 100%;
-    background-color: #EAF7FF;
+    background-color: #eaf7ff;
     margin: 0 0 5rem 0;
     position: relative;
   }
@@ -795,9 +799,10 @@
   }
 }
 
-
-
 @media screen and (max-width: 650px) {
+  .home .about .about-content .about-right h5 {
+    text-align: center;
+  }
   .luh-social-grid {
     grid-template-columns: max-content max-content;
   }
@@ -838,6 +843,7 @@
   .home .about .about-content .about-right p {
     margin: 0 0 5rem 0;
     font-weight: 400;
+    font-size: 1.8rem;
   }
 
   .home .subscribe .subscribe-grid {

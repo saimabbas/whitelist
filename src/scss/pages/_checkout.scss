@@ -274,7 +274,7 @@
 
   div {
     width: calc(100%);
-    border-top: 1px dashed #BEC4D7;
+    border-top: 1px dashed #bec4d7;
     height: 0;
     position: absolute;
     top: 50%;
@@ -301,8 +301,6 @@
     transform: translate(50%, 0);
   }
 }
-
-
 
 @media screen and (max-width: 1040px) {
   .checkoutmainpage {
@@ -414,7 +412,6 @@
   }
 }
 
-
 @media screen and (max-width: 650px) {
   .checkoutmainpage .checkoutleft .coleftimg p {
     width: 100%;
@@ -422,57 +419,46 @@
     font-size: 1.45rem;
     font-weight: 500;
   }
-  .checkoutmainpage .checkoutleft .colwallet
-  {
+  .checkoutmainpage .checkoutleft .colwallet {
     margin: 4rem 0 0 0;
   }
-  .checkoutmainpage .checkoutleft .colwallet h5
-  {
+  .checkoutmainpage .checkoutleft .colwallet h5 {
     font-size: 1.8rem;
   }
-  .checkoutmainpage .checkoutleft .colwallet p
-  {
+  .checkoutmainpage .checkoutleft .colwallet p {
     font-weight: 500;
     margin: 0.5rem 0 2rem 0;
     font-size: 1.45rem;
   }
 
-  .checkoutmainpage .checkoutright
-  {
+  .checkoutmainpage .checkoutright {
     padding: 2rem;
   }
   .checkoutmainpage .checkoutleft .colwallet .colwalbtn {
     flex-direction: column;
     border: unset;
   }
-  .checkoutmainpage .checkoutright .sumimgtext .sumtext h6
-  {
+  .checkoutmainpage .checkoutright .sumimgtext .sumtext h6 {
     margin: 0 0 0.5rem 0;
   }
-  .checkoutmainpage .checkoutright .checkouttotal .cotinner h6
-  {
+  .checkoutmainpage .checkoutright .checkouttotal .cotinner h6 {
     font-weight: 700;
   }
-  .checkoutmainpage .checkoutright .checkouttotal .cottotal h6
-  {
+  .checkoutmainpage .checkoutright .checkouttotal .cottotal h6 {
     font-weight: 800;
   }
-  .checkoutmainpage .checkoutright .cosub button
-  {
+  .checkoutmainpage .checkoutright .cosub button {
     padding: 1.25rem 0;
   }
-  .checkoutmainpage .checkoutleft
-  {
+  .checkoutmainpage .checkoutleft {
     margin: 3rem 0 0 0;
     padding: 2rem;
   }
-  .checkoutmainpage .checkoutright h4
-  {
+  .checkoutmainpage .checkoutright h4 {
     font-size: 2rem;
     font-weight: 800;
   }
-  .checkoutmainpage .checkoutleft h4
-  {
+  .checkoutmainpage .checkoutleft h4 {
     font-size: 2rem;
     font-weight: 800;
   }
@@ -497,8 +483,7 @@
     border-radius: 1000px;
     padding: 1.75rem 0;
   }
-  .letushelp-content.hiwsection.page-body-con.checkout-nm
-  {
+  .letushelp-content.hiwsection.page-body-con.checkout-nm {
     margin: 15rem 0 5rem 0;
   }
 }

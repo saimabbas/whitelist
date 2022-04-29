@@ -102,6 +102,7 @@ const Collections = () => {
                 collectionName="Passengers"
                 swiperIconLeft="collections-swiper-left-1"
                 swiperIconRight="collections-swiper-right-1"
+                topNotchColor="top-notch-pink"
               >
                 <Swiper
                   navigation={{
@@ -165,77 +166,11 @@ const Collections = () => {
                 </Swiper>
               </CollectionsCard>
               <CollectionsCard
-                profileImg={VaultProfilePic1}
-                collectionName="Fractional Friends"
-                swiperIconLeft="collections-swiper-left-2"
-                swiperIconRight="collections-swiper-right-2"
-              >
-                <Swiper
-                  navigation={{
-                    nextEl: ".collections-swiper-right-2",
-                    prevEl: ".collections-swiper-left-2",
-                  }}
-                  modules={[Navigation]}
-                  className="mySwiper"
-                  spaceBetween={15}
-                  slidesPerView={1}
-                  breakpoints={{
-                    1150: {
-                      slidesPerView: 3,
-                      spaceBetween: 25,
-                    },
-                  }}
-                >
-                  <SwiperSlide>
-                    <div className="swiper-slide-content">
-                      <div className="collections-grid-card-right-card">
-                        <img src={CollectionsCardImg} alt="CollectionsCard" />
-                        <div className="coming-tag">
-                          Coming This May <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="swiper-slide-content">
-                      <div className="collections-grid-card-right-card">
-                        <img src={CollectionsCardImg} alt="CollectionsCard" />
-                        <div className="coming-tag">
-                          Coming This May <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="swiper-slide-content">
-                      <div className="collections-grid-card-right-card">
-                        <img src={CollectionsCardImg} alt="CollectionsCard" />
-                        <div className="coming-tag">
-                          Coming This May <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="swiper-slide-content">
-                      <div className="collections-grid-card-right-card">
-                        <img src={CollectionsCardImg} alt="CollectionsCard" />
-                        <div className="coming-tag">
-                          Coming This May <span></span>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-              </CollectionsCard>
-              <CollectionsCard
                 profileImg={VaultProfilePic2}
                 collectionName="Walt's Vault"
                 swiperIconLeft="collections-swiper-left-2"
                 swiperIconRight="collections-swiper-right-2"
+                topNotchColor="top-notch-orange"
               >
                 <Swiper
                   navigation={{
