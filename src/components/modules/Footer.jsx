@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Discord from "../../assets/icons/Discord";
 import Instagram from "../../assets/icons/Instagram";
 import RefreshIcon from "../../assets/icons/RefreshIcon";
@@ -9,8 +9,22 @@ import ChevronUp from "../../assets/icons/ChevronUp";
 import HelpIcon from "../../assets/img/help-icon.svg";
 import { MdClear } from "react-icons/md";
 import Support from "../../assets/img/helpiconimg.png";
+import { gsap } from "gsap";
+import {
+  Power1,
+  Power2,
+  Power3,
+  Power4,
+  Linear,
+  Back,
+  Expo,
+  Circ,
+} from "gsap/dist/gsap";
+import { SplitText } from "gsap/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Footer = (props) => {
+  gsap.registerPlugin(ScrollTrigger);
   const [showHelpBox, setShowHelpBox] = useState(false);
   const showHelpBoxFun = () => {
     setShowHelpBox(true);
@@ -18,6 +32,91 @@ const Footer = (props) => {
   const hideHelpBoxFun = () => {
     setShowHelpBox(false);
   };
+
+  useEffect(() => {
+    let footerLeft = gsap.timeline({
+      scrollTrigger: {
+        trigger: "footer",
+        start: "top 100%",
+      },
+    });
+    footerLeft
+      .fromTo(
+        ".footer-left > *",
+        {
+          x: "10rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
+          opacity: 1,
+          duration: 1.25,
+          stagger: 0.1,
+          ease: Back.easeInOut,
+        }
+      )
+      .fromTo(
+        ".footer-center > *",
+        {
+          x: "10rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
+          opacity: 1,
+          duration: 1.25,
+          stagger: 0.1,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".footer-center .fc-grid a",
+        {
+          x: "10rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
+          opacity: 1,
+          duration: 1.25,
+          stagger: 0.1,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".footer-right > *",
+        {
+          x: "10rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
+          opacity: 1,
+          duration: 1.25,
+          stagger: 0.1,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".footer-bottom > *",
+        {
+          x: "10rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
+          opacity: 1,
+          duration: 1.25,
+          stagger: 0.1,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      );
+  }, []);
+
   return (
     <footer>
       <div className="footer-pc">

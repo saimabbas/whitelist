@@ -27,14 +27,40 @@ import { SplitText } from "gsap/SplitText";
 const LoadingPage = (props) => {
   const [isLightTheme] = useState(true);
   useEffect(() => {
-    let loadingPageAnim = gsap.timeline({
+    var Cont = { val: 0 },
+      NewVal = 100;
+
+    gsap.to(Cont, 2, {
+      val: NewVal,
       delay: 1.5,
+      roundProps: "val",
+      duration: 1,
+      ease: Linear.easeInOut,
+      onUpdate: function () {
+        document.getElementById("counter").innerHTML = Cont.val;
+      },
+    });
+
+    gsap.fromTo(
+      ".land-inner-prog",
+      {
+        width: 0,
+      },
+      {
+        width: "100%",
+        delay: 1.5,
+        duration: 2,
+      }
+    );
+    let loadingPageAnim = gsap.timeline({
+      delay: 1,
       defaults: {
         ease: Back.easeInOut,
         duration: 1.25,
       },
     });
     loadingPageAnim
+
       .fromTo(
         ".loading-cloud-1",
         {
@@ -153,7 +179,9 @@ const LoadingPage = (props) => {
                 <div className="landing-progres">
                   <div className="land-inner-prog"></div>
                 </div>
-                <h5>64%</h5>
+                <h5>
+                  <span id="counter"></span>%
+                </h5>
                 <p>Please wait...</p>
               </div>
             </div>

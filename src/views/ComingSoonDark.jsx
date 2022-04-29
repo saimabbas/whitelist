@@ -1,14 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Passengers from "./../assets/img/passenger.png";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
+import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
 import { gsap } from "gsap";
 import { Power4 } from "gsap/dist/gsap";
 import { SplitText } from "gsap/SplitText";
 const ComingSoonDark = () => {
+  const ad = useRef(null);
   gsap.registerPlugin(SplitText);
+
+  const playAudio = () => {
+    ad.current.play();
+  };
+
+  // ad.current.play();
 
   useEffect(() => {
     const comingsoonHeading = new SplitText(".comingsoon-heading", {
@@ -243,6 +251,10 @@ const ComingSoonDark = () => {
                 </h6>
               </div>
             </div>
+            {/* <audio ref={ad} className="back-audio" controls src={BackAudio} />
+            <button onClick={playAudio} type="button">
+              Play Audio
+            </button> */}
             <div className="comingsoon-bottom-box">
               <h5 className="comingsoon-text-component-1">
                 Get notified when we are close to blast off:
