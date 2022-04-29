@@ -12,10 +12,10 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-html,
 body {
   width: 100%;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .home-loading {

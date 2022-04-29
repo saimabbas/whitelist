@@ -259,7 +259,7 @@ const Home = () => {
     let homeAboutAnim = gsap.timeline({
       scrollTrigger: {
         trigger: ".about",
-        start: "top 80%",
+        start: "top 100%",
       },
     });
     homeAboutAnim
@@ -335,6 +335,155 @@ const Home = () => {
           ease: Back.easeInOut,
         },
         "<0.15"
+      );
+
+    let homeCollectionsAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".collections",
+        start: "top 100%",
+      },
+    });
+    homeCollectionsAnim
+      .fromTo(
+        ".collections .section-heading .sh-heading",
+        {
+          y: "10rem",
+          opacity: 0,
+        },
+        {
+          y: "0",
+          opacity: 1,
+          duration: 1.25,
+          ease: Back.easeInOut,
+        }
+      )
+      .fromTo(
+        ".collections .section-heading p",
+        {
+          y: "10rem",
+          opacity: 0,
+        },
+        {
+          y: "0",
+          opacity: 1,
+          duration: 1.25,
+          ease: Back.easeInOut,
+        },
+        "<0.25"
+      )
+      .fromTo(
+        ".collections-grid > *",
+        {
+          y: "15rem",
+          opacity: 0,
+        },
+        {
+          y: "0",
+          opacity: 1,
+          duration: 1.25,
+          stagger: 0.1,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      );
+
+    let homeSubscribeAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".subscribe",
+        start: "top 100%",
+      },
+    });
+    homeSubscribeAnim
+      .fromTo(
+        ".subscribe .section-heading .sh-heading",
+        {
+          y: "10rem",
+          opacity: 0,
+        },
+        {
+          y: "0",
+          opacity: 1,
+          duration: 1.25,
+          ease: Back.easeInOut,
+        }
+      )
+      .fromTo(
+        ".subscribe .section-heading p",
+        {
+          y: "10rem",
+          opacity: 0,
+        },
+        {
+          y: "0",
+          opacity: 1,
+          duration: 1.25,
+          ease: Back.easeInOut,
+        },
+        "<0.25"
+      )
+      .fromTo(
+        ".subscribe-grid > *",
+        {
+          y: "25rem",
+          opacity: 0,
+        },
+        {
+          y: "0",
+          opacity: 1,
+          duration: 1.25,
+          stagger: 0.1,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      );
+    let homeLetUsHelpAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".letushelp",
+        start: "top 100%",
+      },
+    });
+    homeLetUsHelpAnim
+      .fromTo(
+        ".letushelp .section-heading .sh-heading",
+        {
+          y: "10rem",
+          opacity: 0,
+        },
+        {
+          y: "0",
+          opacity: 1,
+          duration: 1.25,
+          ease: Back.easeInOut,
+        }
+      )
+      .fromTo(
+        ".letushelp .section-heading p",
+        {
+          y: "10rem",
+          opacity: 0,
+        },
+        {
+          y: "0",
+          opacity: 1,
+          duration: 1.25,
+          ease: Back.easeInOut,
+        },
+        "<0.25"
+      )
+      .fromTo(
+        ".letushelp-grid > .accordion > *",
+        {
+          x: "25rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
+          opacity: 1,
+          duration: 1.25,
+          stagger: 0.1,
+          ease: Back.easeInOut,
+        },
+        "<0"
       );
   }, []);
 
