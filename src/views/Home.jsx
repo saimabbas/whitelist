@@ -54,9 +54,11 @@ import {
   Circ,
 } from "gsap/dist/gsap";
 import { SplitText } from "gsap/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LoadingPage from "./LoadingPage";
 
 const Home = () => {
+  gsap.registerPlugin(ScrollTrigger);
   SwiperCore.use([Pagination]);
   const [isLightTheme, setIsLightTheme] = useState(true);
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
@@ -76,10 +78,18 @@ const Home = () => {
   };
 
   useEffect(() => {
-    /* const heroH1 = new SplitText(".hero-left h1 span", {
+    const heroP = new SplitText(".hero-left p", {
       type: "lines",
     });
-    const heroH1Lines = heroH1.lines; */
+    const heroPLines = heroP.lines;
+    const aboutRightP = new SplitText(".about-right .about-right-p", {
+      type: "lines",
+    });
+    const aboutRightPLines = aboutRightP.lines;
+    /* const aboutRightH5 = new SplitText(".about-right .about-right-h5", {
+      type: "lines",
+    });
+    const aboutRightH5Lines = aboutRightH5.lines; */
     let homeAnim = gsap.timeline({
       delay: 4,
     });
@@ -112,8 +122,36 @@ const Home = () => {
         },
         "<0"
       )
-      /* .fromTo(
-        ".hero-left h1 > span",
+      .fromTo(
+        ".home-cloud-1",
+        {
+          opacity: 0,
+          x: "15rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1.5,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".home-cloud-2",
+        {
+          opacity: 0,
+          x: "25rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1.5,
+          ease: Back.easeInOut,
+        },
+        "<0.25"
+      )
+      .fromTo(
+        heroPLines,
         {
           opacity: 0,
           x: "10rem",
@@ -126,7 +164,63 @@ const Home = () => {
           stagger: 0.1,
         },
         "<0"
-      ) */
+      )
+      .fromTo(
+        ".hero-countdopwn-box h6",
+        {
+          opacity: 0,
+          x: "10rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          ease: Back.easeInOut,
+          stagger: 0.1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".hero-left h1",
+        {
+          opacity: 0,
+          x: "10rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          ease: Back.easeInOut,
+          stagger: 0.1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".hc-time-box-top span",
+        {
+          x: "5rem",
+        },
+        {
+          x: 0,
+          duration: 1,
+          ease: Back.easeInOut,
+          stagger: 0.1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".hc-time-box-top span",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 1,
+          ease: Back.easeInOut,
+          stagger: 0.1,
+        },
+        "<0.25"
+      )
       .fromTo(
         ".hero-swiper-box .swiper-pagination-bullet",
         {
@@ -162,14 +256,86 @@ const Home = () => {
         },
         "<0"
       );
-
-    /* .to(
-        ".hero-swiper-box .swiper-pagination-bullet.swiper-pagination-bullet-active",
+    let homeAboutAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".about",
+        start: "top 80%",
+      },
+    });
+    homeAboutAnim
+      .fromTo(
+        ".about-left img",
         {
+          x: "10rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
           opacity: 1,
-          duration: 0,
+          duration: 1,
+          ease: Back.easeInOut,
         }
-      ); */
+      )
+
+      .fromTo(
+        ".about-right h6",
+        {
+          x: "7.5rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
+          opacity: 1,
+          duration: 1,
+          stagger: 0.05,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".about-right-h5",
+        {
+          x: "7.5rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
+          opacity: 1,
+          duration: 1,
+          stagger: 0.05,
+          ease: Back.easeInOut,
+        },
+        "<0.15"
+      )
+      .fromTo(
+        aboutRightPLines,
+        {
+          x: "7.5rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
+          opacity: 1,
+          duration: 1,
+          stagger: 0.05,
+          ease: Back.easeInOut,
+        },
+        "<0.15"
+      )
+      .fromTo(
+        ".about-right > img",
+        {
+          x: "7.5rem",
+          opacity: 0,
+        },
+        {
+          x: "0",
+          opacity: 1,
+          duration: 1,
+          ease: Back.easeInOut,
+        },
+        "<0.15"
+      );
   }, []);
 
   return (
@@ -496,12 +662,12 @@ const Home = () => {
                   <Logo className="light-img" color="#1F194D" />
                   <Logo className="dark-img" color="#fff" />
                 </h6>
-                <h5>
-                  Here at The <b>Whitelist</b>, we are dedicated to providing
+                <p className="about-right-h5">
+                  Here at The <b>Whitelist,</b> we are dedicated to providing
                   our community the <b>best art, utility</b> and{" "}
                   <b>community</b> benefits, period.
-                </h5>
-                <p>
+                </p>
+                <p className="about-right-p">
                   No More grinding to get a whitelist spot on a good project. We
                   Bring the Good Projects to you. We provide a wide range of
                   options to users who are looking at different{" "}

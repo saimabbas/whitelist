@@ -207,6 +207,11 @@ button:hover {
   transition: 0.25s;
 }
 
+.light-blue-btn-filled:active {
+  -webkit-transform: scale(0.95) !important;
+          transform: scale(0.95) !important;
+}
+
 .light-blue-btn-filled:hover {
   background-color: #195bff;
   color: #fff;
@@ -1152,7 +1157,7 @@ button:hover {
   margin: 0 0 0 0.75rem;
 }
 
-.home .about .about-content .about-right h5 {
+.home .about .about-content .about-right p.about-right-h5 {
   font-size: 2.5rem;
   line-height: 3.25rem;
   font-weight: 300;
@@ -1162,11 +1167,11 @@ button:hover {
   color: var(--dark-blue-white);
 }
 
-.home .about .about-content .about-right h5 b {
+.home .about .about-content .about-right b {
   font-weight: 700;
 }
 
-.home .about .about-content .about-right p {
+.home .about .about-content .about-right p.about-right-p {
   font-size: 1.75rem;
   line-height: 2.75rem;
   color: var(--home-about-p);
@@ -1175,8 +1180,7 @@ button:hover {
   font-weight: 300;
 }
 
-.home .about .about-content .about-right p b {
-  font-weight: 700;
+.home .about .about-content .about-right p.about-right-p b {
   color: var(--dark-blue-white);
 }
 
@@ -2064,6 +2068,22 @@ button:hover {
 .landingpage-scroll {
   overflow: hidden;
   position: relative;
+}
+
+.loading-cloud-1 {
+  width: 15rem;
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  z-index: 100;
+}
+
+.loading-cloud-2 {
+  width: 10rem;
+  position: absolute;
+  top: 22.5%;
+  left: 60%;
+  z-index: 100;
 }
 
 .landingpage {

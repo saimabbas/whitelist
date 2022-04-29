@@ -3,6 +3,12 @@ import HeroBgLight from "./../assets/img/coming-soon-bg-light.png";
 import LogoAnimationDark from "./../assets/videos/logo-animation-dark.gif";
 import LogoAnimationLight from "./../assets/videos/logo-animation-light.gif";
 import HeroBgDark from "./../assets/img/middle-moon.png";
+import Cloud1Light from "./../assets/img/cloud-1.png";
+import Cloud1Dark from "./../assets/img/cloud-1-dark.png";
+import Cloud2Light from "./../assets/img/cloud-2.png";
+import Cloud2Dark from "./../assets/img/cloud-2-dark.png";
+import Cloud3Light from "./../assets/img/cloud-3.png";
+import Cloud3Dark from "./../assets/img/cloud-3-dark.png";
 import Support from "./../assets/img/helpiconimg.png";
 import { MdClear } from "react-icons/md";
 
@@ -24,11 +30,36 @@ const LoadingPage = (props) => {
     let loadingPageAnim = gsap.timeline({
       delay: 1.5,
       defaults: {
-        ease: Power4.easeIn,
+        ease: Back.easeInOut,
         duration: 1.25,
       },
     });
     loadingPageAnim
+      .fromTo(
+        ".loading-cloud-1",
+        {
+          opacity: 0,
+          x: "15rem",
+        },
+        {
+          opacity: 1,
+          x: "0",
+          duration: 2,
+        }
+      )
+      .fromTo(
+        ".loading-cloud-2",
+        {
+          opacity: 0,
+          x: "20rem",
+        },
+        {
+          opacity: 1,
+          x: "0",
+          duration: 2,
+        },
+        "<0"
+      )
       .fromTo(
         ".landing-progres",
         {
@@ -38,7 +69,8 @@ const LoadingPage = (props) => {
         {
           opacity: 1,
           y: "0",
-        }
+        },
+        "<0"
       )
       .fromTo(
         ".landing-content h5",
@@ -96,6 +128,26 @@ const LoadingPage = (props) => {
                 className="loading-page-animation light-img"
                 src={LogoAnimationLight}
                 alt="LogoAnimationLight"
+              />
+              <img
+                className="light-img loading-cloud-1"
+                src={Cloud2Light}
+                alt="Cloud2Light"
+              />
+              <img
+                className="dark-img loading-cloud-1"
+                src={Cloud2Dark}
+                alt="Cloud2Light"
+              />
+              <img
+                className="light-img loading-cloud-2"
+                src={Cloud1Light}
+                alt="Cloud1Light"
+              />
+              <img
+                className="dark-img loading-cloud-2"
+                src={Cloud1Dark}
+                alt="Cloud1Light"
               />
               <div className="landing-content">
                 <div className="landing-progres">

@@ -179,7 +179,9 @@ button {
       transition: 0.25s;
     }
   }
-
+  &:active {
+    transform: scale(0.95) !important;
+  }
   &:hover {
     background-color: #195bff;
     color: #fff;

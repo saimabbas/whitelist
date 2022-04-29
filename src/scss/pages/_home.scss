@@ -280,7 +280,7 @@
           }
         }
 
-        h5 {
+        p.about-right-h5 {
           font-size: 2.5rem;
           line-height: 3.25rem;
           font-weight: 300;
@@ -288,13 +288,12 @@
           position: relative;
           margin: 1.5rem 0;
           color: var(--dark-blue-white);
-
-          b {
-            font-weight: 700;
-          }
         }
 
-        p {
+        b {
+          font-weight: 700;
+        }
+        p.about-right-p {
           font-size: 1.75rem;
           line-height: 2.75rem;
           color: var(--home-about-p);
@@ -303,7 +302,6 @@
           font-weight: 300;
 
           b {
-            font-weight: 700;
             color: var(--dark-blue-white);
           }
         }
