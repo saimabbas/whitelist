@@ -19,7 +19,7 @@ import {
 } from "gsap/dist/gsap";
 
 const Header = (props) => {
-  useEffect(() => {
+  /*   useEffect(() => {
     let headerAnim = gsap.timeline({
       delay: 4,
     });
@@ -110,7 +110,7 @@ const Header = (props) => {
         },
         "<0.25"
       );
-  }, []);
+  }, []); */
 
   return (
     <header>

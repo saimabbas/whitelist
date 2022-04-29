@@ -6653,6 +6653,22 @@ p {
   font-weight: 400;
 }
 
+.home header .header-content .header-right button.light-blue-btn-filled {
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+}
+
+.home header .header-content .header-right button.light-blue-btn-filled span {
+  width: 0;
+  overflow: hidden;
+}
+
+.home header .header-content .header-right button.light-blue-btn-filled svg {
+  margin: 0;
+  min-width: 2.25rem;
+}
+
 header {
   width: 100%;
   position: absolute;
@@ -6736,7 +6752,6 @@ header .header-content .header-right {
 header .header-content .header-right > * {
   margin: 0 0 0 2.5rem;
   cursor: pointer;
-  opacity: 0;
 }
 
 header .header-content .header-right .header-right-icon {
@@ -6805,22 +6820,6 @@ header .header-content .header-right .login-img-box svg {
 
 header .header-content .header-right svg {
   margin: 0 1rem 0 0rem;
-}
-
-header .header-content .header-right button.light-blue-btn-filled {
-  width: 5rem;
-  height: 5rem;
-  padding: 0;
-}
-
-header .header-content .header-right button.light-blue-btn-filled span {
-  width: 0;
-  overflow: hidden;
-}
-
-header .header-content .header-right button.light-blue-btn-filled svg {
-  margin: 0;
-  min-width: 2.25rem;
 }
 
 .mobmenuicon {
