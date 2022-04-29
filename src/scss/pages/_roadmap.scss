@@ -231,6 +231,10 @@
     }
   }
 }
+.roadmap-endpoint-box {
+  display: flex;
+  align-items: center;
+}
 @media screen and (max-width: 1000px) {
   .roadmap-content {
     display: none;
