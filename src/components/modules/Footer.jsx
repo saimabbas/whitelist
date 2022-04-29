@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Discord from "../../assets/icons/Discord";
 import Instagram from "../../assets/icons/Instagram";
 import RefreshIcon from "../../assets/icons/RefreshIcon";
@@ -7,8 +7,17 @@ import Logo from "../../assets/img/Logo";
 import { Accordion } from "react-bootstrap";
 import ChevronUp from "../../assets/icons/ChevronUp";
 import HelpIcon from "../../assets/img/help-icon.svg";
+import { MdClear } from "react-icons/md";
+import Support from "../../assets/img/helpiconimg.png";
 
 const Footer = (props) => {
+  const [showHelpBox, setShowHelpBox] = useState(false);
+  const showHelpBoxFun = () => {
+    setShowHelpBox(true);
+  };
+  const hideHelpBoxFun = () => {
+    setShowHelpBox(false);
+  };
   return (
     <footer>
       <div className="footer-pc">
@@ -131,6 +140,44 @@ const Footer = (props) => {
           <RefreshIcon className="dark-img" color="#000" />
         </div>
       ) : null}
+
+      <div className="help-box">
+        <img onClick={showHelpBoxFun} src={HelpIcon} alt="HelpIcon" />
+        {showHelpBox ? (
+          <div className="wlfootermodal">
+            <div className="helpiconmodel">
+              <div className="hiheader">
+                <div className="hihimg">
+                  <img src={Support} alt="" />
+                  <p>Support</p>
+                </div>
+                <div onClick={hideHelpBoxFun}>
+                  <MdClear />
+                </div>
+              </div>
+              <div className="wlupinput">
+                <label htmlFor="">Name</label>
+                <input type="text" placeholder="Enter Your Name" />
+              </div>
+              <div className="wlupinput">
+                <label htmlFor="">Email</label>
+                <input type="text" placeholder="Enter Your Email Address" />
+              </div>
+              <div className="wlupinput">
+                <label htmlFor="">Problem</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="What's the problem?"
+                ></textarea>
+              </div>
+              <button>Send</button>
+            </div>
+          </div>
+        ) : null}
+      </div>
     </footer>
   );
 };

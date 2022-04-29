@@ -16,6 +16,7 @@
   height: 40rem;
   .round-chevron-box {
     transform: translate(0, -1rem);
+    background-color: var(--roadmap-dot-bg) !important;
   }
   .roadmap-grid {
     width: 100%;
@@ -118,7 +119,7 @@
 .roadmap-step-line {
   width: 25rem;
   height: 0.5rem;
-  background-color: #e0e3ec;
+  background-color: var(--roadmap-dot-bg);
 }
 .roadmap-step {
   width: 100%;
@@ -129,7 +130,7 @@
   .roadmap-step-dot {
     min-width: 3rem;
     min-height: 3rem;
-    background-color: #e0e3ec;
+    background-color: var(--roadmap-dot-bg);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -139,14 +140,14 @@
     h6 {
       font-size: 1.65rem;
       font-weight: 500;
-      color: #1f194d;
+      color: var(--dark-blue-white);
       white-space: nowrap;
       margin: 0.75rem 0;
     }
     p {
       font-size: 1.35rem;
       font-weight: 400;
-      color: #807e8e;
+      color: var(--user-details-p);
       opacity: 0;
       transition: 0.5s;
       width: 80%;
@@ -305,13 +306,13 @@
     h6 {
       font-size: 2.25rem;
       font-weight: 500;
-      color: #1f194d;
+      color: var(--dark-blue-white);
       margin: 0 0 0.5rem 0;
     }
     p {
       font-size: 1.5rem;
       font-weight: 400;
-      color: #1f194d;
+      color: var(--user-details-p);
     }
   }
   .roadmap-current .roadmap-step-text-box h6 {
