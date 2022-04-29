@@ -264,7 +264,62 @@ const Vault = () => {
       </div>
       {/* Footer */}
       <Footer />
-      {/*  */}
+      {/* <div className="wlfootermodal">
+        <div className="helpiconmodel">
+          <div className="hiheader">
+            <div className="hihimg">
+              <img src={Support} alt="" />
+              <p>Support</p>
+            </div>
+            <MdClear />
+          </div>
+          <div className="wlupinput">
+                <label htmlFor="">Name</label>
+                <input type="text" placeholder="Enter Your Name" />
+              </div>
+              <div className="wlupinput">
+                <label htmlFor="">Email</label>
+                <input type="text" placeholder="Enter Your Email Address" />
+              </div>
+              <div className="wlupinput">
+                <label htmlFor="">Problem</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="What's the problem?"></textarea>
+              </div>
+              <button>Send</button>
+        </div>
+      </div> */}
+      <div className="wlcomingsoonmodal">
+        <div className="wlcsmainbox">
+          <div className="top-notch top-notch-orange"></div>
+          <h6>Coming Soon</h6>
+          <p>Join us in...</p>
+          <div className="wlcstimer">
+            <div className="days">
+              <span>02</span>
+              <h6>Days</h6>
+            </div>
+            <p>:</p>
+            <div className="days">
+              <span>02</span>
+              <h6>Days</h6>
+            </div>
+            <p>:</p>
+            <div className="days">
+              <span>02</span>
+              <h6>Days</h6>
+            </div>
+            <p>:</p>
+            <div className="days">
+              <span>02</span>
+              <h6>Days</h6>
+            </div>
+          </div>
+          <div className="coomsooninput">
+            <input type="text" name="" id="" placeholder="Early access code" />
+            <button>Submit</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
