@@ -67,7 +67,7 @@ const Roadmap = () => {
           />
           <div className="app-page">
             <div className="box">
-              <div className="letushelp-content hiwsection">
+              <div className="letushelp-content hiwsection roadmapsect">
                 <div className="section-heading">
                   <div className="sh-heading">
                     <h2>Roadmap</h2>
@@ -567,7 +567,7 @@ const Roadmap = () => {
                         <div className="roadmap-step-line"></div>
                       </div>
                       <div className="roadmap-step-text-bottom">
-                        <h6>UI and Site Development</h6>
+                        <h6>Advisory and team build out</h6>
                         <p>
                           We are working to bring our users the best experience
                           possible.{" "}

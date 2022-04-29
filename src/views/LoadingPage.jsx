@@ -3,6 +3,9 @@ import HeroBgLight from "./../assets/img/coming-soon-bg-light.png";
 import LogoAnimationDark from "./../assets/videos/logo-animation-dark.gif";
 import LogoAnimationLight from "./../assets/videos/logo-animation-light.gif";
 import HeroBgDark from "./../assets/img/middle-moon.png";
+import Support from "./../assets/img/helpiconimg.png";
+import { MdClear } from "react-icons/md";
+
 import { gsap } from "gsap";
 import {
   Power1,

@@ -1,15 +1,19 @@
 .roadmapmainpage {
   width: 100%;
+  min-height: 100vh;
   .roadmapmain {
     width: 100%;
   }
 }
+.letushelp-content.hiwsection.roadmapsect {
+  margin: 22.5rem 0 15rem 0;
+}
 .roadmap-content {
   width: 100%;
-  margin: 5rem 0 30rem 0;
+  margin: 2rem 0 10rem 0;
   display: flex;
   align-items: center;
-  height: 35rem;
+  height: 40rem;
   .round-chevron-box {
     transform: translate(0, -1rem);
   }
@@ -131,8 +135,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    cursor: pointer;
     h6 {
-      font-size: 1.5rem;
+      font-size: 1.65rem;
       font-weight: 500;
       color: #1f194d;
       white-space: nowrap;
@@ -144,6 +149,7 @@
       color: #807e8e;
       opacity: 0;
       transition: 0.5s;
+      width: 80%;
     }
     &:hover p {
       opacity: 1;
@@ -152,7 +158,7 @@
       position: absolute;
       left: 50%;
       // bottom: 0;
-      transform: translate(-50%, 7.5rem);
+      transform: translate(-50%, 9rem);
       z-index: 100;
       display: flex;
       flex-direction: column;
@@ -164,13 +170,15 @@
       position: absolute;
       left: 50%;
       // top: 0;
-      transform: translate(-50%, -7.5rem);
+      transform: translate(-50%, -9rem);
       z-index: 100;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       width: 50rem;
+      justify-content: flex-end;
+      height: 8rem;
     }
     svg {
       font-size: 2rem;
@@ -220,6 +228,8 @@
     background-color: #ffa901 !important;
     h6 {
       font-weight: 700;
+      font-size: 1.8rem;
+      margin: 0.75rem 0 1rem 0;
     }
     .roadmap-step-dot-inner-1 {
       opacity: 0.2;
@@ -234,6 +244,21 @@
 .roadmap-endpoint-box {
   display: flex;
   align-items: center;
+}
+.roadmap-content-mob {
+  display: none;
+}
+@media screen and (max-width: 1140px) {
+  .letushelp-content.hiwsection.roadmapsect {
+    margin: 22.5rem 0 5rem 0;
+  }
+  .roadmap-content {
+    width: 93%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    height: 40rem;
+  }
 }
 @media screen and (max-width: 1000px) {
   .roadmap-content {
@@ -291,5 +316,11 @@
   }
   .roadmap-current .roadmap-step-text-box h6 {
     font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .roadmap-content-mob {
+    margin: 8rem 0 0 0;
   }
 }

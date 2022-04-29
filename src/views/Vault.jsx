@@ -288,6 +288,38 @@ const Vault = () => {
               <button>Send</button>
         </div>
       </div> */}
+      <div className="wlcomingsoonmodal">
+        <div className="wlcsmainbox">
+          <div className="top-notch top-notch-orange"></div>
+          <h6>Coming Soon</h6>
+          <p>Join us in...</p>
+          <div className="wlcstimer">
+            <div className="days">
+              <span>02</span>
+              <h6>Days</h6>
+            </div>
+            <p>:</p>
+            <div className="days">
+              <span>02</span>
+              <h6>Days</h6>
+            </div>
+            <p>:</p>
+            <div className="days">
+              <span>02</span>
+              <h6>Days</h6>
+            </div>
+            <p>:</p>
+            <div className="days">
+              <span>02</span>
+              <h6>Days</h6>
+            </div>
+          </div>
+          <div className="coomsooninput">
+            <input type="text" name="" id="" placeholder="Early access code" />
+            <button>Submit</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

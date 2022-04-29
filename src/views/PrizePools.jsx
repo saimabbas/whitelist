@@ -1301,7 +1301,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog "></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -1346,7 +1345,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -1391,7 +1389,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -1436,7 +1433,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -1481,7 +1477,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -1520,7 +1515,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -1565,7 +1559,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -1603,7 +1596,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -1649,7 +1641,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -1690,7 +1681,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                               </div>
                             </Accordion.Body>
@@ -2213,7 +2203,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -2258,7 +2247,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -2303,7 +2291,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -2346,7 +2333,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -2389,7 +2375,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -2435,7 +2420,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -2481,7 +2465,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -2526,7 +2509,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -2571,7 +2553,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                                 <div className="vo-option">
                                   <div className="vo-option-left">
@@ -2610,7 +2591,6 @@ const PrizePools = () => {
                                       </label>
                                     </div>
                                   </div>
-                                  <div className="vo-option-prog"></div>
                                 </div>
                               </div>
                             </Accordion.Body>
