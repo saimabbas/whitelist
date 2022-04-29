@@ -231,7 +231,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog "></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -268,7 +267,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -305,7 +303,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -342,7 +339,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -379,7 +375,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -410,7 +405,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -447,7 +441,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -478,7 +471,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -516,7 +508,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -549,7 +540,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                         </div>
                         <div className="vo-grid-card">
@@ -961,7 +951,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -993,7 +982,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -1026,7 +1014,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -1058,7 +1045,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -1091,7 +1077,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -1124,7 +1109,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -1157,7 +1141,6 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
                           </div>
                           <div className="vo-option">
                             <div className="vo-option-left">
@@ -1191,7 +1174,70 @@ const PrizePools = () => {
                                 </label>
                               </div>
                             </div>
-                            <div className="vo-option-prog"></div>
+                          </div>
+                          <div className="vo-option">
+                            <div className="vo-option-left">
+                              <div className="vo-info-box">
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
+                                <div className="vo-info-box-content">
+                                  <h6>25 Peloton’s</h6>
+                                  <p>
+                                    Peloton will ship Directly from Peleton.
+                                    Winners will get the choice of prize won or
+                                    equivalent cash payout. Bike ultimate
+                                    package
+                                  </p>
+                                </div>
+                              </div>
+                              <p>25 Peloton’s</p>
+                            </div>
+                            <div className="vo-option-right">
+                              <h6></h6>
+                              <div className="vo-option-checkbox">
+                                <input type="checkbox" name="" id="vo-25" />
+                                <label htmlFor="vo-25">
+                                  <div className="vo-checkbox-circle">
+                                    <MdDone />
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="vo-option">
+                            <div className="vo-option-left">
+                              <div className="vo-info-box">
+                                <InfoIcon
+                                  className="light-img"
+                                  color="#1F194D"
+                                />
+                                <InfoIcon className="dark-img" color="#fff" />
+                                <div className="vo-info-box-content">
+                                  <h6>2x Louis Vuitton travel sets</h6>
+                                  <p>
+                                    LV luggage sets will ship from the UAE.
+                                    Winners will get the choice of prize won or
+                                    equivalent cash payout. (1x Travel Bag, 2x
+                                    rolling luggage, 2x travel accessories)
+                                  </p>
+                                </div>
+                              </div>
+                              <p>2x Louis Vuitton travel sets</p>
+                            </div>
+                            <div className="vo-option-right">
+                              <h6></h6>
+                              <div className="vo-option-checkbox">
+                                <input type="checkbox" name="" id="vo-26" />
+                                <label htmlFor="vo-26">
+                                  <div className="vo-checkbox-circle">
+                                    <MdDone />
+                                  </div>
+                                </label>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
