@@ -6,7 +6,7 @@
   }
 }
 .letushelp-content.hiwsection.roadmapsect {
-  margin: 22.5rem 0 15rem 0;
+  margin: 22.5rem 0 10rem 0;
 }
 .roadmap-content {
   width: 100%;
@@ -323,5 +323,27 @@
 @media screen and (max-width: 850px) {
   .roadmap-content-mob {
     margin: 8rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .roadmap-startpoint span {
+    transform: rotate(45deg);
+    min-width: 6rem;
+    min-height: 6rem;
+  }
+  .roadmap-startpoint p {
+    font-size: 2.75rem;
+  }
+  .roadmap-step-text-box h6 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .roadmap-step-text-bottom {
+    width: 100%;
+    padding: 0 0 2.5rem 0;
+  }
+  .roadmap-step-text-bottom h6 {
+    font-size: 2rem;
   }
 }
