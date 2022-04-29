@@ -21,6 +21,7 @@ header {
       ul {
         display: inline-flex;
         margin: 0 0 0 7.5rem;
+        overflow: hidden;
         li {
           list-style: none;
           width: max-content;
@@ -44,6 +45,7 @@ header {
       & > * {
         margin: 0 0 0 2.5rem;
         cursor: pointer;
+        opacity: 0;
       }
       .header-right-icon {
         width: max-content;
@@ -89,8 +91,20 @@ header {
         }
       }
       svg {
-        font-size: 2rem;
         margin: 0 1rem 0 0rem;
+      }
+      button.light-blue-btn-filled {
+        span {
+          width: 0;
+          overflow: hidden;
+        }
+        svg {
+          margin: 0;
+          min-width: 2.25rem;
+        }
+        width: 5rem;
+        height: 5rem;
+        padding: 0;
       }
     }
   }

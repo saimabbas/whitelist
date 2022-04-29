@@ -47,6 +47,7 @@ import {
   Expo,
   Circ,
 } from "gsap/dist/gsap";
+import { SplitText } from "gsap/SplitText";
 import LoadingPage from "./LoadingPage";
 
 const Home = () => {
@@ -69,16 +70,20 @@ const Home = () => {
   };
 
   useEffect(() => {
+    /* const heroH1 = new SplitText(".hero-left h1 span", {
+      type: "lines",
+    });
+    const heroH1Lines = heroH1.lines; */
     let homeAnim = gsap.timeline({
-      delay: 2.5,
+      delay: 1,
     });
     homeAnim
-      .to(".home-loading", {
+      /* .to(".home-loading", {
         top: "-150%",
         duration: 1,
         ease: Power4.easeIn,
-      })
-      .to(
+      }) */
+      /* .to(
         ".home-loading",
         {
           opacity: 0,
@@ -86,7 +91,7 @@ const Home = () => {
           ease: Power4.easeIn,
         },
         "<0.5"
-      )
+      ) */
       .fromTo(
         ".swiper-slide-content",
         {
@@ -96,17 +101,75 @@ const Home = () => {
         {
           opacity: 1,
           y: 0,
+          duration: 1.5,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      )
+      /* .fromTo(
+        ".hero-left h1 > span",
+        {
+          opacity: 0,
+          x: "10rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
           duration: 1,
-          ease: Power4.easeIn,
+          ease: Back.easeInOut,
+          stagger: 0.1,
+        },
+        "<0"
+      ) */
+      .fromTo(
+        ".hero-swiper-box .swiper-pagination-bullet",
+        {
+          x: "1.5rem",
+        },
+        {
+          x: 0,
+          duration: 1,
+          delay: 0.5,
+          stagger: {
+            each: 0.1,
+            from: "end",
+          },
+          ease: Back.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".hsb-round-btns-box > span",
+        {
+          opacity: 0,
+          x: "2.5rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1.5,
+          stagger: {
+            each: 0.1,
+            from: "end",
+          },
+          ease: Back.easeInOut,
         },
         "<0"
       );
+
+    /* .to(
+        ".hero-swiper-box .swiper-pagination-bullet.swiper-pagination-bullet-active",
+        {
+          opacity: 1,
+          duration: 0,
+        }
+      ); */
   }, []);
 
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Loading Page */}
-      <LoadingPage className="home-loading" />
+      {/* <LoadingPage className="home-loading" /> */}
       {/* Header */}
       <Header
         changeToDarkTheme={changeToDarkTheme}
@@ -149,8 +212,7 @@ const Home = () => {
               <div className="hero-left">
                 <h1>
                   <span>
-                    <b>Welcome</b> To <br />
-                    The <b>WhiteList.</b>
+                    <b>Welcome</b> To <br /> the <b>WhiteList.</b>
                   </span>
                   <img
                     className="light-img"
@@ -205,12 +267,13 @@ const Home = () => {
                   alt="hero-glare"
                 />
                 <div className="hero-swiper-box">
+                  <div className="swiper-pagination-hero-pc"></div>
                   <Swiper
-                    pagination={true}
-                    modules={[Pagination]}
                     className="mySwiper"
                     direction={"vertical"}
                     spaceBetween={50}
+                    pagination={true}
+                    modules={{ Pagination }}
                   >
                     <SwiperSlide>
                       <div className="swiper-slide-content">

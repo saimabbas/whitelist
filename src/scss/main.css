@@ -6408,6 +6408,7 @@ header .header-content .header-left ul {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0 0 0 7.5rem;
+  overflow: hidden;
 }
 
 header .header-content .header-left ul li {
@@ -6445,6 +6446,7 @@ header .header-content .header-right {
 header .header-content .header-right > * {
   margin: 0 0 0 2.5rem;
   cursor: pointer;
+  opacity: 0;
 }
 
 header .header-content .header-right .header-right-icon {
@@ -6512,8 +6514,23 @@ header .header-content .header-right .login-img-box svg {
 }
 
 header .header-content .header-right svg {
-  font-size: 2rem;
   margin: 0 1rem 0 0rem;
+}
+
+header .header-content .header-right button.light-blue-btn-filled {
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+}
+
+header .header-content .header-right button.light-blue-btn-filled span {
+  width: 0;
+  overflow: hidden;
+}
+
+header .header-content .header-right button.light-blue-btn-filled svg {
+  margin: 0;
+  min-width: 2.25rem;
 }
 
 .mobmenuicon {
@@ -7650,13 +7667,13 @@ footer .more-btn svg {
 
 .hero-swiper-box .swiper-pagination-bullet {
   background-color: var(--dark-blue-white);
-  opacity: 0.25 !important;
+  opacity: 0.25;
   margin: 1rem 0 !important;
 }
 
 .hero-swiper-box .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--dark-blue-white);
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .hero-swiper-box .swiper-pagination-vertical.swiper-pagination-bullets,

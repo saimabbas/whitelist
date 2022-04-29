@@ -20,22 +20,95 @@ import {
 const Header = (props) => {
   useEffect(() => {
     let headerAnim = gsap.timeline({
-      delay: 3,
+      delay: 1,
     });
-    headerAnim.fromTo(
-      ".header-left ul li",
-      {
-        opacity: 0,
-        x: "25rem",
-      },
-      {
-        opacity: 1,
-        x: "0",
-        duration: 1.25,
-        ease: Power4.easeInOut,
-        stagger: 0.1,
-      }
-    );
+    headerAnim
+      .fromTo(
+        ".header-left .header-logo",
+        {
+          opacity: 0,
+          x: "25rem",
+        },
+        {
+          opacity: 1,
+          x: "0",
+          duration: 1.5,
+          ease: Back.easeInOut,
+        }
+      )
+      .fromTo(
+        ".header-left ul li",
+        {
+          opacity: 0,
+          x: "25rem",
+        },
+        {
+          opacity: 1,
+          x: "0",
+          duration: 1.5,
+          ease: Back.easeInOut,
+          stagger: 0.1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".header-right-icon",
+        {
+          opacity: 0,
+          x: "2.5rem",
+        },
+        {
+          opacity: 1,
+          delay: 0.5,
+          x: "0",
+          duration: 1.5,
+          ease: Back.easeInOut,
+          stagger: 0.1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".header-right button",
+        {
+          opacity: 0,
+          scale: 0.5,
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".header-right button",
+        {
+          width: "5rem",
+        },
+        {
+          width: "15rem",
+          duration: 1.25,
+          ease: Back.easeOut,
+        },
+        "<0.9"
+      )
+      .fromTo(
+        ".header-right button span",
+        {
+          width: 0,
+          x: "2.5rem",
+          opacity: 0,
+        },
+        {
+          width: "7ch",
+          x: "0",
+          opacity: 1,
+          duration: 1.25,
+          ease: Back.easeOut,
+        },
+        "<0.25"
+      );
   }, []);
 
   return (
@@ -43,8 +116,8 @@ const Header = (props) => {
       <div className="box">
         <div className="header-content">
           <div className="header-left">
-            <Logo className="light-img" color="#1F194D" />
-            <Logo className="dark-img" color="#fff" />
+            <Logo className="light-img header-logo" color="#1F194D" />
+            <Logo className="dark-img header-logo" color="#fff" />
             <div className="mobmenuicon" onClick={props.openMobHeader}>
               <div className="mobmenubox">
                 <Menu />
@@ -81,25 +154,30 @@ const Header = (props) => {
           </div>
           <div className="header-right">
             <MessagesIcon
-              className="header-right-icon light-img"
+              className="header-right-icon light-img header-right-icon"
               color="#1F194D"
             />
             <MessagesIcon
-              className="header-right-icon dark-img"
+              className="header-right-icon dark-img header-right-icon"
               color="#FFFF"
             />
-            <div className="light-img" onClick={props.changeToDarkTheme}>
+            <div
+              className="light-img header-right-icon"
+              onClick={props.changeToDarkTheme}
+            >
               <MoonIcon className="header-right-icon" color="#1F194D" />
             </div>
-            <div className="dark-img" onClick={props.changeToLightTheme}>
+            <div
+              className="dark-img header-right-icon"
+              onClick={props.changeToLightTheme}
+            >
               <SunIcon className="header-right-icon" color="#FFFF" />
             </div>
 
             <button className="light-blue-btn-filled">
-              {" "}
               <WalletIcon className="light-img" color="#195BFF" />
               <WalletIcon className="dark-img" color="#fff" />
-              Wallet
+              <span>Wallet</span>
             </button>
             {/* <div className="login-img-box">
                 <div className="libimg">
