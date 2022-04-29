@@ -178,11 +178,7 @@ const PrizePools = () => {
                       <div className="pgc-top-left-profile">
                         <img src={VaultProfilePic} alt="VaultProfilePic" />
                       </div>
-                      <img
-                        className="pgc-top-left-logo"
-                        src={PassengersLogo}
-                        alt="PassengersLogo"
-                      />
+                      <h6>Fractional Friends</h6>
                     </div>
                     <div className="pgc-top-right">
                       <img src={VaultImg1} alt="VaultImg1" />
@@ -2592,11 +2588,7 @@ const PrizePools = () => {
                         <img src={VaultProfilePic} alt="VaultProfilePic" />
                       </div>
 
-                      <img
-                        className="pgc-top-left-logo"
-                        src={PassengersLogo}
-                        alt="PassengersLogo"
-                      />
+                      <h6>Walt's Vault </h6>
                     </div>
                     <div className="pgc-top-right">
                       <img src={VaultImg1} alt="VaultImg1" />
