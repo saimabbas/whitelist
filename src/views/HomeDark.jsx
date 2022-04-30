@@ -10,6 +10,7 @@ import BlobGreen2 from "../assets/img/blob-green2.png";
 import BlobYellow from "../assets/img/blob-yellow.svg";
 import BlobYellow2 from "../assets/img/blob-yellow2.png";
 import LogoLight from "./../assets/img/logo-light.svg";
+import { MdExpandMore } from "react-icons/md";
 import HeroBgLight from "./../assets/img/light-bg-without-clouds.png";
 import Cloud1Light from "./../assets/img/cloud-1.png";
 import Cloud1Dark from "./../assets/img/cloud-1-dark.png";
@@ -27,6 +28,8 @@ import EllipseYellow from "./../assets/img/ellipse-yellow.svg";
 import CollectionsBg from "./../assets/img/collections-bg.svg";
 import CollectionsBg2 from "./../assets/img/collections-bg2.png";
 import CollectionsCard from "./../assets/img/collections-card.png";
+import BlueTick from "../assets/img/bluetick.png";
+import PersonImg from "../assets/img/personimg.png";
 import { Accordion } from "react-bootstrap";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
@@ -63,6 +66,11 @@ import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LoadingPage from "./LoadingPageDark";
 import ProfileDetailsModal from "../components/pages/Home/ProfileDetailsModal";
+import { Dropdown } from "react-bootstrap";
+import Profile from "../assets/icons/Profile";
+import Collection from "../assets/icons/Collection";
+import Logout from "../assets/icons/Logout";
+import Bell from "../assets/icons/Bell";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -656,7 +664,7 @@ const Home = () => {
               </ul>
             </div>
             <div className="header-right">
-              <div className="not-logged-in-box">
+              {/* <div className="not-logged-in-box">
                 <MessagesIcon
                   className="header-right-icon light-img header-right-icon"
                   color="#1F194D"
@@ -685,51 +693,51 @@ const Home = () => {
                   <WalletIcon className="dark-img" color="#fff" />
                   <span>Wallet</span>
                 </button>
-              </div>
+              </div> */}
 
-              {/* <div className="logged-in-box">
-              <Dropdown>
-                <Dropdown.Toggle id="dropdown-basic">
-                  <div className="login-img-box">
-                    <img src={PersonImg} alt="" />
-                    <h6>1.00461</h6>
-                    <p>ETH</p>
-                    <MdExpandMore />
-                  </div>
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <div className="logininfo">
-                    <div className="loginnameimg">
+              <div className="logged-in-box">
+                <Dropdown>
+                  <Dropdown.Toggle id="dropdown-basic">
+                    <div className="login-img-box">
                       <img src={PersonImg} alt="" />
-                      <div className="logintext">
-                        <h6>Mohammad Reza</h6>
-                        <img src={BlueTick} alt="" />
-                      </div>
-                      <p>0xc4c16a645...b21a</p>
+                      <h6>1.00461</h6>
+                      <p>ETH</p>
+                      <MdExpandMore />
                     </div>
-                    <div className="loginbottombox">
-                      <div className="loginicontext">
-                        <Profile className="light-img" color="#1f194d" />
-                        <Profile className="dark-img" color="#fff" />
-                        <h5>Edit Profile</h5>
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <div className="logininfo">
+                      <div className="loginnameimg">
+                        <img src={PersonImg} alt="" />
+                        <div className="logintext">
+                          <h6>Mohammad Reza</h6>
+                          <img src={BlueTick} alt="" />
+                        </div>
+                        <p>0xc4c16a645...b21a</p>
                       </div>
-                      <div className="loginicontext">
-                        <Collection className="light-img" color="#1f194d" />
-                        <Collection className="dark-img" color="#fff" />
-                        <h5>My Collections</h5>
-                      </div>
-                      <div className="loginicontext lcdisconnect">
-                        <Logout />
-                        <h5>Disconnect</h5>
+                      <div className="loginbottombox">
+                        <div className="loginicontext">
+                          <Profile className="light-img" color="#1f194d" />
+                          <Profile className="dark-img" color="#fff" />
+                          <h5>Edit Profile</h5>
+                        </div>
+                        <div className="loginicontext">
+                          <Collection className="light-img" color="#1f194d" />
+                          <Collection className="dark-img" color="#fff" />
+                          <h5>My Collections</h5>
+                        </div>
+                        <div className="loginicontext lcdisconnect">
+                          <Logout />
+                          <h5>Disconnect</h5>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Dropdown.Menu>
-              </Dropdown>
-              <span></span>
-              <Bell className="light-img" color="#1F194D" />
-              <Bell className="dark-img" color="#FFFFFF" />
-            </div> */}
+                  </Dropdown.Menu>
+                </Dropdown>
+                <span></span>
+                <Bell className="light-img" color="#1F194D" />
+                <Bell className="dark-img" color="#FFFFFF" />
+              </div>
             </div>
           </div>
         </div>

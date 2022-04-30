@@ -8,10 +8,10 @@ import Menu from "../../assets/icons/Menu";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import Bell from "../../assets/icons/Bell";
-import PersonImg from "../../assets/img/personimg.png";
 import { MdExpandMore } from "react-icons/md";
 import { Dropdown } from "react-bootstrap";
 import BlueTick from "../../assets/img/bluetick.png";
+import PersonImg from "../../assets/img/personimg.png";
 import {
   Power1,
   Power2,

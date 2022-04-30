@@ -63,6 +63,11 @@ import SunIcon from "../assets/icons/SunIcon";
 import WalletIcon from "../assets/icons/WalletIcon";
 import Menu from "../assets/icons/Menu";
 import ProfileDetailsModal from "../components/pages/Home/ProfileDetailsModal";
+import { Dropdown } from "react-bootstrap";
+import Profile from "../assets/icons/Profile";
+import Collection from "../assets/icons/Collection";
+import Logout from "../assets/icons/Logout";
+import Bell from "../assets/icons/Bell";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
