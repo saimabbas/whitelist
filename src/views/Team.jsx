@@ -5,11 +5,28 @@ import HeroBgLight from "./../assets/img/hero-bg-light.png";
 import HeroBgLightMob from "./../assets/img/hero-bg-light-mob.png";
 import HeroBgDark from "./../assets/img/right-moon.png";
 import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
-import Team1 from "./../assets/img/team1.png";
-import Team2 from "./../assets/img/team2.png";
-import Team3 from "./../assets/img/team3.png";
-import Team4 from "./../assets/img/team4.png";
-import Team5 from "./../assets/img/team5.png";
+import Team1 from "./../assets/img/Teams/Connor-Gregory.png";
+import Team2 from "./../assets/img/Teams/Chalres-Hiebert.png";
+import Team3 from "./../assets/img/Teams/Serge-Klassen.png";
+import Team4 from "./../assets/img/Teams/Kristian-Hybschman.png";
+import Team5 from "./../assets/img/Teams/JenniHiebert.png";
+import Team6 from "./../assets/img/Teams/EvanKlassen.png";
+import Team7 from "./../assets/img/Teams/Alex-Merritt.png";
+import Team8 from "./../assets/img/Teams/PlaceholderforSal'sadvisor.png";
+import Team9 from "./../assets/img/Teams/Andy-Ridgway.png";
+import Team10 from "./../assets/img/Teams/MomodouKhan.png";
+import Team11 from "./../assets/img/Teams/NilianStudios.png";
+import Team12 from "./../assets/img/Teams/Ali-Chenari.png";
+import Team13 from "./../assets/img/Teams/NinaLaue.png";
+import Team14 from "./../assets/img/Teams/NFTGUYY.png";
+import Team15 from "./../assets/img/Teams/DeltaCrypto.png";
+import Team16 from "./../assets/img/Teams/SalamanShawaf.png";
+import Team17 from "./../assets/img/Teams/RolandDudko.png";
+import Team18 from "./../assets/img/Teams/MattKohn.png";
+import Team19 from "./../assets/img/Teams/EstebanValbuena.png";
+import Team20 from "./../assets/img/Teams/EvanKlassen.png";
+import Team21 from "./../assets/img/Teams/Amir-Bagian.png";
+
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -115,66 +132,62 @@ const Subscribe = () => {
                     role="Community Manager"
                   />
                   <TeamCard
-                    img={Team1}
+                    img={Team5}
                     name="Jenni Hiebertt"
                     role="Project Manager"
                   />
                   <TeamCard
-                    img={Team5}
+                    img={Team6}
                     name="Evan Klassen"
                     role="Innovations"
                   />
                   <TeamCard
-                    img={Team5}
+                    img={Team7}
                     name="Alex Merritt"
                     role="Head of Marketing"
                   />
-                  <TeamCard img={Team5} name="Sheraz Ahmed" role="Marketing" />
+                  <TeamCard img={Team8} name="Sheraz Ahmed" role="Marketing" />
                   <TeamCard
-                    img={Team5}
+                    img={Team9}
                     name="Andy Ridgway"
                     role="Lead Strategist"
                   />
                   <TeamCard
-                    img={Team5}
+                    img={Team10}
                     name="Momodou Khan"
                     role="Content Creator"
                   />
                   <TeamCard
-                    img={Team5}
+                    img={Team11}
                     name="Nilian Studios"
                     role="Artistic Lead Partner"
                   />
-                  <TeamCard img={Team5} name="ALi " role="Creative Director" />
-                  <TeamCard img={Team5} name=" Ali " role="Art Supervisor" />
-                  <TeamCard img={Team5} name=" Ali" role="Artist" />
-                  <TeamCard img={Team5} name="Ali " role="Artist" />
-                  <TeamCard img={Team5} name="Ali " role="Artist" />
+                  <TeamCard img={Team12} name="ALi " role="Creative Director" />
                   <TeamCard
-                    img={Team5}
+                    img={Team13}
                     name="Nina Laue"
                     role="Head of Advisory"
                   />
-                  <TeamCard img={Team5} name="NFTGUYY" role="Advisor" />
-                  <TeamCard img={Team5} name="DeltaCrypto" role="Advisor" />
+                  <TeamCard img={Team14} name="NFTGUYY" role="Advisor" />
+                  <TeamCard img={Team15} name="DeltaCrypto" role="Advisor" />
                   <TeamCard
-                    img={Team5}
+                    img={Team16}
                     name="Salman Shawaf"
                     role="Advisor(Founder of Dippies)"
                   />
-                  <TeamCard img={Team5} name="Roland Dudko" role="Chief Dev" />
-                  <TeamCard img={Team5} name="Matt Kohn" role="Development" />
+                  <TeamCard img={Team17} name="Roland Dudko" role="Chief Dev" />
+                  <TeamCard img={Team18} name="Matt Kohn" role="Development" />
                   <TeamCard
-                    img={Team5}
+                    img={Team19}
                     name="Esteban Valbuena"
                     role="Development"
                   />
                   <TeamCard
-                    img={Team5}
+                    img={Team20}
                     name="Evan Klassen"
                     role="Innovations"
                   />
-                  <TeamCard img={Team5} name="Amir Bagian" role="UI/UX" />
+                  <TeamCard img={Team21} name="Amir Bagian" role="UI/UX" />
                 </div>
               </div>
             </div>
