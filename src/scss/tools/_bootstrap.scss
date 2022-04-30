@@ -117,7 +117,43 @@
     padding: 0;
   }
 }
-
+.logged-in-box {
+  .btn-primary {
+    background-color: unset;
+    border: 0;
+    padding: 0;
+    width: max-content;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: unset !important;
+      box-shadow: none !important;
+    }
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .btn-check:active + .btn-primary,
+  .btn-check:checked + .btn-primary,
+  .btn-primary.active,
+  .btn-primary:active,
+  .show > .btn-primary.dropdown-toggle {
+    background-color: unset !important;
+  }
+  .dropdown-menu {
+    padding: 0 !important;
+    background-color: unset !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    right: 0 !important;
+  }
+  .dropdown,
+  .dropend,
+  .dropstart,
+  .dropup {
+    position: unset;
+  }
+}
 @media screen and (max-width: 650px) {
   .letushelp-grid .faq-q {
     width: 95%;

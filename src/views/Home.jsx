@@ -553,7 +553,7 @@ const Home = () => {
         "<0"
       )
       .fromTo(
-        ".header-right button",
+        ".header-right .connect-wallet-btn",
         {
           opacity: 0,
           scale: 0.5,
@@ -567,7 +567,7 @@ const Home = () => {
         "<0"
       )
       .fromTo(
-        ".header-right button",
+        ".header-right .connect-wallet-btn",
         {
           width: "5rem",
         },
@@ -579,7 +579,7 @@ const Home = () => {
         "<0.9"
       )
       .fromTo(
-        ".header-right button span",
+        ".header-right .connect-wallet-btn span",
         {
           width: 0,
           x: "2.5rem",
@@ -1248,30 +1248,6 @@ const Home = () => {
         </section>
         {/* Footer */}
         <Footer moreBtn={true} />
-        {/* <div className="logininfo">
-          <div className="loginnameimg">
-            <img src={PersonImg} alt="" />
-            <div className="logintext">
-              <h6>Mohammad Reza</h6>
-              <img src={BlueTick} alt="" />
-            </div>
-            <p>0xc4c16a645...b21a</p>
-          </div>
-          <div className="loginbottombox">
-            <div className="loginicontext">
-              <Profile />
-              <h5>Edit Profile</h5>
-            </div>
-            <div className="loginicontext">
-              <Collection />
-              <h5>My Collections</h5>
-            </div>
-            <div className="loginicontext lcdisconnect">
-              <Logout />
-              <h5>Disconnect</h5>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

@@ -64,9 +64,29 @@ header {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      & > * {
+
+      .not-logged-in-box {
         margin: 0 0 0 2.5rem;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        & > * {
+          margin: 0 0 0 2.5rem;
+        }
+      }
+      .logged-in-box {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+        span {
+          width: 1px;
+          height: 3.5rem;
+          background-color: var(--heder-logged-border);
+          margin: 0 2.5rem;
+          display: flex;
+        }
       }
       .header-right-icon {
         width: max-content;
@@ -76,43 +96,32 @@ header {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        border-right: 1px solid #d1e4ef;
-        .libimg {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        position: relative;
+        img {
           min-width: 5rem;
+          border-radius: 50%;
           max-width: 5rem;
           min-height: 5rem;
           max-height: 5rem;
-          background-color: #fff;
-          border-radius: 50%;
-          img {
-            min-width: 4.5rem;
-            max-width: 4.5rem;
-            min-height: 4.5rem;
-            max-height: 4.5rem;
-          }
+          margin: 0 1.5rem 0 0;
+          border: 0.35rem solid var(--heder-img-border);
         }
         h6 {
           font-size: 1.8rem;
           color: #1f194d;
           font-weight: 700;
-          margin: 0 1rem;
         }
         p {
           font-size: 1.4rem;
           color: #1f194d;
           font-weight: 600;
+          margin: 0 1rem;
         }
         svg {
           font-size: 1.95rem;
           color: #1f194d;
-          margin: 0 2rem;
+          margin: 0;
         }
-      }
-      svg {
-        margin: 0 1rem 0 0rem;
       }
     }
   }
@@ -138,6 +147,127 @@ header {
   }
 }
 
+.logininfo {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 28.5rem;
+  box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(0, 103%);
+  &::before {
+    content: "";
+    border-left: 0.85rem solid transparent;
+    border-right: 0.85rem solid transparent;
+    border-top: 0.85rem solid transparent;
+    border-bottom: 0.85rem solid #fff;
+    position: absolute;
+    top: 0;
+    left: 70%;
+    transform: translate(-50%, -100%);
+  }
+
+  .loginnameimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0;
+
+    img {
+      width: 7.5rem;
+      height: 7.5rem;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2.5px solid var(--user-details-border);
+    }
+
+    .logintext {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1.5rem 0 0.5rem 0;
+
+      h6 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #1f194d;
+        margin: 0 0.5rem 0 0;
+      }
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        border: unset;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #807e8e;
+    }
+  }
+
+  .loginbottombox {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+
+    .loginicontext {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      margin: 0 0 1.75rem 0;
+
+      svg {
+        width: 13%;
+      }
+
+      h5 {
+        width: 87%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #1f194d;
+        padding: 0 0 2rem 0.95rem;
+        margin: 0 0 0 0.85rem;
+        border-bottom: 1px solid #ededed;
+      }
+    }
+
+    .loginicontext.lcdisconnect {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      margin: 0 0 1.75rem 0;
+
+      svg {
+        width: 13%;
+      }
+
+      h5 {
+        width: 87%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #fd3766;
+        padding: 0 0 2rem 0.95rem;
+        margin: 0 0 0 0.85rem;
+        border: unset;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1250px) {
   header .header-content .header-left ul {
     margin: 0 0 0 3.5rem;

@@ -152,6 +152,9 @@ button {
     object-fit: contain;
     margin: 0 0.75rem 0 0;
   }
+  &:active {
+    transform: scale(0.95) !important;
+  }
 }
 
 .light-blue-btn-filled {
