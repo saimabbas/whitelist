@@ -19,9 +19,9 @@ import {
 } from "gsap/dist/gsap";
 
 const Header = (props) => {
-  /*   useEffect(() => {
+  useEffect(() => {
     let headerAnim = gsap.timeline({
-      delay: 4,
+      // delay: 4,
     });
     headerAnim
       .fromTo(
@@ -34,7 +34,7 @@ const Header = (props) => {
           opacity: 1,
           x: "0",
           duration: 1.5,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         }
       )
       .fromTo(
@@ -47,7 +47,7 @@ const Header = (props) => {
           opacity: 1,
           x: "0",
           duration: 1.5,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
           stagger: 0.1,
         },
         "<0"
@@ -63,7 +63,7 @@ const Header = (props) => {
           delay: 0.5,
           x: "0",
           duration: 1.5,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
           stagger: 0.1,
         },
         "<0"
@@ -78,7 +78,7 @@ const Header = (props) => {
           opacity: 1,
           scale: 1,
           duration: 1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       )
@@ -110,15 +110,17 @@ const Header = (props) => {
         },
         "<0.25"
       );
-  }, []); */
+  }, []);
 
   return (
     <header>
       <div className="box">
         <div className="header-content">
           <div className="header-left">
-            <Logo className="light-img header-logo" color="#1F194D" />
-            <Logo className="dark-img header-logo" color="#fff" />
+            <Link to="/home">
+              <Logo className="light-img header-logo" color="#1F194D" />
+              <Logo className="dark-img header-logo" color="#fff" />
+            </Link>
             <div className="mobmenuicon" onClick={props.openMobHeader}>
               <div className="mobmenubox">
                 <Menu />

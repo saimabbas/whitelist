@@ -103,14 +103,14 @@ const Home = () => {
       .to(".home-loading", {
         top: "-150%",
         duration: 1,
-        ease: Power4.easeIn,
+        ease: Power3.easeInOut,
       })
       .to(
         ".home-loading",
         {
           opacity: 0,
           duration: 1,
-          ease: Power4.easeIn,
+          ease: Power3.easeInOut,
         },
         "<0.5"
       )

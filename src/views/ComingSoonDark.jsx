@@ -6,7 +6,16 @@ import Discord from "../assets/icons/Discord";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
 import { gsap } from "gsap";
-import { Power4 } from "gsap/dist/gsap";
+import {
+  Power1,
+  Power2,
+  Power3,
+  Power4,
+  Linear,
+  Back,
+  Expo,
+  Circ,
+} from "gsap/dist/gsap";
 import { SplitText } from "gsap/SplitText";
 const ComingSoonDark = () => {
   const ad = useRef(null);
@@ -74,7 +83,7 @@ const ComingSoonDark = () => {
           scale: 1,
           opacity: 1,
           duration: 1.5,
-          ease: Power4.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0.25"
       )
@@ -103,7 +112,7 @@ const ComingSoonDark = () => {
         {
           opacity: 1,
           duration: 0.2,
-          ease: Power4.easeIn,
+          ease: Power3.easeInOut,
         },
         "<0.25"
       )
@@ -131,7 +140,7 @@ const ComingSoonDark = () => {
         {
           opacity: 1,
           duration: 0.2,
-          ease: Power4.easeIn,
+          ease: Power3.easeInOut,
         },
         "<0.25"
       )
@@ -143,7 +152,7 @@ const ComingSoonDark = () => {
         {
           opacity: 1,
           duration: 0.2,
-          ease: Power4.easeIn,
+          ease: Power3.easeInOut,
         },
         "<0.25"
       )

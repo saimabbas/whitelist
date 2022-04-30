@@ -103,14 +103,14 @@ const Home = () => {
       .to(".home-loading", {
         top: "-150%",
         duration: 1,
-        ease: Power4.easeIn,
+        ease: Power3.easeInOut,
       })
       .to(
         ".home-loading",
         {
           opacity: 0,
           duration: 1,
-          ease: Power4.easeIn,
+          ease: Power3.easeInOut,
         },
         "<0.5"
       )
@@ -124,7 +124,7 @@ const Home = () => {
           opacity: 1,
           y: 0,
           duration: 1.5,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       )
@@ -138,7 +138,7 @@ const Home = () => {
           opacity: 1,
           x: 0,
           duration: 1.5,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       )
@@ -152,7 +152,7 @@ const Home = () => {
           opacity: 1,
           x: 0,
           duration: 1.5,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0.25"
       )
@@ -166,7 +166,7 @@ const Home = () => {
           opacity: 1,
           x: 0,
           duration: 1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
           stagger: 0.1,
         },
         "<0"
@@ -181,7 +181,7 @@ const Home = () => {
           opacity: 1,
           x: 0,
           duration: 1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
           stagger: 0.1,
         },
         "<0"
@@ -196,7 +196,7 @@ const Home = () => {
           opacity: 1,
           x: 0,
           duration: 1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
           stagger: 0.1,
         },
         "<0"
@@ -209,7 +209,7 @@ const Home = () => {
         {
           x: 0,
           duration: 1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
           stagger: 0.1,
         },
         "<0"
@@ -222,7 +222,7 @@ const Home = () => {
         {
           opacity: 1,
           duration: 1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
           stagger: 0.1,
         },
         "<0.25"
@@ -240,7 +240,7 @@ const Home = () => {
             each: 0.1,
             from: "end",
           },
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       )
@@ -258,7 +258,7 @@ const Home = () => {
             each: 0.1,
             from: "end",
           },
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       );
@@ -279,7 +279,7 @@ const Home = () => {
           x: "0",
           opacity: 1,
           duration: 1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         }
       )
 
@@ -294,7 +294,7 @@ const Home = () => {
           opacity: 1,
           duration: 1,
           stagger: 0.05,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       )
@@ -309,7 +309,7 @@ const Home = () => {
           opacity: 1,
           duration: 1,
           stagger: 0.05,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0.15"
       )
@@ -324,7 +324,7 @@ const Home = () => {
           opacity: 1,
           duration: 1,
           stagger: 0.05,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0.15"
       )
@@ -338,7 +338,7 @@ const Home = () => {
           x: "0",
           opacity: 1,
           duration: 1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0.15"
       );
@@ -360,7 +360,7 @@ const Home = () => {
           y: "0",
           opacity: 1,
           duration: 1.25,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         }
       )
       .fromTo(
@@ -373,7 +373,7 @@ const Home = () => {
           y: "0",
           opacity: 1,
           duration: 1.25,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0.25"
       )
@@ -388,7 +388,7 @@ const Home = () => {
           opacity: 1,
           duration: 1.25,
           stagger: 0.1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       );
@@ -410,7 +410,7 @@ const Home = () => {
           y: "0",
           opacity: 1,
           duration: 1.25,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         }
       )
       .fromTo(
@@ -423,24 +423,35 @@ const Home = () => {
           y: "0",
           opacity: 1,
           duration: 1.25,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0.25"
       )
       .fromTo(
         ".subscribe-grid > *",
         {
-          y: "25rem",
-          opacity: 0,
+          y: "50rem",
         },
         {
           y: "0",
+          duration: 1.25,
+          stagger: 0.1,
+          ease: Power3.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".subscribe-grid > *",
+        {
+          opacity: 0,
+        },
+        {
           opacity: 1,
           duration: 1.25,
           stagger: 0.1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
-        "<0"
+        "<0.5"
       );
     let homeLetUsHelpAnim = gsap.timeline({
       scrollTrigger: {
@@ -459,7 +470,7 @@ const Home = () => {
           y: "0",
           opacity: 1,
           duration: 1.25,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         }
       )
       .fromTo(
@@ -472,7 +483,7 @@ const Home = () => {
           y: "0",
           opacity: 1,
           duration: 1.25,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0.25"
       )
@@ -487,7 +498,7 @@ const Home = () => {
           opacity: 1,
           duration: 1.25,
           stagger: 0.1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       );
@@ -507,7 +518,7 @@ const Home = () => {
           opacity: 1,
           x: "0",
           duration: 1.5,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         }
       )
       .fromTo(
@@ -520,7 +531,7 @@ const Home = () => {
           opacity: 1,
           x: "0",
           duration: 1.5,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
           stagger: 0.1,
         },
         "<0"
@@ -536,7 +547,7 @@ const Home = () => {
           delay: 0.5,
           x: "0",
           duration: 1.5,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
           stagger: 0.1,
         },
         "<0"
@@ -551,7 +562,7 @@ const Home = () => {
           opacity: 1,
           scale: 1,
           duration: 1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       )

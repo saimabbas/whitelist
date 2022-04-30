@@ -20,7 +20,7 @@ import TeamCard from "../components/pages/Team/TeamCard";
 import HeaderMob from "../components/modules/HeaderMob";
 
 const Subscribe = () => {
-  const [isLightTheme, setIsLightTheme] = useState(false);
+  const [isLightTheme, setIsLightTheme] = useState(true);
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
 
   const changeToDarkTheme = () => {

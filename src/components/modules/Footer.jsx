@@ -52,7 +52,7 @@ const Footer = (props) => {
           opacity: 1,
           duration: 1.25,
           stagger: 0.1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         }
       )
       .fromTo(
@@ -66,7 +66,7 @@ const Footer = (props) => {
           opacity: 1,
           duration: 1.25,
           stagger: 0.1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       )
@@ -81,7 +81,7 @@ const Footer = (props) => {
           opacity: 1,
           duration: 1.25,
           stagger: 0.1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       )
@@ -96,7 +96,7 @@ const Footer = (props) => {
           opacity: 1,
           duration: 1.25,
           stagger: 0.1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       )
@@ -111,7 +111,7 @@ const Footer = (props) => {
           opacity: 1,
           duration: 1.25,
           stagger: 0.1,
-          ease: Back.easeInOut,
+          ease: Power3.easeInOut,
         },
         "<0"
       );

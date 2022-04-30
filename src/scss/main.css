@@ -6703,7 +6703,7 @@ header .header-content .header-left {
           justify-content: flex-start;
 }
 
-header .header-content .header-left > svg {
+header .header-content .header-left svg.header-logo {
   height: 2.5rem;
   -o-object-fit: contain;
      object-fit: contain;
@@ -6725,9 +6725,18 @@ header .header-content .header-left ul li {
   margin: 0 5rem 0 0;
 }
 
+header .header-content .header-left ul li:hover {
+  color: var(--header-links);
+}
+
 header .header-content .header-left ul li a {
   text-decoration: none;
   font-size: 1.75rem;
+  color: var(--header-links);
+  cursor: pointer;
+}
+
+header .header-content .header-left ul li a:hover {
   color: var(--header-links);
 }
 

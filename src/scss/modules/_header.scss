@@ -29,7 +29,7 @@ header {
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      & > svg {
+      svg.header-logo {
         height: 2.5rem;
         object-fit: contain;
       }
@@ -41,10 +41,17 @@ header {
           list-style: none;
           width: max-content;
           margin: 0 5rem 0 0;
+          &:hover {
+            color: var(--header-links);
+          }
           a {
             text-decoration: none;
             font-size: 1.75rem;
             color: var(--header-links);
+            cursor: pointer;
+            &:hover {
+              color: var(--header-links);
+            }
             b {
               font-size: 2rem;
               transition: 0.25s;
