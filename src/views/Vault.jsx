@@ -26,7 +26,7 @@ import Footer from "../components/modules/Footer";
 import HeaderMob from "../components/modules/HeaderMob";
 
 const Vault = () => {
-  const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isLightTheme, setIsLightTheme] = useState(false);
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
   const changeToDarkTheme = () => {
     setIsLightTheme(false);
@@ -265,30 +265,6 @@ const Vault = () => {
       </div>
       {/* Footer */}
       <Footer />
-      {/* <div className="wlfootermodal">
-        <div className="helpiconmodel">
-          <div className="hiheader">
-            <div className="hihimg">
-              <img src={Support} alt="" />
-              <p>Support</p>
-            </div>
-            <MdClear />
-          </div>
-          <div className="wlupinput">
-                <label htmlFor="">Name</label>
-                <input type="text" placeholder="Enter Your Name" />
-              </div>
-              <div className="wlupinput">
-                <label htmlFor="">Email</label>
-                <input type="text" placeholder="Enter Your Email Address" />
-              </div>
-              <div className="wlupinput">
-                <label htmlFor="">Problem</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="What's the problem?"></textarea>
-              </div>
-              <button>Send</button>
-        </div>
-      </div> */}
       <div className="wlcomingsoonmodal">
         <div className="wlcsmainbox">
           <div className="top-notch top-notch-orange"></div>

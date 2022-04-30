@@ -182,7 +182,7 @@ const Header = (props) => {
             </ul>
           </div>
           <div className="header-right">
-            {/* <div className="not-logged-in-box">
+            <div className="not-logged-in-box">
               <MessagesIcon
                 className="header-right-icon light-img header-right-icon"
                 color="#1F194D"
@@ -211,9 +211,9 @@ const Header = (props) => {
                 <WalletIcon className="dark-img" color="#fff" />
                 <span>Wallet</span>
               </button>
-            </div> */}
+            </div>
 
-            <div className="logged-in-box">
+            {/* <div className="logged-in-box">
               <Dropdown>
                 <Dropdown.Toggle id="dropdown-basic">
                   <div className="login-img-box">
@@ -223,7 +223,6 @@ const Header = (props) => {
                     <MdExpandMore />
                   </div>
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <div className="logininfo">
                     <div className="loginnameimg">
@@ -236,11 +235,13 @@ const Header = (props) => {
                     </div>
                     <div className="loginbottombox">
                       <div className="loginicontext">
-                        <Profile />
+                        <Profile className="light-img" color="#1f194d" />
+                        <Profile className="dark-img" color="#fff" />
                         <h5>Edit Profile</h5>
                       </div>
                       <div className="loginicontext">
-                        <Collection />
+                        <Collection className="light-img" color="#1f194d" />
+                        <Collection className="dark-img" color="#fff" />
                         <h5>My Collections</h5>
                       </div>
                       <div className="loginicontext lcdisconnect">
@@ -251,39 +252,10 @@ const Header = (props) => {
                   </div>
                 </Dropdown.Menu>
               </Dropdown>
-              {/* <div className="login-img-box">
-                <img src={PersonImg} alt="" />
-                <h6>1.00461</h6>
-                <p>ETH</p>
-                <MdExpandMore />
-              </div> */}
               <span></span>
-              <Bell />
-              {/* <div className="logininfo">
-                <div className="loginnameimg">
-                  <img src={PersonImg} alt="" />
-                  <div className="logintext">
-                    <h6>Mohammad Reza</h6>
-                    <img src={BlueTick} alt="" />
-                  </div>
-                  <p>0xc4c16a645...b21a</p>
-                </div>
-                <div className="loginbottombox">
-                  <div className="loginicontext">
-                    <Profile />
-                    <h5>Edit Profile</h5>
-                  </div>
-                  <div className="loginicontext">
-                    <Collection />
-                    <h5>My Collections</h5>
-                  </div>
-                  <div className="loginicontext lcdisconnect">
-                    <Logout />
-                    <h5>Disconnect</h5>
-                  </div>
-                </div>
-              </div> */}
-            </div>
+              <Bell className="light-img" color="#1F194D" />
+              <Bell className="dark-img" color="#FFFFFF" />
+            </div> */}
           </div>
         </div>
       </div>

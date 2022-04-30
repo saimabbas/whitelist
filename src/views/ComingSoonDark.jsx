@@ -6,6 +6,7 @@ import Discord from "../assets/icons/Discord";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
 import { gsap } from "gsap";
+import $ from "jquery";
 import {
   Power1,
   Power2,
@@ -19,15 +20,21 @@ import {
 import { SplitText } from "gsap/SplitText";
 const ComingSoonDark = () => {
   const ad = useRef(null);
+  const btntbn = useRef(null);
   gsap.registerPlugin(SplitText);
 
   const playAudio = () => {
     ad.current.play();
   };
-
-  // ad.current.play();
-
+  document.body.addEventListener("mousemove", function () {
+    // ad.current.get(0).play();
+    btntbn.current.click();
+  });
   useEffect(() => {
+    /* $(window).on("load", function () {
+      ad.current.play();
+      console.log("Document Loadeddddddddddddd");
+    }); */
     const comingsoonHeading = new SplitText(".comingsoon-heading", {
       type: "chars",
     });
@@ -260,10 +267,10 @@ const ComingSoonDark = () => {
                 </h6>
               </div>
             </div>
-            {/* <audio ref={ad} className="back-audio" controls src={BackAudio} />
-            <button onClick={playAudio} type="button">
+            <audio ref={ad} controls className="back-audio" src={BackAudio} />
+            <button ref={btntbn} onClick={playAudio} type="button">
               Play Audio
-            </button> */}
+            </button>
             <div className="comingsoon-bottom-box">
               <h5 className="comingsoon-text-component-1">
                 Get notified when we are close to blast off:
