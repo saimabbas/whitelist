@@ -13,7 +13,7 @@
 
 body {
   width: 100%;
-  max-width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -1873,6 +1873,10 @@ button:hover {
 }
 
 @media screen and (max-width: 850px) {
+  .home .home-cloud-1,
+  .home .home-cloud-2 {
+    display: none !important;
+  }
   .home .about .about-content .about-right h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -7383,6 +7387,7 @@ footer .more-btn svg {
   bottom: 2.5rem;
   right: 2.5rem;
   z-index: 1050;
+  display: none;
 }
 
 .help-box img {

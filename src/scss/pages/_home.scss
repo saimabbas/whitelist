@@ -815,6 +815,10 @@
   display: none;
 }
 @media screen and (max-width: 850px) {
+  .home .home-cloud-1,
+  .home .home-cloud-2 {
+    display: none !important;
+  }
   .home .about .about-content .about-right h6 {
     justify-content: center;
     width: 100%;
