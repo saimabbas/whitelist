@@ -236,6 +236,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
 
   .wlupdatecontent {
     width: 60%;
@@ -338,7 +342,7 @@
             font-size: 1.4rem;
             color: #1f194d;
             font-weight: 400;
-            margin: 0 0 0.75rem 0;
+            margin: 0 0 0.5rem 0;
           }
 
           input {
@@ -348,7 +352,7 @@
             color: #1f194d;
             font-weight: 600;
             width: 100%;
-            padding: 1.5rem 0.75rem;
+            padding: 1.25rem 0.75rem;
           }
 
           input:focus {
@@ -363,17 +367,7 @@
         }
 
         button {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #195bff;
-          border-radius: 1000px;
-          font-size: 1.6rem;
-          color: #ffffff;
-          font-weight: 700;
           width: 100%;
-          padding: 1.75rem 0;
-          border: unset;
           margin: 3rem 0 4rem 0;
         }
       }

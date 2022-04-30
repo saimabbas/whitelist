@@ -1238,30 +1238,6 @@ const Home = () => {
         </section>
         {/* Footer */}
         <Footer moreBtn={true} />
-        {/* <div className="logininfo">
-          <div className="loginnameimg">
-            <img src={PersonImg} alt="" />
-            <div className="logintext">
-              <h6>Mohammad Reza</h6>
-              <img src={BlueTick} alt="" />
-            </div>
-            <p>0xc4c16a645...b21a</p>
-          </div>
-          <div className="loginbottombox">
-            <div className="loginicontext">
-              <Profile />
-              <h5>Edit Profile</h5>
-            </div>
-            <div className="loginicontext">
-              <Collection />
-              <h5>My Collections</h5>
-            </div>
-            <div className="loginicontext lcdisconnect">
-              <Logout />
-              <h5>Disconnect</h5>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

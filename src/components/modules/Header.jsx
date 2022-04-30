@@ -7,6 +7,11 @@ import Logo from "../../assets/img/Logo";
 import Menu from "../../assets/icons/Menu";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
+import Bell from "../../assets/icons/Bell";
+import PersonImg from "../../assets/img/personimg.png";
+import { MdExpandMore } from "react-icons/md";
+import { Dropdown } from "react-bootstrap";
+import BlueTick from "../../assets/img/bluetick.png";
 import {
   Power1,
   Power2,
@@ -17,8 +22,21 @@ import {
   Expo,
   Circ,
 } from "gsap/dist/gsap";
+import ProfileDetailsModal from "../pages/Home/ProfileDetailsModal";
+import Profile from "../../assets/icons/Profile";
+import Collection from "../../assets/icons/Collection";
+import Logout from "../../assets/icons/Logout";
 
 const Header = (props) => {
+  const [showProfileModal, setShowProfileModal] = useState(false);
+  const showProfileDetailsModal = () => {
+    setShowProfileModal(true);
+    document.body.classList.add("no-scroll");
+  };
+  const hideProfileDetailsModal = () => {
+    setShowProfileModal(false);
+    document.body.classList.remove("no-scroll");
+  };
   useEffect(() => {
     let headerAnim = gsap.timeline({
       // delay: 4,
@@ -69,7 +87,7 @@ const Header = (props) => {
         "<0"
       )
       .fromTo(
-        ".header-right button",
+        ".header-right .connect-wallet-btn",
         {
           opacity: 0,
           scale: 0.5,
@@ -83,7 +101,7 @@ const Header = (props) => {
         "<0"
       )
       .fromTo(
-        ".header-right button",
+        ".header-right .connect-wallet-btn",
         {
           width: "5rem",
         },
@@ -95,7 +113,7 @@ const Header = (props) => {
         "<0.9"
       )
       .fromTo(
-        ".header-right button span",
+        ".header-right .connect-wallet-btn span",
         {
           width: 0,
           x: "2.5rem",
@@ -164,44 +182,116 @@ const Header = (props) => {
             </ul>
           </div>
           <div className="header-right">
-            <MessagesIcon
-              className="header-right-icon light-img header-right-icon"
-              color="#1F194D"
-            />
-            <MessagesIcon
-              className="header-right-icon dark-img header-right-icon"
-              color="#FFFF"
-            />
-            <div
-              className="light-img header-right-icon"
-              onClick={props.changeToDarkTheme}
-            >
-              <MoonIcon className="header-right-icon" color="#1F194D" />
-            </div>
-            <div
-              className="dark-img header-right-icon"
-              onClick={props.changeToLightTheme}
-            >
-              <SunIcon className="header-right-icon" color="#FFFF" />
-            </div>
+            {/* <div className="not-logged-in-box">
+              <MessagesIcon
+                className="header-right-icon light-img header-right-icon"
+                color="#1F194D"
+              />
+              <MessagesIcon
+                className="header-right-icon dark-img header-right-icon"
+                color="#FFFF"
+              />
+              <div
+                className="light-img header-right-icon"
+                onClick={props.changeToDarkTheme}
+              >
+                <MoonIcon className="header-right-icon" color="#1F194D" />
+              </div>
+              <div
+                className="dark-img header-right-icon"
+                onClick={props.changeToLightTheme}
+              >
+                <SunIcon className="header-right-icon" color="#FFFF" />
+              </div>
+              <button
+                className="light-blue-btn-filled connect-wallet-btn"
+                onClick={showProfileDetailsModal}
+              >
+                <WalletIcon className="light-img" color="#195BFF" />
+                <WalletIcon className="dark-img" color="#fff" />
+                <span>Wallet</span>
+              </button>
+            </div> */}
 
-            <button className="light-blue-btn-filled">
-              <WalletIcon className="light-img" color="#195BFF" />
-              <WalletIcon className="dark-img" color="#fff" />
-              <span>Wallet</span>
-            </button>
-            {/* <div className="login-img-box">
-                <div className="libimg">
-                  <img src={Person} alt="" />
-                </div>
+            <div className="logged-in-box">
+              <Dropdown>
+                <Dropdown.Toggle id="dropdown-basic">
+                  <div className="login-img-box">
+                    <img src={PersonImg} alt="" />
+                    <h6>1.00461</h6>
+                    <p>ETH</p>
+                    <MdExpandMore />
+                  </div>
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <div className="logininfo">
+                    <div className="loginnameimg">
+                      <img src={PersonImg} alt="" />
+                      <div className="logintext">
+                        <h6>Mohammad Reza</h6>
+                        <img src={BlueTick} alt="" />
+                      </div>
+                      <p>0xc4c16a645...b21a</p>
+                    </div>
+                    <div className="loginbottombox">
+                      <div className="loginicontext">
+                        <Profile />
+                        <h5>Edit Profile</h5>
+                      </div>
+                      <div className="loginicontext">
+                        <Collection />
+                        <h5>My Collections</h5>
+                      </div>
+                      <div className="loginicontext lcdisconnect">
+                        <Logout />
+                        <h5>Disconnect</h5>
+                      </div>
+                    </div>
+                  </div>
+                </Dropdown.Menu>
+              </Dropdown>
+              {/* <div className="login-img-box">
+                <img src={PersonImg} alt="" />
                 <h6>1.00461</h6>
                 <p>ETH</p>
                 <MdExpandMore />
-              </div>
-              <Bell /> */}
+              </div> */}
+              <span></span>
+              <Bell />
+              {/* <div className="logininfo">
+                <div className="loginnameimg">
+                  <img src={PersonImg} alt="" />
+                  <div className="logintext">
+                    <h6>Mohammad Reza</h6>
+                    <img src={BlueTick} alt="" />
+                  </div>
+                  <p>0xc4c16a645...b21a</p>
+                </div>
+                <div className="loginbottombox">
+                  <div className="loginicontext">
+                    <Profile />
+                    <h5>Edit Profile</h5>
+                  </div>
+                  <div className="loginicontext">
+                    <Collection />
+                    <h5>My Collections</h5>
+                  </div>
+                  <div className="loginicontext lcdisconnect">
+                    <Logout />
+                    <h5>Disconnect</h5>
+                  </div>
+                </div>
+              </div> */}
+            </div>
           </div>
         </div>
       </div>
+      {showProfileModal ? (
+        <ProfileDetailsModal
+          hideProfileDetailsModal={hideProfileDetailsModal}
+        />
+      ) : null}
     </header>
   );
 };
