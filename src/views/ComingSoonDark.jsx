@@ -267,10 +267,10 @@ const ComingSoonDark = () => {
                 </h6>
               </div>
             </div>
-            <audio ref={ad} controls className="back-audio" src={BackAudio} />
+            {/* <audio ref={ad} controls className="back-audio" src={BackAudio} />
             <button ref={btntbn} onClick={playAudio} type="button">
               Play Audio
-            </button>
+            </button> */}
             <div className="comingsoon-bottom-box">
               <h5 className="comingsoon-text-component-1">
                 Get notified when we are close to blast off:
