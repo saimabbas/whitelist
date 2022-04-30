@@ -34,7 +34,7 @@ const ProfileDetailsModal = (props) => {
           <p>My Address Wallet</p>
           <h6>1F1tAaz5x1HUXrCNLbtMDqc...4xqX</h6>
         </div>
-        <button>
+        <button className="light-blue-btn-filled">
           <img src={Metamask} alt="Metamask" /> DISCONNECT METAMASK
         </button>
       </div>

@@ -139,7 +139,7 @@ button {
   color: #fff;
   font-size: 1.65rem;
   font-weight: 700;
-  padding: 1.25rem 3.5rem;
+  padding: 1.5rem 3.5rem;
   border: 1px solid transparent;
   border-radius: 1000px;
   display: flex;
@@ -163,7 +163,7 @@ button {
   color: var(--light-blue-btn-filled-color);
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1.25rem 3.5rem;
+  padding: 1.5rem 3.5rem;
   border: 1px solid transparent;
   border-radius: 1000px;
   display: flex;
@@ -171,7 +171,8 @@ button {
   justify-content: center;
   transition: 0.25s;
 
-  svg {
+  svg,
+  img {
     width: max-content;
     height: 2.25rem;
     object-fit: contain;
@@ -213,7 +214,7 @@ button {
   color: var(--light-blue-btn-filled-color);
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1.25rem 3.5rem;
+  padding: 1.5rem 3.5rem;
   border-radius: 1000px;
   display: flex;
   align-items: center;

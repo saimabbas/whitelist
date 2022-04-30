@@ -142,7 +142,7 @@ button:hover {
   color: #fff;
   font-size: 1.65rem;
   font-weight: 700;
-  padding: 1.25rem 3.5rem;
+  padding: 1.5rem 3.5rem;
   border: 1px solid transparent;
   border-radius: 1000px;
   display: -webkit-box;
@@ -179,7 +179,7 @@ button:hover {
   color: var(--light-blue-btn-filled-color);
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1.25rem 3.5rem;
+  padding: 1.5rem 3.5rem;
   border: 1px solid transparent;
   border-radius: 1000px;
   display: -webkit-box;
@@ -195,7 +195,8 @@ button:hover {
   transition: 0.25s;
 }
 
-.light-blue-btn-filled svg {
+.light-blue-btn-filled svg,
+.light-blue-btn-filled img {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -207,7 +208,8 @@ button:hover {
   transition: 0.25s;
 }
 
-.light-blue-btn-filled svg path {
+.light-blue-btn-filled svg path,
+.light-blue-btn-filled img path {
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -246,7 +248,7 @@ button:hover {
   color: var(--light-blue-btn-filled-color);
   font-size: 1.5rem;
   font-weight: 700;
-  padding: 1.25rem 3.5rem;
+  padding: 1.5rem 3.5rem;
   border-radius: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1552,6 +1554,272 @@ button:hover {
   background-color: #111318;
 }
 
+.wlupdatemodal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(31, 25, 77, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+}
+
+.wlupdatemodal .wlupdatecontent {
+  width: 60%;
+  background-color: var(--round-chevron-box);
+  border-radius: 2rem;
+  padding: 4rem 6rem;
+  -webkit-box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+          box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wlupdatemodal .wlupdatecontent svg {
+  font-size: 2rem;
+  color: var(--user-details-p);
+  cursor: pointer;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  margin: 2rem 0 0 0;
+  padding: 0 3rem 0 0;
+  border-right: 1px solid #eeeeee;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft p {
+  font-size: 1.8rem;
+  color: var(--dark-blue-white);
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft .wlloadingdiv {
+  width: 100%;
+  height: 20rem;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft button {
+  width: 100%;
+  margin: 3rem 0 4rem 0;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft h6 {
+  font-size: 1.4rem;
+  color: var(--user-details-p);
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft h6 span {
+  font-weight: 700;
+  color: var(--dark-blue-white);
+  margin: 0 0 0 0.25rem;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 2rem 0 0 0;
+  width: 55%;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright p {
+  font-size: 1.8rem;
+  color: var(--dark-blue-white);
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin: 3.5rem 0 0 0;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput label {
+  font-size: 1.4rem;
+  color: var(--dark-blue-white);
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input {
+  border: 1px solid var(--user-details-border);
+  border-radius: 0.75rem;
+  font-size: 1.6rem;
+  color: var(--dark-blue-white);
+  font-weight: 600;
+  width: 100%;
+  background-color: transparent;
+  padding: 1.25rem 1.5rem;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input:focus {
+  outline: none;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  color: var(--user-details-p);
+  font-weight: 400;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input:-ms-input-placeholder {
+  font-size: 1.6rem;
+  color: var(--user-details-p);
+  font-weight: 400;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input::-ms-input-placeholder {
+  font-size: 1.6rem;
+  color: var(--user-details-p);
+  font-weight: 400;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input::placeholder {
+  font-size: 1.6rem;
+  color: var(--user-details-p);
+  font-weight: 400;
+}
+
+.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright button {
+  width: 100%;
+  margin: 3rem 0 4rem 0;
+}
+
+.wlupdatemodal .wlwalletdisconnect {
+  width: 37%;
+  background-color: var(--round-chevron-box);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  -webkit-box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+          box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+}
+
+.wlupdatemodal .wlwalletdisconnect .wlwallettext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+}
+
+.wlupdatemodal .wlwalletdisconnect .wlwallettext p {
+  font-size: 1.4rem;
+  color: var(--home-about-p);
+  font-weight: 500;
+}
+
+.wlupdatemodal .wlwalletdisconnect .wlwallettext h6 {
+  font-size: 1.4rem;
+  color: var(--dark-blue-white);
+  font-weight: 500;
+}
+
+.wlupdatemodal .wlwalletdisconnect button {
+  width: 44%;
+}
+
+.wlupdatemodal .wlwalletdisconnect button img {
+  width: 3rem;
+  height: 3rem;
+}
+
 @media screen and (max-width: 1000px) {
   .home .hero .hero-left h1 {
     font-size: 3.25rem;
@@ -2225,302 +2493,6 @@ button:hover {
   color: #1f194d;
   background-color: transparent;
   font-weight: 700;
-}
-
-.wlupdatemodal {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(31, 25, 77, 0.75);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100000;
-}
-
-.wlupdatemodal .wlupdatecontent {
-  width: 60%;
-  background-color: #fff;
-  border-radius: 2rem;
-  padding: 4rem 6rem;
-  -webkit-box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
-          box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.wlupdatemodal .wlupdatecontent svg {
-  font-size: 2rem;
-  color: #1f194d;
-  cursor: pointer;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 100%;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 40%;
-  margin: 2rem 0 0 0;
-  padding: 0 3rem 0 0;
-  border-right: 1px solid #eeeeee;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft p {
-  font-size: 1.8rem;
-  color: #1f194d;
-  font-weight: 400;
-  margin: 0 0 1rem 0;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft .wlloadingdiv {
-  width: 100%;
-  height: 20rem;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(25, 90, 255, 0.1);
-  border-radius: 1000px;
-  font-size: 1.6rem;
-  color: #195bff;
-  font-weight: 800;
-  width: 100%;
-  padding: 1.75rem 0;
-  border: unset;
-  margin: 3rem 0 4rem 0;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft h6 {
-  font-size: 1.4rem;
-  color: #807e8e;
-  font-weight: 400;
-  text-align: center;
-  width: 100%;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateleft h6 span {
-  font-weight: 700;
-  color: #1f194d;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 2rem 0 0 0;
-  width: 55%;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright p {
-  font-size: 1.8rem;
-  color: #1f194d;
-  font-weight: 400;
-  margin: 0 0 1rem 0;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 100%;
-  margin: 3.5rem 0 0 0;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput label {
-  font-size: 1.4rem;
-  color: #1f194d;
-  font-weight: 400;
-  margin: 0 0 0.5rem 0;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input {
-  border: 1px solid #e1e4eb;
-  border-radius: 0.75rem;
-  font-size: 1.6rem;
-  color: #1f194d;
-  font-weight: 600;
-  width: 100%;
-  padding: 1.25rem 0.75rem;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input:focus {
-  outline: none;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input::-webkit-input-placeholder {
-  font-size: 1.6rem;
-  color: #807e8e;
-  font-weight: 400;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input:-ms-input-placeholder {
-  font-size: 1.6rem;
-  color: #807e8e;
-  font-weight: 400;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input::-ms-input-placeholder {
-  font-size: 1.6rem;
-  color: #807e8e;
-  font-weight: 400;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright .wlupinput input::placeholder {
-  font-size: 1.6rem;
-  color: #807e8e;
-  font-weight: 400;
-}
-
-.wlupdatemodal .wlupdatecontent .wlupdatemainbox .wlupdateright button {
-  width: 100%;
-  margin: 3rem 0 4rem 0;
-}
-
-.wlupdatemodal .wlwalletdisconnect {
-  width: 37%;
-  background-color: #fff;
-  border-radius: 2rem;
-  padding: 1rem 2rem;
-  -webkit-box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
-          box-shadow: 1px 27px 44px rgba(6, 45, 95, 0.12);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 2rem 0;
-}
-
-.wlupdatemodal .wlwalletdisconnect .wlwallettext {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 50%;
-}
-
-.wlupdatemodal .wlwalletdisconnect .wlwallettext p {
-  font-size: 1.4rem;
-  color: #807e8e;
-  font-weight: 500;
-}
-
-.wlupdatemodal .wlwalletdisconnect .wlwallettext h6 {
-  font-size: 1.4rem;
-  color: #1f194d;
-  font-weight: 500;
-}
-
-.wlupdatemodal .wlwalletdisconnect button {
-  width: 44%;
-  border: unset;
-  border-radius: 1000px;
-  background-color: rgba(108, 107, 118, 0.1);
-  padding: 1.25rem 2rem;
-  font-size: 1.4rem;
-  color: #1f194d;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.wlupdatemodal .wlwalletdisconnect button img {
-  width: 3rem;
-  height: 3rem;
 }
 
 @media screen and (max-width: 850px) {
@@ -6670,20 +6642,20 @@ header .header-content .header-right .login-img-box img {
 
 header .header-content .header-right .login-img-box h6 {
   font-size: 1.8rem;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   font-weight: 700;
 }
 
 header .header-content .header-right .login-img-box p {
   font-size: 1.4rem;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   font-weight: 600;
   margin: 0 1rem;
 }
 
 header .header-content .header-right .login-img-box svg {
   font-size: 1.95rem;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   margin: 0;
 }
 
@@ -6720,7 +6692,7 @@ header .header-content .header-right .login-img-box svg {
 }
 
 .logininfo {
-  background-color: #fff;
+  background-color: var(--round-chevron-box);
   border-radius: 0.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6750,7 +6722,7 @@ header .header-content .header-right .login-img-box svg {
   border-left: 0.85rem solid transparent;
   border-right: 0.85rem solid transparent;
   border-top: 0.85rem solid transparent;
-  border-bottom: 0.85rem solid #fff;
+  border-bottom: 0.85rem solid var(--round-chevron-box);
   position: absolute;
   top: 0;
   left: 70%;
@@ -6800,7 +6772,7 @@ header .header-content .header-right .login-img-box svg {
 .logininfo .loginnameimg .logintext h6 {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   margin: 0 0.5rem 0 0;
 }
 
@@ -6815,7 +6787,7 @@ header .header-content .header-right .login-img-box svg {
 .logininfo .loginnameimg p {
   font-size: 1.4rem;
   font-weight: 400;
-  color: #807e8e;
+  color: var(--user-details-p);
 }
 
 .logininfo .loginbottombox {
@@ -6858,10 +6830,10 @@ header .header-content .header-right .login-img-box svg {
   width: 87%;
   font-size: 1.6rem;
   font-weight: 400;
-  color: #1f194d;
+  color: var(--dark-blue-white);
   padding: 0 0 2rem 0.95rem;
   margin: 0 0 0 0.85rem;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid var(--vault-card-border-mob);
 }
 
 .logininfo .loginbottombox .loginicontext.lcdisconnect {
