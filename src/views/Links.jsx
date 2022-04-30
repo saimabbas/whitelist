@@ -49,6 +49,12 @@ const Links = () => {
       <Link to="/vault">
         14. <span>Vault</span>
       </Link>
+      <Link to="/waltsvault">
+        15. <span>Walt's Vault</span>
+      </Link>
+      <Link to="/passengers">
+        14. <span>Passengers</span>
+      </Link>
     </div>
   );
 };

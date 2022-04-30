@@ -17,6 +17,8 @@ import LinksPage from "./views/Links";
 import MintConnect from "./views/MintConnect";
 import MintDisconnect from "./views/MintDisconnect";
 import Header from "./components/modules/Header";
+import WaltsVault from "./views/WaltsVault";
+import Passengers from "./views/Passengers";
 const App = () => {
   const [isLightTheme, setIsLightTheme] = useState(true);
   const changeToDarkTheme = () => {
@@ -49,6 +51,8 @@ const App = () => {
               <Route path="/subscribe" element={<Subscribe />} />
               <Route path="/vault" element={<Vault />} />
               <Route path="/comingsoondark" element={<ComingSoonDark />} />
+              <Route path="/waltsvault" element={<WaltsVault />} />
+              <Route path="/passengers" element={<Passengers />} />
             </Routes>
           </Switch>
         </div>
@@ -72,6 +76,8 @@ const App = () => {
               <Route path="/subscribe" element={<Subscribe />} />
               <Route path="/vault" element={<Vault />} />
               <Route path="/comingsoondark" element={<ComingSoonDark />} />
+              <Route path="/waltsvault" element={<WaltsVault />} />
+              <Route path="/passengers" element={<Passengers />} />
             </Routes>
           </Switch>
         </div>
