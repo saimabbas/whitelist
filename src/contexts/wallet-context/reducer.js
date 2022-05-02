@@ -2,7 +2,7 @@ import { TYPES } from "./Types";
 
 // state of the application
 export const initialState = {
-  acceptedChainId: "0x4",
+  acceptedChainId: "0x1",
   connectedChainId: null,
   isCorrectChain: false,
 
