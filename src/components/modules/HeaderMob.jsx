@@ -5,18 +5,27 @@ import WalletIcon from "../../assets/icons/WalletIcon";
 import { MdClear } from "react-icons/md";
 import Logo from "../../assets/img/Logo";
 import SunIcon from "../../assets/icons/SunIcon";
+import { WalletUserContext } from "../../contexts/wallet-context";
+import { shortenAddress } from "../../utils/constants";
 
 const HeaderMob = (props) => {
+  const { state, connectMetamask, disconnectWallet } = WalletUserContext();
+  const { account, isWalletConnected } = state;
+  const handleWalletButton = () => {
+    if (!isWalletConnected) return connectMetamask();
+    disconnectWallet();
+  };
+
   return (
     <div className="headermobilecontent">
       <div className="headermobicon">
         <div className="headermic-left">
           <div className="mobmenubox">
             <div className="light-img" onClick={props.changeToDarkTheme}>
-            <MoonIcon color="#1F194D" />
+              <MoonIcon color="#1F194D" />
             </div>
             <div className="dark-img" onClick={props.changeToLightTheme}>
-            <SunIcon color="#1F194D" />
+              <SunIcon color="#1F194D" />
             </div>
           </div>
           <div className="mobmenubox">
@@ -41,9 +50,9 @@ const HeaderMob = (props) => {
           <p>Upcoming Drops</p>
           <p>Meet the Team</p>
         </div>
-        <button className="light-blue-btn-filled">
-          {" "}
-          <WalletIcon color="#fff" /> Wallet
+        <button className="light-blue-btn-filled" onClick={handleWalletButton}>
+          <WalletIcon color="#fff" />
+          {isWalletConnected ? shortenAddress(account) : "Wallet"}
         </button>
       </div>
     </div>
