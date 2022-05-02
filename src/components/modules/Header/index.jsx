@@ -1,4 +1,4 @@
-import { Dropdown } from "react-bootstrap";
+import { Dropdown, Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import ProfileDetailsModal from "../../pages/Home/ProfileDetailsModal";
@@ -18,8 +18,11 @@ import Collection from "../../../assets/icons/Collection";
 import Logout from "../../../assets/icons/Logout";
 import useStylesEffect from "./hooks";
 import { WalletUserContext } from "../../../contexts/wallet-context";
+import { shortenAddress, toYdecimalPlace } from "../../../utils/constants";
+import { useWalletConnectStatus } from "../../../hooks/web3.hooks";
 
 const Header = (props) => {
+  useWalletConnectStatus();
   useStylesEffect();
 
   const [showProfileModal, setShowProfileModal] = useState(false);
@@ -32,12 +35,15 @@ const Header = (props) => {
     document.body.classList.remove("no-scroll");
   };
 
-  const { state, connectMetamask } = WalletUserContext();
-  const { isWalletConnected } = state;
+  const { state, connectMetamask, disconnectWallet } = WalletUserContext();
+  const { account, balance, isBalanceLoading, isWalletConnected } = state;
   const handleWalletConnect = () => {
     connectMetamask();
   };
 
+  const handleDisconnect = () => {
+    disconnectWallet();
+  };
   return (
     <header>
       <div className="box">
@@ -111,14 +117,16 @@ const Header = (props) => {
               >
                 <SunIcon className="header-right-icon" color="#FFFF" />
               </div>
-              <button
-                className="light-blue-btn-filled connect-wallet-btn"
-                onClick={handleWalletConnect}
-              >
-                <WalletIcon className="light-img" color="#195BFF" />
-                <WalletIcon className="dark-img" color="#fff" />
-                <span>Wallet</span>
-              </button>
+              {!isWalletConnected && (
+                <button
+                  className="light-blue-btn-filled connect-wallet-btn"
+                  onClick={handleWalletConnect}
+                >
+                  <WalletIcon className="light-img" color="#195BFF" />
+                  <WalletIcon className="dark-img" color="#fff" />
+                  <span>Wallet</span>
+                </button>
+              )}
             </div>
 
             {/* on user sign in */}
@@ -129,8 +137,27 @@ const Header = (props) => {
                   <Dropdown.Toggle id="dropdown-basic">
                     <div className="login-img-box">
                       <img src={PersonImg} alt="" />
-                      <h6>1.00461</h6>
+
+                      {isBalanceLoading ? (
+                        <>
+                          <Spinner
+                            animation="grow"
+                            className="light-img"
+                            variant="dark"
+                          />
+                          <Spinner
+                            animation="grow"
+                            className="dark-img"
+                            variant="light"
+                          />
+                        </>
+                      ) : (
+                        <>
+                          <h6>{toYdecimalPlace(balance)}</h6>
+                        </>
+                      )}
                       <p>ETH</p>
+
                       <MdExpandMore />
                     </div>
                   </Dropdown.Toggle>
@@ -142,10 +169,13 @@ const Header = (props) => {
                           <h6>Mohammad Reza</h6>
                           <img src={BlueTick} alt="" />
                         </div>
-                        <p>0xc4c16a645...b21a</p>
+                        <p>{shortenAddress(account)}</p>
                       </div>
                       <div className="loginbottombox">
-                        <div className="loginicontext">
+                        <div
+                          className="loginicontext"
+                          onClick={showProfileDetailsModal}
+                        >
                           <Profile className="light-img" color="#1f194d" />
                           <Profile className="dark-img" color="#fff" />
                           <h5>Edit Profile</h5>
@@ -155,7 +185,10 @@ const Header = (props) => {
                           <Collection className="dark-img" color="#fff" />
                           <h5>My Collections</h5>
                         </div>
-                        <div className="loginicontext lcdisconnect">
+                        <div
+                          className="loginicontext lcdisconnect"
+                          onClick={handleDisconnect}
+                        >
                           <Logout />
                           <h5>Disconnect</h5>
                         </div>
