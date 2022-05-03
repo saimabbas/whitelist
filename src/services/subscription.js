@@ -1,3 +1,5 @@
+import { WHITELIST_APIs_BASE_URL } from "../HTTP/urls";
+
 export const handleSubscription = async (e, photoRef, nameRef, emailRef, imageUrl, account) => {
     e.preventDefault();
 
@@ -11,7 +13,7 @@ export const handleSubscription = async (e, photoRef, nameRef, emailRef, imageUr
      // add subscriptionData info at mongodb
      try {
         // setMessage("");
-        const url = "https://whitelist-backend-server.herokuapp.com/users/subscriptions";
+        const url = `${WHITELIST_APIs_BASE_URL}/users/subscriptions`;
         const option = {
           method: "POST",
           headers: {
@@ -35,14 +37,14 @@ export const handleSubscription = async (e, photoRef, nameRef, emailRef, imageUr
 export const getSubscription = async (account) => {
     try {
         // setMessage("");
-        const url = `https://whitelist-backend-server.herokuapp.com/users/getSubscriptionByAccount?account=${account}`;
+        const url = `${WHITELIST_APIs_BASE_URL}/users/getSubscriptionByAccount?account=${account}`;
 
-        const option = {
-          method: "GET",
-          headers: {
-            'Content-Type': 'application/json',
-          },          
-        };
+        // const option = {
+        //   method: "GET",
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //   },          
+        // };
         const response = await fetch(url);
         const data = await response.json();
         return data;
