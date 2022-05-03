@@ -1,11 +1,10 @@
 import axios from "axios";
-
-const SERVER_URL = "http://localhost:8081";
+import { WHITELIST_APIs_BASE_URL } from "./urls";
 
 export const subscribeToWaltsLaunch = async (payload) => {
   if (!payload) throw new Error("Payload is required");
   const res = await axios.post(
-    `${SERVER_URL}/active-campaign/subscribe-walts-launch-notification`,
+    `${WHITELIST_APIs_BASE_URL}/active-campaign/subscribe-walts-launch-notification`,
     payload,
     {
       headers: {
@@ -19,7 +18,7 @@ export const subscribeToWaltsLaunch = async (payload) => {
 export const subscribeToComingSoonI = async (payload) => {
   if (!payload) throw new Error("Payload is required");
   const res = await axios.post(
-    `${SERVER_URL}/active-campaign/subscribe-comming-soon-I-launch`,
+    `${WHITELIST_APIs_BASE_URL}/active-campaign/subscribe-comming-soon-I-launch`,
     payload,
     {
       headers: {
