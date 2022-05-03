@@ -1,76 +1,65 @@
-import React, { useState, useEffect } from "react";
-import HeroImg from "../assets/img/hero-img-1.png";
-import BlobPurple from "../assets/img/blob-purple.svg";
-import BlobPurple2 from "../assets/img/blob-purple2.png";
+import { gsap } from "gsap";
+import {
+  Back, Power3
+} from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+import React, { useEffect, useState } from "react";
+import { Accordion, Dropdown, Spinner } from "react-bootstrap";
+import { FaDiscord, FaInstagram, FaTwitter } from "react-icons/fa";
+import { MdExpandMore, MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-router-dom";
+import SwiperCore, { FreeMode, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Bell from "../assets/icons/Bell";
+import Collection from "../assets/icons/Collection";
+import Logout from "../assets/icons/Logout";
+import Menu from "../assets/icons/Menu";
+import MessagesIcon from "../assets/icons/MessagesIcon";
+import MoonIcon from "../assets/icons/MoonIcon";
+import Profile from "../assets/icons/Profile";
+import SunIcon from "../assets/icons/SunIcon";
+import WalletIcon from "../assets/icons/WalletIcon";
 import BlobPurpleDark from "../assets/img/blob-gray.png";
-import BlobLightBlue from "../assets/img/blob-lightblue.svg";
-import BlobLightBlue2 from "../assets/img/blob-lightblue2.png";
 import BlobGreen from "../assets/img/blob-green.svg";
 import BlobGreen2 from "../assets/img/blob-green2.png";
+import BlobLightBlue from "../assets/img/blob-lightblue.svg";
+import BlobLightBlue2 from "../assets/img/blob-lightblue2.png";
+import BlobPurple from "../assets/img/blob-purple.svg";
+import BlobPurple2 from "../assets/img/blob-purple2.png";
 import BlobYellow from "../assets/img/blob-yellow.svg";
 import BlobYellow2 from "../assets/img/blob-yellow2.png";
-import LogoLight from "./../assets/img/logo-light.svg";
-import { MdExpandMore } from "react-icons/md";
-import HeroBgLight from "./../assets/img/light-bg-without-clouds.png";
-import Cloud1Light from "./../assets/img/cloud-1.png";
+import BlueTick from "../assets/img/bluetick.png";
+import HeroImg from "../assets/img/hero-img-1.png";
+import Logo from "../assets/img/Logo";
+import Footer from "../components/modules/Footer";
+import HeaderMob from "../components/modules/HeaderMob";
+import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
+import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
+import ProfileDetailsModal from "../components/pages/Home/ProfileDetailsModal";
+import SubscribeCard from "../components/pages/Home/SubscribeCard";
+import { WalletUserContext } from "../contexts/wallet-context";
+import { shortenAddress, toYdecimalPlace } from "../utils/constants";
 import Cloud1Dark from "./../assets/img/cloud-1-dark.png";
-import Cloud2Light from "./../assets/img/cloud-2.png";
+import Cloud1Light from "./../assets/img/cloud-1.png";
 import Cloud2Dark from "./../assets/img/cloud-2-dark.png";
-import Cloud3Light from "./../assets/img/cloud-3.png";
-import Cloud3Dark from "./../assets/img/cloud-3-dark.png";
-import HeroBgLightMob from "./../assets/img/hero-bg-light-mob.png";
-import HeroBgDark from "./../assets/img/dark-bg-without-clouds.png";
-import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
-import HeroGlareLight from "./../assets/img/glare-light.svg";
-import HeroGlareDark from "./../assets/img/hero-glare-dark.png";
-import AboutImg from "./../assets/img/home-about-img.png";
-import EllipseYellow from "./../assets/img/ellipse-yellow.svg";
+import Cloud2Light from "./../assets/img/cloud-2.png";
 import CollectionsBg from "./../assets/img/collections-bg.svg";
 import CollectionsBg2 from "./../assets/img/collections-bg2.png";
 import CollectionsCard from "./../assets/img/collections-card.png";
-import BlueTick from "../assets/img/bluetick.png";
-import PersonImg from "../assets/img/personimg.png";
-import { Accordion } from "react-bootstrap";
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import { FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
-import Header from "../components/modules/Header";
-import Footer from "../components/modules/Footer";
-import LetUsHelpCard from "../components/pages/Home/LetUsHelpCard";
-import SubscribeCard from "../components/pages/Home/SubscribeCard";
-import HomeCollectionsCard from "../components/pages/Home/HomeCollectionsCard";
-import HeaderMob from "../components/modules/HeaderMob";
-import SwiperCore, { FreeMode, Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css/free-mode";
-import "swiper/css";
-import "swiper/css/pagination";
-import MessagesIcon from "../assets/icons/MessagesIcon";
-import { Link } from "react-router-dom";
-import MoonIcon from "../assets/icons/MoonIcon";
-import SunIcon from "../assets/icons/SunIcon";
-import WalletIcon from "../assets/icons/WalletIcon";
-import Logo from "../assets/img/Logo";
-import Menu from "../assets/icons/Menu";
-import { gsap } from "gsap";
-import {
-  Power1,
-  Power2,
-  Power3,
-  Power4,
-  Linear,
-  Back,
-  Expo,
-  Circ,
-} from "gsap/dist/gsap";
-import { SplitText } from "gsap/SplitText";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import HeroBgDark from "./../assets/img/dark-bg-without-clouds.png";
+import EllipseYellow from "./../assets/img/ellipse-yellow.svg";
+import HeroGlareLight from "./../assets/img/glare-light.svg";
+import HeroBgLightMob from "./../assets/img/hero-bg-light-mob.png";
+import HeroGlareDark from "./../assets/img/hero-glare-dark.png";
+import AboutImg from "./../assets/img/home-about-img.png";
+import HeroBgLight from "./../assets/img/light-bg-without-clouds.png";
+import LogoLight from "./../assets/img/logo-light.svg";
+import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
 import LoadingPage from "./LoadingPageDark";
-import ProfileDetailsModal from "../components/pages/Home/ProfileDetailsModal";
-import { Dropdown } from "react-bootstrap";
-import Profile from "../assets/icons/Profile";
-import Collection from "../assets/icons/Collection";
-import Logout from "../assets/icons/Logout";
-import Bell from "../assets/icons/Bell";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -78,6 +67,17 @@ const Home = () => {
   const [isLightTheme, setIsLightTheme] = useState(false);
   const [isHeaderMobOpen, setIsHeaderMobOpen] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
+  const { state, connectMetamask, disconnectWallet } = WalletUserContext();
+  const { account, balance, isBalanceLoading, isWalletConnected, userSubscription } = state;
+
+  const handleWalletConnect = () => {
+    connectMetamask();
+  };
+
+  const handleDisconnect = () => {
+    disconnectWallet();
+  };
+
   const showProfileDetailsModal = () => {
     setShowProfileModal(true);
     document.body.classList.add("no-scroll");
@@ -664,7 +664,7 @@ const Home = () => {
               </ul>
             </div>
             <div className="header-right">
-              {/* <div className="not-logged-in-box">
+              <div className="not-logged-in-box">
                 <MessagesIcon
                   className="header-right-icon light-img header-right-icon"
                   color="#1F194D"
@@ -685,22 +685,45 @@ const Home = () => {
                 >
                   <SunIcon className="header-right-icon" color="#FFFF" />
                 </div>
+                {
+                  !isWalletConnected && (
                 <button
                   className="light-blue-btn-filled connect-wallet-btn"
-                  onClick={showProfileDetailsModal}
+                  // onClick={showProfileDetailsModal}
+                  onClick={handleWalletConnect}
                 >
                   <WalletIcon className="light-img" color="#195BFF" />
                   <WalletIcon className="dark-img" color="#fff" />
                   <span>Wallet</span>
                 </button>
-              </div> */}
+                  )
+                }
+                
+              </div> 
+              
 
-              <div className="logged-in-box">
+            {isWalletConnected && (
+                <div className="logged-in-box">
                 <Dropdown>
                   <Dropdown.Toggle id="dropdown-basic">
                     <div className="login-img-box">
-                      <img src={PersonImg} alt="" />
-                      <h6>1.00461</h6>
+                      <img src={userSubscription?.picture} alt="" />
+                      {isBalanceLoading ? (
+                        <>
+                          <Spinner
+                            animation="grow"
+                            className="light-img"
+                            variant="dark"
+                          />
+                          <Spinner
+                            animation="grow"
+                            className="dark-img"
+                            variant="light"
+                          />
+                        </>
+                      ) : ( 
+                        <h6>{toYdecimalPlace(balance)}</h6>
+                      )}
                       <p>ETH</p>
                       <MdExpandMore />
                     </div>
@@ -708,15 +731,17 @@ const Home = () => {
                   <Dropdown.Menu>
                     <div className="logininfo">
                       <div className="loginnameimg">
-                        <img src={PersonImg} alt="" />
+                        <img src={userSubscription?.picture} alt="" />
                         <div className="logintext">
-                          <h6>Mohammad Reza</h6>
+                          <h6>{userSubscription?.name}</h6>
                           <img src={BlueTick} alt="" />
                         </div>
-                        <p>0xc4c16a645...b21a</p>
+                        <p>{shortenAddress(account)}</p>
                       </div>
                       <div className="loginbottombox">
-                        <div className="loginicontext">
+                        <div className="loginicontext"
+                        onClick={showProfileDetailsModal}
+                        >
                           <Profile className="light-img" color="#1f194d" />
                           <Profile className="dark-img" color="#fff" />
                           <h5>Edit Profile</h5>
@@ -726,7 +751,9 @@ const Home = () => {
                           <Collection className="dark-img" color="#fff" />
                           <h5>My Collections</h5>
                         </div>
-                        <div className="loginicontext lcdisconnect">
+                        <div className="loginicontext lcdisconnect"
+                        onClick={handleDisconnect}
+                        >
                           <Logout />
                           <h5>Disconnect</h5>
                         </div>
@@ -738,6 +765,7 @@ const Home = () => {
                 <Bell className="light-img" color="#1F194D" />
                 <Bell className="dark-img" color="#FFFFFF" />
               </div>
+            )}
             </div>
           </div>
         </div>
