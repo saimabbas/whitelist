@@ -6,6 +6,7 @@ import Discord from "../assets/icons/Discord";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
 import { gsap } from "gsap";
+import ReactAudioPlayer from "react-audio-player";
 import $ from "jquery";
 import {
   Power1,
@@ -271,6 +272,9 @@ const ComingSoonDark = () => {
             <button ref={btntbn} onClick={playAudio} type="button">
               Play Audio
             </button> */}
+            {/* <div className="audio-box"> */}
+            <audio src={BackAudio} controls autoPlay={true} />
+            {/* </div> */}
             <div className="comingsoon-bottom-box">
               <h5 className="comingsoon-text-component-1">
                 Get notified when we are close to blast off:
