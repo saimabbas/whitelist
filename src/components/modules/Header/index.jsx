@@ -1,25 +1,25 @@
-import { Dropdown, Spinner } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import ProfileDetailsModal from "../../pages/Home/ProfileDetailsModal";
-import MessagesIcon from "../../../assets/icons/MessagesIcon";
-import MoonIcon from "../../../assets/icons/MoonIcon";
-import SunIcon from "../../../assets/icons/SunIcon";
-import WalletIcon from "../../../assets/icons/WalletIcon";
-import Logo from "../../../assets/img/Logo";
-import Menu from "../../../assets/icons/Menu";
-import Bell from "../../../assets/icons/Bell";
+import { Dropdown, Spinner } from "react-bootstrap";
 import { MdExpandMore } from "react-icons/md";
-import BlueTick from "../../../assets/img/bluetick.png";
-import PersonImg from "../../../assets/img/personimg.png";
-
-import Profile from "../../../assets/icons/Profile";
+import { Link } from "react-router-dom";
+import Bell from "../../../assets/icons/Bell";
 import Collection from "../../../assets/icons/Collection";
 import Logout from "../../../assets/icons/Logout";
-import useStylesEffect from "./hooks";
+import Menu from "../../../assets/icons/Menu";
+import MessagesIcon from "../../../assets/icons/MessagesIcon";
+import MoonIcon from "../../../assets/icons/MoonIcon";
+import Profile from "../../../assets/icons/Profile";
+import SunIcon from "../../../assets/icons/SunIcon";
+import WalletIcon from "../../../assets/icons/WalletIcon";
+import BlueTick from "../../../assets/img/bluetick.png";
+import Logo from "../../../assets/img/Logo";
+import team1 from "../../../assets/img/team1.png";
 import { WalletUserContext } from "../../../contexts/wallet-context";
-import { shortenAddress, toYdecimalPlace } from "../../../utils/constants";
 import { useWalletConnectStatus } from "../../../hooks/web3.hooks";
+import { shortenAddress, toYdecimalPlace } from "../../../utils/constants";
+import ProfileDetailsModal from "../../pages/Home/ProfileDetailsModal";
+import useStylesEffect from "./hooks";
+
 
 const Header = (props) => {
   useWalletConnectStatus();
@@ -36,7 +36,9 @@ const Header = (props) => {
   };
 
   const { state, connectMetamask, disconnectWallet } = WalletUserContext();
-  const { account, balance, isBalanceLoading, isWalletConnected } = state;
+  const { account, balance, isBalanceLoading, isWalletConnected, userSubscription } = state;
+  // console.log('userSubscription', userSubscription)
+  console.log('userSubscription.picture', userSubscription.picture)
   const handleWalletConnect = () => {
     connectMetamask();
   };
@@ -130,13 +132,13 @@ const Header = (props) => {
             </div>
 
             {/* on user sign in */}
-
+            
             {isWalletConnected && (
               <div className="logged-in-box">
                 <Dropdown>
                   <Dropdown.Toggle id="dropdown-basic">
                     <div className="login-img-box">
-                      <img src={PersonImg} alt="" />
+                      <img src={(userSubscription.picture !== ("" || undefined) ) ? userSubscription?.picture : team1} alt="" />
 
                       {isBalanceLoading ? (
                         <>
@@ -164,9 +166,9 @@ const Header = (props) => {
                   <Dropdown.Menu>
                     <div className="logininfo">
                       <div className="loginnameimg">
-                        <img src={PersonImg} alt="" />
+                        <img src={(userSubscription.picture !== ("" || undefined) ) ? userSubscription?.picture : team1} alt="" />
                         <div className="logintext">
-                          <h6>Mohammad Reza</h6>
+                          <h6> {userSubscription?.name === ("" || undefined) ? "Anonymous" : userSubscription?.name} </h6>
                           <img src={BlueTick} alt="" />
                         </div>
                         <p>{shortenAddress(account)}</p>

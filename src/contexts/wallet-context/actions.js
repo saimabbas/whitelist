@@ -1,5 +1,6 @@
-import { EthereumMainnet } from "../../utils/network.confgs";
+import { getSubscription } from "../../services/subscription";
 import { updateproviderInStore } from "../../utils/constants";
+import { EthereumMainnet } from "../../utils/network.confgs";
 import { TYPES } from "./Types";
 
 export default function actions(state = {}, dispatch = () => {}) {
@@ -32,12 +33,14 @@ export default function actions(state = {}, dispatch = () => {}) {
     const web3Instance = new Web3(provider);
     const account = await web3Instance.eth.getCoinbase();
 
+    const userSubscription = await getSubscription(account);
     dispatch({
       type: TYPES.WALLET_CONNECTED,
       payload: {
         web3Instance,
         account,
         provider,
+        userSubscription
       },
     });
     updateproviderInStore(true);

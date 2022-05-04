@@ -2,12 +2,16 @@ import { TYPES } from "./Types";
 
 // state of the application
 export const initialState = {
-  acceptedChainId: "0x1",
+  acceptedChainId: "0x4",
   connectedChainId: null,
   isCorrectChain: false,
 
   account: null,
   isWalletConnected: false,
+  userSubscription: {
+    picture: "",
+    name: ""
+  },
 
   balance: null,
   isBalanceLoading: false,
