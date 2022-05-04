@@ -5,15 +5,14 @@ import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
+import WaltsVaultBg from "../assets/img/waltsvault-bg.png";
 
 const WaltsVault = () => {
   return (
     <div className="app light-theme">
       <div className="waltsvault">
         <div className="waltsvaultmain">
-          {/* <video autoPlay muted playsInline className="backvideo">
-            <source src={ComingVideo} type="video/mp4" />
-          </video> */}
+          <img className="backvideo" src={WaltsVaultBg} alt="" />
           <div className="waltsvaultcontent">
             <p>The whitelist presents</p>
             <h4>Walt's Vault</h4>
