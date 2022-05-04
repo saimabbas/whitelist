@@ -1,11 +1,20 @@
 import React from "react";
 import { MdClear } from "react-icons/md";
 import Metamask from "../../../assets/img/metamask.png";
-const ProfileDetailsModal = (props) => {
+import { WalletUserContext } from "../../../contexts/wallet-context";
+import { shortenAddress } from "../../../utils/constants";
+const ProfileDetailsModal = ({ hideProfileDetailsModal }) => {
+  const { state, disconnectWallet } = WalletUserContext();
+  const { account } = state;
+
+  const handleDisconnect = () => {
+    disconnectWallet();
+    hideProfileDetailsModal();
+  };
   return (
     <div className="wlupdatemodal">
       <div className="wlupdatecontent">
-        <MdClear onClick={props.hideProfileDetailsModal} />
+        <MdClear onClick={hideProfileDetailsModal} />
         <div className="wlupdatemainbox">
           <div className="wlupdateleft">
             <p>Wallet</p>
@@ -32,9 +41,9 @@ const ProfileDetailsModal = (props) => {
       <div className="wlwalletdisconnect">
         <div className="wlwallettext">
           <p>My Address Wallet</p>
-          <h6>1F1tAaz5x1HUXrCNLbtMDqc...4xqX</h6>
+          <h6>{shortenAddress(account)}</h6>
         </div>
-        <button className="light-blue-btn-filled">
+        <button className="light-blue-btn-filled" onClick={handleDisconnect}>
           <img src={Metamask} alt="Metamask" /> DISCONNECT METAMASK
         </button>
       </div>
