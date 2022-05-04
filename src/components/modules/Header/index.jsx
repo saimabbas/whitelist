@@ -20,7 +20,6 @@ import { shortenAddress, toYdecimalPlace } from "../../../utils/constants";
 import ProfileDetailsModal from "../../pages/Home/ProfileDetailsModal";
 import useStylesEffect from "./hooks";
 
-
 const Header = (props) => {
   useWalletConnectStatus();
   useStylesEffect();
@@ -36,9 +35,15 @@ const Header = (props) => {
   };
 
   const { state, connectMetamask, disconnectWallet } = WalletUserContext();
-  const { account, balance, isBalanceLoading, isWalletConnected, userSubscription } = state;
+  const {
+    account,
+    balance,
+    isBalanceLoading,
+    isWalletConnected,
+    userSubscription,
+  } = state;
   // console.log('userSubscription', userSubscription)
-  console.log('userSubscription.picture', userSubscription.picture)
+  console.log("userSubscription.picture", userSubscription.picture);
   const handleWalletConnect = () => {
     connectMetamask();
   };
@@ -132,13 +137,20 @@ const Header = (props) => {
             </div>
 
             {/* on user sign in */}
-            
+
             {isWalletConnected && (
               <div className="logged-in-box">
                 <Dropdown>
                   <Dropdown.Toggle id="dropdown-basic">
                     <div className="login-img-box">
-                      <img src={(userSubscription.picture !== ("" || undefined) ) ? userSubscription?.picture : team1} alt="" />
+                      <img
+                        src={
+                          userSubscription.picture !== ("" || undefined)
+                            ? userSubscription?.picture
+                            : team1
+                        }
+                        alt=""
+                      />
 
                       {isBalanceLoading ? (
                         <>
@@ -166,9 +178,21 @@ const Header = (props) => {
                   <Dropdown.Menu>
                     <div className="logininfo">
                       <div className="loginnameimg">
-                        <img src={(userSubscription.picture !== ("" || undefined) ) ? userSubscription?.picture : team1} alt="" />
+                        <img
+                          src={
+                            userSubscription.picture !== ("" || undefined)
+                              ? userSubscription?.picture
+                              : team1
+                          }
+                          alt=""
+                        />
                         <div className="logintext">
-                          <h6> {userSubscription?.name === ("" || undefined) ? "Anonymous" : userSubscription?.name} </h6>
+                          <h6>
+                            {" "}
+                            {userSubscription?.name === ("" || undefined)
+                              ? "Anonymous"
+                              : userSubscription?.name}{" "}
+                          </h6>
                           <img src={BlueTick} alt="" />
                         </div>
                         <p>{shortenAddress(account)}</p>
@@ -216,3 +240,5 @@ const Header = (props) => {
 };
 
 export default Header;
+
+/* milk foam welcome nose swing mistake episode crumble across velvet debris corn */
