@@ -8,49 +8,9 @@ import Logo from "../assets/img/Logo";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
-import { subscribeToComingSoonI } from "../HTTP/endpoints";
-import ToastCustom from "../components/Toast";
 
 const ComingSoon = () => {
   const [isLightTheme, setIsLightTheme] = useState(false);
-
-  const [email, setEmail] = useState("");
-  const handleInputChange = (e) => setEmail(e.target.value);
-
-  const [toastState, setToastState] = useState({
-    showToast: false,
-    variant: "Primary",
-    message: "",
-  });
-  const handleSubscribe = async (e) => {
-    e.preventDefault();
-    if (!email) return;
-    const payload = JSON.stringify({ email });
-    try {
-      await subscribeToComingSoonI(payload);
-      setEmail("");
-      setToastState({
-        showToast: true,
-        variant: "Success",
-        message: "Subscribe successfully.",
-      });
-
-      setTimeout(() => {
-        setToastState({
-          showToast: false,
-          variant: "Primary",
-          message: "",
-        });
-      }, 3000);
-    } catch (err) {
-      console.log("err", err);
-      setToastState({
-        showToast: true,
-        variant: "Danger",
-        message: err.message,
-      });
-    }
-  };
   return (
     <div className={`app ${isLightTheme ? "light-theme" : "dark-theme"}`}>
       {/* Header */}
@@ -133,23 +93,15 @@ const ComingSoon = () => {
               </div>
               <div className="coomsoonlast">
                 <p>Get notified when site goes live</p>
-                <form onSubmit={handleSubscribe} className="subscribe-form">
-                  <div className="coomsooninput">
-                    <input
-                      type="email"
-                      onChange={handleInputChange}
-                      value={email}
-                      placeholder="Enter your Email"
-                      required
-                    />
-                    <button type="submit">Subscribe</button>
-
-                    <div className="toast-container">
-                      {toastState.showToast && <ToastCustom {...toastState} />}
-                    </div>
-                  </div>
-                </form>
-
+                <div className="coomsooninput">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Enter your Email"
+                  />
+                  <button>Subscribe</button>
+                </div>
                 <div className="coomsoonicons">
                   <Instagram className="light-img" color="#1F194D" />
                   <Instagram className="dark-img" color="#fff" />

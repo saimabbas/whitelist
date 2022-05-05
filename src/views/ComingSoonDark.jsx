@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import Passengers from "./../assets/img/passenger.png";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
@@ -6,6 +6,7 @@ import Discord from "../assets/icons/Discord";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
 import { gsap } from "gsap";
+import ReactAudioPlayer from "react-audio-player";
 import $ from "jquery";
 import {
   Power1,
@@ -18,9 +19,6 @@ import {
   Circ,
 } from "gsap/dist/gsap";
 import { SplitText } from "gsap/SplitText";
-import { subscribeToComingSoonII } from "../HTTP/endpoints";
-import Toast from "../components/Toast";
-
 const ComingSoonDark = () => {
   const ad = useRef(null);
   const btntbn = useRef(null);
@@ -233,45 +231,6 @@ const ComingSoonDark = () => {
       );
   }, []);
 
-  const [email, setEmail] = useState("");
-  const handleInputChange = (e) => setEmail(e.target.value);
-  const [toastState, setToastState] = useState({
-    showToast: false,
-    variant: "Primary",
-    message: "",
-  });
-
-  const handleSubscribe = async (e) => {
-    e.preventDefault();
-    if (!email) return;
-    const payload = JSON.stringify({ email });
-    try {
-      await subscribeToComingSoonII(payload);
-      setEmail("");
-
-      setToastState({
-        showToast: true,
-        variant: "Success",
-        message: "Subscribe successfully.",
-      });
-
-      setTimeout(() => {
-        setToastState({
-          showToast: false,
-          variant: "Primary",
-          message: "",
-        });
-      }, 3000);
-    } catch (err) {
-      console.log("err", err);
-      setToastState({
-        showToast: true,
-        variant: "Danger",
-        message: err.message,
-      });
-    }
-  };
-
   return (
     <div className="app light-theme">
       <div className="coomsoondark">
@@ -313,27 +272,22 @@ const ComingSoonDark = () => {
             <button ref={btntbn} onClick={playAudio} type="button">
               Play Audio
             </button> */}
+            {/* <div className="audio-box"> */}
+            <audio src={BackAudio} controls autoPlay={true} />
+            {/* </div> */}
             <div className="comingsoon-bottom-box">
               <h5 className="comingsoon-text-component-1">
                 Get notified when we are close to blast off:
               </h5>
-              <form onSubmit={handleSubscribe} className="subscribe-form">
-                <div className="comdarkinput comingsoon-op-component">
-                  <input
-                    type="email"
-                    onChange={handleInputChange}
-                    value={email}
-                    placeholder="Enter your Email"
-                    required
-                  />
-                  <button type="submit">Subscribe</button>
-
-                  <div className="toast-container">
-                    {toastState.showToast && <Toast {...toastState} />}
-                  </div>
-                </div>
-              </form>
-
+              <div className="comdarkinput comingsoon-op-component">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Enter your email..."
+                />
+                <button>Subscribe</button>
+              </div>
               <h6 className="comingsoon-text-component-2">
                 If you have any qustions, please contact us at:
               </h6>

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-import { TYPES } from "../contexts/wallet-context/Types";
 import { WalletUserContext } from "../contexts/wallet-context/";
+import { TYPES } from "../contexts/wallet-context/Types";
+import { getSubscription } from "../services/subscription";
 import { getStatusProviderFromStore } from "../utils/constants";
 
 /**
@@ -22,7 +23,8 @@ export const useAddWeb3ProviderListners = () => {
           account: null,
         };
         if (accounts && accounts.length) {
-          payload = { isWalletConnected: true, account: accounts[0] };
+          const userSubscription = await getSubscription(accounts[0]);
+          payload = { isWalletConnected: true, account: accounts[0], userSubscription };
         }
         dispatch({
           type: TYPES.UPDATE_CONNECTED_WALLET,
