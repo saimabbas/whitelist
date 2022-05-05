@@ -6,6 +6,7 @@ import Discord from "../assets/icons/Discord";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
 import WaltsVaultBg from "../assets/img/waltsvault-bg.png";
+import ToastCustom from "../components/Toast";
 
 const WaltsVault = () => {
   const [email, setEmail] = useState("");
@@ -21,7 +22,7 @@ const WaltsVault = () => {
     if (!email) return;
     const payload = JSON.stringify({ email });
     try {
-      await subscribeToWaltsLaunch(payload);
+      // await subscribeToWaltsLaunch(payload);
       setEmail("");
       setToastState({
         showToast: true,
@@ -52,26 +53,26 @@ const WaltsVault = () => {
           <img className="backvideo" src={WaltsVaultBg} alt="" />
           <div className="waltsvaultcontent">
             <p>The whitelist presents</p>
-            <h4>Walt's Vault</h4>
+            <h4 className="grobold">Walt's Vault</h4>
             <h6>Coming Soon</h6>
             <div className="waltsvaulttimer">
               <div className="wvdays">
                 <div className="wvdcount">
-                  <span>23</span>
+                  <span className="grobold">23</span>
                 </div>
                 <h6>Days</h6>
               </div>
               <p>:</p>
               <div className="wvdays">
                 <div className="wvdcount">
-                  <span>23</span>
+                  <span className="grobold">23</span>
                 </div>
                 <h6>Days</h6>
               </div>
               <p>:</p>
               <div className="wvdays">
                 <div className="wvdcount">
-                  <span>23</span>
+                  <span className="grobold">23</span>
                 </div>
                 <h6>Days</h6>
               </div>
