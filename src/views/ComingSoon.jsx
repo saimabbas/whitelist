@@ -170,7 +170,7 @@ const ComingSoon = () => {
     ComingSoonPageAnim.fromTo(
       ".sh-heading",
       {
-        y: "15rem",
+        y: "20rem",
         opacity: 0,
       },
       {
@@ -184,7 +184,7 @@ const ComingSoon = () => {
       .fromTo(
         ".section-heading p",
         {
-          y: "15rem",
+          y: "20rem",
           opacity: 0,
         },
         {
@@ -234,7 +234,7 @@ const ComingSoon = () => {
           scale: "1",
           opacity: 1,
           ease: Power3.easeInOut,
-          duration: 1,
+          duration: 1.25,
         },
         "<0.1"
       )
@@ -250,7 +250,7 @@ const ComingSoon = () => {
           ease: Power3.easeInOut,
           duration: 1,
         },
-        "<0.1"
+        "<0.5"
       )
       .fromTo(
         ".coomsoonicons a",
@@ -384,16 +384,16 @@ const ComingSoon = () => {
             </button>
           </div>
           <div className="coomsoonicons">
-            <a href="https://www.instagram.com/thewhitelist_nft/?hl=en">
+            <a href="https://www.instagram.com/_thewhitelist_/">
               <Instagram className="light-img" color="#1F194D" />
             </a>
-            <a href="https://www.instagram.com/thewhitelist_nft/?hl=en">
+            <a href="https://www.instagram.com/_thewhitelist_/">
               <Instagram className="dark-img" color="#fff" />
             </a>
-            <a href="https://twitter.com/ThewhitelistN">
+            <a href="https://twitter.com/_TheWhitelist_">
               <TwitterIcon className="light-img" color="#1F194D" />
             </a>
-            <a href="https://twitter.com/ThewhitelistN">
+            <a href="https://twitter.com/_TheWhitelist_">
               <TwitterIcon className="dark-img" color="#fff" />
             </a>
             <a href="https://discord.gg/5y6Htj7Q">
