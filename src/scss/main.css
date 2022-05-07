@@ -8,7 +8,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  font-family: "Cairo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Cairo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -26,24 +26,19 @@ body {
   height: 100vh;
 }
 
-.audio-box {
-  width: 100%;
-  background-color: red;
-}
-
 .no-scroll {
   overflow-y: hidden !important;
   padding: 0 16px 0 0;
 }
 
 .app {
-  width: 100%;
-  min-height: 100vh;
-}
-
-.app {
   background-color: var(--bg-color);
   color: var(--text-color);
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .app.light-theme .light-img {
@@ -647,6 +642,11 @@ button:hover {
 }
 
 .landing-page-bg {
+  -o-object-position: top !important;
+     object-position: top !important;
+}
+
+.object-position-top {
   -o-object-position: top !important;
      object-position: top !important;
 }
@@ -2296,10 +2296,10 @@ button:hover {
   width: 100%;
   z-index: 99;
   position: absolute;
-  bottom: 0%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -5rem);
-          transform: translate(-50%, -5rem);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .landing-content .landing-progres {
@@ -3889,64 +3889,113 @@ h6 {
   }
 }
 
-.cslmainheader {
-  padding: 0;
-  margin: 0;
+.comingsoon-moon {
+  width: 35rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: -2.5rem;
+  right: -5rem;
+  z-index: 80;
 }
 
-.cslmainheader .header-content {
-  margin: 0 0 0 8rem;
-  height: 23rem;
+.comingsoon-cloud-1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  z-index: 99;
+  width: 10rem;
+}
+
+.comingsoon-cloud-2 {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  z-index: 99;
+  width: 10rem;
+}
+
+.comingsoon-cloud-3 {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  z-index: 99;
+  width: 7.5rem;
+}
+
+.comingsoon-header {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  padding: 7.5rem 0 12.5rem 7.5rem;
+}
+
+.comingsoon-header svg {
+  width: 5rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .comesoonpage {
   width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-.comesoonpage .coomsoon-main {
+.comesoonpage .hr-bg-dark,
+.comesoonpage .hr-bg-light {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.comesoonsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
-  height: unset;
+  height: 100%;
+  z-index: 199;
+  position: relative;
+  padding: 0 2.5rem;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
-.comesoonpage .coomsoon-main .coomsoon-bg-light {
-  width: 100%;
+.comesoonsection .section-heading .sh-heading h2 {
+  letter-spacing: 8px;
+  font-size: 8rem;
+}
+
+.comesoonsection .section-heading .sh-heading img {
+  width: 12.5rem;
   position: absolute;
-  min-height: 130vh;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
-  z-index: 1;
-}
-
-.comesoonpage .coomsoon-main .hr-bg-dark {
-  height: 125vh;
-}
-
-.landing-content.comesoonsection {
-  padding: 30rem 0 0 0 !important;
-  margin: 0 !important;
-}
-
-.landing-content.comesoonsection .section-heading h2 {
-  letter-spacing: 9px;
-  font-size: 9rem;
-}
-
-.landing-content.comesoonsection .section-heading p {
-  margin: 5rem 0 0rem 0;
-  z-index: 10;
-  font-size: 2.35rem;
-}
-
-.landing-content.comesoonsection .section-heading img {
-  width: 15rem;
-  position: absolute;
-  top: -5rem;
-  right: -4.5rem;
+  top: -4.5rem;
+  right: -3.5rem;
   z-index: 9;
+}
+
+.comesoonsection .section-heading p {
+  margin: 3.5rem 0 0 0;
+  z-index: 10;
+  font-size: 2.25rem;
 }
 
 .coomsoontimer {
@@ -4057,7 +4106,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 6rem 0 2rem 0;
+  margin: 5rem 0;
 }
 
 .coomsoonlast p {
@@ -4077,7 +4126,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 45rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-radius: 4rem;
   padding: 1rem;
   background-color: var(--var-input-bgc);
@@ -4085,13 +4136,14 @@ h6 {
 }
 
 .coomsoonlast .coomsooninput input {
-  width: 65%;
+  width: 0;
+  overflow: hidden;
   border: unset;
   font-size: 1.6rem;
   color: #69697c;
   font-weight: 400;
   background-color: transparent;
-  padding: 0 1rem;
+  padding: 0;
 }
 
 .coomsoonlast .coomsooninput input:focus {
@@ -4132,7 +4184,8 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 33%;
+  min-width: 15rem;
+  max-width: 15rem;
   border-radius: 4rem;
   color: #fff;
   background-color: #195bff;
@@ -4153,27 +4206,77 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   margin: 5rem 0 0 0;
-  width: 30%;
 }
 
-@media screen and (max-width: 850px) {
-  .landing-content.comesoonsection .section-heading h2 {
-    letter-spacing: 7px;
+.coomsoonicons a {
+  margin: 0 0.75rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .comingsoon-header {
+    padding: 5rem 0 10rem 5rem;
   }
-  .comesoonpage .coomsoon-main .coomsoon-bg-light {
-    height: 100vh;
+  .comingsoon-moon {
+    width: 27.5rem;
+  }
+  .comesoonsection .section-heading .sh-heading h2 {
+    font-size: 6.5rem;
+  }
+  .comesoonsection .section-heading .sh-heading img {
+    width: 10rem;
+    top: -2.5rem;
+    right: -2.5rem;
+  }
+  .comesoonsection .section-heading p {
+    font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .cslmainheader {
-    padding: 0;
-    margin: 0;
+  .comingsoon-header {
+    padding: 3.5rem 0 12.5rem 2.5rem;
   }
-  .cslmainheader .header-content {
-    padding: 5rem 0 0 2.5rem;
-    height: 8.5rem;
-    margin: 0;
+  .comingsoon-header svg {
+    width: 4rem;
+  }
+  .comingsoon-moon {
+    width: 22.5rem;
+    top: -7.5rem;
+    right: -10rem;
+  }
+  .comesoonsection .section-heading .sh-heading h2 {
+    font-size: 4.5rem;
+    letter-spacing: 3.5px;
+  }
+  .comesoonsection .section-heading .sh-heading img {
+    width: 8.5rem;
+    top: -2.5rem;
+    right: -2.5rem;
+  }
+  .comesoonsection .section-heading p {
+    font-size: 1.75rem;
+  }
+  .coomsoonlast .coomsooninput button {
+    min-width: 12.5rem;
+    max-width: 12.5rem;
+    padding: 1.25rem 2.5rem;
+  }
+  .coomsoonicons {
+    margin: 6.5rem 0 0 0;
+  }
+  .comingsoon-cloud-1 {
+    top: 7.5%;
+    width: 6.5rem;
+  }
+  .comingsoon-cloud-2 {
+    top: 25%;
+    left: 5%;
+    width: 6.5rem;
+  }
+  .comingsoon-cloud-3 {
+    top: 17%;
+    left: 90%;
+    width: 5rem;
   }
   .landing-content.comesoonsection {
     padding: 20rem 0 0 0 !important;
@@ -4195,19 +4298,6 @@ h6 {
   .coomsoontimer .hc-time-box-top span {
     font-size: 2.75rem;
   }
-  .comesoonpage .coomsoon-main .coomsoon-bg-light {
-    height: 100vh;
-  }
-  .landing-content.comesoonsection .section-heading h2 {
-    letter-spacing: 3px;
-    font-size: 4.5rem;
-  }
-  .landing-content.comesoonsection .section-heading p {
-    margin: 3rem 0 0rem 0;
-    z-index: 10;
-    font-size: 2rem;
-    width: 100%;
-  }
   header .header-content.cslmainheader {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -4225,28 +4315,12 @@ h6 {
     margin: 0;
   }
   .coomsoonlast {
-    margin: 4rem 0 0 0;
+    margin: 5rem 0 0 0;
     width: 100%;
   }
   .coomsoonlast .coomsooninput {
     width: 100%;
     padding: 0.5rem;
-  }
-  .landing-content.comesoonsection .section-heading img {
-    width: 9rem;
-    position: absolute;
-    top: -2rem;
-    right: -2rem;
-    z-index: 9;
-  }
-  .coomsoonlast .coomsooninput input {
-    width: 100%;
-  }
-  .coomsoonlast .coomsooninput button {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    padding: 1.25rem 2.5rem;
   }
 }
 
@@ -8268,5 +8342,69 @@ footer .more-btn svg {
   bottom: unset !important;
   -webkit-transform: translate(0, -50%) !important;
           transform: translate(0, -50%) !important;
+}
+
+.Toastify__toast-theme--light {
+  background-color: unset !important;
+}
+
+.toast-dark-theme .Toastify__toast {
+  background: #21274b !important;
+  overflow: hidden !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toast-dark-theme .Toastify__toast .Toastify__toast-body > div:last-child {
+  font-size: 1.65rem;
+  color: #fff;
+}
+
+.toast-dark-theme .Toastify__toast .Toastify__close-button--light {
+  color: #fff;
+  opacity: 1;
+}
+
+.toast-dark-theme .Toastify__toast .Toastify__progress-bar--success {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.toast-light-theme .Toastify__toast {
+  background: #fff !important;
+  overflow: hidden !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toast-light-theme .Toastify__toast .Toastify__toast-body > div:last-child {
+  font-size: 1.65rem;
+  color: #1f194d;
+}
+
+.toast-light-theme .Toastify__toast .Toastify__close-button--light {
+  color: #1f194d;
+  opacity: 1;
+}
+
+.toast-light-theme .Toastify__toast .Toastify__progress-bar--success {
+  background-color: #1f194d !important;
+}
+
+.Toastify__close-button {
+  -ms-flex-item-align: unset !important;
+      -ms-grid-row-align: unset !important;
+      align-self: unset !important;
+}
+
+.Toastify__progress-bar {
+  bottom: -1px !important;
 }
 /*# sourceMappingURL=main.css.map */

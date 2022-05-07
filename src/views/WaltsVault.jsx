@@ -16,7 +16,7 @@ const WaltsVault = () => {
           </video> */}
           <div className="waltsvaultcontent">
             <p>The whitelist presents</p>
-            <h4>Walts Vault</h4>
+            <h4>Walt's Vault</h4>
             <h6>Coming Soon</h6>
             <div className="waltsvaulttimer">
               <div className="wvdays">

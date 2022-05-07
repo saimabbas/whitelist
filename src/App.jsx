@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ToastContainer, Slide, Zoom, Flip, Bounce } from "react-toastify";
 import { BrowserRouter as Switch, Routes, Route } from "react-router-dom";
 import PrizePools from "./views/PrizePools";
 import Home from "./views/Home";
@@ -19,8 +20,10 @@ import MintDisconnect from "./views/MintDisconnect";
 import Header from "./components/modules/Header";
 import WaltsVault from "./views/WaltsVault";
 import Passengers from "./views/Passengers";
+import "react-toastify/dist/ReactToastify.css";
+
 const App = () => {
-  const [isLightTheme, setIsLightTheme] = useState(true);
+  const [isLightTheme, setIsLightTheme] = useState(false);
   const changeToDarkTheme = () => {
     console.log("Changes to Dark Theme");
     setIsLightTheme(false);
@@ -32,55 +35,85 @@ const App = () => {
   return (
     <>
       {isLightTheme ? (
-        <div className="app light-theme">
-          <Switch>
-            <Routes>
-              <Route path="/" element={<LinksPage />} />
-              <Route exact path="/home" element={<Home />} />
-              <Route exact path="/homedark" element={<HomeDark />} />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/collections" element={<Collections />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/comingsoon" element={<ComingSoon />} />
-              <Route path="/loadingpage" element={<LoadingPage />} />
-              <Route path="/roadmap" element={<Roadmap />} />
-              <Route path="/mintconnect" element={<MintConnect />} />
-              <Route path="/mintdisconnect" element={<MintDisconnect />} />
-              <Route path="/howitworks" element={<HowItWorks />} />
-              <Route path="/prizepools" element={<PrizePools />} />
-              <Route path="/subscribe" element={<Subscribe />} />
-              <Route path="/vault" element={<Vault />} />
-              <Route path="/comingsoondark" element={<ComingSoonDark />} />
-              <Route path="/waltsvault" element={<WaltsVault />} />
-              <Route path="/passengers" element={<Passengers />} />
-            </Routes>
-          </Switch>
-        </div>
+        <>
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            className="toast-light-theme"
+            transition={Slide}
+          />
+          <div className="app light-theme">
+            <Switch>
+              <Routes>
+                <Route path="/" element={<ComingSoon />} />
+                <Route exact path="/home" element={<Home />} />
+                <Route exact path="/homedark" element={<HomeDark />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/collections" element={<Collections />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/comingsoon" element={<ComingSoon />} />
+                <Route path="/loadingpage" element={<LoadingPage />} />
+                <Route path="/roadmap" element={<Roadmap />} />
+                <Route path="/mintconnect" element={<MintConnect />} />
+                <Route path="/mintdisconnect" element={<MintDisconnect />} />
+                <Route path="/howitworks" element={<HowItWorks />} />
+                <Route path="/prizepools" element={<PrizePools />} />
+                <Route path="/subscribe" element={<Subscribe />} />
+                <Route path="/vault" element={<Vault />} />
+                <Route path="/comingsoondark" element={<ComingSoonDark />} />
+                <Route path="/waltsvault" element={<WaltsVault />} />
+                <Route path="/passengers" element={<Passengers />} />
+              </Routes>
+            </Switch>
+          </div>
+        </>
       ) : (
-        <div className="app dark-theme">
-          <Switch>
-            <Routes>
-              <Route path="/" element={<LinksPage />} />
-              <Route exact path="/home" element={<Home />} />
-              <Route exact path="/homedark" element={<HomeDark />} />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/collections" element={<Collections />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/comingsoon" element={<ComingSoon />} />
-              <Route path="/loadingpage" element={<LoadingPage />} />
-              <Route path="/roadmap" element={<Roadmap />} />
-              <Route path="/mintconnect" element={<MintConnect />} />
-              <Route path="/mintdisconnect" element={<MintDisconnect />} />
-              <Route path="/howitworks" element={<HowItWorks />} />
-              <Route path="/prizepools" element={<PrizePools />} />
-              <Route path="/subscribe" element={<Subscribe />} />
-              <Route path="/vault" element={<Vault />} />
-              <Route path="/comingsoondark" element={<ComingSoonDark />} />
-              <Route path="/waltsvault" element={<WaltsVault />} />
-              <Route path="/passengers" element={<Passengers />} />
-            </Routes>
-          </Switch>
-        </div>
+        <>
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            className="toast-dark-theme"
+            transition={Slide}
+          />
+          <div className="app dark-theme">
+            <Switch>
+              <Routes>
+                <Route path="/" element={<ComingSoon />} />
+                <Route exact path="/home" element={<Home />} />
+                <Route exact path="/homedark" element={<HomeDark />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/collections" element={<Collections />} />
+                <Route path="/team" element={<Team />} />
+                <Route path="/comingsoon" element={<ComingSoon />} />
+                <Route path="/loadingpage" element={<LoadingPage />} />
+                <Route path="/roadmap" element={<Roadmap />} />
+                <Route path="/mintconnect" element={<MintConnect />} />
+                <Route path="/mintdisconnect" element={<MintDisconnect />} />
+                <Route path="/howitworks" element={<HowItWorks />} />
+                <Route path="/prizepools" element={<PrizePools />} />
+                <Route path="/subscribe" element={<Subscribe />} />
+                <Route path="/vault" element={<Vault />} />
+                <Route path="/comingsoondark" element={<ComingSoonDark />} />
+                <Route path="/waltsvault" element={<WaltsVault />} />
+                <Route path="/passengers" element={<Passengers />} />
+              </Routes>
+            </Switch>
+          </div>
+        </>
       )}
     </>
   );
