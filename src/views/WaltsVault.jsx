@@ -21,21 +21,21 @@ const WaltsVault = () => {
             <div className="waltsvaulttimer">
               <div className="wvdays">
                 <div className="wvdcount">
-                  <span>23</span>
+                  <span className="grobold">23</span>
                 </div>
                 <h6>Days</h6>
               </div>
               <p>:</p>
               <div className="wvdays">
                 <div className="wvdcount">
-                  <span>23</span>
+                  <span className="grobold">23</span>
                 </div>
                 <h6>Days</h6>
               </div>
               <p>:</p>
               <div className="wvdays">
                 <div className="wvdcount">
-                  <span>23</span>
+                  <span className="grobold">23</span>
                 </div>
                 <h6>Days</h6>
               </div>
