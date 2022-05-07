@@ -24,7 +24,7 @@ import {
 
   // Power1,
   // Power2,
-  // Power4,
+  Power4,
   Linear,
   // Expo,
   // Circ,
@@ -81,27 +81,27 @@ const ComingSoon = () => {
     ComingSoonCloud1Anim.fromTo(
       ".comingsoon-cloud-1",
       {
-        left: "50%",
+        transform: "translate(50vw, 0)",
       },
       {
-        left: "101%",
-        duration: 150,
+        transform: "translate(101vw, 0)",
+        duration: 100,
         ease: Linear.easeInOut,
       }
     )
       .to(".comingsoon-cloud-1", {
-        left: "0%",
+        transform: "translate(-20vw, 0)",
         duration: 0,
         ease: Linear.easeInOut,
       })
       .fromTo(
         ".comingsoon-cloud-1",
         {
-          left: "0%",
+          transform: "translate(-20vw, 0)",
         },
         {
-          left: "101%",
-          duration: 300,
+          transform: "translate(101vw, 0)",
+          duration: 200,
           ease: Linear.easeInOut,
           repeat: -1,
         }
@@ -111,26 +111,26 @@ const ComingSoon = () => {
     ComingSoonCloud2Anim.fromTo(
       ".comingsoon-cloud-2",
       {
-        left: "10%",
+        transform: "translate(10vw,0)",
       },
       {
-        left: "101%",
+        transform: "translate(101vw,0)",
         duration: 125,
         ease: Linear.easeInOut,
       }
     )
       .to(".comingsoon-cloud-2", {
-        left: "0%",
+        transform: "translate(  -10vw,0)",
         duration: 0,
         ease: Linear.easeInOut,
       })
       .fromTo(
         ".comingsoon-cloud-2",
         {
-          left: "0%",
+          transform: "translate( -10vw ,0)",
         },
         {
-          left: "101%",
+          transform: "translate(101vw  ,0)",
           duration: 250,
           ease: Linear.easeInOut,
           repeat: -1,
@@ -140,26 +140,26 @@ const ComingSoon = () => {
     ComingSoonCloud3Anim.fromTo(
       ".comingsoon-cloud-3",
       {
-        left: "90%",
+        transform: "translate(90vw  ,0)",
       },
       {
-        left: "101%",
+        transform: "translate( 101vw ,0)",
         duration: 20,
         ease: Linear.easeInOut,
       }
     )
       .to(".comingsoon-cloud-3", {
-        left: "0%",
+        transform: "translate( -10vw ,0)",
         duration: 0,
         ease: Linear.easeInOut,
       })
       .fromTo(
         ".comingsoon-cloud-3",
         {
-          left: "0%",
+          transform: "translate( -10vw ,0)",
         },
         {
-          left: "101%",
+          transform: "translate(101vw  ,0)",
           duration: 225,
           ease: Linear.easeInOut,
           repeat: -1,
