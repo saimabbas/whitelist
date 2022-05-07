@@ -85,7 +85,7 @@ const ComingSoon = () => {
       },
       {
         left: "101%",
-        duration: 125,
+        duration: 100,
         ease: Linear.easeInOut,
       }
     )
@@ -101,7 +101,7 @@ const ComingSoon = () => {
         },
         {
           left: "101%",
-          duration: 250,
+          duration: 200,
           ease: Linear.easeInOut,
           repeat: -1,
         }
