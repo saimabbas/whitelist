@@ -25,7 +25,7 @@ import Links from "./views/Links";
 import { HashRouter } from "react-router-dom";
 
 const App = () => {
-  const [isLightTheme, setIsLightTheme] = useState(false);
+  const [isLightTheme, setIsLightTheme] = useState(true);
   const changeToDarkTheme = () => {
     console.log("Changes to Dark Theme");
     setIsLightTheme(false);
