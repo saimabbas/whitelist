@@ -24,14 +24,14 @@ const ComingSoonDark = () => {
   const vid = useRef(null);
   const btntbn = useRef(null);
   gsap.registerPlugin(SplitText);
-  setTimeout(function () {
+  /* setTimeout(function () {
     console.log("1");
     vid.current.click();
     console.log("2");
   }, 1);
   setTimeout(function () {
     ad.current.play();
-  }, 2000);
+  }, 2000); */
   useEffect(() => {
     const comingsoonHeading = new SplitText(".comingsoon-heading", {
       type: "chars",
@@ -72,6 +72,7 @@ const ComingSoonDark = () => {
       },
       {
         opacity: 0,
+        duration: 1,
       }
     )
       .fromTo(
@@ -81,11 +82,19 @@ const ComingSoonDark = () => {
         },
         {
           opacity: 0,
+          duration: 0.25,
         }
       )
-      /* .to(".comingsoon-dark-loader-box", {
-        display: "none",
-      }) */
+      .fromTo(
+        ".comingsoon-dark-loader-box",
+        {
+          width: "100%",
+        },
+        {
+          width: "0",
+          duration: 0.1,
+        }
+      )
       .fromTo(
         ".comingsoon-header",
         {
@@ -292,7 +301,7 @@ const ComingSoonDark = () => {
                 </h6>
               </div>
             </div>
-            <audio ref={ad} controls className="back-audio" src={BackAudio} />
+            {/* <audio ref={ad} controls className="back-audio" src={BackAudio} /> */}
             {/* <button ref={btntbn} onClick={playAudio} type="button">
               Play Audio
             </button> */}
