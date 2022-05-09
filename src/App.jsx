@@ -35,7 +35,7 @@ const App = () => {
     setIsLightTheme(true);
   };
   return (
-    <HashRouter>
+    <>
       {isLightTheme ? (
         <>
           <ToastContainer
@@ -119,7 +119,7 @@ const App = () => {
           </div>
         </>
       )}
-    </HashRouter>
+    </>
   );
 };
 
