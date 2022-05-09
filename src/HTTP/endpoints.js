@@ -33,7 +33,7 @@ export const subscribeToComingSoonI = async (payload) => {
 export const subscribeToComingSoonII = async (payload) => {
   if (!payload) throw new Error("Payload is required");
   const res = await axios.post(
-    `${SERVER_URL}/active-campaign/subscribe-comming-soon-II-launch`,
+    `${WHITELIST_APIs_BASE_URL}/active-campaign/subscribe-comming-soon-II-launch`,
     payload,
     {
       headers: {

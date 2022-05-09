@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Passengers from "./../assets/img/passenger.png";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
@@ -7,7 +7,8 @@ import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
 import { gsap } from "gsap";
 import $ from "jquery";
-import { SpinnerCircularFixed } from "spinners-react";
+import { SpinnerCircularFixed, SpinnerCircular } from "spinners-react";
+import { toast } from "react-toastify"
 import {
   Power1,
   Power2,
@@ -18,12 +19,16 @@ import {
   Expo,
   Circ,
 } from "gsap/dist/gsap";
+import { subscribeToComingSoonII } from "../HTTP/endpoints";
 import { SplitText } from "gsap/SplitText";
 const ComingSoonDark = () => {
+  console.log("rendering: ")
   const ad = useRef(null);
   const vid = useRef(null);
   const btntbn = useRef(null);
   gsap.registerPlugin(SplitText);
+  const [isLoading, setIsLoading] = useState(false);
+  const [email, setEmail] = useState("");
   /* setTimeout(function () {
     console.log("1");
     vid.current.click();
@@ -32,6 +37,24 @@ const ComingSoonDark = () => {
   setTimeout(function () {
     ad.current.play();
   }, 2000); */
+
+  const handleSubscribe = async (e) => {
+    console.log("submitting")
+    if (!email) return;
+    const payload = JSON.stringify({ email });
+    try {
+      setIsLoading(true);
+      await subscribeToComingSoonII(payload);
+      setEmail("");
+      setIsLoading(false);
+      toast.success("Subscribed Successfully.");
+    } catch (err) {
+      console.log("err", err);
+      toast.error(err.message);
+      setIsLoading(false);
+    }
+  };
+
   useEffect(() => {
     const comingsoonHeading = new SplitText(".comingsoon-heading", {
       type: "chars",
@@ -312,11 +335,19 @@ const ComingSoonDark = () => {
               <div className="comdarkinput comingsoon-op-component">
                 <input
                   type="text"
-                  name=""
-                  id=""
+                  value={email} 
                   placeholder="Enter your email..."
+                  onChange={e => {
+                    setEmail(e.target.value)
+                  }} 
                 />
-                <button>Subscribe</button>
+                <button 
+                  onClick={handleSubscribe}
+                  disabled={isLoading}
+                >
+                  {isLoading && <SpinnerCircular size={20} thickness={50} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" />}
+                  <span style={{ display: "inline-block", marginLeft: "5px"}}>Subscribe</span>
+                 </button>
               </div>
               <h6 className="comingsoon-text-component-2">
                 If you have any qustions, please contact us at:
