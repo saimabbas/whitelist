@@ -7,6 +7,7 @@ import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
 import { gsap } from "gsap";
 import $ from "jquery";
+import { SpinnerCircularFixed } from "spinners-react";
 import {
   Power1,
   Power2,
@@ -20,21 +21,18 @@ import {
 import { SplitText } from "gsap/SplitText";
 const ComingSoonDark = () => {
   const ad = useRef(null);
+  const vid = useRef(null);
   const btntbn = useRef(null);
   gsap.registerPlugin(SplitText);
-
-  const playAudio = () => {
+  setTimeout(function () {
+    console.log("1");
+    vid.current.click();
+    console.log("2");
+  }, 1);
+  setTimeout(function () {
     ad.current.play();
-  };
-  document.body.addEventListener("mousemove", function () {
-    // ad.current.get(0).play();
-    btntbn.current.click();
-  });
+  }, 2000);
   useEffect(() => {
-    /* $(window).on("load", function () {
-      ad.current.play();
-      console.log("Document Loadeddddddddddddd");
-    }); */
     const comingsoonHeading = new SplitText(".comingsoon-heading", {
       type: "chars",
     });
@@ -66,20 +64,40 @@ const ComingSoonDark = () => {
       }
     );
     const comingsoonTextComponent3Chars = comingsoonTextComponent3.chars;
-    let tl = gsap.timeline({
-      delay: 1,
-    });
+    let tl = gsap.timeline({});
     tl.fromTo(
-      ".comingsoon-header",
-      {
-        opacity: 0,
-      },
+      ".comingsoon-dark-loader-box span",
       {
         opacity: 1,
-        duration: 0.25,
-        repeat: 3,
+      },
+      {
+        opacity: 0,
       }
     )
+      .fromTo(
+        ".comingsoon-dark-loader-box",
+        {
+          opacity: 1,
+        },
+        {
+          opacity: 0,
+        }
+      )
+      /* .to(".comingsoon-dark-loader-box", {
+        display: "none",
+      }) */
+      .fromTo(
+        ".comingsoon-header",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.25,
+          repeat: 3,
+        },
+        "<0"
+      )
       .fromTo(
         ".comsoondcontent",
         {
@@ -92,7 +110,7 @@ const ComingSoonDark = () => {
           duration: 1.5,
           ease: Power3.easeInOut,
         },
-        "<0.25"
+        "<0"
       )
 
       .fromTo(
@@ -234,16 +252,23 @@ const ComingSoonDark = () => {
     <div className="app light-theme">
       <div className="coomsoondark">
         <div className="comsoondmain">
-          <video autoPlay muted playsInline className="backvideo">
+          <video ref={vid} autoPlay muted className="backvideo" id="vid">
             <source src={ComingVideo} type="video/mp4" />
           </video>
-          <header className="comingsoon-header">
-            <div className="header-content">
-              <div className="header-left">
-                <img src={Passengers} alt="" />
-              </div>
-            </div>
-          </header>
+          <div className="comingsoon-dark-loader-box">
+            <span>
+              <SpinnerCircularFixed
+                size={65}
+                thickness={150}
+                speed={150}
+                color="#fff"
+                secondaryColor="rgba(255, 255, 255, 0)"
+              />
+            </span>
+          </div>
+          <div className="comingsoon-dark-header">
+            <img src={Passengers} alt="" />
+          </div>
           <div className="comsoondcontent">
             <h1 className="comingsoon-heading conthrax">
               Coming <br /> Soon
@@ -267,8 +292,8 @@ const ComingSoonDark = () => {
                 </h6>
               </div>
             </div>
-            {/* <audio ref={ad} controls className="back-audio" src={BackAudio} />
-            <button ref={btntbn} onClick={playAudio} type="button">
+            <audio ref={ad} controls className="back-audio" src={BackAudio} />
+            {/* <button ref={btntbn} onClick={playAudio} type="button">
               Play Audio
             </button> */}
             <div className="comingsoon-bottom-box">

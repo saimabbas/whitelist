@@ -21,6 +21,7 @@ import Header from "./components/modules/Header";
 import WaltsVault from "./views/WaltsVault";
 import Passengers from "./views/Passengers";
 import "react-toastify/dist/ReactToastify.css";
+import Links from "./views/Links";
 
 const App = () => {
   const [isLightTheme, setIsLightTheme] = useState(false);
@@ -53,6 +54,7 @@ const App = () => {
             <Switch>
               <Routes>
                 <Route path="/" element={<ComingSoon />} />
+                <Route exact path="/links" element={<Links />} />
                 <Route exact path="/home" element={<Home />} />
                 <Route exact path="/homedark" element={<HomeDark />} />
                 <Route path="/checkout" element={<Checkout />} />
@@ -94,6 +96,7 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<ComingSoon />} />
                 <Route exact path="/home" element={<Home />} />
+                <Route exact path="/links" element={<Links />} />
                 <Route exact path="/homedark" element={<HomeDark />} />
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="/collections" element={<Collections />} />

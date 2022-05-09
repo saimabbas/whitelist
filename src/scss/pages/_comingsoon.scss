@@ -39,6 +39,15 @@
     object-fit: contain;
   }
 }
+.comingsoon-dark-header {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  img {
+    width: max-content;
+    height: 1.5rem;
+  }
+}
 .comesoonpage {
   width: 100%;
   height: 100%;
