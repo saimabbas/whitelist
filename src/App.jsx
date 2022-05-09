@@ -22,6 +22,7 @@ import WaltsVault from "./views/WaltsVault";
 import Passengers from "./views/Passengers";
 import "react-toastify/dist/ReactToastify.css";
 import Links from "./views/Links";
+import { HashRouter } from "react-router-dom";
 
 const App = () => {
   const [isLightTheme, setIsLightTheme] = useState(false);
@@ -34,7 +35,7 @@ const App = () => {
     setIsLightTheme(true);
   };
   return (
-    <>
+    <HashRouter>
       {isLightTheme ? (
         <>
           <ToastContainer
@@ -118,7 +119,7 @@ const App = () => {
           </div>
         </>
       )}
-    </>
+    </HashRouter>
   );
 };
 
