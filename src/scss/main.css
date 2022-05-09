@@ -4377,7 +4377,19 @@ h6 {
   z-index: 1001;
   position: relative;
   max-width: 1000px;
+  height: 100%;
+  min-height: inherit;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .coomsoondark .comsoondmain .comsoondcontent br {
@@ -4670,7 +4682,7 @@ h6 {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
   .coomsoondark {
     padding: 1.5rem;
   }

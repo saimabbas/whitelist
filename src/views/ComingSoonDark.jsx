@@ -350,7 +350,7 @@ const ComingSoonDark = () => {
                  </button>
               </div>
               <h6 className="comingsoon-text-component-2">
-                If you have any qustions, please contact us at:
+                If you have any questions, please contact us at:
               </h6>
               <h4 className="comingsoon-text-component-3">
                 Info@thewhitelist.com
