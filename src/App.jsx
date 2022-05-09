@@ -97,7 +97,7 @@ const App = () => {
               <Routes>
                 <Route path="/comingsoondark" element={<ComingSoon />} />
                 <Route exact path="/" element={<Links />} />
-                <Route exact path="/links" element={<Links />} />
+                <Route exact path="/home" element={<Home />} />
                 <Route exact path="/homedark" element={<HomeDark />} />
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="/collections" element={<Collections />} />
