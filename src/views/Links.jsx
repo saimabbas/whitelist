@@ -55,6 +55,9 @@ const Links = () => {
       <Link to="/passengers">
         14. <span>Passengers</span>
       </Link>
+      <Link to="/links">
+        15. <span>Links Page</span>
+      </Link>
     </div>
   );
 };
