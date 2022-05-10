@@ -17,10 +17,10 @@ const Links = () => {
         3. <span>Collections</span>
       </Link>
       <Link to="/comingsoon">
-        4. <span>Coming Soon 1</span>
+        4. <span>Coming Soon Whitelist</span>
       </Link>
       <Link to="/comingsoondark">
-        5. <span>Coming Soon 2</span>
+        5. <span>Coming Soon Passengers</span>
       </Link>
       <Link to="/team">
         6. <span>Team</span>
