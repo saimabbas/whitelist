@@ -14,6 +14,8 @@
   display: flex;
   align-items: center;
   height: 40rem;
+  position: relative;
+  z-index: 300;
   .round-chevron-box {
     transform: translate(0, -1rem);
     background-color: var(--roadmap-dot-bg) !important;

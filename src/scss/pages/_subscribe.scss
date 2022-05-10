@@ -26,6 +26,8 @@
 }
 .subscribe-content.subsmainpage {
   margin: 22.5rem 0 15rem 0;
+  position: relative;
+  z-index: 300;
   .section-heading {
     p {
       margin: 2.5rem 0 7.5rem 0;

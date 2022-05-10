@@ -298,7 +298,7 @@ button:hover {
 .page-body-con {
   margin: 22.5rem 0 15rem 0;
   position: relative;
-  z-index: 5;
+  z-index: 300;
 }
 
 .round-chevron-box {
@@ -2041,6 +2041,11 @@ button:hover {
   width: 100%;
 }
 
+.letushelp .letushelp-grid {
+  position: relative;
+  z-index: 300;
+}
+
 .letushelp .luh-main {
   width: 100%;
 }
@@ -2568,6 +2573,8 @@ button:hover {
 
 .subscribe-content.subsmainpage {
   margin: 22.5rem 0 15rem 0;
+  position: relative;
+  z-index: 300;
 }
 
 .subscribe-content.subsmainpage .section-heading p {
@@ -2754,6 +2761,8 @@ button:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 40rem;
+  position: relative;
+  z-index: 300;
 }
 
 .roadmap-content .round-chevron-box {
@@ -3912,23 +3921,35 @@ h6 {
   z-index: 80;
 }
 
+.comesoonpage .comingsoon-cloud-1 {
+  top: 20%;
+}
+
+.comesoonpage .comingsoon-cloud-2 {
+  top: 60%;
+}
+
+.comesoonpage .comingsoon-cloud-3 {
+  top: 50%;
+}
+
 .comingsoon-cloud-1 {
   position: absolute;
-  top: 20%;
+  top: 15%;
   z-index: 99;
   width: 10rem;
 }
 
 .comingsoon-cloud-2 {
   position: absolute;
-  top: 60%;
+  top: 40%;
   z-index: 99;
   width: 10rem;
 }
 
 .comingsoon-cloud-3 {
   position: absolute;
-  top: 50%;
+  top: 35%;
   z-index: 99;
   width: 7.5rem;
 }
@@ -8652,6 +8673,8 @@ footer .more-btn svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 300;
 }
 
 .section-heading .sh-heading {
