@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BlobPurple from "../assets/img/blob-purple.svg";
 import BlobPurpleDark from "../assets/img/blob-purple2.png";
-import HeroBgLight from "./../assets/img/hero-bg-light.png";
+import HeroBgLight from "./../assets/img/light-bg-wc.png";
 import HeroBgLightMob from "./../assets/img/hero-bg-light-mob.png";
 import HeroBgDark from "./../assets/img/right-moon.png";
 import HeroBgDarkMob from "./../assets/img/right-moon-mob.png";
