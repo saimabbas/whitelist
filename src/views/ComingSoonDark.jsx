@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Passengers from "./../assets/img/passenger.png";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
+import HeroBgDark from "./../assets/img/comingsoon-dark-bg-pc.png";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
 import { gsap } from "gsap";
@@ -22,16 +23,35 @@ import { SplitText } from "gsap/SplitText";
 const ComingSoonDark = () => {
   const ad = useRef(null);
   const vid = useRef(null);
-  const btntbn = useRef(null);
+  const [timeLeft, setTimeLeft] = useState();
+  const [launch, setLaunch] = useState(true);
+
+  const calculateTimeLeft = () => {
+    let year = new Date().getFullYear();
+    let difference = +new Date(`05/12/${year}`) - +new Date();
+
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  });
   gsap.registerPlugin(SplitText);
-  /* setTimeout(function () {
-    console.log("1");
-    vid.current.click();
-    console.log("2");
-  }, 1);
-  setTimeout(function () {
-    ad.current.play();
-  }, 2000); */
   useEffect(() => {
     const comingsoonHeading = new SplitText(".comingsoon-heading", {
       type: "chars",
@@ -64,8 +84,11 @@ const ComingSoonDark = () => {
       }
     );
     const comingsoonTextComponent3Chars = comingsoonTextComponent3.chars;
-    let tl = gsap.timeline({});
-    tl.fromTo(
+
+    let CMAnim = gsap.timeline({
+      paused: true,
+    });
+    CMAnim.fromTo(
       ".comingsoon-dark-loader-box span",
       {
         opacity: 1,
@@ -73,6 +96,7 @@ const ComingSoonDark = () => {
       {
         opacity: 0,
         duration: 1,
+        delay: 2.5,
       }
     )
       .fromTo(
@@ -255,13 +279,26 @@ const ComingSoonDark = () => {
         },
         "<0.25"
       );
+    $(".launch-btn").click(() => {
+      $(".comsoondmain").css({ display: "block" });
+      $(".launch-screen").css({ display: "none" });
+      ad.current.play();
+      CMAnim.play(0);
+      setTimeout(() => {
+        vid.current.play();
+      }, 2150);
+    });
   }, []);
-
   return (
     <div className="app light-theme">
       <div className="coomsoondark">
+        <div className="launch-screen">
+          <button className="launch-btn">Launch</button>
+          <img className="launch-bg" src={HeroBgDark} alt="HeroBgDark" />
+        </div>
+
         <div className="comsoondmain">
-          <video ref={vid} autoPlay muted className="backvideo" id="vid">
+          <video ref={vid} muted className="backvideo" id="vid">
             <source src={ComingVideo} type="video/mp4" />
           </video>
           <div className="comingsoon-dark-loader-box">
@@ -285,26 +322,33 @@ const ComingSoonDark = () => {
             <div className="comdarktimer">
               <div className="comdarkday">
                 <h6 className="comingsoon-timer conthrax">
-                  23 <span className="conthrax">DAYS</span>
+                  <i>{("0" + timeLeft?.days).slice(-2)}</i>{" "}
+                  <span className="conthrax">DAYS</span>
                 </h6>
               </div>
               <p className="conthrax">:</p>
               <div className="comdarkday">
                 <h6 className="comingsoon-timer conthrax">
-                  02 <span className="conthrax">HOURS</span>
+                  <i>{("0" + timeLeft?.hours).slice(-2)}</i>{" "}
+                  <span className="conthrax">HOURS</span>
                 </h6>
               </div>
               <p className="conthrax">:</p>
               <div className="comdarkday">
                 <h6 className="comingsoon-timer conthrax">
-                  34 <span className="conthrax">MINUTES</span>
+                  <i>{("0" + timeLeft?.minutes).slice(-2)}</i>{" "}
+                  <span className="conthrax">MINUTES</span>
+                </h6>
+              </div>
+              <p className="conthrax">:</p>
+              <div className="comdarkday">
+                <h6 className="comingsoon-timer conthrax">
+                  <i>{("0" + timeLeft?.seconds).slice(-2)}</i>{" "}
+                  <span className="conthrax">SECONDS</span>
                 </h6>
               </div>
             </div>
-            {/* <audio ref={ad} controls className="back-audio" src={BackAudio} /> */}
-            {/* <button ref={btntbn} onClick={playAudio} type="button">
-              Play Audio
-            </button> */}
+            <audio ref={ad} controls className="back-audio" src={BackAudio} />
             <div className="comingsoon-bottom-box">
               <h5 className="comingsoon-text-component-1">
                 Get notified when we are close to blast off:
@@ -338,3 +382,12 @@ const ComingSoonDark = () => {
 };
 
 export default ComingSoonDark;
+
+/* 
+coming soon font .....
+timer .....
+font of timer .....
+responsiveness
+Button to play audio
+Flickering animation
+*/

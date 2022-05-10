@@ -3,6 +3,30 @@
   //   height: 130vh;
   padding: 5rem;
   background-color: #243f71;
+  .back-audio {
+    display: none;
+  }
+  .launch-screen {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .launch-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+    & > button {
+      position: relative;
+      z-index: 100;
+    }
+  }
   .comsoondmain {
     width: 100%;
     min-height: 100vh;
@@ -11,6 +35,7 @@
     width: 100%;
     padding: 5rem;
     background-color: #243f71;
+    display: none;
     header {
       position: absolute;
       top: 0;
@@ -37,18 +62,24 @@
         display: none;
       }
       h1 {
-        font-size: 10rem;
+        font-size: 9rem;
         letter-spacing: 7px;
         font-weight: 600;
         color: #fff;
         white-space: nowrap;
         padding: 15rem 0rem 0 5rem;
+        width: 100%;
+        text-align: center;
         font-family: conthrax, sans-serif;
         & * {
           font-family: conthrax, sans-serif;
         }
       }
       .comdarktimer {
+        font-family: conthrax, sans-serif;
+        & * {
+          font-family: conthrax, sans-serif;
+        }
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,15 +91,18 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          padding: 1.25rem 3.75rem;
+          padding: 1.5rem 2.5rem;
           h6 {
-            font-size: 3.55rem;
+            font-size: 3.25rem;
             color: #fff;
             font-weight: 700;
             span {
               color: rgba(255, 255, 255, 0.4);
-              font-size: 1.75rem;
+              font-size: 1.5rem;
               font-weight: 500;
+            }
+            i {
+              font-style: normal;
             }
           }
         }
