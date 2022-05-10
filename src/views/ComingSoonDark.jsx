@@ -17,6 +17,7 @@ import Cloud3Dark from "./../assets/img/cloud-3-dark.png";
 import $ from "jquery";
 import { FaRocket } from "react-icons/fa";
 import { SpinnerCircularFixed, SpinnerCircular } from "spinners-react";
+import { subscribeToComingSoonII } from "../HTTP/endpoints";
 import {
   Power1,
   Power2,
