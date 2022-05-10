@@ -490,9 +490,11 @@ const ComingSoonDark = () => {
               <div className="comdarkinput comingsoon-op-component">
                 <input
                   type="text"
-                  name=""
-                  id=""
+                  value={email}
                   placeholder="Enter your email..."
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                 />
                 <button onClick={handleSubscribe} disabled={isLoading}>
                   {isLoading && (
