@@ -86,7 +86,7 @@ const ComingSoonDark = () => {
     });
     const comingsoonHeadingChars = comingsoonHeading.chars;
 
-    const comingsoonTimer = new SplitText(".comingsoon-timer", {
+    const comingsoonTimer = new SplitText(".cst-1 span", {
       type: "chars",
     });
     const comingsoonTimerChars = comingsoonTimer.chars;
@@ -164,9 +164,24 @@ const ComingSoonDark = () => {
             each: 0.1,
             from: "random",
           },
-        },
-        "<0.25"
+        }
       )
+      /* .fromTo(
+        ".comdarktimer > i",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.25,
+          stagger: {
+            repeat: 2,
+            each: 0.1,
+            from: "random",
+          },
+        },
+        "<0"
+      ) */
       .fromTo(
         ".comdarktimer > *",
         {
@@ -205,26 +220,22 @@ const ComingSoonDark = () => {
         ".comingsoon-heading",
         {
           scale: 0.75,
-          opacity: 0,
         },
         {
           scale: 1,
-          opacity: 1,
-          duration: 1.25,
+          duration: 1,
           delay: 0.5,
         },
-        "<1"
+        "<0"
       )
       .fromTo(
         ".comdarktimer",
         {
           scale: 0.75,
-          opacity: 0,
         },
         {
           scale: 1,
-          opacity: 1,
-          duration: 1.25,
+          duration: 1,
         },
         "<0"
       )
@@ -481,32 +492,25 @@ const ComingSoonDark = () => {
             </h1>
             <div className="comdarktimer">
               <div className="comdarkday">
-                <h6 className="comingsoon-timer conthrax">
+                <h6 className="comingsoon-timer cst-1 conthrax">
                   <i>{("0" + timeLeft?.days).slice(-2)}</i>{" "}
                   <span className="conthrax">DAYS</span>
                 </h6>
               </div>
               <p className="conthrax">:</p>
               <div className="comdarkday">
-                <h6 className="comingsoon-timer conthrax">
+                <h6 className="comingsoon-timer cst-2 conthrax">
                   <i>{("0" + timeLeft?.hours).slice(-2)}</i>{" "}
                   <span className="conthrax">HOURS</span>
                 </h6>
               </div>
               <p className="conthrax">:</p>
               <div className="comdarkday">
-                <h6 className="comingsoon-timer conthrax">
+                <h6 className="comingsoon-timer cst-3 conthrax">
                   <i>{("0" + timeLeft?.minutes).slice(-2)}</i>{" "}
                   <span className="conthrax">MINUTES</span>
                 </h6>
               </div>
-              {/* <p className="conthrax">:</p>
-              <div className="comdarkday">
-                <h6 className="comingsoon-timer conthrax">
-                  <i>{("0" + timeLeft?.seconds).slice(-2)}</i>{" "}
-                  <span className="conthrax">SECONDS</span>
-                </h6>
-              </div> */}
             </div>
             <audio ref={ad} controls className="back-audio" src={BackAudio} />
             <div className="comingsoon-bottom-box">
