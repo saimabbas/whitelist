@@ -142,6 +142,16 @@ const ComingSoonDark = () => {
         "<0.5"
       )
       .fromTo(
+        ".comingsoon-dark-loader-box",
+        {
+          x: 0,
+        },
+        {
+          x: "200vw",
+          duration: 0.1,
+        }
+      )
+      .fromTo(
         comingsoonHeadingChars,
         {
           opacity: 0,
