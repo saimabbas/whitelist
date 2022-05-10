@@ -16,7 +16,7 @@ import Cloud3Light from "./../assets/img/cloud-3.png";
 import Cloud3Dark from "./../assets/img/cloud-3-dark.png";
 import $ from "jquery";
 import { FaRocket } from "react-icons/fa";
-import { SpinnerCircularFixed } from "spinners-react";
+import { SpinnerCircularFixed, SpinnerCircular } from "spinners-react";
 import {
   Power1,
   Power2,
@@ -34,6 +34,23 @@ const ComingSoonDark = () => {
   const [timeLeft, setTimeLeft] = useState();
   const [launch, setLaunch] = useState(true);
 
+  const [isLoading, setIsLoading] = useState(false);
+  const handleSubscribe = async (e) => {
+    console.log("submitting");
+    if (!email) return;
+    const payload = JSON.stringify({ email });
+    try {
+      setIsLoading(true);
+      await subscribeToComingSoonII(payload);
+      setEmail("");
+      setIsLoading(false);
+      toast.success("Subscribed Successfully.");
+    } catch (err) {
+      console.log("err", err);
+      toast.error(err.message);
+      setIsLoading(false);
+    }
+  };
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
     let difference = +new Date(`05/12/${year}`) - +new Date();
