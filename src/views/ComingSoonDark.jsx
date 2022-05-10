@@ -18,6 +18,7 @@ import $ from "jquery";
 import { FaRocket } from "react-icons/fa";
 import { SpinnerCircularFixed, SpinnerCircular } from "spinners-react";
 import { subscribeToComingSoonII } from "../HTTP/endpoints";
+import { toast } from "react-toastify";
 import {
   Power1,
   Power2,
@@ -34,6 +35,7 @@ const ComingSoonDark = () => {
   const vid = useRef(null);
   const [timeLeft, setTimeLeft] = useState();
   const [launch, setLaunch] = useState(true);
+  const [email, setEmail] = useState("");
 
   const [isLoading, setIsLoading] = useState(false);
   const handleSubscribe = async (e) => {
