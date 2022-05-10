@@ -10,6 +10,7 @@ import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
 import { subscribeToComingSoonI } from "../HTTP/endpoints";
+import { gsap } from "gsap";
 import Moon from "../assets/img/moon.png";
 import Cloud1Light from "./../assets/img/cloud-1.png";
 import Cloud1Dark from "./../assets/img/cloud-1-dark.png";
@@ -17,7 +18,6 @@ import Cloud2Light from "./../assets/img/cloud-2.png";
 import Cloud2Dark from "./../assets/img/cloud-2-dark.png";
 import Cloud3Light from "./../assets/img/cloud-3.png";
 import Cloud3Dark from "./../assets/img/cloud-3-dark.png";
-import { gsap } from "gsap";
 import {
   Back,
   Power3,

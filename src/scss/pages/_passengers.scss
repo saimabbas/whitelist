@@ -1,16 +1,45 @@
 .passengerpage {
   width: 100%;
   padding: 5rem;
-  background-color: #000000;
+  background-color: #243f71;
   .passengermain {
     width: 100%;
     position: relative;
-    background-color: #243f71;
+    overflow: hidden;
+    .passengersmain-content {
+      position: relative;
+      width: 100%;
+      z-index: 500;
+    }
+    .passengers-bg {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      z-index: 99;
+    }
+    .passengers-header-bg {
+      width: 80%;
+      height: max-content;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: contain;
+      z-index: 99;
+    }
     .passengersheaderhero {
       width: 100%;
-      height: 100vh;
+      min-height: 135vh;
       position: relative;
-      background-color: #243f71;
+      .passengers-hero-mountains {
+        width: 100%;
+        height: max-content;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 50;
+      }
       .passengerheader {
         width: 100%;
         height: 12.5rem;
@@ -111,7 +140,7 @@
         width: 100%;
         padding: 22.5rem 0 0 0;
         h3 {
-          font-size: 10.5rem;
+          font-size: 8.5rem;
           color: #fff;
           font-weight: 500;
           letter-spacing: 8px;
@@ -147,7 +176,6 @@
       }
     }
     .passengersswiper {
-      background-color: #243f71;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -175,7 +203,6 @@
       }
     }
     .passengersteam {
-      background-color: #243f71;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -227,7 +254,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: #243f71;
       width: 100%;
       padding: 10rem 0 0 0;
       p {
@@ -358,4 +384,15 @@
       }
     }
   }
+}
+
+.planet-1 {
+  width: 60rem;
+  height: max-content;
+  object-fit: contain;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  transform: translate(60%, -50%);
+  z-index: 100;
 }
