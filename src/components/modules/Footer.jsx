@@ -234,10 +234,10 @@ const Footer = (props) => {
         </div>
       </div>
       {props.moreBtn ? (
-        <div className="more-btn">
+        <a className="more-btn" href="/howitworks">
           More <RefreshIcon className="light-img" color="#fff" />{" "}
           <RefreshIcon className="dark-img" color="#000" />
-        </div>
+        </a>
       ) : null}
 
       <div className="help-box">
@@ -248,7 +248,7 @@ const Footer = (props) => {
               <div className="hiheader">
                 <div className="hihimg">
                   <img src={Support} alt="" />
-                  <p>Support</p>
+                  <p>How can we help</p>
                 </div>
                 <div onClick={hideHelpBoxFun}>
                   <MdClear />

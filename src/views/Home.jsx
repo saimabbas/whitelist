@@ -1094,8 +1094,8 @@ const Home = () => {
                   topNotchColor="top-notch-blue"
                 />
                 <SubscribeCard
-                  tier="Tier 3"
-                  eth="0.5ETH"
+                  tier="Tier 3 (The Inner Circle)"
+                  eth="0.6ETH"
                   topNotchColor="top-notch-yellow"
                 />
               </div>

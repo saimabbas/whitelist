@@ -106,8 +106,7 @@ const HowItWorks = () => {
                       <p>
                         Depending on the tier you have decided to go with, every
                         tier unlocks certain perks and advantages. Visit (
-                        <a href="https://www.youtube.com/">Subscribe</a>) to
-                        find out more.
+                        <a href="/subscribe">Subscribe</a>) to find out more.
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
@@ -171,9 +170,8 @@ const HowItWorks = () => {
                         At the whitelist we strive to provide our users with
                         some of the best utility that the market has to offer.
                         For an in-depth understanding of utility please visit
-                        <a href="https://www.youtube.com/"> Roadmap</a> and tier
-                        options
-                        <a href="https://www.youtube.com/"> Subscribe</a>.
+                        <a href="/roadmap"> Roadmap</a> and tier options
+                        <a href="/subscribe"> Subscribe</a>.
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
@@ -193,7 +191,7 @@ const HowItWorks = () => {
                       ques="Who is behind The Whitelist? "
                     >
                       <p>
-                        <a href="https://www.youtube.com/">Meet the Team</a>
+                        <a href="/team">Meet the Team</a>
                       </p>
                     </LetUsHelpCard>
                     <LetUsHelpCard
@@ -225,8 +223,7 @@ const HowItWorks = () => {
                         Here at The Whitelist, we have a multitude of
                         subscription options that aim to fit all types of users.
                         Please visit us at
-                        <a href="https://www.youtube.com/"> Subscribe</a> for
-                        details.
+                        <a href="/subscribe"> Subscribe</a> for details.
                       </p>
                     </LetUsHelpCard>
                   </Accordion>

@@ -178,7 +178,7 @@ const PrizePools = () => {
                       <div className="pgc-top-left-profile">
                         <img src={VaultProfilePic} alt="VaultProfilePic" />
                       </div>
-                      <h6>Fractional Friends</h6>
+                      <h6>Walt's Vault</h6>
                     </div>
                     <div className="pgc-top-right">
                       <img src={VaultImg1} alt="VaultImg1" />
@@ -2601,7 +2601,7 @@ const PrizePools = () => {
                   </div>
                 </div>
               </div>
-              <div className="prizepools-grid-card">
+              {/* <div className="prizepools-grid-card">
                 <div className="prizepools-grid-card-top">
                   <div className="prizepools-grid-card-top-box">
                     <div className="pgc-top-left">
@@ -2628,7 +2628,7 @@ const PrizePools = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
