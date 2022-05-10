@@ -56,7 +56,7 @@ const ComingSoonDark = () => {
   };
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
-    let difference = +new Date(`05/12/${year}`) - +new Date();
+    let difference = +new Date(`05/21/${year}`) - +new Date();
 
     let timeLeft = {};
 
