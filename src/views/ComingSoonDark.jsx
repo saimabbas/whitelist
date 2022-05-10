@@ -474,7 +474,20 @@ const ComingSoonDark = () => {
                   id=""
                   placeholder="Enter your email..."
                 />
-                <button>Subscribe</button>
+                <button onClick={handleSubscribe} disabled={isLoading}>
+                  {isLoading && (
+                    <SpinnerCircular
+                      size={20}
+                      thickness={50}
+                      speed={100}
+                      color="rgba(255, 255, 255, 1)"
+                      secondaryColor="rgba(0, 0, 0, 0.44)"
+                    />
+                  )}
+                  <span style={{ display: "inline-block", marginLeft: "5px" }}>
+                    Subscribe
+                  </span>
+                </button>
               </div>
               <h6 className="comingsoon-text-component-2">
                 If you have any questions, please contact us at:
