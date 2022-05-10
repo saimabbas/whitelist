@@ -5,7 +5,7 @@ import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
 import HeroBgDark from "./../assets/img/comingsoon-dark-bg-pc.png";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
-import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
+import BackAudio from "../assets/audio/Passengers-coming-soon.ogg";
 import { gsap } from "gsap";
 import Moon from "../assets/img/moon.png";
 import Cloud1Light from "./../assets/img/cloud-1.png";
