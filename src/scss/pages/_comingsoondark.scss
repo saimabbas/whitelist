@@ -112,7 +112,7 @@
           align-items: center;
           padding: 1.5rem 2.5rem;
           h6 {
-            font-size: 3.25rem;
+            font-size: 3rem;
             color: #fff;
             font-weight: 700;
             span {
@@ -141,7 +141,7 @@
     }
   }
   h5 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     text-align: center;
@@ -205,11 +205,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #000;
+  // background-color: #000;
   z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .backvideo {
   position: absolute;
@@ -317,14 +318,18 @@
     }
   }
   .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     span {
-      margin: 1.5rem 0.5rem 0 0.5rem;
+      margin: 1.5rem 0.5rem 0 1rem;
     }
   }
   .coomsoondark .comsoondmain .comsoondcontent .comdarktimer {
     flex-direction: column;
     margin: 4rem 0;
+  }
+  .comingsoon-dark-header img {
+    width: max-content;
+    height: 1.25rem;
   }
   .coomsoondark h5 {
     font-size: 1.85rem;

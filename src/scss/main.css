@@ -4512,7 +4512,7 @@ h6 {
 }
 
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 {
-  font-size: 3.25rem;
+  font-size: 3rem;
   color: #fff;
   font-weight: 700;
 }
@@ -4542,7 +4542,7 @@ h6 {
 }
 
 .coomsoondark h5 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   text-align: center;
@@ -4619,7 +4619,6 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #000;
   z-index: 10000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4630,6 +4629,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 .backvideo {
@@ -4774,10 +4774,10 @@ h6 {
     display: block;
   }
   .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
   .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 span {
-    margin: 1.5rem 0.5rem 0 0.5rem;
+    margin: 1.5rem 0.5rem 0 1rem;
   }
   .coomsoondark .comsoondmain .comsoondcontent .comdarktimer {
     -webkit-box-orient: vertical;
@@ -4785,6 +4785,12 @@ h6 {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 4rem 0;
+  }
+  .comingsoon-dark-header img {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: 1.25rem;
   }
   .coomsoondark h5 {
     font-size: 1.85rem;

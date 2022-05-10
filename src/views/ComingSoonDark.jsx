@@ -123,32 +123,14 @@ const ComingSoonDark = () => {
       },
       {
         opacity: 0,
-        duration: 1,
-        delay: 2.5,
+        duration: 0.25,
+        repeat: 2,
+        delay: 1,
       }
     )
+
       .fromTo(
-        ".comingsoon-dark-loader-box",
-        {
-          opacity: 1,
-        },
-        {
-          opacity: 0,
-          duration: 0.25,
-        }
-      )
-      .fromTo(
-        ".comingsoon-dark-loader-box",
-        {
-          width: "100%",
-        },
-        {
-          width: "0",
-          duration: 0.1,
-        }
-      )
-      .fromTo(
-        ".comingsoon-header",
+        ".comingsoon-dark-header img",
         {
           opacity: 0,
         },
@@ -157,23 +139,8 @@ const ComingSoonDark = () => {
           duration: 0.25,
           repeat: 3,
         },
-        "<0"
+        "<0.5"
       )
-      .fromTo(
-        ".comsoondcontent",
-        {
-          scale: 0.85,
-          opacity: 0,
-        },
-        {
-          scale: 1,
-          opacity: 1,
-          duration: 1.5,
-          ease: Power3.easeInOut,
-        },
-        "<0"
-      )
-
       .fromTo(
         comingsoonHeadingChars,
         {
@@ -181,7 +148,7 @@ const ComingSoonDark = () => {
         },
         {
           opacity: 1,
-          duration: 0.2,
+          duration: 0.25,
           stagger: {
             repeat: 2,
             each: 0.1,
@@ -191,17 +158,23 @@ const ComingSoonDark = () => {
         "<0.25"
       )
       .fromTo(
-        ".comdarktimer",
+        ".comdarktimer > *",
         {
           opacity: 0,
         },
         {
           opacity: 1,
           duration: 0.2,
-          ease: Power3.easeInOut,
+          stagger: {
+            repeat: 1,
+            each: 0.1,
+            from: "random",
+          },
+          repeat: 1,
         },
         "<0.25"
       )
+
       .fromTo(
         comingsoonTimerChars,
         {
@@ -217,6 +190,33 @@ const ComingSoonDark = () => {
           },
         },
         "<0.25"
+      )
+      .fromTo(
+        ".comingsoon-heading",
+        {
+          scale: 0.75,
+          opacity: 0,
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 1.25,
+          delay: 0.5,
+        },
+        "<1"
+      )
+      .fromTo(
+        ".comdarktimer",
+        {
+          scale: 0.75,
+          opacity: 0,
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 1.25,
+        },
+        "<0"
       )
       .fromTo(
         ".comingsoon-bottom-box",
@@ -243,6 +243,22 @@ const ComingSoonDark = () => {
         "<0.25"
       )
       .fromTo(
+        ".comdarkinput > *",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.1,
+          stagger: {
+            repeat: 2,
+            each: 0.05,
+            from: "random",
+          },
+        },
+        "<0.25"
+      )
+      .fromTo(
         comingsoonTextComponent1Chars,
         {
           opacity: 0,
@@ -256,7 +272,7 @@ const ComingSoonDark = () => {
             from: "random",
           },
         },
-        "<0.25"
+        "<0"
       )
       .fromTo(
         ".comingsoon-text-component-2",
@@ -474,13 +490,13 @@ const ComingSoonDark = () => {
                   <span className="conthrax">MINUTES</span>
                 </h6>
               </div>
-              <p className="conthrax">:</p>
+              {/* <p className="conthrax">:</p>
               <div className="comdarkday">
                 <h6 className="comingsoon-timer conthrax">
                   <i>{("0" + timeLeft?.seconds).slice(-2)}</i>{" "}
                   <span className="conthrax">SECONDS</span>
                 </h6>
-              </div>
+              </div> */}
             </div>
             <audio ref={ad} controls className="back-audio" src={BackAudio} />
             <div className="comingsoon-bottom-box">
@@ -518,9 +534,15 @@ const ComingSoonDark = () => {
                 Info@thewhitelist.com
               </h4>
               <div className="coomsoonicons comingsoon-op-component">
-                <Instagram color="rgba(255, 255, 255, 0.6)" />
-                <TwitterIcon color="rgba(255, 255, 255, 0.6)" />
-                <Discord color="rgba(255, 255, 255, 0.6)" />
+                <a href="https://www.instagram.com/_thewhitelist_/">
+                  <Instagram color="rgba(255, 255, 255, 0.6)" />
+                </a>
+                <a href="https://twitter.com/_TheWhitelist_">
+                  <TwitterIcon color="rgba(255, 255, 255, 0.6)" />
+                </a>
+                <a href="https://discord.gg/5y6Htj7Q">
+                  <Discord color="rgba(255, 255, 255, 0.6)" />
+                </a>
               </div>
             </div>
           </div>
