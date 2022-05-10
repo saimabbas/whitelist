@@ -14,6 +14,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
     .launch-bg {
       width: 100%;
       height: 100%;
@@ -25,6 +26,23 @@
     & > button {
       position: relative;
       z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.75rem;
+      color: #fff;
+      background: linear-gradient(#394dff, #6833ff);
+      // background: #243f71;
+      border-radius: 2rem;
+      border: unset;
+      padding: 1.5rem 3.5rem;
+      transition: 0.5s;
+      svg {
+        margin: 0 0 0 1rem;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
   .comsoondmain {

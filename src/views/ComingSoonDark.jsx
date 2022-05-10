@@ -7,7 +7,15 @@ import HeroBgDark from "./../assets/img/comingsoon-dark-bg-pc.png";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/comingsoon-bg-audio.ogg";
 import { gsap } from "gsap";
+import Moon from "../assets/img/moon.png";
+import Cloud1Light from "./../assets/img/cloud-1.png";
+import Cloud1Dark from "./../assets/img/cloud-1-dark.png";
+import Cloud2Light from "./../assets/img/cloud-2.png";
+import Cloud2Dark from "./../assets/img/cloud-2-dark.png";
+import Cloud3Light from "./../assets/img/cloud-3.png";
+import Cloud3Dark from "./../assets/img/cloud-3-dark.png";
 import $ from "jquery";
+import { FaRocket } from "react-icons/fa";
 import { SpinnerCircularFixed } from "spinners-react";
 import {
   Power1,
@@ -279,6 +287,94 @@ const ComingSoonDark = () => {
         },
         "<0.25"
       );
+    let ComingSoonCloud1Anim = gsap.timeline();
+    ComingSoonCloud1Anim.fromTo(
+      ".comingsoon-cloud-1",
+      {
+        transform: "translate(50vw, 0)",
+      },
+      {
+        transform: "translate(101vw, 0)",
+        duration: 100,
+        ease: Linear.easeInOut,
+      }
+    )
+      .to(".comingsoon-cloud-1", {
+        transform: "translate(-20vw, 0)",
+        duration: 0,
+        ease: Linear.easeInOut,
+      })
+      .fromTo(
+        ".comingsoon-cloud-1",
+        {
+          transform: "translate(-20vw, 0)",
+        },
+        {
+          transform: "translate(101vw, 0)",
+          duration: 200,
+          ease: Linear.easeInOut,
+          repeat: -1,
+        }
+      );
+
+    let ComingSoonCloud2Anim = gsap.timeline();
+    ComingSoonCloud2Anim.fromTo(
+      ".comingsoon-cloud-2",
+      {
+        transform: "translate(10vw,0)",
+      },
+      {
+        transform: "translate(101vw,0)",
+        duration: 125,
+        ease: Linear.easeInOut,
+      }
+    )
+      .to(".comingsoon-cloud-2", {
+        transform: "translate(  -10vw,0)",
+        duration: 0,
+        ease: Linear.easeInOut,
+      })
+      .fromTo(
+        ".comingsoon-cloud-2",
+        {
+          transform: "translate( -10vw ,0)",
+        },
+        {
+          transform: "translate(101vw  ,0)",
+          duration: 250,
+          ease: Linear.easeInOut,
+          repeat: -1,
+        }
+      );
+    let ComingSoonCloud3Anim = gsap.timeline();
+    ComingSoonCloud3Anim.fromTo(
+      ".comingsoon-cloud-3",
+      {
+        transform: "translate(90vw  ,0)",
+      },
+      {
+        transform: "translate( 101vw ,0)",
+        duration: 20,
+        ease: Linear.easeInOut,
+      }
+    )
+      .to(".comingsoon-cloud-3", {
+        transform: "translate( -10vw ,0)",
+        duration: 0,
+        ease: Linear.easeInOut,
+      })
+      .fromTo(
+        ".comingsoon-cloud-3",
+        {
+          transform: "translate( -10vw ,0)",
+        },
+        {
+          transform: "translate(101vw  ,0)",
+          duration: 225,
+          ease: Linear.easeInOut,
+          repeat: -1,
+        }
+      );
     $(".launch-btn").click(() => {
       $(".comsoondmain").css({ display: "block" });
       $(".launch-screen").css({ display: "none" });
@@ -293,8 +389,26 @@ const ComingSoonDark = () => {
     <div className="app light-theme">
       <div className="coomsoondark">
         <div className="launch-screen">
-          <button className="launch-btn">Launch</button>
+          <button className="launch-btn">
+            Launch Site <FaRocket />
+          </button>
           <img className="launch-bg" src={HeroBgDark} alt="HeroBgDark" />
+          <img src={Moon} alt="Moon" className="comingsoon-moon" />
+          <img
+            src={Cloud1Dark}
+            alt="Cloud1Dark"
+            className="comingsoon-cloud-1"
+          />
+          <img
+            src={Cloud2Dark}
+            alt="CloudDarkt"
+            className="comingsoon-cloud-2"
+          />
+          <img
+            src={Cloud3Dark}
+            alt="ClouDarkht"
+            className="comingsoon-cloud-3"
+          />
         </div>
 
         <div className="comsoondmain">

@@ -4368,6 +4368,7 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 
 .coomsoondark .launch-screen .launch-bg {
@@ -4382,6 +4383,33 @@ h6 {
 .coomsoondark .launch-screen > button {
   position: relative;
   z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.75rem;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#394dff), to(#6833ff));
+  background: linear-gradient(#394dff, #6833ff);
+  border-radius: 2rem;
+  border: unset;
+  padding: 1.5rem 3.5rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.coomsoondark .launch-screen > button svg {
+  margin: 0 0 0 1rem;
+}
+
+.coomsoondark .launch-screen > button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .coomsoondark .comsoondmain {
