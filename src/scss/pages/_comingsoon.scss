@@ -7,23 +7,34 @@
   right: -5rem;
   z-index: 80;
 }
+.comesoonpage {
+  .comingsoon-cloud-1 {
+    top: 20%;
+  }
+  .comingsoon-cloud-2 {
+    top: 60%;
+  }
+  .comingsoon-cloud-3 {
+    top: 50%;
+  }
+}
 .comingsoon-cloud-1 {
   position: absolute;
-  top: 20%;
+  top: 15%;
   // left: 50%;
   z-index: 99;
   width: 10rem;
 }
 .comingsoon-cloud-2 {
   position: absolute;
-  top: 60%;
+  top: 40%;
   // left: 10%;
   z-index: 99;
   width: 10rem;
 }
 .comingsoon-cloud-3 {
   position: absolute;
-  top: 50%;
+  top: 35%;
   // left: 90%;
   z-index: 99;
   width: 7.5rem;

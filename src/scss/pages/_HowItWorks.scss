@@ -1,5 +1,9 @@
 .letushelp {
   width: 100%;
+  .letushelp-grid {
+    position: relative;
+    z-index: 300;
+  }
   .luh-main {
     width: 100%;
     .landing-bg-light {

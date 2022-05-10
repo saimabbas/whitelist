@@ -10,7 +10,7 @@ import BlobGreen2 from "../assets/img/blob-green2.png";
 import BlobYellow from "../assets/img/blob-yellow.svg";
 import BlobYellow2 from "../assets/img/blob-yellow2.png";
 import LogoLight from "./../assets/img/logo-light.svg";
-import HeroBgLight from "./../assets/img/light-bg-without-clouds.png";
+import HeroBgLight from "./../assets/img/light-bg-wc.png";
 import Cloud1Light from "./../assets/img/cloud-1.png";
 import Cloud1Dark from "./../assets/img/cloud-1-dark.png";
 import Cloud2Light from "./../assets/img/cloud-2.png";

@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  position: relative;
+  z-index: 300;
   .sh-heading {
     width: max-content;
     position: relative;
