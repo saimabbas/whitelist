@@ -4405,11 +4405,13 @@ h6 {
 
 .coomsoondark .launch-screen > button svg {
   margin: 0 0 0 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.coomsoondark .launch-screen > button:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+.coomsoondark .launch-screen > button:hover svg {
+  -webkit-transform: translate(3px, -3px);
+          transform: translate(3px, -3px);
 }
 
 .coomsoondark .comsoondmain {
