@@ -2,6 +2,9 @@
   width: 100%;
   padding: 5rem;
   background-color: #243f71;
+  .back-audio {
+    display: none;
+  }
   .passengermain {
     width: 100%;
     position: relative;
@@ -96,6 +99,8 @@
             background: rgba(255, 255, 255, 0.1);
             width: 20%;
             height: 3.5rem;
+            padding: 0.5rem;
+            backdrop-filter: blur(3px);
             button {
               display: flex;
               justify-content: center;
@@ -104,13 +109,18 @@
               border-radius: 50%;
               background-color: transparent;
               border: none;
-              height: 100%;
+              height: 3rem;
+              height: 3rem;
+              transition: 0 !important;
               svg {
                 width: 100%;
               }
             }
-            button:hover {
+            button.passengers-audio-active-btn {
               background-color: #fff;
+              svg path {
+                stroke: #000 !important;
+              }
             }
           }
           .passengerscomingsoon {
@@ -118,6 +128,7 @@
             justify-content: center;
             align-items: center;
             width: 50%;
+            backdrop-filter: blur(3px);
             padding: 1.5rem 0;
             color: #fff;
             background: linear-gradient(
@@ -126,9 +137,12 @@
               rgba(255, 255, 255, 0.2) 100%
             );
             border: unset;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             font-weight: 400;
             margin: 0 0 0 2rem;
+          }
+          b {
+            margin: 0 0 0 0.25rem;
           }
         }
       }
@@ -157,20 +171,26 @@
             justify-content: center;
             align-items: center;
             background: rgba(255, 255, 255, 0.1);
-            max-width: 4rem;
-            max-height: 4rem;
-            min-width: 4rem;
-            min-height: 4rem;
+            max-width: 4.5rem;
+            max-height: 4.5rem;
+            min-width: 4.5rem;
+            min-height: 4.5rem;
             border-radius: 50%;
             margin: 0 0 0 1rem;
             cursor: pointer;
             svg {
-              max-width: 1.75rem;
+              width: 2rem;
               color: #fff;
             }
           }
           .pibox:hover {
             background: #fff;
+            svg {
+              fill: #000 !important;
+              path {
+                fill: #000 !important;
+              }
+            }
           }
         }
       }
@@ -196,6 +216,7 @@
           width: 100%;
           height: 100%;
           img {
+            width: 100%;
             border-radius: 1rem;
             border: 1px solid rgba(255, 255, 255, 0.6);
           }
@@ -243,7 +264,7 @@
             font-size: 1.55rem;
             color: #fff;
             font-weight: 500;
-            margin: 2rem 0 0 0;
+            margin: 1.5rem 0 0 0;
             text-transform: uppercase;
           }
         }
@@ -256,80 +277,17 @@
       justify-content: center;
       width: 100%;
       padding: 10rem 0 0 0;
-      p {
-        font-size: 3rem;
-        color: #fff;
-        font-weight: 400;
-        text-transform: uppercase;
-        margin: 0 0 3rem 0;
-      }
       .pfaqbox {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 85%;
         flex-direction: column;
-        .firstpassfaq {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .accordion {
           width: 100%;
-          flex-direction: column;
-          .fpfquest {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 2rem 4rem;
-            background: #09062c;
-            transform: skew(-20deg, 0deg);
-            margin: 0 0 2rem 0;
-            border-bottom: 0.5px solid #fff;
-            .fpfqleft {
-              display: flex;
-              justify-content: flex-start;
-              align-items: center;
-              width: 70%;
-              span {
-                color: #fff;
-                font-weight: 500;
-                font-size: 2.5rem;
-                margin: 0 6rem 0 0;
-              }
-              p {
-                font-size: 1.85rem;
-                color: #fff;
-                font-weight: 400;
-                text-transform: uppercase;
-                margin: 0 !important;
-              }
-            }
-            .fpfqright {
-              display: flex;
-              justify-content: flex-end;
-              align-items: center;
-              svg {
-                color: #fff;
-                font-size: 4rem;
-              }
-            }
-          }
-          .fpfans {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            padding: 2rem 4rem;
-            background: #09062c;
-            transform: skew(-15deg, 0deg);
-            margin: 0 0 2rem 0;
-            h6 {
-              font-size: 1.6rem;
-              font-weight: 300;
-              color: #fff;
-              text-transform: normal;
-            }
-          }
+        }
+        .accordion-item {
+          margin: 0 0 3.5rem 0;
         }
       }
     }
@@ -339,7 +297,7 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      padding: 10rem 0;
+      padding: 10rem 0 35rem 0;
       h6 {
         font-size: 3rem;
         color: #fff;
@@ -395,4 +353,239 @@
   right: 0;
   transform: translate(60%, -50%);
   z-index: 100;
+}
+
+.passengers-section-heading {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+.proadmap-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 7.5rem 0 0 0;
+  padding: 5rem 0 10rem 0;
+}
+.passengers-roadmap {
+  width: 100%;
+  margin: 7.5rem 0 0 0;
+}
+.proadmap-center-line-box {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1px;
+  background-color: #fff;
+  .proadmap-center-line-box-top {
+    width: max-content;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > div:nth-child(1) {
+      width: 4.5rem;
+      height: 1px;
+      background-color: #fff;
+    }
+    & > div:nth-child(2) {
+      width: 2.5rem;
+      height: 1px;
+      background-color: #fff;
+      margin: 0.75rem 0 0 0;
+    }
+  }
+  .proadmap-center-line-box-bottom {
+    width: max-content;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > div:nth-child(1) {
+      width: 2.5rem;
+      height: 1px;
+      background-color: #fff;
+      margin: 0 0 0.75rem 0;
+    }
+    & > div:nth-child(2) {
+      width: 4.5rem;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+}
+.proadmap-box {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  .proadmap-box-number {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5rem 0 0;
+    span {
+      font-size: 18.5rem;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+      font-family: conthrax, sans-serif;
+    }
+  }
+  .proadmap-box-text-con {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    span {
+      width: 5rem;
+      height: 1px;
+      background-color: #fff;
+      display: block;
+    }
+    .proadmap-box-text-con-box {
+      position: relative;
+      width: max-content;
+      img {
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+      }
+      h4 {
+        font-size: 2.5rem;
+        color: #01fbc2;
+        margin: 0 0 0.5rem 0;
+        z-index: 55;
+        position: relative;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.8);
+        z-index: 55;
+        position: relative;
+      }
+    }
+  }
+}
+.proadmap-box-left {
+  .proadmap-box-number {
+    justify-content: flex-end;
+    padding: 0 5rem 0 0;
+  }
+}
+.proadmap-box-right {
+  .proadmap-box-number {
+    justify-content: flex-start;
+    padding: 0 0 0 5rem;
+  }
+}
+.proadmap-box-1,
+.proadmap-box-3,
+.proadmap-box-5,
+.proadmap-box-7,
+.proadmap-box-9,
+.proadmap-box-11,
+.proadmap-box-13,
+.proadmap-box-15,
+.proadmap-box-17 {
+  .proadmap-box-text-con-box {
+    padding: 5rem 5rem 5rem 2.5rem;
+  }
+}
+.proadmap-box-2,
+.proadmap-box-4,
+.proadmap-box-6,
+.proadmap-box-8,
+.proadmap-box-10,
+.proadmap-box-12,
+.proadmap-box-14,
+.proadmap-box-16 {
+  .proadmap-box-text-con-box {
+    padding: 7.5rem 1.5rem 1.5rem 7.5rem;
+  }
+}
+.passengers-footer-bg {
+  width: 100%;
+  height: max-content;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+}
+
+.fpfquest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 4rem;
+  background: #09062c;
+  transform: skew(-15deg, 0deg);
+  border-bottom: 0.5px solid #fff;
+  .fpfqleft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 95%;
+    transform: skew(15deg, 0deg);
+    span {
+      color: #fff;
+      font-weight: 500;
+      font-size: 2.5rem;
+      margin: 0 5rem 0 0;
+      font-family: conthrax, sans-serif;
+    }
+    p {
+      font-size: 1.75rem;
+      color: #fff;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0 !important;
+      font-family: conthrax, sans-serif;
+    }
+  }
+  .fpfqright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: skew(15deg, 0deg);
+    svg {
+      color: #fff;
+      font-size: 2.5rem;
+    }
+  }
+}
+.fpfans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 4rem;
+  background: #09062c;
+  transform: skew(-15deg, 0deg);
+  margin: 1.5rem 0 0 0;
+  h6 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: #fff;
+    text-transform: normal;
+    transform: skew(15deg, 0deg);
+  }
 }

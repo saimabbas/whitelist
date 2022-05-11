@@ -6913,6 +6913,10 @@ h6 {
   background-color: #243f71;
 }
 
+.passengerpage .back-audio {
+  display: none;
+}
+
 .passengerpage .passengermain {
   width: 100%;
   position: relative;
@@ -7063,6 +7067,9 @@ h6 {
   background: rgba(255, 255, 255, 0.1);
   width: 20%;
   height: 3.5rem;
+  padding: 0.5rem;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .passengerpage .passengermain .passengersheaderhero .passengerheader .passengerheaderright .volumeicons button {
@@ -7079,15 +7086,22 @@ h6 {
   border-radius: 50%;
   background-color: transparent;
   border: none;
-  height: 100%;
+  height: 3rem;
+  height: 3rem;
+  -webkit-transition: 0 !important;
+  transition: 0 !important;
 }
 
 .passengerpage .passengermain .passengersheaderhero .passengerheader .passengerheaderright .volumeicons button svg {
   width: 100%;
 }
 
-.passengerpage .passengermain .passengersheaderhero .passengerheader .passengerheaderright .volumeicons button:hover {
+.passengerpage .passengermain .passengersheaderhero .passengerheader .passengerheaderright .volumeicons button.passengers-audio-active-btn {
   background-color: #fff;
+}
+
+.passengerpage .passengermain .passengersheaderhero .passengerheader .passengerheaderright .volumeicons button.passengers-audio-active-btn svg path {
+  stroke: #000 !important;
 }
 
 .passengerpage .passengermain .passengersheaderhero .passengerheader .passengerheaderright .passengerscomingsoon {
@@ -7101,14 +7115,20 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   padding: 1.5rem 0;
   color: #fff;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.08)), to(rgba(255, 255, 255, 0.2)));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.2) 100%);
   border: unset;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin: 0 0 0 2rem;
+}
+
+.passengerpage .passengermain .passengersheaderhero .passengerheader .passengerheaderright b {
+  margin: 0 0 0 0.25rem;
 }
 
 .passengerpage .passengermain .passengersheaderhero .passengershero {
@@ -7162,22 +7182,30 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  max-width: 4rem;
-  max-height: 4rem;
-  min-width: 4rem;
-  min-height: 4rem;
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+  min-width: 4.5rem;
+  min-height: 4.5rem;
   border-radius: 50%;
   margin: 0 0 0 1rem;
   cursor: pointer;
 }
 
 .passengerpage .passengermain .passengersheaderhero .passengershero .passengersicons .pibox svg {
-  max-width: 1.75rem;
+  width: 2rem;
   color: #fff;
 }
 
 .passengerpage .passengermain .passengersheaderhero .passengershero .passengersicons .pibox:hover {
   background: #fff;
+}
+
+.passengerpage .passengermain .passengersheaderhero .passengershero .passengersicons .pibox:hover svg {
+  fill: #000 !important;
+}
+
+.passengerpage .passengermain .passengersheaderhero .passengershero .passengersicons .pibox:hover svg path {
+  fill: #000 !important;
 }
 
 .passengerpage .passengermain .passengersswiper {
@@ -7217,6 +7245,7 @@ h6 {
 }
 
 .passengerpage .passengermain .passengersswiper .passengersmainswiper .passengerslide img {
+  width: 100%;
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
@@ -7293,7 +7322,7 @@ h6 {
   font-size: 1.55rem;
   color: #fff;
   font-weight: 500;
-  margin: 2rem 0 0 0;
+  margin: 1.5rem 0 0 0;
   text-transform: uppercase;
 }
 
@@ -7315,14 +7344,6 @@ h6 {
   padding: 10rem 0 0 0;
 }
 
-.passengerpage .passengermain .passengersfaq p {
-  font-size: 3rem;
-  color: #fff;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 0 0 3rem 0;
-}
-
 .passengerpage .passengermain .passengersfaq .pfaqbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7340,110 +7361,12 @@ h6 {
           flex-direction: column;
 }
 
-.passengerpage .passengermain .passengersfaq .pfaqbox .firstpassfaq {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.passengerpage .passengermain .passengersfaq .pfaqbox .accordion {
   width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.passengerpage .passengermain .passengersfaq .pfaqbox .firstpassfaq .fpfquest {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  padding: 2rem 4rem;
-  background: #09062c;
-  -webkit-transform: skew(-20deg, 0deg);
-          transform: skew(-20deg, 0deg);
-  margin: 0 0 2rem 0;
-  border-bottom: 0.5px solid #fff;
-}
-
-.passengerpage .passengermain .passengersfaq .pfaqbox .firstpassfaq .fpfquest .fpfqleft {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 70%;
-}
-
-.passengerpage .passengermain .passengersfaq .pfaqbox .firstpassfaq .fpfquest .fpfqleft span {
-  color: #fff;
-  font-weight: 500;
-  font-size: 2.5rem;
-  margin: 0 6rem 0 0;
-}
-
-.passengerpage .passengermain .passengersfaq .pfaqbox .firstpassfaq .fpfquest .fpfqleft p {
-  font-size: 1.85rem;
-  color: #fff;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 0 !important;
-}
-
-.passengerpage .passengermain .passengersfaq .pfaqbox .firstpassfaq .fpfquest .fpfqright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.passengerpage .passengermain .passengersfaq .pfaqbox .firstpassfaq .fpfquest .fpfqright svg {
-  color: #fff;
-  font-size: 4rem;
-}
-
-.passengerpage .passengermain .passengersfaq .pfaqbox .firstpassfaq .fpfans {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  padding: 2rem 4rem;
-  background: #09062c;
-  -webkit-transform: skew(-15deg, 0deg);
-          transform: skew(-15deg, 0deg);
-  margin: 0 0 2rem 0;
-}
-
-.passengerpage .passengermain .passengersfaq .pfaqbox .firstpassfaq .fpfans h6 {
-  font-size: 1.6rem;
-  font-weight: 300;
-  color: #fff;
-  text-transform: normal;
+.passengerpage .passengermain .passengersfaq .pfaqbox .accordion-item {
+  margin: 0 0 3.5rem 0;
 }
 
 .passengerpage .passengermain .passengersaboutus {
@@ -7461,7 +7384,7 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 10rem 0;
+  padding: 10rem 0 35rem 0;
 }
 
 .passengerpage .passengermain .passengersaboutus h6 {
@@ -7536,6 +7459,347 @@ h6 {
   -webkit-transform: translate(60%, -50%);
           transform: translate(60%, -50%);
   z-index: 100;
+}
+
+.passengers-section-heading {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.proadmap-container {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 7.5rem 0 0 0;
+  padding: 5rem 0 10rem 0;
+}
+
+.passengers-roadmap {
+  width: 100%;
+  margin: 7.5rem 0 0 0;
+}
+
+.proadmap-center-line-box {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 1px;
+  background-color: #fff;
+}
+
+.proadmap-center-line-box .proadmap-center-line-box-top {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proadmap-center-line-box .proadmap-center-line-box-top > div:nth-child(1) {
+  width: 4.5rem;
+  height: 1px;
+  background-color: #fff;
+}
+
+.proadmap-center-line-box .proadmap-center-line-box-top > div:nth-child(2) {
+  width: 2.5rem;
+  height: 1px;
+  background-color: #fff;
+  margin: 0.75rem 0 0 0;
+}
+
+.proadmap-center-line-box .proadmap-center-line-box-bottom {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proadmap-center-line-box .proadmap-center-line-box-bottom > div:nth-child(1) {
+  width: 2.5rem;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 0 0.75rem 0;
+}
+
+.proadmap-center-line-box .proadmap-center-line-box-bottom > div:nth-child(2) {
+  width: 4.5rem;
+  height: 1px;
+  background-color: #fff;
+}
+
+.proadmap-box {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proadmap-box .proadmap-box-number {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 5rem 0 0;
+}
+
+.proadmap-box .proadmap-box-number span {
+  font-size: 18.5rem;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+  font-family: conthrax, sans-serif;
+}
+
+.proadmap-box .proadmap-box-text-con {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proadmap-box .proadmap-box-text-con span {
+  width: 5rem;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+}
+
+.proadmap-box .proadmap-box-text-con .proadmap-box-text-con-box {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.proadmap-box .proadmap-box-text-con .proadmap-box-text-con-box img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.proadmap-box .proadmap-box-text-con .proadmap-box-text-con-box h4 {
+  font-size: 2.5rem;
+  color: #01fbc2;
+  margin: 0 0 0.5rem 0;
+  z-index: 55;
+  position: relative;
+}
+
+.proadmap-box .proadmap-box-text-con .proadmap-box-text-con-box p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 55;
+  position: relative;
+}
+
+.proadmap-box-left .proadmap-box-number {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 5rem 0 0;
+}
+
+.proadmap-box-right .proadmap-box-number {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 0 0 5rem;
+}
+
+.proadmap-box-1 .proadmap-box-text-con-box,
+.proadmap-box-3 .proadmap-box-text-con-box,
+.proadmap-box-5 .proadmap-box-text-con-box,
+.proadmap-box-7 .proadmap-box-text-con-box,
+.proadmap-box-9 .proadmap-box-text-con-box,
+.proadmap-box-11 .proadmap-box-text-con-box,
+.proadmap-box-13 .proadmap-box-text-con-box,
+.proadmap-box-15 .proadmap-box-text-con-box,
+.proadmap-box-17 .proadmap-box-text-con-box {
+  padding: 5rem 5rem 5rem 2.5rem;
+}
+
+.proadmap-box-2 .proadmap-box-text-con-box,
+.proadmap-box-4 .proadmap-box-text-con-box,
+.proadmap-box-6 .proadmap-box-text-con-box,
+.proadmap-box-8 .proadmap-box-text-con-box,
+.proadmap-box-10 .proadmap-box-text-con-box,
+.proadmap-box-12 .proadmap-box-text-con-box,
+.proadmap-box-14 .proadmap-box-text-con-box,
+.proadmap-box-16 .proadmap-box-text-con-box {
+  padding: 7.5rem 1.5rem 1.5rem 7.5rem;
+}
+
+.passengers-footer-bg {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+}
+
+.fpfquest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 3rem 4rem;
+  background: #09062c;
+  -webkit-transform: skew(-15deg, 0deg);
+          transform: skew(-15deg, 0deg);
+  border-bottom: 0.5px solid #fff;
+}
+
+.fpfquest .fpfqleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 95%;
+  -webkit-transform: skew(15deg, 0deg);
+          transform: skew(15deg, 0deg);
+}
+
+.fpfquest .fpfqleft span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 0 5rem 0 0;
+  font-family: conthrax, sans-serif;
+}
+
+.fpfquest .fpfqleft p {
+  font-size: 1.75rem;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 !important;
+  font-family: conthrax, sans-serif;
+}
+
+.fpfquest .fpfqright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: skew(15deg, 0deg);
+          transform: skew(15deg, 0deg);
+}
+
+.fpfquest .fpfqright svg {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.fpfans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2rem 4rem;
+  background: #09062c;
+  -webkit-transform: skew(-15deg, 0deg);
+          transform: skew(-15deg, 0deg);
+  margin: 1.5rem 0 0 0;
+}
+
+.fpfans h6 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 3rem;
+  color: #fff;
+  text-transform: normal;
+  -webkit-transform: skew(15deg, 0deg);
+          transform: skew(15deg, 0deg);
 }
 
 h1 {
@@ -8993,12 +9257,14 @@ footer .more-btn svg {
 
 .footer-mob .accordion-body,
 .voting-open-mob-acc .accordion-body,
+.passengersfaq .accordion-body,
 .checkoutright-mob .accordion-body {
   padding: 0;
 }
 
 .footer-mob .accordion-item,
 .voting-open-mob-acc .accordion-item,
+.passengersfaq .accordion-item,
 .checkoutright-mob .accordion-item {
   border-radius: 0 !important;
   border: 0 !important;
@@ -9008,6 +9274,7 @@ footer .more-btn svg {
 
 .footer-mob .accordion-button:not(.collapsed),
 .voting-open-mob-acc .accordion-button:not(.collapsed),
+.passengersfaq .accordion-button:not(.collapsed),
 .checkoutright-mob .accordion-button:not(.collapsed) {
   color: unset;
   -webkit-box-shadow: unset !important;
@@ -9019,6 +9286,7 @@ footer .more-btn svg {
 
 .footer-mob .accordion-button:not(.collapsed) svg,
 .voting-open-mob-acc .accordion-button:not(.collapsed) svg,
+.passengersfaq .accordion-button:not(.collapsed) svg,
 .checkoutright-mob .accordion-button:not(.collapsed) svg {
   -webkit-transform: rotate(0) !important;
           transform: rotate(0) !important;
@@ -9026,18 +9294,21 @@ footer .more-btn svg {
 
 .footer-mob .accordion-button,
 .voting-open-mob-acc .accordion-button,
+.passengersfaq .accordion-button,
 .checkoutright-mob .accordion-button {
   background-color: unset !important;
 }
 
 .footer-mob .accordion-button::after,
 .voting-open-mob-acc .accordion-button::after,
+.passengersfaq .accordion-button::after,
 .checkoutright-mob .accordion-button::after {
   display: none !important;
 }
 
 .footer-mob .accordion-button:focus,
 .voting-open-mob-acc .accordion-button:focus,
+.passengersfaq .accordion-button:focus,
 .checkoutright-mob .accordion-button:focus {
   border: 0 !important;
   -webkit-box-shadow: unset !important;
@@ -9046,6 +9317,7 @@ footer .more-btn svg {
 
 .footer-mob .accordion-button,
 .voting-open-mob-acc .accordion-button,
+.passengersfaq .accordion-button,
 .checkoutright-mob .accordion-button {
   padding: 0;
 }
