@@ -294,6 +294,10 @@ const Checkout = () => {
                       <input type="text" placeholder="Promo code" />
                       <button>Submit</button>
                     </div>
+                    <div className="cosub">
+                      <input type="text" placeholder="Affiliate code" />
+                      <button>Submit</button>
+                    </div>
                   </div>
                   <div className="checkoutright-mob">
                     <Accordion>
@@ -331,6 +335,10 @@ const Checkout = () => {
                               <p>Total</p>
                               <h6>0.62 ETH</h6>
                             </div>
+                          </div>
+                          <div className="cosub">
+                            <input type="text" placeholder="Promo code" />
+                            <button>Submit</button>
                           </div>
                           <div className="cosub">
                             <input type="text" placeholder="Promo code" />

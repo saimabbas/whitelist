@@ -263,7 +263,7 @@ const Subscribe = () => {
                   <TeamCard
                     img={Team3}
                     name="Serge Klassen"
-                    role="OPerations Manager"
+                    role="Operations Manager"
                   />
                   <TeamCard
                     img={Team4}
@@ -312,7 +312,7 @@ const Subscribe = () => {
                   <TeamCard
                     img={Team16}
                     name="Salman Shawaf"
-                    role="Advisor(Founder of Dippies)"
+                    role="Advisor (Founder of Dippies)"
                   />
                   <TeamCard img={Team17} name="Roland Dudko" role="Chief Dev" />
                   <TeamCard img={Team18} name="Matt Kohn" role="Development" />
