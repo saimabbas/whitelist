@@ -1,6 +1,6 @@
 import React from "react";
 
-const Menu = () => {
+const Menu = (props) => {
   return (
     <svg
       width="25"
@@ -11,19 +11,19 @@ const Menu = () => {
     >
       <path
         d="M3.64258 6.45654H21.7207"
-        stroke="#1F194D"
+        stroke={props.color}
         stroke-width="1.5"
         stroke-linecap="round"
       />
       <path
         d="M3.64258 12.3755H21.7207"
-        stroke="#1F194D"
+        stroke={props.color}
         stroke-width="1.5"
         stroke-linecap="round"
       />
       <path
         d="M3.64258 18.2939H21.7207"
-        stroke="#1F194D"
+        stroke={props.color}
         stroke-width="1.5"
         stroke-linecap="round"
       />

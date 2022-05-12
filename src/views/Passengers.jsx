@@ -15,6 +15,7 @@ import PassengerSwiperImg from "../assets/img/passengersswiper.png";
 import PassengersBg from "../assets/img/passengers-bg.png";
 import PassengersFooterBg from "../assets/img/passengers-bottom-bg-img.png";
 import PassengersHeaderBg from "../assets/img/passengers-header-bg.png";
+import PassengersHeaderMobBg from "../assets/img/passengermobheader.png";
 import PassengersHeroMountains from "../assets/img/passengers-hero-mountains.png";
 import Planet1 from "../assets/img/Planets/planet-1.svg";
 import Planet2 from "../assets/img/Planets/planet-2.svg";
@@ -25,6 +26,7 @@ import PBG1 from "../assets/img/PRoadmap/proadmap-box-bg-1.png";
 import PBG2 from "../assets/img/PRoadmap/proadmap-box-bg-2.png";
 import PassengerTeam from "../assets/img/passengersteam.png";
 import { MdExpandMore } from "react-icons/md";
+import Menu from "../assets/icons/Menu";
 
 const Passengers = () => {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
@@ -54,6 +56,11 @@ const Passengers = () => {
           <img
             className="passengers-header-bg"
             src={PassengersHeaderBg}
+            alt="PassengersBg"
+          />
+          <img
+            className="passengers-header-mob-bg"
+            src={PassengersHeaderMobBg}
             alt="PassengersBg"
           />
           <div className="passengersmain-content">
@@ -93,7 +100,7 @@ const Passengers = () => {
                         <b>A</b>bout us
                       </a>
                     </li>
-                    <li>
+                    <li className="faqnomarg">
                       <a href="#">
                         <b>F</b>aq
                       </a>
@@ -130,8 +137,11 @@ const Passengers = () => {
                       </button>
                     )}
                   </div>
+                  <div className="passengersheadermob">
+                    <Menu color="#fff" />
+                  </div>
                   <button className="passengerscomingsoon">
-                    <b>Mint </b>(Coming Soon)
+                    <b>Mint </b> (Coming Soon)
                   </button>
                 </div>
               </header>
@@ -532,7 +542,7 @@ const Passengers = () => {
             </div>
             <div className="box">
               <div className="passengersfaq">
-                <p>Frequently asked questions</p>
+                <h3>Frequently asked questions</h3>
 
                 <div className="pfaqbox">
                   <Accordion>

@@ -21,6 +21,7 @@
       left: 0;
       object-fit: cover;
       z-index: 99;
+      height: 100%;
     }
     .passengers-header-bg {
       width: 80%;
@@ -30,6 +31,9 @@
       left: 0;
       object-fit: contain;
       z-index: 99;
+    }
+    .passengers-header-mob-bg {
+      display: none;
     }
     .passengersheaderhero {
       width: 100%;
@@ -277,6 +281,14 @@
       justify-content: center;
       width: 100%;
       padding: 10rem 0 0 0;
+      h3 {
+        font-size: 3rem;
+        color: #fff;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0 0 4rem 0;
+        text-align: center;
+      }
       .pfaqbox {
         display: flex;
         justify-content: center;
@@ -587,5 +599,302 @@
     color: #fff;
     text-transform: normal;
     transform: skew(15deg, 0deg);
+  }
+}
+.passengersheadermob {
+  display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderleft
+    ul
+    li {
+    margin: 0 4rem 0 0;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderleft
+    ul
+    li {
+    margin: 0 1.5rem 0 0;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderleft
+    ul
+    li.faqnomarg {
+    margin: 0;
+  }
+  .passengerpage .passengermain .passengersheaderhero .passengerheader {
+    height: 10.5rem;
+    padding: 0 3rem;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderleft
+    ul {
+    margin: 0 0 0 4rem;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderleft
+    ul
+    li
+    a {
+    font-size: 1.45rem;
+  }
+  .passengerpage {
+    padding: 3.5rem;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderleft
+    img {
+    width: 25%;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderright
+    .volumeicons {
+    width: 30%;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderright
+    .passengerscomingsoon {
+    width: 60%;
+    margin: 0 0 0 1rem;
+    padding: 1.25rem 0;
+  }
+  .passengerpage .passengermain .passengersteam .passengersteamgrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95%;
+  }
+  .passengerpage .passengermain .passengersfaq .pfaqbox {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .passengerpage .passengermain .passengersheaderhero {
+    min-height: 100vh;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderleft
+    ul {
+    display: none;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderright
+    .passengerscomingsoon {
+    display: none;
+  }
+  .passengerpage .passengermain .passengersheaderhero .passengerheader {
+    height: 7.5rem;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderleft
+    img {
+    width: 40%;
+  }
+  .passengersheaderhero .passengerheader .passengerheaderright .volumeicons {
+    width: 45% !important;
+  }
+  .passengersheadermob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.14);
+    border-radius: 50%;
+    min-width: 4.5rem;
+    min-height: 4.5rem;
+    max-height: 4.5rem;
+    max-width: 4.5rem;
+    box-shadow: 0px 16px 34px -9px rgb(0 76 172 / 61%);
+    color: #fff;
+    margin: 0 0 0 1.5rem;
+    svg {
+      width: 2.75rem;
+      height: max-content;
+      color: #fff;
+    }
+  }
+  .passengerpage .passengermain .passengersheaderhero .passengershero h3 {
+    font-size: 6.25rem;
+  }
+  .proadmap-center-line-box {
+    display: none;
+  }
+  .proadmap-box {
+    flex-direction: column;
+  }
+  .proadmap-box .proadmap-box-text-con span {
+    display: none;
+  }
+  .proadmap-box .proadmap-box-text-con .proadmap-box-text-con-box img {
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+  .proadmap-box .proadmap-box-text-con {
+    width: 75%;
+  }
+  .proadmap-container {
+    margin: 0;
+    padding: 2rem 0 5rem 0;
+  }
+  .proadmap-box-1 .proadmap-box-text-con-box {
+    padding: 5rem 8rem 5rem 2.5rem;
+  }
+  .proadmap-box-left .proadmap-box-number {
+    padding: 0;
+    justify-content: center;
+  }
+  .proadmap-box.proadmap-box-right {
+    flex-direction: column-reverse;
+  }
+  .proadmap-box-right .proadmap-box-number {
+    padding: 0;
+    justify-content: center;
+  }
+  .passengerpage .passengermain .passengersteam .passengersteamgrid {
+    grid-gap: 3rem 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fpfquest {
+    padding: 2rem;
+  }
+  .fpfquest .fpfqleft p {
+    font-size: 1.45rem;
+  }
+  .fpfquest .fpfqleft span {
+    font-size: 2.25rem;
+    margin: 0 3rem 0 0;
+  }
+  .fpfans h6 {
+    font-size: 1.55rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .passengerpage {
+    padding: 0;
+  }
+  .passengers-header-bg {
+    display: none;
+  }
+  .passengerpage .passengermain .passengers-header-mob-bg {
+    width: 100%;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    z-index: 99;
+    display: block;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderleft
+    img {
+    width: 75%;
+  }
+  .passengerpage
+    .passengermain
+    .passengersheaderhero
+    .passengerheader
+    .passengerheaderright
+    .volumeicons {
+    display: none;
+  }
+  .passengerpage .passengermain .passengersheaderhero {
+    min-height: 70vh;
+  }
+  .passengerpage .passengermain .passengersheaderhero .passengershero h3 {
+    font-size: 2.5rem;
+  }
+  .proadmap-box-1 .proadmap-box-text-con-box {
+    padding: 7rem 2rem 5rem 2.5rem;
+  }
+  .proadmap-box .proadmap-box-text-con {
+    width: 74%;
+  }
+  .passengerpage
+    .passengermain
+    .passengersteam
+    .passengersteamgrid
+    .ptgmainbox
+    img {
+    width: 100%;
+    height: 100%;
+  }
+  .passengerpage .passengermain .passengersteam .passengersteamgrid {
+    width: 100%;
+    grid-gap: 3rem 2rem;
+  }
+  .passengerpage .passengermain .passengersaboutus .passaboutusbtn {
+    width: 100%;
+    flex-direction: column;
+    button {
+      width: 60%;
+      margin: 0 0 4rem 0;
+      padding: 2.15rem 1.5rem;
+      svg {
+        width: 3.75rem;
+        height: 3.75rem;
+      }
+    }
+  }
+  .passengerpage .passengermain .passengersaboutus p {
+    font-size: 1.65rem;
+    br {
+      display: none;
+    }
+  }
+  .fpfquest .fpfqleft p {
+    font-size: 1rem;
+  }
+  .fpfquest .fpfqleft span {
+    font-size: 1.75rem;
+    margin: 0 1.5rem 0 0;
+  }
+  .fpfans h6 {
+    font-size: 1.25rem;
   }
 }

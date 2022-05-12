@@ -19,7 +19,6 @@ import { shortenAddress, toYdecimalPlace } from "../../../utils/constants";
 import ProfileDetailsModal from "../../pages/Home/ProfileDetailsModal";
 import useStylesEffect from "./hooks";
 
-
 const Header = (props) => {
   useWalletConnectStatus();
   useStylesEffect();
@@ -35,7 +34,13 @@ const Header = (props) => {
   };
 
   const { state, connectMetamask, disconnectWallet } = WalletUserContext();
-  const { account, balance, isBalanceLoading, isWalletConnected, userSubscription } = state;
+  const {
+    account,
+    balance,
+    isBalanceLoading,
+    isWalletConnected,
+    userSubscription,
+  } = state;
   // console.log('userSubscription', userSubscription)
   const handleWalletConnect = () => {
     connectMetamask();
@@ -55,7 +60,7 @@ const Header = (props) => {
             </Link>
             <div className="mobmenuicon" onClick={props.openMobHeader}>
               <div className="mobmenubox">
-                <Menu />
+                <Menu color="#1f194d" />
               </div>
             </div>
             {/* <img src={LogoLight} alt="LogoLight" /> */}
