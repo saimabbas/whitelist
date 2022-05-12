@@ -449,7 +449,7 @@ const ComingSoonDark = () => {
     <div className="app light-theme">
       <div className="coomsoondark">
         <div className="launch-screen">
-          <button className="launch-btn">Launch Site</button>
+          <button className="launch-btn">Launch</button>
           {/* <img className="launch-bg" src={HeroBgDark} alt="HeroBgDark" /> */}
           {/* <img src={Moon} alt="Moon" className="comingsoon-moon" />
           <img
