@@ -158,9 +158,9 @@ const ComingSoonDark = () => {
         },
         {
           opacity: 1,
-          duration: 0.65,
+          duration: 0.75,
           stagger: {
-            repeat: 2,
+            repeat: 3,
             each: 0.1,
             from: "random",
           },
@@ -220,11 +220,11 @@ const ComingSoonDark = () => {
       .fromTo(
         ".comingsoon-heading",
         {
-          scale: 0.75,
+          scale: 0.65,
         },
         {
           scale: 1,
-          duration: 1.25,
+          duration: 1.4,
           delay: 0.5,
           ease: Power4.easeInOut,
         },
@@ -233,11 +233,11 @@ const ComingSoonDark = () => {
       .fromTo(
         ".comdarktimer",
         {
-          scale: 0.75,
+          scale: 0.65,
         },
         {
           scale: 1,
-          duration: 1.25,
+          duration: 1.4,
           ease: Power4.easeInOut,
         },
         "<0"
@@ -438,7 +438,7 @@ const ComingSoonDark = () => {
     $(".launch-btn").click(() => {
       $(".comsoondmain").css({ display: "block" });
       $(".launch-screen").css({ display: "none" });
-      ad.current.play();
+      // ad.current.play();
       CMAnim.play(0);
       setTimeout(() => {
         vid.current.play();
