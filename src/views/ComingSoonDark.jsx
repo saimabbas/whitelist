@@ -450,7 +450,7 @@ const ComingSoonDark = () => {
       <div className="coomsoondark">
         <div className="launch-screen">
           <button className="launch-btn">Launch Site</button>
-          <img className="launch-bg" src={HeroBgDark} alt="HeroBgDark" />
+          {/* <img className="launch-bg" src={HeroBgDark} alt="HeroBgDark" /> */}
           {/* <img src={Moon} alt="Moon" className="comingsoon-moon" />
           <img
             src={Cloud1Dark}

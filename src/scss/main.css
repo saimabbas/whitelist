@@ -4390,6 +4390,7 @@ h6 {
           justify-content: center;
   position: relative;
   overflow: hidden;
+  background-color: #000;
 }
 
 .coomsoondark .launch-screen .launch-bg {
@@ -4418,9 +4419,8 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.75rem;
-  color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#394dff), to(#6833ff));
-  background: linear-gradient(#394dff, #6833ff);
+  color: #000;
+  background: #fff;
   border-radius: 2rem;
   border: unset;
   padding: 1.5rem 3.5rem;
