@@ -3,7 +3,7 @@ import Passengers from "./../assets/img/passenger.png";
 import Instagram from "../assets/icons/Instagram";
 import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
-import HeroBgDark from "./../assets/img/comingsoon-dark-bg-pc.png";
+import HeroBgDark from "./../assets/img/pl.png";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
 import BackAudio from "../assets/audio/Passengers-coming-soon.ogg";
 import { gsap } from "gsap";
@@ -446,11 +446,9 @@ const ComingSoonDark = () => {
     <div className="app light-theme">
       <div className="coomsoondark">
         <div className="launch-screen">
-          <button className="launch-btn">
-            Launch Site <FaRocket />
-          </button>
+          <button className="launch-btn">Launch Site</button>
           <img className="launch-bg" src={HeroBgDark} alt="HeroBgDark" />
-          <img src={Moon} alt="Moon" className="comingsoon-moon" />
+          {/* <img src={Moon} alt="Moon" className="comingsoon-moon" />
           <img
             src={Cloud1Dark}
             alt="Cloud1Dark"
@@ -465,7 +463,7 @@ const ComingSoonDark = () => {
             src={Cloud3Dark}
             alt="ClouDarkht"
             className="comingsoon-cloud-3"
-          />
+          /> */}
         </div>
 
         <div className="comsoondmain">
