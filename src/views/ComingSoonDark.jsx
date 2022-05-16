@@ -158,22 +158,6 @@ const ComingSoonDark = () => {
         },
         "<0.5"
       )
-      /* .fromTo(
-        ".comdarktimer > i",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.25,
-          stagger: {
-            repeat: 2,
-            each: 0.1,
-            from: "random",
-          },
-        },
-        "<0"
-      ) */
       .fromTo(
         ".comdarktimer > *",
         {
@@ -209,7 +193,7 @@ const ComingSoonDark = () => {
         "<0.25"
       )
       .fromTo(
-        ".comingsoon-heading",
+        ".comsoondcontent",
         {
           scale: 0.65,
         },
@@ -221,7 +205,7 @@ const ComingSoonDark = () => {
         },
         "<0"
       )
-      .fromTo(
+      /* .fromTo(
         ".comdarktimer",
         {
           scale: 0.65,
@@ -232,7 +216,7 @@ const ComingSoonDark = () => {
           ease: Power4.easeInOut,
         },
         "<0"
-      )
+      ) */
       .fromTo(
         ".comingsoon-dark-loader-box",
         {
@@ -254,7 +238,7 @@ const ComingSoonDark = () => {
           duration: 0.2,
           ease: Power3.easeInOut,
         },
-        "<0.25"
+        "<0"
       )
       .fromTo(
         ".comingsoon-op-component",
@@ -266,23 +250,7 @@ const ComingSoonDark = () => {
           duration: 0.2,
           ease: Power3.easeInOut,
         },
-        "<0.25"
-      )
-      .fromTo(
-        ".comdarkinput > *",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.1,
-          stagger: {
-            repeat: 2,
-            each: 0.05,
-            from: "random",
-          },
-        },
-        "<0.25"
+        "<0"
       )
       .fromTo(
         comingsoonTextComponent1Chars,
@@ -291,31 +259,46 @@ const ComingSoonDark = () => {
         },
         {
           opacity: 1,
-          duration: 0.2,
+          duration: 0.3,
           stagger: {
-            repeat: 0,
-            each: 0.05,
+            repeat: 2,
+            each: 0.015,
             from: "random",
           },
         },
-        "<0"
+        "<0.25"
       )
       .fromTo(
-        ".comingsoon-text-component-2",
+        ".comdarkinput .comdarkinputcomp",
         {
           opacity: 0,
         },
         {
           opacity: 1,
-          duration: 0.2,
-          repeat: 2,
-          /* stagger: {
+          duration: 0.5,
+          stagger: {
             repeat: 2,
-            each: 0.05,
-            from: "random",
-          }, */
+            each: 0.1,
+            // from: "random",
+          },
         },
         "<0.25"
+      )
+      .fromTo(
+        comingsoonTextComponent2Chars,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.3,
+          stagger: {
+            repeat: 2,
+            each: 0.015,
+            from: "random",
+          },
+        },
+        "<0.35"
       )
       .fromTo(
         comingsoonTextComponent3Chars,
@@ -324,14 +307,14 @@ const ComingSoonDark = () => {
         },
         {
           opacity: 1,
-          duration: 0.2,
+          duration: 0.3,
           stagger: {
-            repeat: 1,
-            each: 0.05,
+            repeat: 2,
+            each: 0.015,
             from: "random",
           },
         },
-        "<0.25"
+        "<0.35"
       )
       .fromTo(
         ".coomsoonicons svg",
@@ -440,7 +423,7 @@ const ComingSoonDark = () => {
     $(".launch-btn").click(() => {
       $(".comsoondmain").css({ display: "block" });
       $(".launch-screen").css({ display: "none" });
-      ad.current.play();
+      // ad.current.play();
       CMAnim.play(0);
       setTimeout(() => {
         vid.current.play();
@@ -520,7 +503,7 @@ const ComingSoonDark = () => {
               <h5 className="comingsoon-text-component-1">
                 Get notified when we are close to blast off:
               </h5>
-              <div className="comdarkinput comingsoon-op-component">
+              <div className="comdarkinput">
                 <input
                   type="text"
                   value={email}
@@ -528,21 +511,26 @@ const ComingSoonDark = () => {
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
+                  className="comdarkinputcomp"
                 />
-                <button onClick={handleSubscribe} disabled={isLoading}>
-                  {isLoading && (
-                    <SpinnerCircular
-                      size={20}
-                      thickness={50}
-                      speed={100}
-                      color="rgba(255, 255, 255, 1)"
-                      secondaryColor="rgba(0, 0, 0, 0.44)"
-                    />
-                  )}
-                  <span style={{ display: "inline-block", marginLeft: "5px" }}>
-                    Subscribe
-                  </span>
-                </button>
+                <div className="comdarkinputcomp">
+                  <button onClick={handleSubscribe} disabled={isLoading}>
+                    {isLoading && (
+                      <SpinnerCircular
+                        size={20}
+                        thickness={50}
+                        speed={100}
+                        color="rgba(255, 255, 255, 1)"
+                        secondaryColor="rgba(0, 0, 0, 0.44)"
+                      />
+                    )}
+                    <span
+                      style={{ display: "inline-block", marginLeft: "5px" }}
+                    >
+                      Subscribe
+                    </span>
+                  </button>
+                </div>
               </div>
               <h6 className="comingsoon-text-component-2">
                 If you have any questions, please contact us at:

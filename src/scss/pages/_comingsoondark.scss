@@ -259,9 +259,12 @@
     color: #fff;
     background-image: linear-gradient(#394dff, #6833ff);
     border-radius: 2rem;
-    width: 30%;
     border: unset;
     padding: 1.25rem 1.75rem;
+    width: 100%;
+  }
+  div {
+    width: 30%;
   }
 }
 
