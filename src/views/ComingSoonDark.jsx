@@ -86,10 +86,18 @@ const ComingSoonDark = () => {
     });
     const comingsoonHeadingChars = comingsoonHeading.chars;
 
-    const comingsoonTimer = new SplitText(".cst-1 span", {
+    const comingsoonTimer1 = new SplitText(".cst-1 span", {
       type: "chars",
     });
-    const comingsoonTimerChars = comingsoonTimer.chars;
+    const comingsoonTimerChars1 = comingsoonTimer1.chars;
+    const comingsoonTimer2 = new SplitText(".cst-2 span", {
+      type: "chars",
+    });
+    const comingsoonTimerChars2 = comingsoonTimer2.chars;
+    const comingsoonTimer3 = new SplitText(".cst-3 span", {
+      type: "chars",
+    });
+    const comingsoonTimerChars3 = comingsoonTimer3.chars;
 
     const comingsoonTextComponent1 = new SplitText(
       ".comingsoon-text-component-1",
@@ -151,7 +159,7 @@ const ComingSoonDark = () => {
           opacity: 1,
           duration: 0.75,
           stagger: {
-            repeat: 3,
+            repeat: 2.25,
             each: 0.1,
             from: "random",
           },
@@ -167,7 +175,7 @@ const ComingSoonDark = () => {
           opacity: 1,
           duration: 0.2,
           stagger: {
-            repeat: 1,
+            repeat: 0,
             each: 0.1,
             from: "random",
           },
@@ -177,20 +185,52 @@ const ComingSoonDark = () => {
       )
 
       .fromTo(
-        comingsoonTimerChars,
+        comingsoonTimerChars1,
         {
           opacity: 0,
         },
         {
           opacity: 1,
-          duration: 0.2,
+          duration: 0.25,
           stagger: {
-            repeat: 1,
-            each: 0.1,
+            repeat: 3,
+            each: 0.015,
             from: "random",
           },
         },
-        "<0.25"
+        "<0"
+      )
+      .fromTo(
+        comingsoonTimerChars2,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.25,
+          stagger: {
+            repeat: 3,
+            each: 0.015,
+            from: "random",
+          },
+        },
+        "<0"
+      )
+      .fromTo(
+        comingsoonTimerChars3,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.25,
+          stagger: {
+            repeat: 3,
+            each: 0.015,
+            from: "random",
+          },
+        },
+        "<0"
       )
       .fromTo(
         ".comsoondcontent",
@@ -199,8 +239,8 @@ const ComingSoonDark = () => {
         },
         {
           scale: 1,
-          duration: 1.4,
-          delay: 0.5,
+          duration: 1.5,
+          delay: 0.6,
           ease: Power4.easeInOut,
         },
         "<0"
