@@ -351,6 +351,9 @@
       padding: 2rem;
       border-radius: 1.5rem;
     }
+    div {
+      width: 100%;
+    }
     button {
       border-radius: 1.5rem;
       width: 100%;
@@ -374,5 +377,8 @@
   }
   .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday {
     border-radius: 1.5rem;
+  }
+  .coomsoondark .launch-screen {
+    min-height: calc(100vh - 3rem);
   }
 }

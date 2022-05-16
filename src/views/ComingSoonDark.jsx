@@ -157,10 +157,10 @@ const ComingSoonDark = () => {
         },
         {
           opacity: 1,
-          duration: 0.75,
+          duration: 0.65,
           stagger: {
             repeat: 2.25,
-            each: 0.1,
+            each: 0.05,
             from: "random",
           },
         },
@@ -175,11 +175,9 @@ const ComingSoonDark = () => {
           opacity: 1,
           duration: 0.2,
           stagger: {
-            repeat: 0,
             each: 0.1,
             from: "random",
           },
-          repeat: 1,
         },
         "<0.25"
       )
@@ -191,10 +189,10 @@ const ComingSoonDark = () => {
         },
         {
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
             repeat: 3,
-            each: 0.015,
+            each: 0.085,
             from: "random",
           },
         },
@@ -207,10 +205,10 @@ const ComingSoonDark = () => {
         },
         {
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
             repeat: 3,
-            each: 0.015,
+            each: 0.085,
             from: "random",
           },
         },
@@ -223,10 +221,10 @@ const ComingSoonDark = () => {
         },
         {
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
             repeat: 3,
-            each: 0.015,
+            each: 0.085,
             from: "random",
           },
         },
