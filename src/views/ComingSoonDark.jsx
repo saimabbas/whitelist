@@ -449,7 +449,7 @@ const ComingSoonDark = () => {
     $(".launch-btn").click(() => {
       $(".comsoondmain").css({ display: "block" });
       $(".launch-screen").css({ display: "none" });
-      // ad.current.play();
+      ad.current.play();
       CMAnim.play(0);
       setTimeout(() => {
         vid.current.play();
