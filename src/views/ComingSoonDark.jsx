@@ -238,23 +238,11 @@ const ComingSoonDark = () => {
         {
           scale: 1,
           duration: 1.5,
-          delay: 0.6,
+          delay: 0.8,
           ease: Power4.easeInOut,
         },
         "<0"
       )
-      /* .fromTo(
-        ".comdarktimer",
-        {
-          scale: 0.65,
-        },
-        {
-          scale: 1,
-          duration: 1.4,
-          ease: Power4.easeInOut,
-        },
-        "<0"
-      ) */
       .fromTo(
         ".comingsoon-dark-loader-box",
         {
@@ -461,7 +449,7 @@ const ComingSoonDark = () => {
     $(".launch-btn").click(() => {
       $(".comsoondmain").css({ display: "block" });
       $(".launch-screen").css({ display: "none" });
-      ad.current.play();
+      // ad.current.play();
       CMAnim.play(0);
       setTimeout(() => {
         vid.current.play();
