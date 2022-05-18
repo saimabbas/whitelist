@@ -102,24 +102,21 @@ const ComingSoonDark = () => {
     const comingsoonTextComponent1 = new SplitText(
       ".comingsoon-text-component-1",
       {
-        type: "chars",
-        type: "words",
+        type: "chars, words",
       }
     );
     const comingsoonTextComponent1Chars = comingsoonTextComponent1.chars;
     const comingsoonTextComponent2 = new SplitText(
       ".comingsoon-text-component-2",
       {
-        type: "chars",
-        type: "words",
+        type: "chars, words",
       }
     );
     const comingsoonTextComponent2Chars = comingsoonTextComponent2.chars;
     const comingsoonTextComponent3 = new SplitText(
       ".comingsoon-text-component-3",
       {
-        type: "chars",
-        type: "words",
+        type: "chars, words",
       }
     );
     const comingsoonTextComponent3Chars = comingsoonTextComponent3.chars;
