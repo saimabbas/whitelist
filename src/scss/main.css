@@ -3980,7 +3980,7 @@ h6 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: 1.5rem;
+  height: 1.35rem;
 }
 
 .comesoonpage {
@@ -4367,6 +4367,7 @@ h6 {
 
 .coomsoondark {
   width: 100%;
+  height: 100vh;
   background-color: #243f71;
 }
 
@@ -4441,7 +4442,7 @@ h6 {
 
 .coomsoondark .comsoondmain {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   width: 100%;
   padding: 5rem;
@@ -4487,12 +4488,11 @@ h6 {
 }
 
 .coomsoondark .comsoondmain .comsoondcontent h1 {
-  font-size: 9rem;
+  font-size: 6.5rem;
   letter-spacing: 7px;
   font-weight: 600;
   color: #fff;
   white-space: nowrap;
-  padding: 15rem 0rem 0 5rem;
   width: 100%;
   text-align: center;
   font-family: conthrax, sans-serif;
@@ -4514,7 +4514,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin: 4rem 0 8rem 0;
+  margin: 3.5rem 0 5rem 0;
 }
 
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer * {
@@ -4523,7 +4523,7 @@ h6 {
 
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday {
   border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 2.25rem;
+  border-radius: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4533,18 +4533,18 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 2.5rem;
+  padding: 1.25rem 2rem;
 }
 
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 {
-  font-size: 3rem;
+  font-size: 2.65rem;
   color: #fff;
   font-weight: 700;
 }
 
 .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 span {
   color: rgba(255, 255, 255, 0.4);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -4567,7 +4567,7 @@ h6 {
 }
 
 .coomsoondark h5 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   text-align: center;
@@ -4575,7 +4575,7 @@ h6 {
 }
 
 .coomsoondark h6 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   letter-spacing: 1px;
@@ -4584,11 +4584,11 @@ h6 {
 
 .coomsoondark h4 {
   color: #43dff6;
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
   letter-spacing: 1px;
   text-align: center;
-  margin: 2rem 0 8rem 0;
+  margin: 1.5rem 0 5rem 0;
 }
 
 .coomsoondark .coomsoonicons {
@@ -4608,7 +4608,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   width: 47%;
-  margin: 3rem auto 7rem auto;
+  margin: 2.5rem auto 5rem auto;
 }
 
 .coomsoondark .comdarkinput input {
@@ -4663,7 +4663,7 @@ h6 {
   bottom: 0;
   z-index: 1;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
