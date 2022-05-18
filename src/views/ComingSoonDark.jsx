@@ -238,7 +238,7 @@ const ComingSoonDark = () => {
         {
           scale: 1,
           duration: 1.5,
-          delay: 0.8,
+          delay: 0.75,
           ease: Power4.easeInOut,
         },
         "<0"
