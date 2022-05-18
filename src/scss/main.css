@@ -4747,34 +4747,52 @@ h6 {
 
 @media screen and (max-width: 1150px) {
   .coomsoondark .comsoondmain .comsoondcontent h1 {
-    padding: 15rem 0 0 0rem;
-    font-size: 9rem;
+    font-size: 5.5rem;
+  }
+  .comingsoon-dark-header img {
+    height: 1rem;
+  }
+  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 {
+    font-size: 2.25rem;
+  }
+  .coomsoondark
+.comsoondmain
+.comsoondcontent
+.comdarktimer
+.comdarkday
+h6
+span {
+    font-size: 1.15rem;
+  }
+  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday {
+    padding: 1.15rem 1.75rem;
+    border-radius: 1.25rem;
+  }
+  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer {
+    margin: 2.5rem 0 3.5rem 0;
+  }
+  .coomsoondark h5,
+  .coomsoondark h6,
+  .coomsoondark h4 {
+    font-size: 1.65rem;
+  }
+  .coomsoondark h4 {
+    margin: 1rem 0 3.5rem 0;
+  }
+  .coomsoondark .comsoondmain {
+    padding: 3.5rem;
   }
 }
 
 @media screen and (max-width: 850px) {
+  .coomsoondark .comdarkinput {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .coomsoondark .comsoondmain .comsoondcontent h1 {
-    padding: 10rem 0 0 0rem;
     font-size: 6.25rem;
-  }
-  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer p {
-    margin: 0 1.5rem;
-  }
-  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday {
-    padding: 1.5rem 2rem;
-  }
-  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 {
-    font-size: 2.75rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 span {
-    font-size: 1.75rem;
-    margin: 0.5rem 0.5rem 0 0.5rem;
   }
   .coomsoondark .comdarkinput {
     width: 85%;
@@ -4783,85 +4801,49 @@ h6 {
     margin: 2rem 0 5rem 0;
   }
   .coomsoondark .coomsoonicons {
-    width: 20%;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-}
-
-@media screen and (max-width: 850px) {
   .coomsoondark .comsoondmain {
     padding: 2rem;
   }
   .coomsoondark .comsoondmain .comsoondcontent h1 {
-    font-size: 4.25rem;
+    font-size: 4.5rem;
     text-align: center;
-    padding: 9rem 0 0 0;
   }
   .coomsoondark .comsoondmain .comsoondcontent br {
     display: block;
-  }
-  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 {
-    font-size: 3.25rem;
-  }
-  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday h6 span {
-    margin: 1.5rem 0.5rem 0 1rem;
   }
   .coomsoondark .comsoondmain .comsoondcontent .comdarktimer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 4rem 0;
-  }
-  .comingsoon-dark-header img {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    height: 1.25rem;
-  }
-  .coomsoondark h5 {
-    font-size: 1.85rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 1.5rem;
   }
   .coomsoondark .comdarkinput {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 100%;
-  }
-  .coomsoondark .comdarkinput input {
-    width: 100%;
-    margin: 0 0 2rem 0;
-    padding: 2rem;
-    border-radius: 1.5rem;
-  }
-  .coomsoondark .comdarkinput div {
-    width: 100%;
-  }
-  .coomsoondark .comdarkinput button {
-    border-radius: 1.5rem;
-    width: 100%;
-    padding: 2rem 0;
-  }
-  .coomsoondark .coomsoonicons {
-    width: 40%;
-  }
-  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday {
-    width: 85%;
-    height: 7.5rem;
-    padding: 0;
-    margin: 0 auto;
-  }
-  .coomsoondark h6 {
-    font-size: 1.7rem;
-  }
-  .coomsoondark h4 {
-    font-size: 1.8rem;
-  }
-  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday {
-    border-radius: 1.5rem;
   }
   .coomsoondark .launch-screen {
     min-height: 100vh;
+  }
+  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer .comdarkday {
+    width: 100%;
+  }
+  .coomsoondark .comsoondmain .comsoondcontent .comdarktimer p {
+    display: none;
+  }
+  .coomsoondark .comdarkinput input,
+  .comdarkinput button {
+    border-radius: 1.5rem;
   }
 }
 

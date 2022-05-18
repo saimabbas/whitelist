@@ -103,6 +103,7 @@ const ComingSoonDark = () => {
       ".comingsoon-text-component-1",
       {
         type: "chars",
+        type: "words",
       }
     );
     const comingsoonTextComponent1Chars = comingsoonTextComponent1.chars;
@@ -110,6 +111,7 @@ const ComingSoonDark = () => {
       ".comingsoon-text-component-2",
       {
         type: "chars",
+        type: "words",
       }
     );
     const comingsoonTextComponent2Chars = comingsoonTextComponent2.chars;
@@ -117,6 +119,7 @@ const ComingSoonDark = () => {
       ".comingsoon-text-component-3",
       {
         type: "chars",
+        type: "words",
       }
     );
     const comingsoonTextComponent3Chars = comingsoonTextComponent3.chars;
