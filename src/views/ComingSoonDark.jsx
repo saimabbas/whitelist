@@ -5,6 +5,7 @@ import TwitterIcon from "../assets/icons/TwitterIcon";
 import Discord from "../assets/icons/Discord";
 import HeroBgDark from "./../assets/img/pl.png";
 import ComingVideo from "../assets/videos/comingsoon.mp4";
+import StarsVideo from "../assets/videos/stars.mp4";
 import BackAudio from "../assets/audio/back-ad.mpeg";
 import { gsap } from "gsap";
 import Moon from "../assets/img/moon.png";
@@ -456,6 +457,10 @@ const ComingSoonDark = () => {
       }, 2150);
     });
   }, []);
+  setTimeout(() => {
+    $("#comingsoonvideo").css({ display: "none" });
+    $("#starsvideo").css({ display: "block" });
+  }, 15000);
   return (
     <div className="app light-theme">
       <div className="coomsoondark">
@@ -481,8 +486,11 @@ const ComingSoonDark = () => {
         </div>
 
         <div className="comsoondmain">
-          <video ref={vid} muted className="backvideo" id="vid">
+          <video ref={vid} muted className="backvideo" id="comingsoonvideo">
             <source src={ComingVideo} type="video/mp4" />
+          </video>
+          <video muted loop autoPlay className="backvideo" id="starsvideo">
+            <source src={StarsVideo} type="video/mp4" />
           </video>
           <div className="comingsoon-dark-loader-box">
             <span>

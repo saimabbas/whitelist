@@ -4847,6 +4847,14 @@ span {
   }
 }
 
+#starsvideo {
+  display: none;
+}
+
+#comingsoonvideo {
+  display: block;
+}
+
 .coomsoondark.mintmainpage {
   width: 100%;
   padding: 5rem;
