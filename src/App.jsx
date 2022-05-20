@@ -54,7 +54,7 @@ const App = () => {
           <div className="app light-theme">
             <Switch>
               <Routes>
-                <Route path="/" element={<ComingSoon />} />
+                <Route path="/" element={<ComingSoonDark />} />
                 <Route exact path="/links" element={<Links />} />
                 <Route exact path="/home" element={<Home />} />
                 <Route exact path="/homedark" element={<HomeDark />} />
@@ -95,7 +95,7 @@ const App = () => {
           <div className="app dark-theme">
             <Switch>
               <Routes>
-                <Route path="/" element={<ComingSoon />} />
+                <Route path="/" element={<ComingSoonDark />} />
                 <Route exact path="/home" element={<Home />} />
                 <Route exact path="/links" element={<Links />} />
                 <Route exact path="/homedark" element={<HomeDark />} />
