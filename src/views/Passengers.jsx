@@ -22,6 +22,7 @@ import Planet2 from "../assets/img/Planets/planet-2.svg";
 import Planet3 from "../assets/img/Planets/planet-3.svg";
 import Planet4 from "../assets/img/Planets/planet-4.svg";
 import Planet5 from "../assets/img/Planets/planet-5.svg";
+import BackVid from "../assets/videos/x1.mp4";
 import PBG1 from "../assets/img/PRoadmap/proadmap-box-bg-1.png";
 import PBG2 from "../assets/img/PRoadmap/proadmap-box-bg-2.png";
 import PassengerTeam from "../assets/img/passengersteam.png";
@@ -65,12 +66,20 @@ const Passengers = () => {
           />
           <div className="passengersmain-content">
             <div className="passengersheaderhero">
-              <img
+              {/* <img
                 className="passengers-hero-mountains"
                 src={PassengersHeroMountains}
                 alt="PassengersHeroMountains"
-              />
-              {/* <img className="planet-1" src={Planet3} alt="Planet1" /> */}
+              /> */}
+              <video
+                muted
+                loop
+                autoPlay
+                className="passengers-hero-mountains"
+                id="starsvideo"
+              >
+                <source src={BackVid} type="video/mp4" />
+              </video>
               <header className="passengerheader">
                 <div className="passengerheaderleft">
                   <img src={Logo} alt="Passengers Logo" />
